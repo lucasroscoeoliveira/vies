@@ -13,8 +13,6 @@ import { DirectivesModule } from './directives/directives.module';
 
 import { Slider } from '../app/components-controllers/Slider'
 
-import { MatMenuModule } from '@angular/material/menu';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +24,6 @@ import { MatMenuModule } from '@angular/material/menu';
     NoopAnimationsModule,
     FashionModule,
     HouseModule,
-    MatMenuModule,
     DirectivesModule,
   ],
   providers: [

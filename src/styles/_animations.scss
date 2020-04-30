@@ -9,29 +9,3 @@
   }
 }
 
-@keyframes flickerAnimation {
-  0%   { opacity:0.4; }
-  80%  { opacity:1; }
-  100% { opacity:0.4; }
-}
-@-o-keyframes flickerAnimation{
-  0%   { opacity:0.4; }
-  80%  { opacity:1; }
-  100% { opacity:0.4; }
-}
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:0.4; }
-  80%  { opacity:1; }
-  100% { opacity:0.4; }
-}
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:0.4; }
-  80%  { opacity:1; }
-  100% { opacity:0.4; }
-}
-.animate-flicker {
-   -webkit-animation: flickerAnimation 3s infinite;
-   -moz-animation: flickerAnimation 3s infinite;
-   -o-animation: flickerAnimation 3s infinite;
-    animation: flickerAnimation 3s infinite;
-}

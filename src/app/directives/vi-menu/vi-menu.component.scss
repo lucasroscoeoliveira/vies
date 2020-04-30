@@ -1,0 +1,50 @@
+@import '../../../styles.scss';
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.background {
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.menu-content {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    animation: menu 0.3s ease-in;
+    background-color: $color-white;
+    box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.button-menu {
+    z-index: 3;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+
+    height: 2.5em;
+    width: 2.5em;
+    background-color: $color-green;
+    border-radius: 100%;
+}

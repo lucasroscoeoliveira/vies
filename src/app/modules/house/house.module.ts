@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HouseHeader } from 'src/app/components-controllers/HouseHeader';
+import { Header } from 'src/app/components-controllers/Header';
 import { HouseComponent } from './house.component';
 import { HouseHeaderComponent } from './directives/house-header/house-header.component';
 import { DirectivesModule } from 'src/app/directives/directives.module';
@@ -16,7 +16,7 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     DirectivesModule
   ],
   providers: [
-    HouseHeader
+    Header
   ]
 })
 export class HouseModule { }

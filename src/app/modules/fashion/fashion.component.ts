@@ -18,24 +18,24 @@ export class FashionComponent implements OnInit {
   initializeSlider() {
     this.slider.items = [
       {
-        source: './assets/imgs/1-COZINHA-SION.jpg',
+        source: './assets/imgs/5-COZINHA-SION.jpg',
         active: true,
       },
       {
-        source: './assets/imgs/2-AREA-GOURMET.jpg',
+        source: './assets/imgs/2-MORAR-MAIS.jpg',
         active: false,
       },
       {
         source: './assets/imgs/3-SALAS-SAVASSI.jpg',
-        active: true,
-      },
-      {
-        source: './assets/imgs/4-MORAR-MAIS.jpg',
         active: false,
       },
       {
-        source: './assets/imgs/5- SALASBURITIS.jpg',
-        active: true,
+        source: './assets/imgs/4-SALAS-BURITIS.jpg',
+        active: false,
+      },
+      {
+        source: './assets/imgs/1-SALA-SANTA-AMELIA.jpg',
+        active: false,
       },
     ]
   }

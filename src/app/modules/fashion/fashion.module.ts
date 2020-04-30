@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FashionComponent } from './fashion.component';
 import { FashionHeaderComponent } from './directives/fashion-header/fashion-header.component';
-import { FashionHeader } from 'src/app/components-controllers/FashionHeader';
+import { Header } from 'src/app/components-controllers/Header';
 import { DirectivesModule } from 'src/app/directives/directives.module';
 
 
@@ -16,7 +16,7 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     DirectivesModule
   ],
   providers: [
-    FashionHeader
+    Header
   ]
 })
 export class FashionModule { }

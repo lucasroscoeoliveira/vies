@@ -1,1 +1,6 @@
-<p>house works!</p>
+<main class="house">
+    <app-vi-menu class="mobile"></app-vi-menu> 
+    <app-house-header></app-house-header>
+    <app-vi-slider *ngIf="slider.items" [images]="slider.items"></app-vi-slider>  
+</main>
+
