@@ -1,0 +1,5 @@
+<div class="content">
+  <div class="content__image" *ngFor="let image of images">
+    <img [src]="image.source" alt="" class="image" [ngClass]="{'transparent': !image.active}">
+  </div>
+</div>

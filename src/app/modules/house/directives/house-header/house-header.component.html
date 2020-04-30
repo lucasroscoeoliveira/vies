@@ -1,0 +1,15 @@
+<div class="house-header desktop">
+  <div class="house-header__item clickable" *ngFor="let item of houseHeader.items" mat-menu-item>
+    <span class="text text--purple text--small unselectable"> {{item.name}} </span>
+
+    <div class="house-header__menu">
+      <div class="house-header__menu__item clickable" *ngFor="let subItem of item.subItems">
+        <span class="text text--white text--small unselectable">{{subItem.name}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="house-header__item clickable" *ngFor="let social of houseHeader.socials">
+    <app-vi-svg icon="{{social.name}}" class="icon"></app-vi-svg>
+  </div>
+</div>

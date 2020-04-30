@@ -1,0 +1,32 @@
+.text {
+  font-family: Roboto;
+  font-size: 1rem;
+
+  &--small {
+    font-size: 0.8rem;
+  }
+
+  &--large {
+    font-size: 1.3rem;
+  }
+
+  &--purple {
+    color: #5E6298;
+  }
+
+  &--green {
+    color: #3A9096;
+  }
+
+  &--intermediate {
+    color: #4D90A3;
+  }
+
+  &--white {
+    color: #FFF;
+  }
+
+  &--bold {
+    font-weight: 800;
+  }
+}
