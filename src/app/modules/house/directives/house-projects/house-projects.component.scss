@@ -67,10 +67,6 @@
                 align-items: flex-end;
                 justify-content: center;
                 display: flex;
-                -webkit-animation: fadeInFromNone 0.5s ease-out;
-                -moz-animation: fadeInFromNone 0.5s ease-out;
-                -o-animation: fadeInFromNone 0.5s ease-out;
-                animation: fadeInFromNone 0.5s ease-out;
             }
         }
     }
@@ -136,8 +132,6 @@
         align-items: flex-end;
         justify-content: center;
         display: flex;
-        -webkit-animation: fadeInFromNone 0.5s ease-out;
-        animation: fadeInFromNone 0.5s ease-out;
         &__content {
             width: 100%;
             display: flex;

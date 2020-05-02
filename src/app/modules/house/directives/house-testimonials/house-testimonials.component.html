@@ -1,0 +1,22 @@
+<div class="house-testimonials">
+    <div class="house-testimonials__header">
+        <span class="text text--green text--large text--centered">DEPOIMENTOS</span> 
+    </div>
+
+    <div class="house-testimonials__container">
+        <div class="house-testimonials__container__card" *ngFor="let testimonial of testimonials">
+            <img [src]="testimonial.image" alt="" class="image">
+
+            <div class="house-testimonials__container__card__labels">
+                <span class="margin-top-2 text text--green">{{testimonial.name}}</span>
+                <span class="margin-top-2 text text--small">{{testimonial.description}}</span>
+            </div>
+
+            <div class="margin-top-2 house-testimonials__container__card__footer">
+                <app-vi-svg class="check" icon="icon-checkmark"></app-vi-svg>
+                <span class="text text--white text--small">{{testimonial.projectName}}</span>
+            </div>
+        </div>
+    </div>
+
+</div>

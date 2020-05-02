@@ -23,69 +23,29 @@ export class HouseProjectsComponent implements OnInit {
   initializeImages() {
     this.images = [
       {
-        source: './assets/imgs/projects/01-SANTO-AGOSTINHO.jpg',
+        source: './assets/imgs/projects/19-RESID-VARGINHA.jpg',
         active: false,
-        description: 'RESIDÊNCIA - STO AGOSTINHO'
-      },
+        description: 'RESIDÊNCIA - VARGINHA - MG'
+      }, 
       {
-        source: './assets/imgs/projects/02-ANCHIETA.jpg',
+        source: './assets/imgs/projects/18-QUARTO-BEBE-CAICARA.jpg',
         active: false,
-        description: 'RESIDÊNCIA - ANCHIETA'
-      },
+        description: 'QUARTO BEBÊ - CAIÇARA'
+      }, 
       {
-        source: './assets/imgs/projects/03-BURITIS.jpg',
+        source: './assets/imgs/projects/17-QUARTO-HOME-OFF-SION.jpg',
         active: false,
-        description: 'RESIDÊNCIA - BURITIS'
-      },
+        description: 'QUARTO E HOME OFFICE - SION'
+      }, 
       {
-        source: './assets/imgs/projects/04-HOME-OFFICE.jpg',
+        source: './assets/imgs/projects/16-PLANALTO.jpg',
         active: false,
-        description: 'HOME OFFICE - SAVASSI'
-      },
+        description: 'RESIDÊNCIA - PLANALTO'
+      }, 
       {
-        source: './assets/imgs/projects/05-SANTA-AMELIA.jpg',
+        source: './assets/imgs/projects/15-LAGOA-SANTA.jpg',
         active: false,
-        description: 'RESIDÊNCIA - STO AGOSTINHO'
-      },
-      {
-        source: './assets/imgs/projects/06-FUNCIONARIOS.jpg',
-        active: false,
-        description: 'RESIDÊNCIA - FUNCIONÁRIOS'
-      },
-      {
-        source: './assets/imgs/projects/07-SUITE-CASA.jpg',
-        active: false,
-        description: 'SUÍTE - OURO PRETO'
-      },
-      {
-        source: './assets/imgs/projects/08-SAVASSI.jpg',
-        active: false,
-        description: 'RESIDÊNCIA - SAVASSI'
-      },
-      {
-        source: './assets/imgs/projects/09-AREA-GOURMET-SA.jpg',
-        active: false,
-        description: 'ÁREA GOURMET - SANTA AMÉLIA'
-      },
-      {
-        source: './assets/imgs/projects/10-PADRE-EUSTAQUIO.jpg',
-        active: false,
-        description: 'RESIDÊNCIA - PADRE EUSTÁQUIO'
-      },
-      {
-        source: './assets/imgs/projects/11-BELVEDERE.jpg',
-        active: false,
-        description: 'SALAS CONJUGADAS - BELVEDERE'
-      },
-      {
-        source: './assets/imgs/projects/12-MORAR-MAIS.jpg',
-        active: false,
-        description: 'PRÊMIO MOSTRA DE DECORAÇÃO - MORAR MAIS 2018'
-      },
-      {
-        source: './assets/imgs/projects/13-COZINHA-SION.jpg',
-        active: false,
-        description: 'COZINHA - SION'
+        description: 'RESIDÊNCIA - LAGOA SANTA'
       },
       {
         source: './assets/imgs/projects/14-CONTAGEM.jpg',
@@ -93,15 +53,70 @@ export class HouseProjectsComponent implements OnInit {
         description: 'RESIDÊNCIA - CONTAGEM'
       },
       {
-        source: './assets/imgs/projects/15-LAGOA-SANTA.jpg',
+        source: './assets/imgs/projects/13-COZINHA-SION.jpg',
         active: false,
-        description: 'RESIDÊNCIA - LAGOA SANTA'
+        description: 'COZINHA - SION'
       },
       {
-        source: './assets/imgs/projects/16-PLANALTO.jpg',
+        source: './assets/imgs/projects/12-MORAR-MAIS.jpg',
         active: false,
-        description: 'RESIDÊNCIA - PLANALTO'
-      }     
+        description: 'PRÊMIO MOSTRA DE DECORAÇÃO - MORAR MAIS 2018'
+      },
+      {
+        source: './assets/imgs/projects/11-BELVEDERE.jpg',
+        active: false,
+        description: 'SALAS CONJUGADAS - BELVEDERE'
+      },
+      {
+        source: './assets/imgs/projects/10-PADRE-EUSTAQUIO.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - PADRE EUSTÁQUIO'
+      },
+      {
+        source: './assets/imgs/projects/09-AREA-GOURMET-SA.jpg',
+        active: false,
+        description: 'ÁREA GOURMET - SANTA AMÉLIA'
+      },
+      {
+        source: './assets/imgs/projects/08-SAVASSI.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - SAVASSI'
+      },
+      {
+        source: './assets/imgs/projects/07-SUITE-CASA.jpg',
+        active: false,
+        description: 'SUÍTE - OURO PRETO'
+      },
+      {
+        source: './assets/imgs/projects/06-FUNCIONARIOS.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - FUNCIONÁRIOS'
+      },
+      {
+        source: './assets/imgs/projects/05-SANTA-AMELIA.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - STO AGOSTINHO'
+      },
+      {
+        source: './assets/imgs/projects/04-HOME-OFFICE.jpg',
+        active: false,
+        description: 'HOME OFFICE - SAVASSI'
+      },
+      {
+        source: './assets/imgs/projects/03-BURITIS.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - BURITIS'
+      },
+      {
+        source: './assets/imgs/projects/02-ANCHIETA.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - ANCHIETA'
+      },
+      {
+        source: './assets/imgs/projects/01-SANTO-AGOSTINHO.jpg',
+        active: false,
+        description: 'RESIDÊNCIA - STO AGOSTINHO'
+      },
     ]
   }
 
@@ -125,7 +140,7 @@ export class HouseProjectsComponent implements OnInit {
 
   move(direction: string) {
     this.setCountActive();
-    let maxPosition = Math.floor(this.images.length / this.countActive) - 1;
+    let maxPosition = Math.floor(this.images.length / this.countActive);
 
     if(direction === 'right' && this.currentPosition === maxPosition){
         this.currentPosition = 0;

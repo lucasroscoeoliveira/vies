@@ -12,7 +12,8 @@ import { HouseModule } from './modules/house/house.module';
 import { DirectivesModule } from './directives/directives.module';
 
 import { Slider } from '../app/components-controllers/Slider';
-
+import { Header } from '../app/components-controllers/Header';
+import { Testimonial } from '../app/components-controllers/Testimonial';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,9 @@ import { Slider } from '../app/components-controllers/Slider';
     DirectivesModule,
   ],
   providers: [
-    Slider
+    Slider,
+    Testimonial,
+    Header
   ],
   bootstrap: [AppComponent]
 })

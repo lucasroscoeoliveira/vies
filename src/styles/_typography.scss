@@ -1,6 +1,7 @@
 .text {
   font-family: Roboto;
   font-size: 1rem;
+  color: #7f7f7f;
 
   &--small {
     font-size: 0.8rem;
@@ -36,23 +37,6 @@
 
   &--centered {
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 901px) {
-  .text {
-    font-size: 1.2rem !important;
-    &--small {
-      font-size: 1rem !important;
-    }
-  
-    &--small-2 {
-      font-size: 0.8rem !important;
-    }
-  
-    &--large {
-      font-size: 1.6rem !important;
-    }
   }
 }
 
