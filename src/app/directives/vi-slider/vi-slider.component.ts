@@ -16,6 +16,11 @@ export class ViSliderComponent implements OnInit {
 
   ngOnInit(): void {
     this.InitializeInterval();
+    this.setIsMobile();
+  }
+
+  setIsMobile() {
+    return screen.width < 900
   }
 
   ngOnDestroy() {

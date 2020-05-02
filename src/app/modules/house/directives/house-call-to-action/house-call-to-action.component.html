@@ -1,0 +1,24 @@
+<div class="call-to-action">
+    <img src="../../../../../assets/imgs/logo-casa-horizontal.png" class="logo" alt="">
+
+    <span class="text text--green text--centered">
+        {{callPhrase}}
+    </span>
+
+    <div class="btns-container">
+        <app-vi-button (onClick)="whatsApp()" white="true">
+            <span class="btn-content">
+                <app-vi-svg icon="icon-whatsapp" class="whatsapp margin-right-1"></app-vi-svg>  
+                <span class="text text--green text-center">Entre em contato por WhatsApp</span>
+            </span>
+        </app-vi-button>
+    
+        <app-vi-button (onClick)="email()" white="true">
+            <span class="btn-content">
+                <app-vi-svg icon="icon-gmail" class="email margin-right-1"></app-vi-svg>  
+                <span class="text text--green text-center">Entre em contato por Email</span>
+            </span>
+        </app-vi-button>
+    </div>
+
+</div>

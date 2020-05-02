@@ -1,6 +1,10 @@
 <main class="house">
-    <app-vi-menu class="mobile"></app-vi-menu> 
-    <app-house-header></app-house-header>
-    <app-vi-slider *ngIf="slider.items" [images]="slider.items"></app-vi-slider>  
+    <app-house-header class="desktop"></app-house-header>
+    <app-vi-slider *ngIf="slider.items" [images]="slider.items"></app-vi-slider>
+    <app-house-call-to-action></app-house-call-to-action>  
+    <app-house-projects></app-house-projects>
 </main>
+
+<app-vi-menu class="mobile"></app-vi-menu>  
+
 

@@ -9,6 +9,7 @@
     bottom: 0;
     top: 0;
     z-index: 1;
+    pointer-events: none;
 }
 
 .background {
@@ -21,6 +22,7 @@
     right: 0;
     bottom: 0;
     top: 0;
+    pointer-events: visible;
 }
 
 .menu-content {
@@ -42,9 +44,19 @@
     position: absolute;
     top: 1em;
     left: 1em;
-
-    height: 2.5em;
-    width: 2.5em;
+    pointer-events: visible;
+    height: 3.2em;
+    width: 3.2em;
     background-color: $color-green;
+    box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
     border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    app-vi-svg {
+        font-size: 25px;
+        color: $color-white;
+    }
 }

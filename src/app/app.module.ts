@@ -11,7 +11,7 @@ import { FashionModule } from './modules/fashion/fashion.module';
 import { HouseModule } from './modules/house/house.module';
 import { DirectivesModule } from './directives/directives.module';
 
-import { Slider } from '../app/components-controllers/Slider'
+import { Slider } from '../app/components-controllers/Slider';
 
 @NgModule({
   declarations: [

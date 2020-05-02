@@ -1,0 +1,158 @@
+@import '../../../../../styles.scss';
+.house-projects-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    padding-bottom: 2em;
+}
+
+.house-projects {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5em 1fr 5em;
+
+    &__container {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 0;
+        margin-bottom: 1em;
+    
+        .card {
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            margin: 0.2em;
+            justify-content: center;
+            min-height: 120px;
+            border-radius: 5px;
+    
+            &__image {
+                width: 100%;
+                object-fit: cover;
+                grid-column: 1/2;
+                grid-row: 1/3;
+                border-radius: 5px;
+            }
+    
+            &:hover {
+                .description {
+                    opacity: 1;
+                    display: flex;
+                    justify-content: flex-end;
+    
+                    &__content {
+                        display: flex;
+                        align-items: center;
+                        background-color: rgba($color: $color-white, $alpha: 0.8);
+                        padding: 0.3em;
+                        opacity: 1;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+    
+            .description {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                opacity: 0;
+                width: 100%;
+                align-items: flex-end;
+                justify-content: center;
+                display: flex;
+                -webkit-animation: fadeInFromNone 0.5s ease-out;
+                -moz-animation: fadeInFromNone 0.5s ease-out;
+                -o-animation: fadeInFromNone 0.5s ease-out;
+                animation: fadeInFromNone 0.5s ease-out;
+            }
+        }
+    }
+
+    &__button-left {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button-right {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttom-menu {
+        pointer-events: visible;
+        height: 3.5em;
+        width: 3.5em;
+        box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+        display: flex;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background-color: $color-white;
+        border: 1px solid #d6d6d6;
+
+        cursor: pointer;
+        app-vi-svg {
+            font-size: 35px;
+            color: $color-green;
+
+            &:hover {
+                opacity: 0.8;
+            }
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .card {
+        max-width: calc(50% - 1em);
+    }
+    .description {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        opacity: 1 !important;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        display: flex;
+        -webkit-animation: fadeInFromNone 0.5s ease-out;
+        animation: fadeInFromNone 0.5s ease-out;
+        &__content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0.2em;
+            justify-content: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .card {
+        max-width: calc(25% - 2em);
+    }
+}

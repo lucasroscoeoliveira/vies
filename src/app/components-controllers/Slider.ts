@@ -15,5 +15,7 @@ export class Slider {
 @Injectable()
 export class Image {
   source: string;
+  sourceMobile?: string | '';
   active: Boolean;
+  description?: string | '';
 }

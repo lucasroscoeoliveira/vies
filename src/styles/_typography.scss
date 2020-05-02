@@ -6,6 +6,10 @@
     font-size: 0.8rem;
   }
 
+  &--small-2 {
+    font-size: 0.6rem;
+  }
+
   &--large {
     font-size: 1.3rem;
   }
@@ -27,6 +31,28 @@
   }
 
   &--bold {
-    font-weight: 800;
+    font-weight: 600;
+  }
+
+  &--centered {
+    text-align: center;
   }
 }
+
+@media only screen and (min-width: 901px) {
+  .text {
+    font-size: 1.2rem !important;
+    &--small {
+      font-size: 1rem !important;
+    }
+  
+    &--small-2 {
+      font-size: 0.8rem !important;
+    }
+  
+    &--large {
+      font-size: 1.6rem !important;
+    }
+  }
+}
+

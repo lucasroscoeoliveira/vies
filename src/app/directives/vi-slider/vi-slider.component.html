@@ -1,5 +1,6 @@
 <div class="content">
   <div class="content__image" *ngFor="let image of images">
-    <img [src]="image.source" alt="" class="image" [ngClass]="{'transparent': !image.active}">
+    <img [src]="image.source" alt="" class="image" *ngIf="!setIsMobile()" [ngClass]="{'transparent': !image.active}">
+    <img [src]="image.sourceMobile" alt="" class="image" *ngIf="setIsMobile()" [ngClass]="{'transparent': !image.active}">
   </div>
 </div>

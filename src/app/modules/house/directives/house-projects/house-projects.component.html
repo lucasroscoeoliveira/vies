@@ -1,0 +1,28 @@
+<div class="house-projects-header">
+    <span class="text text--green text--large text--centered">PROJETOS</span> 
+</div>
+
+<div class="house-projects">
+    <div class="house-projects__container">
+        <div *ngFor="let image of images" class="card" [hidden]="!image.active">
+            <img [src]="image.source" alt="" class="card__image">
+            <div class="description">
+                <div class="description__content">
+                    <span class="text text--green text--small-2 text--bold text--centered">{{image.description}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="house-projects__button-left" (click)="move('left')">
+        <div class="buttom-menu">
+            <app-vi-svg icon="icon-circle-left"></app-vi-svg>
+        </div>
+    </div>
+
+    <div class="house-projects__button-right" (click)="move('right')">
+        <div class="buttom-menu">
+            <app-vi-svg icon="icon-circle-right"></app-vi-svg>
+        </div>
+    </div>
+</div>
