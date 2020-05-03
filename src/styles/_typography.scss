@@ -23,6 +23,10 @@
     color: #3A9096;
   }
 
+  &--normal {
+    color: #7f7f7f;
+  }
+
   &--intermediate {
     color: #4D90A3;
   }
@@ -37,6 +41,10 @@
 
   &--centered {
     text-align: center;
+  }
+
+  &--italic {
+    font-style: italic;
   }
 }
 

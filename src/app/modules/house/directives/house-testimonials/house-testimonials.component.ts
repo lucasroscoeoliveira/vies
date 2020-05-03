@@ -27,7 +27,7 @@ export class HouseTestimonialsComponent implements OnInit {
         projectName: "Consultoria - Residência Grajaú"
       },
       {
-        image: './assets/imgs/projects/17-QUARTO-HOME-OFF-SION.jpg',
+        image: './assets/imgs/projects/13-COZINHA-SION.jpg',
         name: 'Fátima Roscoe e Roberto Lage',
         description: '“Minha experiência com a Viés foi muito gratificante. Todas as expectativas foram atendidas! São profissionais altamente qualificadas e muito gentis. O projeto ficou dentro de todas as nossas necessidades e expectativas!”',
         projectName: "Projeto Cozinha – Sion"

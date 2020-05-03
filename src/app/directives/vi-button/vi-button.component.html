@@ -1,3 +1,3 @@
-<div class="button unselectable" (click)="btnClicked()" [ngClass]="{'white': white}">
+<div class="button unselectable" (click)="btnClicked()" [ngClass]="{'white': type === 'white', 'green': type === 'green'}">
   <ng-content class="unselectable"></ng-content>
 </div>

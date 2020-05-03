@@ -5,6 +5,7 @@ import { HouseHeaderComponent } from './directives/house-header/house-header.com
 import { HouseCallToActionComponent } from './directives/house-call-to-action/house-call-to-action.component';
 import { HouseProjectsComponent } from './directives/house-projects/house-projects.component';
 import { HouseTestimonialsComponent } from './directives/house-testimonials/house-testimonials.component';
+import { HouseDiscoverStyleComponent } from './directives/house-discover-style/house-discover-style.component';
 import { DirectivesModule } from 'src/app/directives/directives.module';
 
 
@@ -14,7 +15,8 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     HouseHeaderComponent,
     HouseCallToActionComponent,
     HouseProjectsComponent,
-    HouseTestimonialsComponent
+    HouseTestimonialsComponent,
+    HouseDiscoverStyleComponent
   ],
   imports: [
     CommonModule,
