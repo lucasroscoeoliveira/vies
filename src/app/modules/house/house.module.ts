@@ -8,7 +8,6 @@ import { HouseTestimonialsComponent } from './directives/house-testimonials/hous
 import { HouseDiscoverStyleComponent } from './directives/house-discover-style/house-discover-style.component';
 import { DirectivesModule } from 'src/app/directives/directives.module';
 
-
 @NgModule({
   declarations: [
     HouseComponent,
@@ -16,11 +15,11 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     HouseCallToActionComponent,
     HouseProjectsComponent,
     HouseTestimonialsComponent,
-    HouseDiscoverStyleComponent
+    HouseDiscoverStyleComponent,
   ],
   imports: [
     CommonModule,
-    DirectivesModule
+    DirectivesModule,
   ],
   providers: [
   ]

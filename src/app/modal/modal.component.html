@@ -1,0 +1,9 @@
+<div class="modal" *ngIf="modal.isOpen" (click)="closeModal()">
+    <div class="modal__content" (mouseover)="isOverModal = true" (mouseout)="isOverModal = false">
+        <app-modal-email 
+            *ngIf="modal.name === 'app-modal-email'" 
+            (data)="modal.data"
+            (callback)="modal.callBack">
+        </app-modal-email>
+    </div>
+</div>

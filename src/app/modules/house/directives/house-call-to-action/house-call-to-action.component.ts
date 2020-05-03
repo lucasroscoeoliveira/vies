@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { WhatsappService } from 'src/app/services/whatsapp.service';
+import { Modal } from 'src/app/components-controllers/Modal';
 
 @Component({
   selector: 'app-house-call-to-action',
@@ -12,7 +14,9 @@ export class HouseCallToActionComponent implements OnInit {
   intervalEvent: any;
   callPhrase: string;
 
-  constructor() { }
+  constructor(
+    public whatsAppService: WhatsappService,
+    public modal: Modal) { }
 
   ngOnInit(): void {
     this.phrases = [
@@ -42,10 +46,20 @@ export class HouseCallToActionComponent implements OnInit {
   }
 
   whatsApp() {
-    debugger;
+    this.whatsAppService.sendMessage(5531993357579);
   }
 
   email() {
+    this.modal.open(
+      'app-modal-email',
+      {
+        batata: true
+      },
+      this.callBackTeste
+    )
+  }
 
+  callBackTeste() {
+    debugger;
   }
 }

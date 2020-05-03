@@ -1,0 +1,63 @@
+<div class="modal-email__header">
+    <div class="content-logo">
+        <img src="../../../../assets//imgs/logo-casa-horizontal.png" class="logo-vies" alt="">
+    </div>
+    <app-vi-svg icon="icon-close"></app-vi-svg>
+</div>
+
+<form class="modal-email__body" id="emailForm" autocomplete="off" method="post" action="">
+    <div class="modal-email__body__content-1">
+        <div class="full-width">
+            <span class="text">Digite seu nome:</span>
+            <input 
+                [(ngModel)]="name" 
+                [ngModelOptions]="{standalone: true}"
+                class="input-default-house"
+                autocomplete="autocomplete_off_hack_xfr4!k" 
+                type="text">
+        </div>
+    </div>
+    <div class="modal-email__body__content-2">
+        <div class="name-input-container">
+            <span class="text">Digite seu email:</span>
+            <input 
+                class="input-default-house"
+                autocomplete="autocomplete_off_hack_xfr4!k"
+                [(ngModel)]="email" 
+                [ngModelOptions]="{standalone: true}"
+                type="text" 
+                placeholder="Ex: seuemail@email.com">
+        </div>
+        <div class="">
+            <span class="text">Digite seu telefone</span>
+            <input  
+                mask="(00) 00000-0000"
+                class="input-default-house"
+                [(ngModel)]="phone" 
+                [ngModelOptions]="{standalone: true}"
+                autocomplete="autocomplete_off_hack_xfr4!k"
+                placeholder="(31) 99999-9999"
+                type="text">
+        </div>
+    </div>
+
+    <div class="full-width">
+      <span class="text">Digite sua mensagem</span>
+      <textarea
+          rows="5"
+          [(ngModel)]="message"
+          [ngModelOptions]="{standalone: true}"
+          class="input-default-house">
+      </textarea>
+    </div>
+
+    <div class="btns-container">
+        <app-vi-button [type]="'danger'" class="desktop">
+            <span class="text text--white">Cancelar</span>
+        </app-vi-button>
+        <app-vi-button [type]="'green'" [submit]="true">
+            <span class="text text--white">Enviar</span>
+        </app-vi-button>
+    </div>
+
+</form>

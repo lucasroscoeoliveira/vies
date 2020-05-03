@@ -10,13 +10,13 @@ import { ViMenuComponent } from './vi-menu/vi-menu.component';
     ViButtonComponent,
     ViSliderComponent,
     ViSvgComponent,
-    ViMenuComponent
+    ViMenuComponent,
   ],
   exports: [
     ViButtonComponent,
     ViSliderComponent,
     ViSvgComponent,
-    ViMenuComponent
+    ViMenuComponent,
   ],
   imports: [
     CommonModule,

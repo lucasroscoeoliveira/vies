@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class ViButtonComponent implements OnInit {
 
   @Input() type: string;
+  @Input() submit: boolean;
   @Output() onClick = new EventEmitter();
 
   constructor() { }
@@ -19,4 +20,9 @@ export class ViButtonComponent implements OnInit {
     this.onClick.emit();
   }
 
+  getBtnType() {
+    if(this.submit){
+      return 'submit';
+    }
+  }
 }

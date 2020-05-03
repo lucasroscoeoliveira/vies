@@ -13,7 +13,7 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
   ],
   imports: [
     CommonModule,
-    DirectivesModule
+    DirectivesModule,
   ],
   providers: [
     Header

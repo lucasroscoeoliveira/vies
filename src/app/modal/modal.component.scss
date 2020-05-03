@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+
+.modal {
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+    right: 0;
+    bottom: 0;
+    top: 0;
+    pointer-events: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        padding: 1em;
+        background-color: $color-white;
+        box-shadow: 0.2px 3px 2px 0 rgba(0, 0, 0, 0.15);
+        z-index: 5;
+    }
+}

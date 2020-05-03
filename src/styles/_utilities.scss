@@ -90,3 +90,47 @@
     display: none !important;
   }
 }
+
+.input-default-fashion {
+  width: 100%;
+  padding-left: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 1em;
+  font-weight: 300;
+  padding-right: 1em;
+  padding-top: 0.3em;
+
+  &:focus {
+    border: solid 1px #5E6298;
+    box-shadow: 2px 1px rgba(#5E6298, 0.3);
+  }
+}
+
+.input-default-house {
+  width: 100%;
+  padding-left: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 1em;
+  font-weight: 300;
+  padding-right: 1em;
+  padding-top: 0.3em;
+
+  &:focus {
+    border: solid 1px #3A9096;
+    box-shadow: 2px 1px rgba(#3A9096, 0.3);
+  }
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
