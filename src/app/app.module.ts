@@ -20,6 +20,7 @@ import { Modal } from '../app/components-controllers/Modal';
 import { Testimonial } from '../app/components-controllers/Testimonial';
 
 import { WhatsappService } from './services/whatsapp.service';
+import { ClientAppService } from './services/client-app.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ModalComponent } from './modal/modal.component';
@@ -51,6 +52,7 @@ import { ModalEmailComponent } from './modal/directives/modal-email/modal-email.
     Header,
     Modal,
     WhatsappService,
+    ClientAppService
   ],
   bootstrap: [AppComponent]
 })
