@@ -37,4 +37,9 @@ export default class ImagesConstants {
             RESID_VARGINHA_19: environment.baseUrl + '/images/House/Projects/19-RESID-VARGINHA.jpg',
         }
     }
+
+    static readonly SHARED_IMAGES = {
+        MARINA: environment.baseUrl + '/images/MARINA.jpg',
+        AMANDA: environment.baseUrl + '/images/AMANDA.jpg',
+    }
 }

@@ -1,0 +1,6 @@
+<div class="navigation-header" (click)="goBack()">
+  <app-vi-svg icon="icon-arrow-left" [ngClass]="{'green': type === 'house', 'purple': type === 'fashion'}" class="icon"></app-vi-svg>
+  <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large unselectable margin-left-1"> 
+    {{title}} 
+  </span>
+</div>

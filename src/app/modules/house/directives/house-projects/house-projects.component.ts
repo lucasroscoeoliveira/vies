@@ -12,7 +12,6 @@ export class HouseProjectsComponent implements OnInit {
   images: Array<Image>;
   currentPosition: number;
   countActive: number;
-  imageConstants: ImagesConstants;
 
   constructor() { }
 

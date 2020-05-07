@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import ImagesConstants from 'src/app/utils/ImagesConstants';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-who-we-are',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhoWeAreComponent implements OnInit {
 
-  constructor() { }
+  marina: string;
+  amanda: string;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.marina = ImagesConstants.SHARED_IMAGES.MARINA;
+    this.amanda = ImagesConstants.SHARED_IMAGES.AMANDA;
+  }
+
+  goBackToInitial() {
+    this.router.navigate(['casa/inicio']);
   }
 
 }
