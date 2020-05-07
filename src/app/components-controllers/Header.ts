@@ -18,6 +18,7 @@ export class HeaderMenuItem {
   subItems: Array<HeaderSubMenuItem>;
   hasMenu: boolean;
   logo: boolean;
+  routeName?: string;
 }
 
 @Injectable()

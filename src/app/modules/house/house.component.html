@@ -1,10 +1,8 @@
-<main class="house">
+<main class="house-container">
     <app-house-header class="desktop"></app-house-header>
-    <app-vi-slider *ngIf="slider.items" [images]="slider.items"></app-vi-slider>
-    <app-house-call-to-action></app-house-call-to-action>  
-    <app-house-projects></app-house-projects>
-    <app-house-discover-style></app-house-discover-style>
-    <app-house-testimonials></app-house-testimonials>
+    <div class="house" id="house_scroll_container">
+        <router-outlet></router-outlet>
+    </div>
 </main>
 
 <app-vi-menu class="mobile"></app-vi-menu>  

@@ -1,5 +1,5 @@
 <div class="house-header desktop">
-  <div class="clickable house-header__item" *ngFor="let item of houseHeader.items" mat-menu-item>
+  <div (click)="onClick(item.routeName)" class="clickable house-header__item" *ngFor="let item of houseHeader.items" mat-menu-item>
     <div *ngIf="!item.logo" class="text-container">
       <span class="text text--green text--small unselectable"> {{item.name}} </span>
     </div>

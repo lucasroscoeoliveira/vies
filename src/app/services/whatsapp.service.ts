@@ -14,7 +14,6 @@ export class WhatsappService {
   }
 
   sendMessage(number: number) {
-    debugger;
     window.open(`${this.api}/${number}`);
   }
 }

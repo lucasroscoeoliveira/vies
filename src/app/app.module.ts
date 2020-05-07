@@ -25,13 +25,17 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ModalComponent } from './modal/modal.component';
 import { ModalEmailComponent } from './modal/directives/modal-email/modal-email.component';
+import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ModalEmailComponent,
-    ModalComponent
+    ModalComponent,
+    WhoWeAreComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
