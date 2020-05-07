@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Slider } from 'src/app/components-controllers/Slider';
-
+import ImagesConstants from 'src/app/utils/ImagesConstants';
 @Component({
   selector: 'app-house',
   templateUrl: './house.component.html',
@@ -8,6 +8,7 @@ import { Slider } from 'src/app/components-controllers/Slider';
 })
 export class HouseComponent implements OnInit {
   title = "casa";
+  imageConstants: ImagesConstants;
 
   constructor(public slider: Slider) { }
 
@@ -23,23 +24,23 @@ export class HouseComponent implements OnInit {
         active: true,
       },
       {
-        source: './assets/imgs/2-MORAR-MAIS.jpg',
-        sourceMobile: './assets/imgs/mobile/2-MOB-MORAR-MAIS.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.MORAR_MAIS_2,
+        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_MORAR_MAIS_2,
         active: false,
       },
       {
-        source: './assets/imgs/3-SALAS-SAVASSI.jpg',
-        sourceMobile: './assets/imgs/mobile/3-MOB-SALAS-SAVASSI.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.SALAS_SAVASSI_3,
+        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALAS_SAVASSI_3,
         active: false,
       },
       {
-        source: './assets/imgs/4-SALAS-BURITIS.jpg',
-        sourceMobile: './assets/imgs/mobile/4-MOB-SALA-BURITIS.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.SALAS_BURITIS_4,
+        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALA_BURITIS_4,
         active: false,
       },
       {
-        source: './assets/imgs/5-COZINHA-SION.jpg',
-        sourceMobile: './assets/imgs/mobile/5-MOB-COZINHA-SION.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.COZINHA_SION_5,
+        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_COZINHA_SION_5,
         active: false,
       },
     ]

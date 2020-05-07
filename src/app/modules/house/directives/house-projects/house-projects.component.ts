@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Image } from 'src/app/components-controllers/Slider';
+import ImagesConstants from 'src/app/utils/ImagesConstants';
 
 @Component({
   selector: 'app-house-projects',
@@ -11,6 +12,7 @@ export class HouseProjectsComponent implements OnInit {
   images: Array<Image>;
   currentPosition: number;
   countActive: number;
+  imageConstants: ImagesConstants;
 
   constructor() { }
 
@@ -23,97 +25,97 @@ export class HouseProjectsComponent implements OnInit {
   initializeImages() {
     this.images = [
       {
-        source: './assets/imgs/projects/19-RESID-VARGINHA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.RESID_VARGINHA_19,
         active: false,
         description: 'RESIDÊNCIA - VARGINHA - MG'
       }, 
       {
-        source: './assets/imgs/projects/18-QUARTO-BEBE-CAICARA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.QUARTO_BEBE_CAICARA_18,
         active: false,
         description: 'QUARTO BEBÊ - CAIÇARA'
       }, 
       {
-        source: './assets/imgs/projects/17-QUARTO-HOME-OFF-SION.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.QUARTO_HOME_OFF_SION_17,
         active: false,
         description: 'QUARTO E HOME OFFICE - SION'
       }, 
       {
-        source: './assets/imgs/projects/16-PLANALTO.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.PLANALTO_16,
         active: false,
         description: 'RESIDÊNCIA - PLANALTO'
       }, 
       {
-        source: './assets/imgs/projects/15-LAGOA-SANTA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.LAGOA_SANTA_15,
         active: false,
         description: 'RESIDÊNCIA - LAGOA SANTA'
       },
       {
-        source: './assets/imgs/projects/14-CONTAGEM.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.CONTAGEM_14,
         active: false,
         description: 'RESIDÊNCIA - CONTAGEM'
       },
       {
-        source: './assets/imgs/projects/13-COZINHA-SION.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.COZINHA_SION_13,
         active: false,
         description: 'COZINHA - SION'
       },
       {
-        source: './assets/imgs/projects/12-MORAR-MAIS.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.MORAR_MAIS_12,
         active: false,
         description: 'PRÊMIO MOSTRA DE DECORAÇÃO - MORAR MAIS 2018'
       },
       {
-        source: './assets/imgs/projects/11-BELVEDERE.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BELVEDERE_11,
         active: false,
         description: 'SALAS CONJUGADAS - BELVEDERE'
       },
       {
-        source: './assets/imgs/projects/10-PADRE-EUSTAQUIO.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.PADRE_EUSTAQUIO_10,
         active: false,
         description: 'RESIDÊNCIA - PADRE EUSTÁQUIO'
       },
       {
-        source: './assets/imgs/projects/09-AREA-GOURMET-SA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.AREA_GOUMET_9,
         active: false,
         description: 'ÁREA GOURMET - SANTA AMÉLIA'
       },
       {
-        source: './assets/imgs/projects/08-SAVASSI.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.SAVASSI_8,
         active: false,
         description: 'RESIDÊNCIA - SAVASSI'
       },
       {
-        source: './assets/imgs/projects/07-SUITE-CASA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.SUITE_CASA_7,
         active: false,
         description: 'SUÍTE - OURO PRETO'
       },
       {
-        source: './assets/imgs/projects/06-FUNCIONARIOS.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.FUNCIONARIOS_6,
         active: false,
         description: 'RESIDÊNCIA - FUNCIONÁRIOS'
       },
       {
-        source: './assets/imgs/projects/05-SANTA-AMELIA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.SANTA_AMELIA_5,
         active: false,
         description: 'RESIDÊNCIA - STO AGOSTINHO'
       },
       {
-        source: './assets/imgs/projects/04-HOME-OFFICE.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.HOME_OFFICE_4,
         active: false,
         description: 'HOME OFFICE - SAVASSI'
       },
       {
-        source: './assets/imgs/projects/03-BURITIS.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BURITIS_3,
         active: false,
         description: 'RESIDÊNCIA - BURITIS'
       },
       {
-        source: './assets/imgs/projects/02-ANCHIETA.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ANCHIETA_2,
         active: false,
         description: 'RESIDÊNCIA - ANCHIETA'
       },
       {
-        source: './assets/imgs/projects/01-SANTO-AGOSTINHO.jpg',
+        source: ImagesConstants.HOUSE_IMAGES.PROJECTS.SANTO_AGOSTINHO_1,
         active: false,
         description: 'RESIDÊNCIA - STO AGOSTINHO'
       },
