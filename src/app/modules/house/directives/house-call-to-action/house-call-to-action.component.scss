@@ -14,6 +14,7 @@
 
     .btns-container {
         padding: 2em 0;
+        padding-bottom: 1em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -38,6 +39,8 @@
 
 @media only screen and (max-width: 500px) {
     .btns-container {
+        width: 100%;
+
         app-vi-button {
             width: 100%;
 

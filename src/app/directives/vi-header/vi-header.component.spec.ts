@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HouseHeaderComponent } from './house-header.component';
+import { ViHeaderComponent } from './vi-header.component';
 
-describe('HouseHeaderComponent', () => {
-  let component: HouseHeaderComponent;
-  let fixture: ComponentFixture<HouseHeaderComponent>;
+describe('ViHeaderComponent', () => {
+  let component: ViHeaderComponent;
+  let fixture: ComponentFixture<ViHeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HouseHeaderComponent ]
+      declarations: [ ViHeaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HouseHeaderComponent);
+    fixture = TestBed.createComponent(ViHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

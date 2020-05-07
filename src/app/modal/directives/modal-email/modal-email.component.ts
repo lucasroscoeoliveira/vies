@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Modal } from 'src/app/components-controllers/Modal';
 
 @Component({
   selector: 'app-modal-email',
@@ -16,13 +17,16 @@ export class ModalEmailComponent implements OnInit {
   message: string;
   subscribe: boolean;
   
-  constructor() { }
+  constructor(public modal: Modal) { }
 
   ngOnInit(): void {
   }
 
   sendEmail() {
-    debugger;
+    this.modal.executeCallBack();
   }
 
+  closeModal() {
+    this.modal.close();
+  }
 }

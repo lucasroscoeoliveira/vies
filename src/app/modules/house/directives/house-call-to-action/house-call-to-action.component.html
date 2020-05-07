@@ -6,14 +6,14 @@
     </span>
 
     <div class="btns-container">
-        <app-vi-button (onClick)="whatsApp()" [type]='"white"'>
+        <app-vi-button (onClick)="whatsApp()" [type]='"white"' [wide]="setIsMobile()">
             <span class="btn-content">
                 <app-vi-svg icon="icon-whatsapp" class="whatsapp margin-right-1"></app-vi-svg>  
                 <span class="text text--green text-center">Entre em contato por WhatsApp</span>
             </span>
         </app-vi-button>
     
-        <app-vi-button (onClick)="email()" [type]='"white"'>
+        <app-vi-button (onClick)="email()" [type]='"white"' [wide]="setIsMobile()">
             <span class="btn-content">
                 <app-vi-svg icon="icon-gmail" class="email margin-right-1"></app-vi-svg>  
                 <span class="text text--green text-center">Entre em contato por Email</span>

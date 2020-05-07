@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-vi-menu',
@@ -8,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ViMenuComponent implements OnInit {
 
   menuOpened: boolean;
+  @Input() items: Menu;
 
   constructor() { }
 
   ngOnInit(): void {
     this.menuOpened = false;
+    debugger;
   }
 
   toggleMenu() {

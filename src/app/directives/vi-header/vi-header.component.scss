@@ -1,6 +1,6 @@
-@import "../../../../../styles.scss";
+@import ".../../../../../styles.scss";
 
-.house-header {
+.header {
   width: 100%;
   top: 0;
   left: 0;
@@ -31,14 +31,23 @@
     }
 
     .icon {
-      &::before{
-        color: $color-green;
-      }
-      color: $color-green;
+        &--green {
+            &::before{
+                color: $color-green;
+              }
+              color: $color-green;
+        }
+
+        &--purple {
+            &::before{
+                color: $color-purple;
+              }
+              color: $color-purple;
+        }
     }
   }
 
-  .house-header__item:hover .house-header__menu {
+  .header__item:hover .header__menu {
     display: block;
   }
 
@@ -50,8 +59,15 @@
     z-index: 1;
     margin-top: 0.8em;
     margin-left: -0.8em;
-    background-color: $color-green;
     animation: growing 0.1s ease-in;
+
+    &--green {
+        background-color: $color-green;
+    }
+
+    &--purple {
+        background-color: $color-purple;
+    }
 
     &__item {
       padding: 0.8em;

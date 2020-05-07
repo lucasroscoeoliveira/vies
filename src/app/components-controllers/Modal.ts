@@ -43,7 +43,6 @@ export class Modal {
   }
 
   executeCallBack() {
-    debugger;
     if(this.callBack){
       this.callBack();
     }

@@ -2,11 +2,11 @@
     <div class="content-logo">
         <img src="../../../../assets//imgs/logo-casa-horizontal.png" class="logo-vies" alt="">
     </div>
-    <app-vi-svg icon="icon-close"></app-vi-svg>
+    <app-vi-svg (click)="closeModal()" icon="icon-close"></app-vi-svg>
 </div>
 
 <form class="modal-email__body" id="emailForm" autocomplete="off" method="post" action="">
-    <div class="modal-email__body__content-1">
+    <div class="modal-email__body__content-1 margin-top-2">
         <div class="full-width">
             <span class="text">Digite seu nome:</span>
             <input 
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="modal-email__body__content-2">
-        <div class="name-input-container">
+        <div class="name-input-container margin-top-2">
             <span class="text">Digite seu email:</span>
             <input 
                 class="input-default-house"
@@ -28,7 +28,7 @@
                 type="text" 
                 placeholder="Ex: seuemail@email.com">
         </div>
-        <div class="">
+        <div class="margin-top-2">
             <span class="text">Digite seu telefone</span>
             <input  
                 mask="(00) 00000-0000"
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="full-width">
+    <div class="full-width margin-top-2">
       <span class="text">Digite sua mensagem</span>
       <textarea
           rows="5"
@@ -51,11 +51,11 @@
       </textarea>
     </div>
 
-    <div class="btns-container">
-        <app-vi-button [type]="'danger'" class="desktop">
+    <div class="btns-container margin-top-2">
+        <app-vi-button [type]="'danger'" (onClick)="closeModal()" class="desktop" >
             <span class="text text--white">Cancelar</span>
         </app-vi-button>
-        <app-vi-button [type]="'green'" [submit]="true">
+        <app-vi-button [type]="'green'" [submit]="true" (onClick)="sendEmail()">
             <span class="text text--white">Enviar</span>
         </app-vi-button>
     </div>

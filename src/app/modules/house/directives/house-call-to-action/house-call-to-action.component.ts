@@ -55,11 +55,14 @@ export class HouseCallToActionComponent implements OnInit {
       {
         batata: true
       },
-      this.callBackTeste
+      this.callBackEmailModal
     )
   }
 
-  callBackTeste() {
-    debugger;
+  setIsMobile() {
+    return screen.width < 500
+  }
+
+  callBackEmailModal() {
   }
 }

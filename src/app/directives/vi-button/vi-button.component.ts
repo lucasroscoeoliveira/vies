@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class ViButtonComponent implements OnInit {
 
   @Input() type: string;
+  @Input() wide: boolean;
   @Input() submit: boolean;
   @Output() onClick = new EventEmitter();
 
