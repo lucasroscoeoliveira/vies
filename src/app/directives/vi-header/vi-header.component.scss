@@ -29,23 +29,23 @@
     &:hover {
       background-color: rgba($color: #000000, $alpha: 0.05);
     }
-
-    .icon {
-        &--green {
-            &::before{
-                color: $color-green;
-              }
-              color: $color-green;
-        }
-
-        &--purple {
-            &::before{
-                color: $color-purple;
-              }
-              color: $color-purple;
-        }
-    }
   }
+
+  .icon {
+    &--green {
+        &::before{
+            color: $color-green;
+          }
+          color: $color-green;
+    }
+
+    &--purple {
+        &::before{
+            color: $color-purple;
+          }
+          color: $color-purple;
+    }
+}
 
   .header__item:hover .header__menu {
     display: block;

@@ -1,28 +1,28 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .menu {
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 1;
-    pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .background {
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.15);
-    right: 0;
-    bottom: 0;
-    top: 0;
-    pointer-events: visible;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.15);
+  right: 0;
+  bottom: 0;
+  top: 0;
+  pointer-events: visible;
 }
 
 .menu-content {
@@ -37,26 +37,93 @@
     box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
     transition: 0.5s;
     overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: visible;
+
+    .itens-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8em;
+        vertical-align: center;
+        border-bottom: 1px solid #efefef;
+
+        .text-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__social {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__item {
+            padding: 0.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    .icon {
+        &--green {
+            &::before{
+                color: $color-green;
+            }
+            color: $color-green;
+        }
+
+        &--purple {
+            &::before{
+                color: $color-purple;
+            }
+            color: $color-purple;
+        }
+    }
+
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &--img {
+            max-height: 1.8em;
+        }
+    }
 }
 
 .button-menu {
-    z-index: 3;
-    position: absolute;
-    bottom: 1.5em;
-    right: 1.5em;
-    pointer-events: visible;
-    height: 3.2em;
-    width: 3.2em;
-    background-color: $color-green;
-    box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
+  z-index: 3;
+  position: absolute;
+  bottom: 1.5em;
+  right: 1.5em;
+  pointer-events: visible;
+  height: 3.2em;
+  width: 3.2em;
+  background-color: $color-green;
+  box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
 
-    cursor: pointer;
-    app-vi-svg {
-        font-size: 25px;
-        color: $color-white;
-    }
+  cursor: pointer;
+  app-vi-svg {
+    font-size: 25px;
+    color: $color-white;
+  }
 }

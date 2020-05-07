@@ -20,6 +20,11 @@ export class ModalEmailComponent implements OnInit {
   constructor(public modal: Modal) { }
 
   ngOnInit(): void {
+    this.focusInputName();
+  }
+
+  focusInputName() {
+    document.getElementById("name_input").focus();
   }
 
   sendEmail() {

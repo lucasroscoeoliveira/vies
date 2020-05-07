@@ -15,7 +15,6 @@ export class ViHeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    debugger;
   }
 
   onClick(route: string) {
@@ -85,7 +84,6 @@ export class ViHeaderComponent implements OnInit {
   }
 
   getMainLogo() {
-    debugger;
     if(this.type === 'house'){
       return './assets/imgs/logo-casa-horizontal.png';
     } else {
@@ -94,7 +92,6 @@ export class ViHeaderComponent implements OnInit {
   }
 
   getSecondaryLogo() {
-    debugger;
     if(this.type === 'house'){
       return './assets/imgs/logo-moda-horizontal.png';
     } else {

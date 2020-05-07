@@ -4,7 +4,32 @@
     </div>
 
     <div class="menu-content" id="menu-content">
+        <div class="itens-container">
+            <div class="menu-content__item clickable" *ngFor="let item of menu.items" (click)="onClickMenu(item.routeName)">
+                <div *ngIf="!item.logo" class="text-container">
+                    <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
+                </div>
+                <div class="logo" *ngIf="item.logo">
+                    <img class="logo--img clickable" [src]="getMainLogo()">
+                </div>
+                <div class="menu-content__sub" [ngClass]="{'menu-content__sub--green': type === 'house', 'menu-content__sub--purple': type === 'fashion'}">
+                    <div class="menu-content__sub__item clickable" *ngFor="let subItem of item.subItems">
+                        <span class="text text--white text--small unselectable">{{subItem.name}}</span>
+                    </div>
+                </div>
+            </div>
     
+            <div class="menu-content__item">
+                <div class="logo">
+                    <img class="logo--img clickable" [src]="getSecondaryLogo()">
+                </div>
+            </div>
+        </div>
+        <div class="menu-content__social">
+            <div class="menu-content__social__item clickable" *ngFor="let social of menu.socials">
+                <app-vi-svg icon="{{social.name}}" [ngClass]="{'icon--green': type === 'house', 'icon--purple': type === 'fashion'}"></app-vi-svg>
+            </div>
+        </div>
     </div>
 
     <div class="button-menu" (click)="toggleMenu()">

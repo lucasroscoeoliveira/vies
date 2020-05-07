@@ -5,15 +5,15 @@
     <app-vi-svg (click)="closeModal()" icon="icon-close"></app-vi-svg>
 </div>
 
-<form class="modal-email__body" id="emailForm" autocomplete="off" method="post" action="">
+<form class="modal-email__body" id="emailForm" method="post" action="">
     <div class="modal-email__body__content-1 margin-top-2">
         <div class="full-width">
             <span class="text">Digite seu nome:</span>
             <input 
+                id="name_input"
                 [(ngModel)]="name" 
                 [ngModelOptions]="{standalone: true}"
                 class="input-default-house"
-                autocomplete="autocomplete_off_hack_xfr4!k" 
                 type="text">
         </div>
     </div>
@@ -22,7 +22,6 @@
             <span class="text">Digite seu email:</span>
             <input 
                 class="input-default-house"
-                autocomplete="autocomplete_off_hack_xfr4!k"
                 [(ngModel)]="email" 
                 [ngModelOptions]="{standalone: true}"
                 type="text" 
@@ -35,7 +34,6 @@
                 class="input-default-house"
                 [(ngModel)]="phone" 
                 [ngModelOptions]="{standalone: true}"
-                autocomplete="autocomplete_off_hack_xfr4!k"
                 placeholder="(31) 99999-9999"
                 type="text">
         </div>
