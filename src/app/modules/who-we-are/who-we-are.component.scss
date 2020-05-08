@@ -8,15 +8,24 @@
     flex-grow: 1;
     justify-content: flex-start;
 
-    .screen {
+    .screen-content {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         justify-content: flex-start;
+        align-items: center;
+        padding: 1em;
+        width: 100%;
+    }
+
+    .screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         overflow-y: auto;
         min-height: 0;
-        padding: 1em;
         align-items: center;
+        width: 100%;
     
         .logo-content {
             display: flex;
@@ -113,5 +122,9 @@
                 }
             }
         }
+    }
+
+    app-vi-footer {
+        width: 100%;
     }
 }

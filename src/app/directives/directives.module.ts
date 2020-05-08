@@ -6,6 +6,8 @@ import { ViSvgComponent } from './vi-svg/vi-svg.component';
 import { ViHeaderComponent } from './vi-header/vi-header.component';
 import { ViMenuComponent } from './vi-menu/vi-menu.component';
 import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigation-header.component';
+import { ViFooterComponent } from './vi-footer/vi-footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigatio
     ViMenuComponent,
     ViHeaderComponent,
     ViNavigationHeaderComponent,
+    ViFooterComponent
   ],
   exports: [
     ViButtonComponent,
@@ -22,10 +25,12 @@ import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigatio
     ViSvgComponent,
     ViMenuComponent,
     ViHeaderComponent,
-    ViNavigationHeaderComponent
+    ViNavigationHeaderComponent,
+    ViFooterComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
   ]
 })
 export class DirectivesModule { }

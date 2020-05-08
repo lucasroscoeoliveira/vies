@@ -1,85 +1,90 @@
 <main class="content">
 
-    <app-vi-navigation-header [type]="'house'" [title]="'Quem Somos'" (onGoBack)="goBackToInitial()" class="mobile"></app-vi-navigation-header>
+    <app-vi-navigation-header [title]="'Quem Somos'" type='neutral' (onGoBack)="goBackToInitial()" class="mobile"></app-vi-navigation-header>
 
     <div class="screen">
-        <div class="logo-content">
-            <img src="./assets/imgs/logo-vies-horizontal.png" class="logo" alt="">
-        </div>
-        <span class="text margin-3 text--centered label">Há 7 anos no mercado, a Viés tem como foco e especialidade 
-                           <strong> soluções para espaços residenciais e comerciais. </strong> 
-                           Todos os nossos serviços são personalizados e pensados prezando sempre pelos 
-                           <strong> sonhos e demandas de cada cliente! </strong> 
-        </span>
-    
-        <div class="strap-content">
-            <div class="strap-horizontal"></div>
-    
-            <span class="strap-vertical-content">
-                <div class="strap-vertical strap-vertical--green"></div>
-                <div></div>
-                <div class="strap-vertical strap-vertical--purple"></div>
+        <div class="screen-content margin-bottom-2">
+            <div class="logo-content">
+                <img src="./assets/imgs/logo-vies-horizontal.png" class="logo" alt="">
+            </div>
+            <span class="text margin-3 text--centered label">Há 7 anos no mercado, a Viés tem como foco e especialidade 
+                               <strong> soluções para espaços residenciais e comerciais. </strong> 
+                               Todos os nossos serviços são personalizados e pensados prezando sempre pelos 
+                               <strong> sonhos e demandas de cada cliente! </strong> 
             </span>
-        </div>
-    
-        <div class="cards-container margin-bottom-2">
-            <div class="vies-card">
-                <span class="text text--large text--green text--centered">
-                    <strong class="text text--large text--green text--centered">ambientes</strong>
-                    para
-                    <strong class="text text--large text--green text--centered">casa</strong>
-                </span>
-    
-                <strong class="text margin-top-2 text--small text--centered">
-                    Projetos e consultoria para a sua casa!
-                </strong>
-    
-                <span class="text margin-top-2 text--small text--centered">
-                    Utilizamos conceitos de arquitetura, design e decoração, imprimimos no seu lar o bem-estar, conforto, funcionalidade, estética e sua personalidade!
+        
+            <div class="strap-content">
+                <div class="strap-horizontal"></div>
+        
+                <span class="strap-vertical-content">
+                    <div class="strap-vertical strap-vertical--green"></div>
+                    <div></div>
+                    <div class="strap-vertical strap-vertical--purple"></div>
                 </span>
             </div>
-
-            <div></div>
-    
-            <div class="vies-card">
-                <span class="text text--large text--purple text--centered">
-                    <strong class="text text--large text--purple text--centered">ambientes</strong>
-                    para
-                    <strong class="text text--large text--purple text--centered">moda</strong>
-                </span>
-    
-                <strong class="text margin-top-2 text--small text--centered">
-                    Projetos e consultoria para a sua loja!
-                </strong>
-    
-                <span class="text margin-top-2 text--small text--centered">
-                    Utilizamos conceitos de arquitetura, design e decoração, imprimimos no seu lar o bem-estar, conforto, funcionalidade, estética e sua personalidade!
-                </span>
-            </div>
-        </div>
-    
-        <div class="partners-container margin-top-3">
-            <span class="text text--large-2">SÓCIAS PROPRIETÁRIAS</span>
-    
-            <div class="partner-cards-container margin-top-3">    
-                <div class="partner-card">
-                    <img [src]="amanda" alt="" class="image-partner">
-    
-                    <div class="padding-2">
-                        <span class="text margin-top-2 text--centered text--small">Olá! Sou <strong>Amanda Silveira, </strong>graduada em Design de Interiores e pós graduada em Marketing Estratégico e Branding. Além de atender pela Viés, sou consultora de Design de Ambientes pelo SEBRAE. </span>
-                        <span class="text margin-top-2 text--centered text--small">Minha paixão por design e moda me levou à formação em estilismo e modelagem e ser professora de vitrinismo na UFMG e na Escola de Moda Denise Aguiar.</span>
-                    </div>
+        
+            <div class="cards-container margin-bottom-2">
+                <div class="vies-card">
+                    <span class="text text--large text--green text--centered">
+                        <strong class="text text--large text--green text--centered">ambientes</strong>
+                        para
+                        <strong class="text text--large text--green text--centered">casa</strong>
+                    </span>
+        
+                    <strong class="text margin-top-2 text--small text--centered">
+                        Projetos e consultoria para a sua casa!
+                    </strong>
+        
+                    <span class="text margin-top-2 text--small text--centered">
+                        Utilizamos conceitos de arquitetura, design e decoração, imprimimos no seu lar o bem-estar, conforto, funcionalidade, estética e sua personalidade!
+                    </span>
                 </div>
-
-                <div class="partner-card">
-                    <img [src]="marina" alt="" class="image-partner">
-                    
-                    <div class="padding-2">
-                        <span class="text margin-top-2 text--centered text--small">Oii! Sou <strong>Marina de Lara, </strong>graduada em Arquitetura e Urbanismo | Design de Interiores, além de antender pela Viés, sou consultora de Design de Ambientes pelo SEBRAE. </span>
-                        <span class="text margin-top-2 text--centered text--small">Amo buscar inspirações em eventos e viagens, onde coleciono novas experiências para aplicar no seu espaço!</span>
-                    </div>
+    
+                <div></div>
+        
+                <div class="vies-card">
+                    <span class="text text--large text--purple text--centered">
+                        <strong class="text text--large text--purple text--centered">ambientes</strong>
+                        para
+                        <strong class="text text--large text--purple text--centered">moda</strong>
+                    </span>
+        
+                    <strong class="text margin-top-2 text--small text--centered">
+                        Projetos e consultoria para a sua loja!
+                    </strong>
+        
+                    <span class="text margin-top-2 text--small text--centered">
+                        Utilizamos conceitos de arquitetura, design e decoração, imprimimos no seu lar o bem-estar, conforto, funcionalidade, estética e sua personalidade!
+                    </span>
                 </div>
             </div>
+        
+            <div class="partners-container margin-top-3">
+                <span class="text text--large-2">SÓCIAS PROPRIETÁRIAS</span>
+        
+                <div class="partner-cards-container margin-top-3">    
+                    <div class="partner-card">
+                        <img [src]="amanda" alt="" class="image-partner">
+        
+                        <div class="padding-2">
+                            <span class="text margin-top-2 text--centered text--small">Olá! Sou <strong>Amanda Silveira, </strong>graduada em Design de Interiores e pós graduada em Marketing Estratégico e Branding. Além de atender pela Viés, sou consultora de Design de Ambientes pelo SEBRAE. </span>
+                            <span class="text margin-top-2 text--centered text--small">Minha paixão por design e moda me levou à formação em estilismo e modelagem e ser professora de vitrinismo na UFMG e na Escola de Moda Denise Aguiar.</span>
+                        </div>
+                    </div>
+    
+                    <div class="partner-card">
+                        <img [src]="marina" alt="" class="image-partner">
+                        
+                        <div class="padding-2">
+                            <span class="text margin-top-2 text--centered text--small">Oii! Sou <strong>Marina de Lara, </strong>graduada em Arquitetura e Urbanismo | Design de Interiores, além de antender pela Viés, sou consultora de Design de Ambientes pelo SEBRAE. </span>
+                            <span class="text margin-top-2 text--centered text--small">Amo buscar inspirações em eventos e viagens, onde coleciono novas experiências para aplicar no seu espaço!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <app-vi-footer type='neutral'></app-vi-footer>
     </div>
+
 </main>

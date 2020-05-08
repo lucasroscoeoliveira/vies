@@ -1,0 +1,47 @@
+<div class="vi-footer" [ngClass]="{'vi-footer--green': type === 'house', 'vi-footer--purple': type === 'fashion', 'vi-footer--gradient': type === 'neutral' }">
+    
+    <div class="top-container">
+        <div class="content margin-bottom-3">
+            <span class="text text--bold text--white">Atendemos onde você estiver!</span>
+            <span class="text text--white">Projeto e consultoria online e presencial</span>
+    
+            <span class="text text--bold text--white margin-top-2">FALE COM A GENTE</span>
+            <span class="text text--white">(31) 3054-7975</span>
+            <span class="text text--white">(31) 99155-7975</span>
+        </div>
+    
+        <div class="content margin-bottom-3">
+            <span class="text text--bold text--white">Receba dicas e novidades sobre casa e decoração!</span>
+            <div class="send margin-top-2">
+                <input 
+                    [(ngModel)]="email" 
+                    [ngModelOptions]="{standalone: true}"
+                    class="input-default-white"
+                    type="text">
+                <app-vi-button wide='true' [type]="'white'" [submit]="true" (onClick)="sendEmail()">
+                    <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text">Enviar</span>
+                </app-vi-button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-container desktop">
+        <span class="text text--white vies">Viés Design - Belo Horizonte-MG | Brasil</span>
+
+        <div class="icons">
+            <div class="social-icon clickable" *ngFor="let social of socials">
+                <app-vi-svg icon="{{social.name}}"></app-vi-svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-container bottom-mobile mobile">
+        <div class="icons">
+            <div class="social-icon clickable" *ngFor="let social of socials">
+                <app-vi-svg icon="{{social.name}}"></app-vi-svg>
+            </div>
+        </div>
+
+        <span class="text text--white vies">Viés Design - Belo Horizonte-MG | Brasil</span>
+    </div>
+</div>

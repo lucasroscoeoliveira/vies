@@ -10,15 +10,20 @@
     background-color: $color-white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-    .green {
-        color: $color-green;
-    }
-
-    .purple {
-        color: $color-purple;
-    }
-
     .icon {
         font-size: 24px;
+        color: $color-white;
     }
+}
+
+.green {
+    color: $color-green;
+}
+
+.purple {
+    color: $color-purple;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, $color-green , $color-purple);
 }
