@@ -8,6 +8,7 @@ import { HousePrizeComponent } from './modules/house/modules/house-prize/house-p
 import { HouseQuizComponent } from './modules/house/modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house/modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house/modules/house-main/house-main.component';
+import { HouseProjectViewComponent } from './modules/house/modules/house-project-view/house-project-view.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'inicio',
         component: HouseMainComponent,
+      },
+      {
+        path: 'projeto/:id',
+        component: HouseProjectViewComponent,
       },
       {
         path: 'premios',

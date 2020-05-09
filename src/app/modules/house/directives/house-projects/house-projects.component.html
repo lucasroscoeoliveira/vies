@@ -4,9 +4,15 @@
     <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
 </div>
 
+<div class="house-projects-tabs">
+    <button class="tab-content" (click)="selectTab(tab)" *ngFor="let tab of tabs" [ngClass]="{'tab-content--selected': tab.selected}">
+        <span [ngClass]="{'text--green': tab.selected}" class="text text--centered text--small">{{tab.name}}</span>
+    </button>
+</div>
+
 <div class="house-projects">
     <div class="house-projects__container">
-        <div *ngFor="let image of images" class="card" [hidden]="!image.active">
+        <div class="clickable" (click)="viewProjectDetail(image)" *ngFor="let image of images" class="card" [hidden]="!image.active">
             <img [src]="image.source" alt="" class="card__image">
             <div class="description">
                 <div class="description__content">

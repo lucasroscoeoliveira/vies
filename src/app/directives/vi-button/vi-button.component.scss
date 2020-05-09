@@ -31,6 +31,7 @@
 .button {
   box-shadow: 0.2px 3px 2px 0 rgba(0, 0, 0, 0.15);
   width: 100%;
+  border: 1px solid #efefef;
 
   cursor: pointer;
   border-radius: 20px;
@@ -39,7 +40,6 @@
   justify-content: center;
   align-items: center;
   border-width: 1px;
-  border-style: none;
 
   &:hover {
     box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);

@@ -18,4 +18,5 @@ export class Image {
   sourceMobile?: string | '';
   active: Boolean;
   description?: string | '';
+  id?: number;
 }

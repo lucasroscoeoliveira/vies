@@ -1,0 +1,51 @@
+<main class="project-view">
+    <div class="project-view__header">
+        <div class="go-back">
+            <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+            <span class="text text--green text--large">Voltar</span>
+        </div>
+    
+        <div>
+            <app-vi-button type='green'>
+                <span class="text text--white">Faça um orçamento</span>
+            </app-vi-button>
+        </div>
+
+    </div>
+
+    <div class="project-view__body">
+        <div class="image-container">
+            <div class="display">
+                <img [src]="image.source" alt="" unselectable="on">
+            </div>
+
+            <div class="button-left desktop" (click)="move('left')">
+                <div class="buttom-menu">
+                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                </div>
+            </div>
+        
+            <div class="button-right desktop" (click)="move('right')">
+                <div class="buttom-menu">
+                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="buttons-mobile mobile">
+    <div class="button-left margin-right-1" (click)="move('left')">
+        <div class="buttom-menu">
+            <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+        </div>
+    </div>
+    <div class="button-right margin-left-1" (click)="move('right')">
+        <div class="buttom-menu">
+            <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+        </div>
+    </div>
+</div>
+
+
+

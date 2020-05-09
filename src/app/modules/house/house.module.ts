@@ -11,6 +11,7 @@ import { HousePrizeComponent } from './modules/house-prize/house-prize.component
 import { HouseQuizComponent } from './modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house-main/house-main.component';
+import { HouseProjectViewComponent } from './modules/house-project-view/house-project-view.component';
 
 import { AppRoutingModule } from '../../app-routing.module';
 
@@ -26,6 +27,7 @@ import { AppRoutingModule } from '../../app-routing.module';
     HouseQuizComponent,
     HouseServicesComponent,
     HouseMainComponent,
+    HouseProjectViewComponent
   ],
   imports: [
     CommonModule,
