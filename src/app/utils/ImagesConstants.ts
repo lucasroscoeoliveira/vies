@@ -35,6 +35,10 @@ export default class ImagesConstants {
             QUARTO_HOME_OFF_SION_17: environment.baseUrl + '/images/House/Projects/17-QUARTO-HOME-OFF-SION.jpg',
             QUARTO_BEBE_CAICARA_18: environment.baseUrl + '/images/House/Projects/18-QUARTO-BEBE-CAICARA.jpg',
             RESID_VARGINHA_19: environment.baseUrl + '/images/House/Projects/19-RESID-VARGINHA.jpg',
+            SALA_COZINHA_101_20: environment.baseUrl + '/images/House/Projects/20-SALA-COZINHA-101-PADRE-EUSTAQUIO.jpg',
+            SALA_COZINHA_402_21: environment.baseUrl + '/images/House/Projects/21-SALA-COZINHA-402-PADRE-EUSTAQUIO.jpg',
+            ANDAR_CASA_SANTA_AMELIA_22: environment.baseUrl + '/images/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA.jpg',
+            RESID_LAGOA_SANTA_23: environment.baseUrl + '/images/House/Projects/23-RESIDENCIA-LAGOA-SANTA.jpg',
         },
         SPECIFICS: {
             RESIDENCIA_SANTO_AGOSTINHO: {

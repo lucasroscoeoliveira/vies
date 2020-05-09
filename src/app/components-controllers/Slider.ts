@@ -19,4 +19,7 @@ export class Image {
   active: Boolean;
   description?: string | '';
   id?: number;
+  main?: boolean;
+  filter?: string;
+  project?: string;
 }
