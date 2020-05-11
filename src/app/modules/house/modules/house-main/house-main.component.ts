@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Slider } from 'src/app/components-controllers/Slider';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-house-main',
@@ -10,11 +11,44 @@ import { Slider } from 'src/app/components-controllers/Slider';
 export class HouseMainComponent implements OnInit {
   title = "início";
   imageConstants: ImagesConstants;
+  session: string;
 
-  constructor(public slider: Slider) { }
+  constructor(public slider: Slider, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.initializeRouteParams();
     this.initializeSlider();
+  }
+
+  initializeRouteParams() {
+    if(this.route.params){
+      this.route.params.subscribe(params => {
+        this.session = params['session'] ?? null;
+      });
+  
+      if(this.session){
+        this.navigateToSession();
+      }
+    }
+  }
+
+  navigateToSession() {
+    let content = null;
+    switch(this.session) {
+      case 'projetos':
+        content = document.getElementsByTagName('app-house-projects')[0];
+        break;
+      case 'quiz':
+        content = document.getElementsByTagName('app-house-discover-style')[0];
+        break;
+      case 'contato':
+        content = document.getElementsByTagName('app-house-call-to-action')[0];
+        break;
+    }
+
+    if(content){
+      content.scrollIntoView();
+    }
   }
 
   initializeSlider() {

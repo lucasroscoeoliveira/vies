@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
+import { Modal } from 'src/app/components-controllers/Modal';
 
 @Component({
   selector: 'app-house-project-view',
@@ -9,7 +10,7 @@ import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 })
 export class HouseProjectViewComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal) { }
   id: number;
   image: any;
   images: any;
@@ -66,4 +67,13 @@ export class HouseProjectViewComponent implements OnInit {
     }
   }
 
+  goBack() {
+    this.router.navigate(['casa/inicio', 'projetos']);
+  }
+
+  openModal() {
+    this.modal.open(
+      'app-modal-email'
+    )
+  }
 }

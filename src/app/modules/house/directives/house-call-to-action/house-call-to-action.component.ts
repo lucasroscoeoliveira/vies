@@ -52,17 +52,10 @@ export class HouseCallToActionComponent implements OnInit {
   email() {
     this.modal.open(
       'app-modal-email',
-      {
-        batata: true
-      },
-      this.callBackEmailModal
     )
   }
 
   setIsMobile() {
     return screen.width < 500
-  }
-
-  callBackEmailModal() {
   }
 }

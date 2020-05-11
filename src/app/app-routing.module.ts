@@ -32,6 +32,10 @@ const routes: Routes = [
       {
         path: 'inicio',
         component: HouseMainComponent,
+      },  
+      {
+        path: 'inicio/:session',
+        component: HouseMainComponent,
       },
       {
         path: 'projeto/:id/:tab',

@@ -17,7 +17,7 @@ export class Modal {
     return Modal.instance = Modal.instance || this;
   }
 
-  open(name: string, modalData: any, callBack: any) {
+  open(name: string, modalData: any = null, callBack: any = null) {
     if(this.isOpen){
       this.close();
     }

@@ -42,14 +42,14 @@ export class ViHeaderComponent implements OnInit {
         this.router.navigate(['casa/quem-somos']);
         break;
       case 'projects':
-        this.router.navigate(['casa/inicio']);
+        this.router.navigate(['casa/inicio', 'projetos']);
         setTimeout(() => this.scrollTo('projects'),500);
         break;
       case 'services':
         this.router.navigate(['casa/servicos']);
         break;
       case 'quiz':
-        this.router.navigate(['casa/inicio']);
+        this.router.navigate(['casa/inicio', 'quiz']);
         setTimeout(() => this.scrollTo('quiz'),500);
         break;
       case 'prize':
@@ -59,7 +59,7 @@ export class ViHeaderComponent implements OnInit {
         //falta implementar o blog
         break;
       case 'contact':
-        this.router.navigate(['casa/inicio']);
+        this.router.navigate(['casa/inicio', 'contato']);
         setTimeout(() => this.scrollTo('contact'),500);
         break;
     }
