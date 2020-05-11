@@ -28,6 +28,7 @@ export class HouseProjectsComponent implements OnInit {
   selectTab(selectedTab: any) {
     this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
       if(tab.filter === selectedTab.filter) {
+        this.filterProjects(selectedTab);
         tab.selected = true;
       } else {
         tab.selected = false;
@@ -35,58 +36,67 @@ export class HouseProjectsComponent implements OnInit {
     });
   }
 
+  filterProjects(selectedTab: any) {
+    if(selectedTab.filter === HouseProjectConstants.FILTERS.MAIN){
+      this.images = HouseProjectConstants.PROJECTS.filter(image => image.main);
+    } else {
+      this.images = HouseProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter);
+    }
+    this.setInitialActive();
+  }
+
   initializeTabs() {
     this.tabs = [
       {
         name: 'EM DESTAQUE',
-        filter: 'initial',
+        filter: HouseProjectConstants.FILTERS.MAIN,
         selected: true
       },
       {
         name: 'SALAS',
-        filter: 'room',
+        filter: HouseProjectConstants.FILTERS.LIVING_ROOM,
         selected: false
       },
       {
         name: 'COZINHAS',
-        filter: 'kitchen',
+        filter: HouseProjectConstants.FILTERS.KITCHEN,
         selected: false
       },
       {
         name: 'QUARTO CASAL',
-        filter: 'room_couple',
+        filter: HouseProjectConstants.FILTERS.ROOM_COUPLE,
         selected: false
       },
       {
         name: 'QUARTO SOLTEIRO',
-        filter: 'room_single',
+        filter: HouseProjectConstants.FILTERS.ROOM_SINGLE,
         selected: false
       },
       {
         name: 'ANTES x DEPOIS',
-        filter: 'after_before',
+        filter: HouseProjectConstants.FILTERS.BEFORE_AFTER,
         selected: false
       },
       {
         name: 'INFANTIS',
-        filter: 'child',
+        filter: HouseProjectConstants.FILTERS.CHILD,
         selected: false
       },
       {
         name: 'HOME OFFICE',
-        filter: 'home_office',
+        filter: HouseProjectConstants.FILTERS.HOME_OFFICE,
         selected: false
       },
       {
         name: 'BANHEIROS',
-        filter: 'bathroom',
+        filter: HouseProjectConstants.FILTERS.BATHROOM,
         selected: false
       },
     ]
   }
 
   initializeImages() {
-    this.images = HouseProjectConstants.PROJECTS;
+    this.images = HouseProjectConstants.PROJECTS.filter(image => image.main);
   }
 
   setInitialActive() {
@@ -136,6 +146,6 @@ export class HouseProjectsComponent implements OnInit {
 
   viewProjectDetail(image: Image)
   {
-    this.router.navigate(['casa/projeto', image.id]);
+    this.router.navigate(['casa/projeto', image.id, image.filter]);
   }
 }

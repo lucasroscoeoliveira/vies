@@ -34,7 +34,7 @@ const routes: Routes = [
         component: HouseMainComponent,
       },
       {
-        path: 'projeto/:id',
+        path: 'projeto/:id/:tab',
         component: HouseProjectViewComponent,
       },
       {
