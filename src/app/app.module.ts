@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {TransferHttpCacheModule} from '@nguniversal/common';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { MatInputModule } from '@angular/material/input';
@@ -37,7 +38,8 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     WhoWeAreComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'vies'}),
+    TransferHttpCacheModule,
     AppRoutingModule,
     NoopAnimationsModule,
     HttpClientModule,

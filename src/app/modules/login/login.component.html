@@ -3,18 +3,22 @@
     <img src="../../../assets/imgs/logo_vies.png" alt="" class="img-logo">
 
     <div class="buttons-container">
-      <app-vi-button (onClick)="goFashion()" [type]='"white"' class="margin-1">
-        <span class="text text--purple text--bold text--large">ambientes </span>&nbsp;
-        <span class="text text--purple text--large">para </span>&nbsp;
-        <span class="text text--purple text--bold text--large">moda</span>
+      <app-vi-button [type]='"white"' class="margin-1">
+        <a routerLink="/moda" routerLinkActive="active">
+          <span class="text text--purple text--bold text--large">ambientes </span>&nbsp;
+          <span class="text text--purple text--large">para </span>&nbsp;
+          <span class="text text--purple text--bold text--large">moda</span>
+        </a>
       </app-vi-button>
 
       <span class="sided-bar"></span>
 
-      <app-vi-button (onClick)="goHome()" [type]='"white"' class="margin-1">
-        <span class="text text--green text--bold text--large">ambientes </span>&nbsp;
-        <span class="text text--green text--large">para </span>&nbsp;
-        <span class="text text--green text--bold text--large">casa</span>
+      <app-vi-button [type]='"white"' class="margin-1">
+        <a routerLink="/casa" routerLinkActive="active">
+          <span class="text text--green text--bold text--large">ambientes </span>&nbsp;
+          <span class="text text--green text--large">para </span>&nbsp;
+          <span class="text text--green text--bold text--large">casa</span>
+        </a>
       </app-vi-button>
     </div>
   </div>

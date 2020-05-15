@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/components-controllers/Menu';
 import { Header } from 'src/app/components-controllers/Header';
+import { Title, Meta } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-house',
   templateUrl: './house.component.html',
@@ -11,11 +13,17 @@ export class HouseComponent implements OnInit {
   menu: Menu;
   header: Header;
 
-  constructor() { }
+  constructor(
+    private titleService: Title,
+    private metaTagService: Meta,
+  ) { }
 
   ngOnInit(): void {
     this.setMenu();
     this.setHeader();
+
+    this.titleService.setTitle("Projetos de decoração de ambientes");
+    this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
   }
 
   setMenu() {
