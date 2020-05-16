@@ -23,6 +23,7 @@ export class HouseCallToActionComponent implements OnInit {
       'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
       'NÃO QUER OBRAS, MAS QUER RENOVAR SUA CASA?',
       'O VALOR DO PROJETO CORRESPONDE A 5% DO VALOR DA REFORMA',
+      'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
     ]
     this.position = 0;
     this.callPhrase = this.phrases[this.position];

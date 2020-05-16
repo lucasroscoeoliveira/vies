@@ -11,13 +11,12 @@
     .cards-container {
         width: 100%;
         justify-content: center;
-        align-items: center;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
         .card-services {
-            padding: 2em;
+            padding: 1.5em;
             padding-bottom: 1em;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             background-color: $color-white;
@@ -28,7 +27,7 @@
             margin: 1em 2em;
             flex-direction: column;
             border-radius: 5px;
-            min-width: 20em;
+            min-width: 30em;
 
             &:hover {
                 box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
@@ -37,19 +36,48 @@
                 }
             }
 
+            .labels-content {
+                width: 100%;
+                min-height: 17em;
+                .label-content {
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    margin: 0.5em 0;
+
+                    &--adjust{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+    
+                    span {
+                        display: flex;
+                        flex-direction: row;
+    
+                        .check-icon {
+                            color: $color-green;
+                            font-size: 1.2em;
+                            margin-right: 0.5em;
+                        }
+                    }
+                }
+            }
+
             .circle {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 8em;
-                height: 8em;
+                width: 5em;
+                height: 5em;
                 margin: 1em 0;
                 border-radius: 100%;
                 border: 0.3em solid $color-green;
 
                 .service-icon {
                     color: $color-green;
-                    font-size: 5em;
+                    font-size: 3em;
                 }
             }
 
@@ -57,5 +85,23 @@
                 min-width: 80%;
             }
         }
+    }
+
+    .service-image {
+        width: 23em;
+        max-height: 15em;
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-services {
+        flex-grow: 1 !important;
+        min-width: 24em !important;
+    }
+
+    .labels-content {
+        min-height: 10em !important;
     }
 }

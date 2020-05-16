@@ -1,7 +1,7 @@
 <div class="house-projects-header">
-    <app-vi-svg icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
+    <app-vi-svg [hidden]="!arrowLeftVisible()" icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
     <span class="text text--green text--large text--centered">PROJETOS</span> 
-    <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
+    <app-vi-svg [hidden]="!arrowRightVisible()" icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
 </div>
 
 <div class="house-projects-tabs">
@@ -22,13 +22,13 @@
         </div>
     </div>
 
-    <div class="house-projects__button-left desktop" (click)="move('left')">
+    <div class="house-projects__button-left desktop" (click)="move('left')" [hidden]="!arrowLeftVisible()">
         <div class="buttom-menu">
             <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
         </div>
     </div>
 
-    <div class="house-projects__button-right desktop" (click)="move('right')">
+    <div class="house-projects__button-right desktop" (click)="move('right')" [hidden]="!arrowRightVisible()">
         <div class="buttom-menu">
             <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
         </div>

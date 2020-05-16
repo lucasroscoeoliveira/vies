@@ -25,22 +25,11 @@ export class HouseProjectsComponent implements OnInit {
     this.initializeTabs();
   }
 
-  selectTab(selectedTab: any) {
-    this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
-      if(tab.filter === selectedTab.filter) {
-        this.filterProjects(selectedTab);
-        tab.selected = true;
-      } else {
-        tab.selected = false;
-      }
-    });
-  }
-
   filterProjects(selectedTab: any) {
     if(selectedTab.filter === HouseProjectConstants.FILTERS.MAIN){
       this.images = HouseProjectConstants.PROJECTS.filter(image => image.main);
     } else {
-      this.images = HouseProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter);
+      this.images = HouseProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter && !image.main);
     }
     this.setInitialActive();
   }
@@ -63,18 +52,8 @@ export class HouseProjectsComponent implements OnInit {
         selected: false
       },
       {
-        name: 'QUARTO CASAL',
-        filter: HouseProjectConstants.FILTERS.ROOM_COUPLE,
-        selected: false
-      },
-      {
-        name: 'QUARTO SOLTEIRO',
-        filter: HouseProjectConstants.FILTERS.ROOM_SINGLE,
-        selected: false
-      },
-      {
-        name: 'ANTES x DEPOIS',
-        filter: HouseProjectConstants.FILTERS.BEFORE_AFTER,
+        name: 'QUARTOS',
+        filter: HouseProjectConstants.FILTERS.ROOM,
         selected: false
       },
       {
@@ -90,6 +69,11 @@ export class HouseProjectsComponent implements OnInit {
       {
         name: 'BANHEIROS',
         filter: HouseProjectConstants.FILTERS.BATHROOM,
+        selected: false
+      },
+      {
+        name: 'ANTES x DEPOIS',
+        filter: HouseProjectConstants.FILTERS.BEFORE_AFTER,
         selected: false
       },
     ]
@@ -134,6 +118,20 @@ export class HouseProjectsComponent implements OnInit {
     this.setActives();
   }
 
+  selectTab(selectedTab: any) {
+    this.currentPosition = 0;
+    this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
+      if(tab.filter === selectedTab.filter) {
+        this.filterProjects(selectedTab);
+        tab.selected = true;
+      } else {
+        tab.selected = false;
+      }
+    });
+
+    this.setActives();
+  }
+
   setActives() {
     let startIndex = this.currentPosition * this.countActive;
     let finishIndex = startIndex + this.countActive;
@@ -147,5 +145,13 @@ export class HouseProjectsComponent implements OnInit {
   viewProjectDetail(image: Image)
   {
     this.router.navigate(['casa/projeto', image.id, image.filter]);
+  }
+
+  arrowLeftVisible() {
+    return (this.currentPosition > 0);
+  }
+
+  arrowRightVisible() {
+    return (this.images.length > (this.currentPosition + 1) * this.countActive);
   }
 }
