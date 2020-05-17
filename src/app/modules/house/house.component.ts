@@ -58,7 +58,7 @@ export class HouseComponent implements OnInit {
         routeName: 'services'
       },
       {
-        name: 'QUIZ',
+        name: 'TESTE',
         subItems: [],
         hasMenu: true,
         logo: false,
@@ -138,7 +138,7 @@ export class HouseComponent implements OnInit {
         routeName: 'services'
       },
       {
-        name: 'QUIZ',
+        name: 'TESTE',
         subItems: [],
         hasMenu: true,
         logo: false,

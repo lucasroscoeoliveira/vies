@@ -52,19 +52,18 @@
 
 .unselectable {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
 
 ::-webkit-scrollbar {
   width: 1px;
-  height: .1px;
+  height: 0.1px;
 }
-
 
 /* Track */
 
@@ -74,7 +73,6 @@
   border-radius: 1px;
   width: 1px;
 }
-
 
 /* Handle */
 
@@ -113,8 +111,8 @@
   padding-top: 1px;
 
   &:focus {
-    border: solid 1px #5E6298;
-    box-shadow: 2px 1px rgba(#5E6298, 0.3);
+    border: solid 1px #5e6298;
+    box-shadow: 2px 1px rgba(#5e6298, 0.3);
   }
 }
 
@@ -132,8 +130,8 @@
   padding-top: 1px;
 
   &:focus {
-    border: solid 1px #3A9096;
-    box-shadow: 2px 1px rgba(#3A9096, 0.3);
+    border: solid 1px #3a9096;
+    box-shadow: 2px 1px rgba(#3a9096, 0.3);
   }
 }
 
@@ -154,9 +152,22 @@
     border: solid 1px #efefef;
     box-shadow: 2px 1px rgba(#efefef, 0.3);
   }
+
+  &::placeholder {
+    color: #fafafa;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: #fafafa;
+  }
+
+  ::-ms-input-placeholder {
+    color: #fafafa;
+  }
 }
 
 input:focus,
 textarea:focus {
-    outline: none;
+  outline: none;
 }

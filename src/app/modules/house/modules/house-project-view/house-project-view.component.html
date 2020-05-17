@@ -19,13 +19,13 @@
                 <img [src]="image.source" alt="" unselectable="on">
             </div>
 
-            <div class="button-left desktop" (click)="move('left')">
+            <div class="button-left desktop" (click)="move('left')" [hidden]="!visibleLeftArrow()">
                 <div class="buttom-menu">
                     <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
                 </div>
             </div>
         
-            <div class="button-right desktop" (click)="move('right')">
+            <div class="button-right desktop" (click)="move('right')" [hidden]="!visibleRightArrow()">
                 <div class="buttom-menu">
                     <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
                 </div>

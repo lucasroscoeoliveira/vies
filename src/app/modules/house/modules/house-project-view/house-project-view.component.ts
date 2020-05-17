@@ -67,6 +67,14 @@ export class HouseProjectViewComponent implements OnInit {
     }
   }
 
+  visibleRightArrow() {
+    return this.currIndex < this.images.length - 1;
+  }
+
+  visibleLeftArrow() {
+    return this.currIndex > 0
+  }
+
   goBack() {
     this.router.navigate(['casa/inicio', 'projetos']);
   }

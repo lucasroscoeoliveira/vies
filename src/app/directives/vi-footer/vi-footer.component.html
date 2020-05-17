@@ -17,6 +17,7 @@
                     [(ngModel)]="email" 
                     [ngModelOptions]="{standalone: true}"
                     class="input-default-white"
+                    placeholder="seuemail@email.com"
                     type="text">
                 <app-vi-button wide='true' [type]="'white'" [submit]="true" (onClick)="sendEmail()">
                     <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text">Enviar</span>

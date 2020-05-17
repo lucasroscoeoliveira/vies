@@ -1,24 +1,31 @@
-<div class="call-to-action">
-    <img src="../../../../../assets/imgs/logo-casa-horizontal.png" class="logo" alt="">
 
-    <h1 class="text text--green text--centered">
-        {{callPhrase}}
-    </h1>
+<div class="call-to-action-container">
+    <span class="text text--green text--large text--centered margin-top-3 text--bold">CONTATO</span>
 
-    <div class="btns-container">
-        <app-vi-button (onClick)="whatsApp()" [type]='"white"' [wide]="setIsMobile()">
-            <span class="btn-content">
-                <app-vi-svg icon="icon-whatsapp" class="whatsapp margin-right-1"></app-vi-svg>  
-                <span class="text text--green text-center">Entre em contato por WhatsApp</span>
-            </span>
-        </app-vi-button>
+    <div class="call-to-action">
+        <img src="../../../../../assets/imgs/logo-casa-horizontal.png" class="logo" alt="">
     
-        <app-vi-button (onClick)="email()" [type]='"white"' [wide]="setIsMobile()">
-            <span class="btn-content">
-                <app-vi-svg icon="icon-gmail" class="email margin-right-1"></app-vi-svg>  
-                <span class="text text--green text-center">Entre em contato por Email</span>
-            </span>
-        </app-vi-button>
+        <h1 class="text text--green text--centered margin-bottom-3 text--large-2 bold">
+            {{callPhrase}}
+        </h1>
+    
+        <h1 class="text text--bold text--centered text--large-2">Dúvidas? Entre em contato com a gente!</h1>
+    
+        <div class="btns-container">
+            <app-vi-button (onClick)="whatsApp()" [type]='"white"' [wide]="setIsMobile()">
+                <span class="btn-content">
+                    <app-vi-svg icon="icon-whatsapp" class="whatsapp margin-right-1"></app-vi-svg>  
+                    <span class="text text--green text-center">Entre em contato por WhatsApp</span>
+                </span>
+            </app-vi-button>
+        
+            <app-vi-button (onClick)="email()" [type]='"white"' [wide]="setIsMobile()">
+                <span class="btn-content">
+                    <app-vi-svg icon="icon-gmail" class="email margin-right-1"></app-vi-svg>  
+                    <span class="text text--green text-center">Entre em contato por Email</span>
+                </span>
+            </app-vi-button>
+        </div>
+    
     </div>
-
 </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Slider } from 'src/app/components-controllers/Slider';
 import { ActivatedRoute } from '@angular/router';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-house-main',
@@ -13,7 +14,7 @@ export class HouseMainComponent implements OnInit {
   imageConstants: ImagesConstants;
   session: string;
 
-  constructor(public slider: Slider, private route: ActivatedRoute) { }
+  constructor(public slider: Slider, private route: ActivatedRoute, private scroll: ScrollTo) { }
 
   ngOnInit(): void {
     this.initializeRouteParams();
@@ -27,27 +28,8 @@ export class HouseMainComponent implements OnInit {
       });
   
       if(this.session){
-        this.navigateToSession();
+        this.scroll.navigateToRoute(this.session, 500);
       }
-    }
-  }
-
-  navigateToSession() {
-    let content = null;
-    switch(this.session) {
-      case 'projetos':
-        content = document.getElementsByTagName('app-house-projects')[0];
-        break;
-      case 'quiz':
-        content = document.getElementsByTagName('app-house-discover-style')[0];
-        break;
-      case 'contato':
-        content = document.getElementsByTagName('app-house-call-to-action')[0];
-        break;
-    }
-
-    if(content){
-      content.scrollIntoView();
     }
   }
 

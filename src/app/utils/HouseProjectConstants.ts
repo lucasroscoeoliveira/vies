@@ -50,6 +50,11 @@ export default class HouseProjectConstants {
     COZINHA_JOICE: 33,
     COZINHA_PAULO: 34,
     COZINHA_REGIANE: 35,
+    SALA_JOICE: 36,
+    SALA_MONICA: 37,
+    SALA_PAULO: 38,
+    QUARTO_REGIANE: 39,
+    QUARTO_PAULO: 40,
   }
 
   static readonly PROJECTS = [
@@ -598,6 +603,260 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_1,
+      active: false,
+      description: 'SALA - BELVEDERE',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALAS_CONJUGADAS_BELVEDERE,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_2,
+      active: false,
+      description: 'SALA - BURITIS',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_3,
+      active: false,
+      description: 'SALA - SANTA AMÉLIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_4,
+      active: false,
+      description: 'SALA - CONTAGEM',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_5,
+      active: false,
+      description: 'SALA - LAGOA SANTA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_6,
+      active: false,
+      description: 'SALA - PLANALTO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PLANALTO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_7,
+      active: false,
+      description: 'SALA - SANTA AMÉLIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SANTA_AMELIA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_8,
+      active: false,
+      description: 'SALA - PADRE EUSTÁQUIO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PADRE_EUSTAQUIO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_9,
+      active: false,
+      description: 'SALA - LAGOA SANTA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_10,
+      active: false,
+      description: 'SALA - PADRE EUSTÁQUIO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_101,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_11,
+      active: false,
+      description: 'SALA - GUTIERREZ',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_12,
+      active: false,
+      description: 'SALA - SAVASSI',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_13,
+      active: false,
+      description: 'SALA - PADRE EUSTÁQUIO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_14,
+      active: false,
+      description: 'SALA - SANTO ANÔNIO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_MONICA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_15,
+      active: false,
+      description: 'SALA - SANTA BRANCA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_1,
+      active: false,
+      description: 'QUARTO SOLTEIRO - GUTIERREZ',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_2,
+      active: false,
+      description: 'QUARTO SOLTEIRO - SION',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_3,
+      active: false,
+      description: 'QUARTO CASAL - LAGOA SANTA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_4,
+      active: false,
+      description: 'QUARTO BLOGUEIRA - MORAR MAIS',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_5,
+      active: false,
+      description: 'QUARTO CASAL - BURITIS',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_6,
+      active: false,
+      description: 'QUARTO CASAL - CONTAGEM',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_7,
+      active: false,
+      description: 'QUARTO CASAL - GUTIERREZ',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_8,
+      active: false,
+      description: 'QUARTO SOLTEIRO - BURITIS',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_9,
+      active: false,
+      description: 'QUARTO SOLTEIRO - SANTA MARIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_10,
+      active: false,
+      description: 'QUARTO CASAL - LAGOA SANTA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_11,
+      active: false,
+      description: 'QUARTO CASAL - SANTA AMÉLIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SANTA_AMELIA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_12,
+      active: false,
+      description: 'QUARTO CASAL - SAVASSI',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_13,
+      active: false,
+      description: 'QUARTO SOLTEIRO - FUNCIONÁRIOS',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_14,
+      active: false,
+      description: 'QUARTO SOLTEIRO - OURO PRETO',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SUITE_OURO_PRETO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_15,
+      active: false,
+      description: 'QUARTO CASAL - VARGINHA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_16,
+      active: false,
+      description: 'QUARTO HÓSPEDES - SANTA BRANCA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.ROOM
     },
   ]
 

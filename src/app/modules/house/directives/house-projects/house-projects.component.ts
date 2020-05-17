@@ -119,6 +119,9 @@ export class HouseProjectsComponent implements OnInit {
   }
 
   selectTab(selectedTab: any) {
+    let content = document.getElementsByTagName('app-house-projects')[0];
+    content.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    
     this.currentPosition = 0;
     this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
       if(tab.filter === selectedTab.filter) {

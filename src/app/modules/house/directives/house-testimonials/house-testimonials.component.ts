@@ -20,19 +20,19 @@ export class HouseTestimonialsComponent implements OnInit {
         image: ImagesConstants.HOUSE_IMAGES.PROJECTS.AREA_GOUMET_9,
         name: 'Wilson e Nathalia',
         description: '“Fizeram um projeto muito mais do que esperávamos! Indicamos de olhos fechados! Sucesso! Empresa que torna sonhos em realidade! ”',
-        projectName: "Projeto Área Gourmet - Santa Amélia"
+        projectName: "Projeto Área Gourmet"
       },
       {
         image: ImagesConstants.HOUSE_IMAGES.PROJECTS.ANCHIETA_2,
         name: 'Luciano Neves**',
         description: '“A consultoria nos ajudou a realizarmos sem precisar de grandes reformas! O resultado foi super satisfatório!”',
-        projectName: "Consultoria - Residência Grajaú"
+        projectName: "Consultoria Residência"
       },
       {
         image: ImagesConstants.HOUSE_IMAGES.PROJECTS.COZINHA_SION_13,
         name: 'Fátima Roscoe e Roberto Lage',
-        description: '“Minha experiência com a Viés foi muito gratificante. Todas as expectativas foram atendidas! São profissionais altamente qualificadas e muito gentis. O projeto ficou dentro de todas as nossas necessidades e expectativas!”',
-        projectName: "Projeto Cozinha – Sion"
+        description: '“Minha experiência com a Viés foi muito gratificante. Todas as expectativas foram atendidas! São profissionais altamente qualificadas e muito gentis!”',
+        projectName: "Projeto Cozinha"
       },
     ]
   }
