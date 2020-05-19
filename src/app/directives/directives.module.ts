@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
     ViMenuComponent,
     ViHeaderComponent,
     ViNavigationHeaderComponent,
-    ViFooterComponent
+    ViFooterComponent,
   ],
   exports: [
     ViButtonComponent,

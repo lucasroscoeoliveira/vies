@@ -12,8 +12,8 @@
 
 <div class="house-projects">
     <div class="house-projects__container">
-        <div class="clickable" (click)="viewProjectDetail(image)" *ngFor="let image of images" class="card" [hidden]="!image.active">
-            <img [src]="image.source" alt="" class="card__image">
+        <div class="clickable" *ngFor="let image of imagesFiltered()" class="card">
+            <img [src]="image.source" alt="" class="card__image" (click)="viewProjectDetail(image)">
             <div class="description desktop">
                 <div class="description__content">
                     <div></div>

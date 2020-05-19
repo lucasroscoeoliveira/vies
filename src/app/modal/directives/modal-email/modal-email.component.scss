@@ -38,7 +38,7 @@
 
     &__body {
         padding: 1em 0;
-        width: 100%;
+        width: calc(100% - 2em);
         flex-grow: 1;   
         &__content-1 {
             width: 100%;

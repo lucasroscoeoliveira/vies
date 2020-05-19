@@ -1,1 +1,20 @@
-<p>house-prize works!</p>
+<div class="content">
+    <h1 class="text text--green text--large-2 text--centered margin-top-3">MOSTRA DE DECORAÇÃO</h1>
+    <h2 class="text text--green text--large text--centered margin-top-2">Morar Mais por Menos - 2018 em Belo Horizonte | MG</h2>
+
+    <div class="images-container">
+        <div class="prize-card" *ngFor="let item of items">
+            <img [src]="item.image" alt="" class="prize-card__image">
+            <h3 class="text text--green text--centered" [innerHTML]="item.label" ></h3>
+        </div>
+    </div>
+
+    <div class="label-container text--centered">
+        <span class="text text--large">Na era das influenciadoras digitais, apresentamos um quarto inspirado nas </span>
+        <span class="text text--green text--bold text--large">necessidades de uma blogueira. </span>
+        <span class="text text--large">Moderno e funcional, o quarto da blogueira cumpre a função de </span>
+        <span class="text text--green text--bold text--large">dormitório, escritório e espaço para fotos. </span>
+        <span class="text text--large">A paleta de cores cria mosaicos e a criatividade dá </span>
+        <span class="text text--green text--bold text--large">novas funções para itens da moda. </span>
+    </div>
+</div>

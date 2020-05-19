@@ -2,7 +2,7 @@
 
 .house-services {
     display: flex;
-    width: 100%;
+    width: calc(100% - 4em);
     justify-content: center;
     align-items: center;
     padding: 2em 1em;

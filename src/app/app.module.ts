@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {TransferHttpCacheModule} from '@nguniversal/common';  
+
+import { TransferHttpCacheModule } from '@nguniversal/common';  
 
 import { AppRoutingModule } from './app-routing.module';
-import { MatInputModule } from '@angular/material/input';
-import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './modules/login/login.component';
 
 import { FashionModule } from './modules/fashion/fashion.module';
@@ -42,13 +41,11 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     BrowserModule.withServerTransition({appId: 'vies'}),
     TransferHttpCacheModule,
     AppRoutingModule,
-    NoopAnimationsModule,
     HttpClientModule,
     FashionModule,
     HouseModule,
     DirectivesModule,
     FormsModule,
-    MatInputModule,
     NgxMaskModule.forRoot()
   ],
   providers: [

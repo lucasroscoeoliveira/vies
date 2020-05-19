@@ -25,8 +25,7 @@ export class HouseMainComponent implements OnInit {
     if(this.route.params){
       this.route.params.subscribe(params => {
         this.session = params['session'] ?? null;
-      });
-  
+      });  
       if(this.session){
         this.scroll.navigateToRoute(this.session, 500);
       }
@@ -36,31 +35,35 @@ export class HouseMainComponent implements OnInit {
   initializeSlider() {
     this.slider.items = [
       {
+        id: 1,
         source: './assets/imgs/1-SALA-SANTA-AMELIA.jpg',
         sourceMobile: './assets/imgs/mobile/1-MOB-SALA-SANTA-AMELIA.jpg',
         active: true,
       },
       {
+        id: 2,
         source: ImagesConstants.HOUSE_IMAGES.MORAR_MAIS_2,
         sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_MORAR_MAIS_2,
         active: false,
       },
       {
+        id: 3,
         source: ImagesConstants.HOUSE_IMAGES.SALAS_SAVASSI_3,
         sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALAS_SAVASSI_3,
         active: false,
       },
       {
+        id: 4,
         source: ImagesConstants.HOUSE_IMAGES.SALAS_BURITIS_4,
         sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALA_BURITIS_4,
         active: false,
       },
       {
+        id: 5,
         source: ImagesConstants.HOUSE_IMAGES.COZINHA_SION_5,
         sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_COZINHA_SION_5,
         active: false,
       },
     ]
   }
-
 }
