@@ -1,7 +1,7 @@
 @import ".../../../../../styles.scss";
 
 .header {
-  width: 100%;
+  width: calc(100% - 8em);
   top: 0;
   left: 0;
   right: 0;

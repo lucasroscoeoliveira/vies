@@ -25,18 +25,22 @@ export class HouseServicesSessionComponent implements OnInit {
   setConsultLabels() {
     this.consultLabels = [
       {
+        id: 1,
         title: 'SOLUÇÕES SIMPLIFICADAS',
         subtitle: ''
       },
       {
+        id: 2,
         title: 'PLANTA LAYOUT',
         subtitle: ''
       },
       {
+        id: 3,
         title: '3D BÁSICO',
         subtitle: ''
       },
       {
+        id: 4,
         title: 'INDICAÇÃO DE MEDIDAS BÁSICAS',
         subtitle: ''
       },
@@ -46,26 +50,30 @@ export class HouseServicesSessionComponent implements OnInit {
   setServiceLabels() {
     this.serviceLabels = [
       {
+        id: 1,
         title: 'SOLUÇÕES 100% PERSONALIZADAS',
         subtitle: ''
       },
       {
+        id: 2,
         title: 'PLANTA LAYOUT COMPLETA',
         subtitle: ''
       },
       {
+        id: 3,
         title: '3D REALÍSTICOS',
         subtitle: ''
       },
       {
+        id: 4,
         title: 'DETALHAMENTO COMPLETO',
         subtitle: '(Especificações, marcenaria, marmoraria, iluminação,<br> tomadas, revestimentos...)'
       },
       {
+        id: 5,
         title: 'ORÇAMENTO COM FORNECEDORES<br> (PRESENCIAL)',
         subtitle: ''
       },
     ]
   }
-
 }

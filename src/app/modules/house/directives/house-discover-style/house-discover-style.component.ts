@@ -9,7 +9,7 @@ import ImagesConstants from 'src/app/utils/ImagesConstants';
 export class HouseDiscoverStyleComponent implements OnInit {
 
   houseTypes: Array<string>;
-  styleImages: Array<string>;
+  styleImages: Array<any>;
   position: number;
   intervalEvent: any;
   houseType: string;
@@ -22,10 +22,22 @@ export class HouseDiscoverStyleComponent implements OnInit {
       'MODERNA', 'MINIMALISTA', 'ROMÂNTICA', 'RÚSTICA'
     ];
     this.styleImages = [
-      ImagesConstants.HOUSE_IMAGES.QUIZ.DESCOLADO,
-      ImagesConstants.HOUSE_IMAGES.QUIZ.INDUSTRIAL,
-      ImagesConstants.HOUSE_IMAGES.QUIZ.MODERNO,
-      ImagesConstants.HOUSE_IMAGES.QUIZ.RUSTICO,
+      {
+        id: 1,
+        source: ImagesConstants.HOUSE_IMAGES.QUIZ.DESCOLADO,
+      },
+      {
+        id: 2,
+        source: ImagesConstants.HOUSE_IMAGES.QUIZ.INDUSTRIAL,
+      },
+      {
+        id: 3,
+        source: ImagesConstants.HOUSE_IMAGES.QUIZ.MODERNO,
+      },
+      {
+        id: 4,
+        source: ImagesConstants.HOUSE_IMAGES.QUIZ.RUSTICO,
+      },
     ];
     this.houseType = this.houseTypes[0];
 

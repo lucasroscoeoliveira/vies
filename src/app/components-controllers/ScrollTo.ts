@@ -11,7 +11,8 @@ export class ScrollTo {
             projects: 'projects',
             quiz: 'quiz',
             contact: 'contact',
-            services: 'services'
+            services: 'services',
+            main: 'main'
         };
         return ScrollTo.instance = ScrollTo.instance || this;
     }
@@ -32,6 +33,9 @@ export class ScrollTo {
             case this.states.services:
                 content = document.getElementsByTagName('app-house-services-session')[0];
                 break;
+            case this.states.main:
+                content = document.getElementsByTagName('app-vi-slider')[0];
+                break;
         }
 
         if (content) {
@@ -48,7 +52,7 @@ export class ScrollTo {
             case 'quiz':
                 return this.states.quiz;
             case 'contato':
-                return this.states.contacts;
+                return this.states.contact;
             case 'servicos':
                 return this.states.services;
             default:

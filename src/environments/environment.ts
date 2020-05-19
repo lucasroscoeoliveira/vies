@@ -6,8 +6,8 @@ export const environment = {
   production: false,
   api: 'http://100.24.105.5:3000/api',
   baseUrl: 'http://localhost:3000',
-  //s3_public: 'https://vies-images.s3.amazonaws.com'
-  s3_public: 'http://localhost:3000/images'
+  s3_public: 'https://vies-images.s3.amazonaws.com/Images'
+  //s3_public: 'http://localhost:3000/images'
 };
 
 /*
