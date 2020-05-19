@@ -7,7 +7,7 @@
     flex-direction: column;
 
     &__header {
-        width: calc(100% - 1em);
+        width: 100%;
         padding: 0.5em 1em;
         justify-content: space-between;
         display: flex;
@@ -15,9 +15,13 @@
 
         .go-back {
             cursor: pointer;
+            display: flex;
+            align-items: center;
             app-vi-svg {
+                display: flex;
                 color: $color-green;
-                font-size: 20px;
+                font-size: 2em;
+                align-items: center;
             }
         }
     }
@@ -47,7 +51,7 @@
                     -moz-user-select: none;
                     -webkit-user-select: none;
                     user-select: none;
-                    max-height: calc(100vh - 8em);
+                    max-height: 100%;
                 }
             }
         }
@@ -90,6 +94,7 @@
         app-vi-svg {
             font-size: 35px;
             color: $color-green;
+            display: flex;
 
             &:hover {
                 opacity: 0.8;

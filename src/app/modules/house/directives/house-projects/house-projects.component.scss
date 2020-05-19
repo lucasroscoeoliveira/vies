@@ -1,7 +1,7 @@
 @import '../../../../../styles.scss';
 .house-projects-header {
     display: flex;
-    width: calc(100% - 4em);
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 2em 0;
@@ -10,7 +10,7 @@
         margin: 0 0.5em;
         font-size: 20px;
         color: $color-green;
-        margin-top: -4px;
+        display: flex;
     }
 }
 
@@ -103,7 +103,7 @@
                         background-color: rgba($color: $color-white, $alpha: 1);
                         padding: 0.6em 0.3em;
                         opacity: 1;
-                        width: calc(100% - 1.2em);
+                        width: 100%;
                         justify-content: center;
                         justify-content: space-between;
                         flex-direction: row;
@@ -160,6 +160,9 @@
         app-vi-svg {
             font-size: 35px;
             color: $color-green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &:hover {
                 opacity: 0.8;
@@ -185,7 +188,7 @@
         justify-content: center;
         display: flex;
         &__content {
-            width: calc(100% - 0.4em);
+            width: 100%;
             display: flex;
             align-items: center;
             background-color: rgba(255, 255, 255, 1);

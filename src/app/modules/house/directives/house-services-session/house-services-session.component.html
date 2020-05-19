@@ -3,46 +3,50 @@
 
     <div class="cards-container">
         <div class="card-services">
-            <div class="circle margin-bottom-2">
-                <app-vi-svg icon="icon-home" class="service-icon"></app-vi-svg>
-            </div>
-            <span class="text text--green text--large margin-bottom-2 name">PROJETO COMPLETO</span>
-            <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
-
-            <img [src]="projectImage" alt="" class="service-image desktop">
-
-            <div class="labels-content">
-                <div class="label-content" *ngFor="let serviceLabel of serviceLabels">
-                    <span class="label-content--adjust">
-                        <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
-                        <h1 class="text text--start" [innerHTML]="serviceLabel.title"></h1>
-                        <span></span>
-                    </span>
-                    <h4 [hidden]="!(serviceLabel.subtitle && serviceLabel.subtitle.length > 0)" [innerHTML]="serviceLabel.subtitle" class="text text--small text--start"></h4>
+            <div class="top-container">
+                <div class="circle margin-bottom-2 mobile">
+                    <app-vi-svg icon="icon-home" class="service-icon"></app-vi-svg>
                 </div>
-            </div>
-            
+                <span class="text text--green text--large margin-bottom-2 name">PROJETO COMPLETO</span>
+                <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
+    
+                <img [src]="projectImage" alt="" class="service-image desktop">
+    
+                <div class="labels-content">
+                    <div class="label-content" *ngFor="let serviceLabel of serviceLabels">
+                        <span class="label-content--adjust">
+                            <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
+                            <h1 class="text text--small" [innerHTML]="serviceLabel.title"></h1>
+                            <span></span>
+                        </span>
+                        <h4 [hidden]="!(serviceLabel.subtitle && serviceLabel.subtitle.length > 0)" 
+                            [innerHTML]="serviceLabel.subtitle" class="text text--small text--center text--thin"></h4>
+                    </div>
+                </div>
+            </div>            
             <app-vi-button [wide]="true" type='green' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
 
         <div class="card-services">
-            <div class="circle margin-bottom-2">
-                <app-vi-svg icon="icon-clipboard" class="service-icon"></app-vi-svg>
-            </div>
-            <span class="text text--green text--large margin-bottom-2 name">CONSULTORIA</span>
-            <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
-
-            <img [src]="consultImage" alt="" class="service-image desktop">
-
-            <div class="labels-content">
-                <div class="label-content"  *ngFor="let consultLabel of consultLabels">
-                    <span>
-                        <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
-                        <h1 class="text text--centered">{{consultLabel.title}}</h1>
-                    </span>
+            <div class="top-container">
+                <div class="circle margin-bottom-2 mobile">
+                    <app-vi-svg icon="icon-clipboard" class="service-icon"></app-vi-svg>
+                </div>
+                <span class="text text--green text--large margin-bottom-2 name">CONSULTORIA</span>
+                <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
+    
+                <img [src]="consultImage" alt="" class="service-image desktop">
+    
+                <div class="labels-content">
+                    <div class="label-content"  *ngFor="let consultLabel of consultLabels">
+                        <span class="label-content--adjust">
+                            <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
+                            <h1 class="text text--small">{{consultLabel.title}}</h1>
+                            <span></span>
+                        </span>
+                    </div>
                 </div>
             </div>
-
             <app-vi-button [wide]="true" class="margin-2" type='green'><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @import ".../../../../../styles.scss";
 
 .header {
-  width: calc(100% - 8em);
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -17,8 +17,8 @@
   &__item {
     padding: 0.8em;
     position: relative;
-    display: inline-block;
-    vertical-align: center;
+    display: flex;
+    align-items: center;
 
     .text-container {
       height: 100%;
@@ -32,6 +32,7 @@
   }
 
   .icon {
+    display: flex;
     &--green {
         &::before{
             color: $color-green;

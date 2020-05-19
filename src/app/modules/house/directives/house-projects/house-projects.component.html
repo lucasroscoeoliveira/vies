@@ -1,7 +1,7 @@
 <div class="house-projects-header">
-    <app-vi-svg [hidden]="!arrowLeftVisible()" icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
+    <app-vi-svg [ngClass]="{'hidden': !arrowLeftVisible()}" icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
     <span class="text text--green text--large text--centered text--bold">PROJETOS</span> 
-    <app-vi-svg [hidden]="!arrowRightVisible()" icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
+    <app-vi-svg [ngClass]="{'hidden': !arrowRightVisible()}" icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
 </div>
 
 <div class="house-projects-tabs">

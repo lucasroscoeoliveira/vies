@@ -19,13 +19,13 @@
                 <img [src]="image.source" alt="" unselectable="on">
             </div>
 
-            <div class="button-left desktop" (click)="move('left')" [hidden]="!visibleLeftArrow()">
+            <div class="button-left desktop" (click)="move('left')" [ngClass]="{'hidden': !visibleLeftArrow()}">
                 <div class="buttom-menu">
                     <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
                 </div>
             </div>
         
-            <div class="button-right desktop" (click)="move('right')" [hidden]="!visibleRightArrow()">
+            <div class="button-right desktop" (click)="move('right')" [ngClass]="{'hidden': !visibleRightArrow()}">
                 <div class="buttom-menu">
                     <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
                 </div>
@@ -35,12 +35,12 @@
 
 
     <div class="buttons-mobile mobile">
-        <div class="button-left margin-right-1" (click)="move('left')">
+        <div class="button-left margin-right-1" (click)="move('left')" [ngClass]="{'hidden': !visibleLeftArrow()}">
             <div class="buttom-menu">
                 <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
             </div>
         </div>
-        <div class="button-right margin-left-1" (click)="move('right')">
+        <div class="button-right margin-left-1" (click)="move('right')" [ngClass]="{'hidden': !visibleRightArrow()}">
             <div class="buttom-menu">
                 <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
             </div>
