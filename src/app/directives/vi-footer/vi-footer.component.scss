@@ -19,7 +19,7 @@
     .top-container {
         padding: 2em;
         display: flex;
-        width: 100%;
+        width: calc(100% - 4em);
         flex-wrap: wrap;
         justify-content: space-between;
         text-align: start;
@@ -55,7 +55,7 @@
 
     .bottom-container {
         display: flex;
-        width: 100%;
+        width: calc(100% - 2em);
         justify-content: space-between;
         align-items: center;
         padding: 1em;

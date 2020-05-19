@@ -34,6 +34,10 @@ export class HouseProjectsComponent implements OnInit {
     this.setInitialActive();
   }
 
+  imagesFiltered() {
+    return this.images.filter(image => image.active);
+  }
+
   initializeTabs() {
     this.tabs = [
       {
