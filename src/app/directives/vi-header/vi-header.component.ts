@@ -33,7 +33,7 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.main, 300);
         break;
       case 'whoWeAre':
-        this.router.navigate(['casa/quem-somos']);
+        this.router.navigate(['quem-somos']);
         break;
       case 'projects':
         this.router.navigate(['casa/inicio', 'projetos']);

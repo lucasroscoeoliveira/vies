@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { ViButtonComponent } from './vi-button/vi-button.component';
 import { ViSliderComponent } from './vi-slider/vi-slider.component';
 import { ViSvgComponent } from './vi-svg/vi-svg.component';
@@ -7,7 +8,12 @@ import { ViHeaderComponent } from './vi-header/vi-header.component';
 import { ViMenuComponent } from './vi-menu/vi-menu.component';
 import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigation-header.component';
 import { ViFooterComponent } from './vi-footer/vi-footer.component';
+import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
+import { Header } from '../components-controllers/Header';
+import { Menu } from '../components-controllers/Menu';
+import { ScrollTo } from '../components-controllers/ScrollTo';
+import { Slider } from '../components-controllers/Slider';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,12 @@ import { FormsModule } from '@angular/forms';
     ViNavigationHeaderComponent,
     ViFooterComponent,
   ],
+  imports: [
+    CommonModule,
+    NgxMaskModule.forRoot(),
+    FormsModule,
+    RouterModule,
+  ],
   exports: [
     ViButtonComponent,
     ViSliderComponent,
@@ -26,11 +38,15 @@ import { FormsModule } from '@angular/forms';
     ViMenuComponent,
     ViHeaderComponent,
     ViNavigationHeaderComponent,
-    ViFooterComponent
+    ViFooterComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-  ]
+  providers: [
+    Header,
+    Menu,
+    ScrollTo,
+    Slider,
+  ],
 })
-export class DirectivesModule { }
+export class DirectivesModule { 
+  
+}
