@@ -1,6 +1,7 @@
 stages:
     - build
     - deploy
+    - deployprd
 
 build:
     image: node:10.16.0-slim
@@ -25,3 +26,15 @@ deploy:
         - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
         - aws s3 rm s3://vies-app --recursive
         - aws s3 sync ./dist s3://vies-app --acl public-read
+
+deployprd:
+    image: python:latest
+    stage: deploy
+    only:
+        - master
+    script: 
+        - pip install awscli
+        - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+        - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+        - aws s3 rm s3://vies-app-prd --recursive
+        - aws s3 sync ./dist s3://vies-app-prd --acl public-read
