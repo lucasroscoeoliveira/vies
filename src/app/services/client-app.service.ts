@@ -11,19 +11,22 @@ export class ClientAppService {
   api: String;
 
   constructor(private http: HttpClient) {
-    this.api = environment.api + '/Addresses';
+    this.api = environment.api + '/clients';
   }
 
-  create(client: ClientModel) {
-    return this.http.post(`${this.api}`, client);
+  create(client: ClientModel, message: string) {
+    return this.http.post(`${this.api}`, {
+      client: client,
+      message: message
+    });
   }
 
   read(id: number) {
     return this.http.get(`${this.api}/${id}`);
   }
 
-  get(id: number) {
-    return this.http.get(`${this.api}/${id}`);
+  get() {
+    return this.http.get(`${this.api}`);
   }
 
   update(client: ClientModel){

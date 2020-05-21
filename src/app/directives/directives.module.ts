@@ -7,6 +7,7 @@ import { ViHeaderComponent } from './vi-header/vi-header.component';
 import { ViMenuComponent } from './vi-menu/vi-menu.component';
 import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigation-header.component';
 import { ViFooterComponent } from './vi-footer/vi-footer.component';
+import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    NgxMaskModule.forRoot()
   ]
 })
 export class DirectivesModule { }

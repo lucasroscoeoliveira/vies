@@ -3,6 +3,7 @@ export class ClientModel {
     Name: string;
     Email: string;
     Phone: string;
+    Subscribe: boolean;
     CreatedAt: Date;
     updatedAt: Date;
 }

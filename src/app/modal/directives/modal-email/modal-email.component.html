@@ -11,7 +11,7 @@
             <span class="text">Digite seu nome:</span>
             <input 
                 id="name_input"
-                [(ngModel)]="name" 
+                [(ngModel)]="client.Name" 
                 [ngModelOptions]="{standalone: true}"
                 class="input-default-house"
                 type="text">
@@ -22,7 +22,7 @@
             <span class="text">Digite seu email:</span>
             <input 
                 class="input-default-house"
-                [(ngModel)]="email" 
+                [(ngModel)]="client.Email" 
                 [ngModelOptions]="{standalone: true}"
                 type="text" 
                 placeholder="Ex: seuemail@email.com">
@@ -32,7 +32,7 @@
             <input  
                 mask="(00) 00000-0000"
                 class="input-default-house"
-                [(ngModel)]="phone" 
+                [(ngModel)]="client.Phone" 
                 [ngModelOptions]="{standalone: true}"
                 placeholder="(31) 99999-9999"
                 type="text">
