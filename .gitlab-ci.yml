@@ -22,7 +22,7 @@ buildprd:
     image: node:10.16.0-slim
     stage: build
     only:
-        - prd
+        - master
     script: 
         - npm install -g @angular/cli@9.1.3
         - npm install
