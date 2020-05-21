@@ -1,11 +1,28 @@
 stages:
     - build
+    - buildprd
     - deploy
     - deployprd
 
 build:
     image: node:10.16.0-slim
     stage: build
+    only:
+        - dev
+    script: 
+        - npm install -g @angular/cli@9.1.3
+        - npm install
+        - npm run build
+    artifacts:
+        paths: 
+            - dist/
+        expire_in: 1 hour
+
+buildprd:
+    image: node:10.16.0-slim
+    stage: build
+    only:
+        - prd
     script: 
         - npm install -g @angular/cli@9.1.3
         - npm install
