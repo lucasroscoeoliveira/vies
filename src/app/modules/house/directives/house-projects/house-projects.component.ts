@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Image } from 'src/app/components-controllers/Slider';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Router } from '@angular/router';
@@ -15,6 +15,7 @@ export class HouseProjectsComponent implements OnInit {
   currentPosition: number;
   countActive: number;
   tabs: any;
+  pagesLabel: string;
 
   constructor(private router: Router) { }
 
@@ -94,6 +95,8 @@ export class HouseProjectsComponent implements OnInit {
       image.active = index < this.countActive ? true : false;
       return image;
     })
+
+    this.setPagesLabel();
   }
 
   setIsMobile() {
@@ -109,17 +112,25 @@ export class HouseProjectsComponent implements OnInit {
     this.setCountActive();
     let maxPosition = Math.floor(this.images.length / this.countActive);
 
-    if(direction === 'right' && this.currentPosition === maxPosition){
-        this.currentPosition = 0;
-    } else if(direction === 'right' && this.currentPosition < maxPosition) {
+    if(direction === 'right' && this.currentPosition < maxPosition - 1) {
         this.currentPosition ++;
-    } else if(direction === 'left' && this.currentPosition === 0){
-        this.currentPosition = maxPosition
     } else if(direction === 'left' && this.currentPosition > 0){
         this.currentPosition--;
     }
 
     this.setActives();
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    let keyPressed = event.keyCode;
+    switch(keyPressed){
+      case 39:
+        this.move('right');
+        break;
+      case 37:
+        this.move('left');
+    }
   }
 
   selectTab(selectedTab: any) {
@@ -147,6 +158,12 @@ export class HouseProjectsComponent implements OnInit {
       image.active = index < finishIndex && index >= startIndex ? true : false;
       return image;
     })
+
+    this.setPagesLabel();
+  }
+
+  setPagesLabel() {
+    this.pagesLabel = (this.currentPosition + 1) + '/' + this.images.length / this.countActive
   }
 
   viewProjectDetail(image: Image)
@@ -154,11 +171,11 @@ export class HouseProjectsComponent implements OnInit {
     this.router.navigate(['casa/projeto', image.id, image.filter]);
   }
 
-  arrowLeftVisible() {
-    return (this.currentPosition > 0);
+  disableArrowLeft() {
+    return this.currentPosition === 0;
   }
 
-  arrowRightVisible() {
-    return (this.images.length > (this.currentPosition + 1) * this.countActive);
+  disableArrowRight() {
+    return ((this.currentPosition + 1) * this.countActive) >= this.images.length;
   }
 }

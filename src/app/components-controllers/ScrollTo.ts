@@ -19,7 +19,6 @@ export class ScrollTo {
     }
 
     navigateToRoute(routeName: string, timeout: number | null, shouldConvert: boolean = false) {
-        debugger;
         if(shouldConvert){
             routeName = this.convertRouteParams(routeName);
         }

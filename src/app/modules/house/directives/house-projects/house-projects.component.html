@@ -1,21 +1,18 @@
 <div class="house-projects-header">
-    <button [disabled]="!arrowLeftVisible()">
-        <app-vi-svg icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
-    </button>
-    <span class="text text--green text--large text--centered text--bold">PROJETOS</span> 
-    <button [disabled]="!arrowRightVisible()">
-        <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
-    </button>
+    <span class="text text--green text--large text--centered text--bold">PROJETOS</span>
 </div>
 
 <div class="house-projects-tabs">
-    <button class="tab-content text--bold" (click)="selectTab(tab)" *ngFor="let tab of tabs" [ngClass]="{'tab-content--selected': tab.selected}">
+    <button class="tab-content text--bold" (click)="selectTab(tab)" *ngFor="let tab of tabs"
+        [ngClass]="{'tab-content--selected': tab.selected}">
         <span [ngClass]="{'text--green': tab.selected}" class="text text--centered text--small">{{tab.name}}</span>
     </button>
 </div>
 
 <div class="house-projects">
-    <div class="house-projects__container" >
+    <div class="house-projects__container"
+        (swiperight)="move('right')" 
+        (swipeleft)="move('left')">
         <div class="clickable" *ngFor="let image of imagesFiltered()" class="card">
             <img [src]="image.source" alt="" class="card__image" (click)="viewProjectDetail(image)">
             <div class="description desktop">
@@ -28,15 +25,32 @@
         </div>
     </div>
 
-    <button class="house-projects__button-left desktop" (click)="move('left')" [disabled]="!arrowLeftVisible()">
+    <button class="house-projects__button-left desktop" (click)="move('left')" [disabled]="disableArrowLeft()"
+        [ngClass]="{'disabled': disableArrowLeft()}">
         <div class="buttom-menu">
             <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
         </div>
     </button>
 
-    <button class="house-projects__button-right desktop" (click)="move('right')" [disabled]="!arrowRightVisible()">
+    <button class="house-projects__button-right desktop" (click)="move('right')" [disabled]="!disableArrowRight()"
+        [ngClass]="{'disabled': disableArrowRight()}">
         <div class="buttom-menu">
             <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
         </div>
     </button>
+</div>
+
+<div class="house-projects__footer">
+    <div class="arrow-container mobile">
+        <button [disabled]="!disableArrowLeft()" [ngClass]="{'disabled': disableArrowLeft()}">
+            <app-vi-svg icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
+        </button>
+        <button [disabled]="disableArrowRight()" [ngClass]="{'disabled': disableArrowRight()}">
+            <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
+        </button>
+    </div>
+
+    <span class="pages text text--small">
+        {{pagesLabel}}
+    </span>
 </div>
