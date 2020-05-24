@@ -1,6 +1,6 @@
 <main class="house-container">
     <app-vi-header class="desktop" [header]="header" type='house'></app-vi-header>
-    <div class="house" id="house_scroll_container">
+    <div class="house" id="house-scroll-container" (scroll)="onScroll($event)">
         <router-outlet></router-outlet>
     </div>
 </main>

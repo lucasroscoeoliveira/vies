@@ -1680,8 +1680,6 @@ export default class HouseProjectConstants {
 
 
 
-
-
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA,
       active: false,

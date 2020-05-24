@@ -10,6 +10,17 @@ export class Header {
   constructor(){
     return Header.instance = Header.instance || this;
   }
+
+  setActive(activeItem: HeaderMenuItem){
+    this.items = this.items.map((item) => {
+      if(item.name === activeItem.name){
+        item.focused = true;
+      } else {
+        item.focused = false;
+      }
+      return item;
+    });
+  }
 }
 
 @Injectable()
@@ -19,6 +30,7 @@ export class HeaderMenuItem {
   hasMenu: boolean;
   logo: boolean;
   routeName?: string;
+  focused?: boolean;
 }
 
 @Injectable()

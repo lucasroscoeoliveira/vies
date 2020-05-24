@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Menu } from 'src/app/components-controllers/Menu';
 import { Header } from 'src/app/components-controllers/Header';
 import { Title, Meta } from '@angular/platform-browser';
@@ -25,6 +25,33 @@ export class HouseComponent implements OnInit {
 
     this.titleService.setTitle("Viés – Projetos residenciais");
     this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
+  }
+
+  onScroll(event) {
+    let scroll = document.getElementById('house-scroll-container')
+    let mainElements = [
+      document.getElementById('house-slider'),
+      document.getElementById('house-call-to-action'),
+      document.getElementById('house-projects'),
+      document.getElementById('house-services-session'),
+      document.getElementById('house-discover-style'),
+    ]
+
+    let yTopPositions = mainElements.map((mainElement) => {
+      let contentOffsetTop = mainElement.offsetTop;
+      var scrollTop = scroll.offsetTop;
+      return contentOffsetTop - scrollTop;
+    });
+
+    var a = scroll.scrollTop;
+
+    yTopPositions.forEach((elPosition, index) => {
+      if(index < yTopPositions.length - 1){
+        
+      } else {
+        
+      }
+    });
   }
 
   setMenu() {

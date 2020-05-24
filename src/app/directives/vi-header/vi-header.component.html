@@ -1,7 +1,7 @@
 <div class="header desktop">
     <div (click)="onClick(item.routeName)" class="clickable header__item" *ngFor="let item of header.items" mat-menu-item>
       <div *ngIf="!item.logo" class="text-container">
-        <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
+        <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion', 'text--underline': item.focused}" class="text text--small unselectable"> {{item.name}} </span>
       </div>
       <div class="logo" *ngIf="item.logo">
         <img class="logo--img clickable" [src]="getMainLogo()">
