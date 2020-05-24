@@ -46,7 +46,6 @@ export class HouseProjectViewComponent implements OnInit {
         return image.filter === this.filter && image.id === this.id;
       });
     }
-    debugger;
   }
 
   setImage() {
@@ -72,7 +71,6 @@ export class HouseProjectViewComponent implements OnInit {
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     let keyPressed = event.keyCode;
-    debugger;
     switch(keyPressed){
       case 39:
         this.move('right');

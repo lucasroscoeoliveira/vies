@@ -1,4 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { TransferHttpCacheModule } from '@nguniversal/common';  
@@ -44,7 +45,9 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     AppRoutingModule,
     HttpClientModule,
     FashionModule,
+    BrowserAnimationsModule,
     HouseModule,
+    HammerModule,
     DirectivesModule,
     FormsModule,
     NgxMaskModule.forRoot()
