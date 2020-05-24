@@ -6,8 +6,18 @@
             <span class="text text--white">Projeto e consultoria online e presencial</span>
     
             <span class="text text--bold text--white margin-top-2">FALE COM A GENTE</span>
-            <span class="text text--white">(31) 3054-7975</span>
-            <span class="text text--white">(31) 99155-7975</span>
+            <div class="flex-center">
+                <app-vi-svg icon="icon-phone" class="text--white margin-right-1"></app-vi-svg>
+                <span class="text text--white">(31) 3054-7975</span>
+            </div>
+            <div class="flex-center">
+                <app-vi-svg icon="icon-phone" class="text--white margin-right-1"></app-vi-svg>
+                <span class="text text--white">(31) 99155-7975</span>
+            </div>
+            <div class="flex-center">
+                <app-vi-svg icon="icon-envelop" class="text--white margin-right-1"></app-vi-svg>
+                <span class="text text--white">vies@viesdesign.com.br</span>
+            </div>
         </div>
     
         <div class="content margin-bottom-3">
@@ -30,6 +40,7 @@
         <span class="text text--white vies">Viés Design - Belo Horizonte-MG | Brasil</span>
 
         <div class="icons">
+            <span class="text text--white">Acompanhe nossas redes sociais: </span>
             <div class="social-icon clickable" *ngFor="let social of socials">
                 <app-vi-svg icon="{{social.name}}"></app-vi-svg>
             </div>

@@ -25,10 +25,10 @@ export class HouseTestimonialsComponent implements OnInit {
       },
       {
         id: 2,
-        image: ImagesConstants.HOUSE_IMAGES.PROJECTS.ANCHIETA_2,
-        name: 'Luciano Neves**',
-        description: '“A consultoria nos ajudou a realizarmos sem precisar de grandes reformas! O resultado foi super satisfatório!”',
-        projectName: "Consultoria Residência"
+        image: ImagesConstants.HOUSE_IMAGES.PROJECTS.BURITIS_3,
+        name: 'Larissa e Douglas Santos',
+        description: '“Meninas, gostaríamos de parabenizar pela presteza e competência de vocês. Nosso apartamento antigo ficou novo! O projeto que vocês fizeram superou as nossas expectativas! Estamos amando usar cada cantinho!”',
+        projectName: "Projeto Apartamento Completo"
       },
       {
         id: 3,
@@ -36,6 +36,13 @@ export class HouseTestimonialsComponent implements OnInit {
         name: 'Fátima Roscoe e Roberto Lage',
         description: '“Minha experiência com a Viés foi muito gratificante. Todas as expectativas foram atendidas! São profissionais altamente qualificadas e muito gentis!”',
         projectName: "Projeto Cozinha"
+      },
+      {
+        id: 4,
+        image: ImagesConstants.HOUSE_IMAGES.PROJECTS.QUARTO_HOME_OFF_SION_17,
+        name: 'Lucas Oliveira',
+        description: '“Gostei muito dos resultados do meu quarto e home office que projetaram. Além de tornarem os dois ambientes muito mais funcionais e organizados, ficaram no estilo que eu queria.”',
+        projectName: "Projeto Quarto Solteiro"
       },
     ]
   }

@@ -3,17 +3,20 @@
 @import "styles/variables";
 @import "styles/animations";
 
-
-html, body { 
+html,
+body {
     box-sizing: border-box;
-    *, *:before, *:after {
+    *,
+    *:before,
+    *:after {
         box-sizing: inherit;
     }
 }
-body { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-    height: 100vh !important;
-    width: 100vw !important;
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100% !important;
+    width: 100% !important;
     position: absolute;
     left: 0;
     right: 0;

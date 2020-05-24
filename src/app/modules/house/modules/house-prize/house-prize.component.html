@@ -5,7 +5,9 @@
     <div class="images-container">
         <div class="prize-card" *ngFor="let item of items">
             <img [src]="item.image" alt="" class="prize-card__image">
-            <h3 class="text text--green text--centered" [innerHTML]="item.label" ></h3>
+            <div class="labels flex-center">
+                <h3 class="text text--green text--centered" [innerHTML]="item.label" ></h3>
+            </div>
         </div>
     </div>
 

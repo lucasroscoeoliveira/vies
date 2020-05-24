@@ -10,11 +10,9 @@
 </div>
 
 <div class="house-projects">
-    <div class="house-projects__container"
-        (swiperight)="move('right')" 
-        (swipeleft)="move('left')">
-        <div class="clickable" *ngFor="let image of imagesFiltered()" class="card">
-            <img [src]="image.source" alt="" class="card__image" (click)="viewProjectDetail(image)">
+    <div class="house-projects__container" (swiperight)="move('right')" (swipeleft)="move('left')">
+        <div class="clickable" *ngFor="let image of imagesFiltered()" class="card" (click)="viewProjectDetail(image)">
+            <img [src]="image.source" alt="" class="card__image">
             <div class="description desktop">
                 <div class="description__content">
                     <div></div>
@@ -25,27 +23,33 @@
         </div>
     </div>
 
-    <button class="house-projects__button-left desktop" (click)="move('left')" [disabled]="disableArrowLeft()"
-        [ngClass]="{'disabled': disableArrowLeft()}">
-        <div class="buttom-menu">
-            <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-        </div>
-    </button>
+    <div class="house-projects__button-left desktop">
+        <button class="" (click)="move('left')"
+            [ngClass]="{'disabled': disableArrowLeft()}">
+            <div class="buttom-menu">
+                <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+            </div>
+        </button>
+    </div>
 
-    <button class="house-projects__button-right desktop" (click)="move('right')" [disabled]="!disableArrowRight()"
-        [ngClass]="{'disabled': disableArrowRight()}">
-        <div class="buttom-menu">
-            <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
-        </div>
-    </button>
+    <div class="house-projects__button-right desktop">
+        <button class="" (click)="move('right')"
+            [ngClass]="{'disabled': disableArrowRight()}">
+            <div class="buttom-menu">
+                <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+            </div>
+        </button>
+    </div>
+
+
 </div>
 
 <div class="house-projects__footer">
     <div class="arrow-container mobile">
-        <button [disabled]="!disableArrowLeft()" [ngClass]="{'disabled': disableArrowLeft()}">
+        <button [ngClass]="{'disabled': disableArrowLeft()}">
             <app-vi-svg icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
         </button>
-        <button [disabled]="disableArrowRight()" [ngClass]="{'disabled': disableArrowRight()}">
+        <button [ngClass]="{'disabled': disableArrowRight()}">
             <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
         </button>
     </div>

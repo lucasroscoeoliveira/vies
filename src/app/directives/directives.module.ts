@@ -10,6 +10,7 @@ import { ViFooterComponent } from './vi-footer/vi-footer.component';
 import { ViToastComponent } from './vi-toast/vi-toast.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
+import { ViSocialComponent } from './vi-social/vi-social.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     ViNavigationHeaderComponent,
     ViFooterComponent,
     ViToastComponent,
+    ViSocialComponent,
   ],
   exports: [
     ViButtonComponent,
@@ -31,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     ViNavigationHeaderComponent,
     ViFooterComponent,
     ViToastComponent,
+    ViSocialComponent,
   ],
   imports: [
     CommonModule,

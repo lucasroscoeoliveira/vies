@@ -64,6 +64,7 @@
         .icons {
             display: flex;
             flex-direction: row;
+            align-items: center;
             .social-icon {
                 padding: 0.4em;
                 &:hover {

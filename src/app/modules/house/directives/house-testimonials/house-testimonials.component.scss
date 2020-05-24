@@ -22,7 +22,7 @@
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             margin: 1em;
             display: flex;
-            height: 440px;
+            height: 465px;
             background-color: $color-white;
             width: 280px;
             flex-direction: column;
@@ -32,9 +32,6 @@
 
             &:hover {
                 box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
-                .name {
-                    font-weight: 500;
-                }
             }
         
 

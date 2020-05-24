@@ -1,0 +1,50 @@
+@import '../../../styles.scss';
+
+app-vi-social {
+    pointer-events: none;
+    position: relative;
+}
+
+.social-content {
+    position: fixed;
+    bottom: 0.5em;
+    right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+
+    .icon-container {
+        pointer-events: all !important;
+        height: 3.2em;
+        background-color: $color-white;
+        width: 3.2em;
+        box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
+        display: flex;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer !important;
+        margin-bottom: 1.5em;
+        z-index: 3;
+        position: relative;
+
+        app-vi-svg {
+          font-size: 25px;
+          display: flex;
+        }
+        .whatsapp {
+            &--icon {
+                color: #6ACB5F;
+            }
+        }
+        &:hover {
+            background-color: #efefef;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .social-content {
+        bottom: 4.7em !important;
+    }
+}

@@ -41,7 +41,7 @@ export class HouseServicesSessionComponent implements OnInit {
       },
       {
         id: 4,
-        title: 'INDICAÇÃO DE MEDIDAS BÁSICAS',
+        title: 'ESPECIFICAÇÕES E MEDIDAS BÁSICAS',
         subtitle: ''
       },
     ]
@@ -61,17 +61,17 @@ export class HouseServicesSessionComponent implements OnInit {
       },
       {
         id: 3,
-        title: '3D REALÍSTICOS',
+        title: '3D REALÍSTICO',
         subtitle: ''
       },
       {
         id: 4,
-        title: 'DETALHAMENTO COMPLETO',
-        subtitle: '(Especificações, marcenaria, marmoraria, iluminação,<br> tomadas, revestimentos...)'
+        title: 'ESPECIFICAÇÕES E DETALHAMENTO COMPLETO',
+        subtitle: '(Móveis, marcenaria, marmoraria, iluminação,<br> tomadas, revestimentos...)'
       },
       {
         id: 5,
-        title: 'ORÇAMENTO COM FORNECEDORES<br> (PRESENCIAL)',
+        title: 'INDICAÇÃO DE FORNECEDORES<br> E SUPORTE TÉCNICO',
         subtitle: ''
       },
     ]

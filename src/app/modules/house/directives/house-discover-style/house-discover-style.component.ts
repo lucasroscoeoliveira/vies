@@ -48,7 +48,7 @@ export class HouseDiscoverStyleComponent implements OnInit {
 
     this.intervalEvent = setInterval(() => {
       this.changeLabel();
-    }, 3000)
+    }, 2000)
   }
 
   changeLabel() {

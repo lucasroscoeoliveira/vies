@@ -2,7 +2,7 @@
 
 .toast-container-desktop {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     pointer-events: none;
@@ -57,7 +57,7 @@
 
 .toast-container-mobile {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     pointer-events: none;
