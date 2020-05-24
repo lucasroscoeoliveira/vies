@@ -7,7 +7,6 @@ export class Header {
   static instance: Header;
   @Input() items: Array<HeaderMenuItem>;
   @Input() socials: Array<HeaderSubMenuItem>;
-  blockSetActive: boolean = false;
 
   constructor(private router: Router){
     return Header.instance = Header.instance || this;
@@ -46,33 +45,33 @@ export class Header {
       return contentOffsetTop - scrollTop;
     });
 
-    let currentPosition = scroll.scrollTop + 10;
+    let currentPosition = scroll.scrollTop + 1;
     yTopPositions.forEach((elPosition, index) => {
       if(index < yTopPositions.length - 1){
         if(currentPosition >= yTopPositions[index] && currentPosition < yTopPositions[index + 1]){
           switch(index){
             case 0:
-              this.setActive('contact');
               this.router.navigate(['casa/inicio', 'contato']);
+              this.setActive('contato');
               break;
             case 1:
-              this.setActive('projects');
               this.router.navigate(['casa/inicio', 'projetos']);
+              this.setActive('projetos');
               break;
             case 2:
-              this.setActive('services');
               this.router.navigate(['casa/inicio', 'servicos']);
+              this.setActive('servicos');
               break;
           }
         }
       } else {
         if(currentPosition <= yTopPositions[0]){
-          this.setActive('start');
-          this.router.navigate(['casa/inicio']);
+          this.router.navigate(['casa/inicio', 'vies']);
+          this.setActive('vies');
         }
         if(currentPosition >= yTopPositions[yTopPositions.length - 1]){
-          this.setActive('quiz');
           this.router.navigate(['casa/inicio', 'quiz']);
+          this.setActive('quiz');
         }
       }
     });

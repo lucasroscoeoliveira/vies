@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   }
 
   goHome() {
-    this.router.navigate(['casa']);
+    this.router.navigate(['casa/inicio', 'vies']);
   }
 
   goFashion() {

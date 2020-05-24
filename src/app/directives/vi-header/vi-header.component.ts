@@ -27,18 +27,18 @@ export class ViHeaderComponent implements OnInit {
 
   navigateToHouse(route: string) {
     switch(route){
-      case 'start':
-        this.router.navigate(['casa/inicio']);
-        this.scroll.navigateToRoute(this.scroll.states.start, 300);
+      case 'vies':
+        this.router.navigate(['casa/inicio', 'vies']);
+        this.scroll.navigateToRoute(this.scroll.states.vies, 300);
         break;
-      case 'whoWeAre':
+      case 'quem-somos':
         this.router.navigate(['casa/quem-somos']);
         break;
-      case 'projects':
+      case 'projetos':
         this.router.navigate(['casa/inicio', 'projetos']);
         this.scroll.navigateToRoute(this.scroll.states.projects, 300);
         break;
-      case 'services':
+      case 'servicos':
         this.router.navigate(['casa/inicio', 'servicos']);
         this.scroll.navigateToRoute(this.scroll.states.services, 300);
         break;
@@ -46,13 +46,13 @@ export class ViHeaderComponent implements OnInit {
         this.router.navigate(['casa/inicio', 'quiz']);
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300);
         break;
-      case 'prize':
+      case 'premio':
         this.router.navigate(['casa/premios']);
         break;
       case 'blog':
         //falta implementar o blog
         break;
-      case 'contact':
+      case 'contato':
         this.router.navigate(['casa/inicio', 'contato']);
         this.scroll.navigateToRoute(this.scroll.states.contact, 300);
         break;

@@ -18,11 +18,11 @@ export class WhoWeAreComponent implements OnInit {
   ngOnInit(): void {
     this.marina = ImagesConstants.SHARED_IMAGES.MARINA;
     this.amanda = ImagesConstants.SHARED_IMAGES.AMANDA;
-    this.header.setActive('whoWeAre');
+    this.header.setActive('quem-somos');
   }
 
   goBackToInitial() {
-    this.router.navigate(['casa/inicio']);
+    this.router.navigate(['casa/inicio', 'vies']);
   }
 
 }

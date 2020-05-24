@@ -41,28 +41,28 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: true,
-        routeName: 'start',
+        routeName: 'vies',
       },
       {
         name: 'QUEM SOMOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'whoWeAre'
+        routeName: 'quem-somos'
       },
       {
         name: 'PROJETOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'projects'
+        routeName: 'projetos'
       },
       {
         name: 'SERVIÇOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'services'
+        routeName: 'servicos'
       },
       {
         name: 'TESTE',
@@ -76,7 +76,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: true,
         logo: false,
-        routeName: 'prize'
+        routeName: 'premio'
       },
       {
         name: 'BLOG',
@@ -90,7 +90,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'contact'
+        routeName: 'contato'
       },
     ];
 
@@ -121,7 +121,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: true,
-        routeName: 'start',
+        routeName: 'vies',
         focused: true
       },
       {
@@ -129,7 +129,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'whoWeAre',
+        routeName: 'quem-somos',
         focused: false
       },
       {
@@ -137,7 +137,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'projects',
+        routeName: 'projetos',
         focused: false
       },
       {
@@ -145,7 +145,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'services',
+        routeName: 'servicos',
         focused: false
       },
       {
@@ -161,7 +161,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: true,
         logo: false,
-        routeName: 'prize',
+        routeName: 'premio',
         focused: false
       },
       {
@@ -177,7 +177,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'contact',
+        routeName: 'contato',
         focused: false
       },
     ];

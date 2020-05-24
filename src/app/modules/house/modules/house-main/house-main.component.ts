@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Slider } from 'src/app/components-controllers/Slider';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-house-main',
@@ -14,7 +15,12 @@ export class HouseMainComponent implements OnInit {
   imageConstants: ImagesConstants;
   session: string;
 
-  constructor(public slider: Slider, private route: ActivatedRoute, private scroll: ScrollTo) { }
+  constructor(
+    public slider: Slider,
+    public header: Header,
+    private route: ActivatedRoute, 
+    private scroll: ScrollTo,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.initializeRouteParams();
@@ -27,9 +33,10 @@ export class HouseMainComponent implements OnInit {
         this.session = params['session'] ?? null;
       });
       if(this.session){
-        this.scroll.navigateToRoute(this.session, 500, true);
-      } else if(!this.session) {
-        this.scroll.navigateToRoute('', 500, true);
+        this.header.setActive(this.session);
+      } else {
+        this.router.navigate(['casa/inicio', 'vies']);
+        this.header.setActive('vies');
       }
     }
   }
