@@ -1,4 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
+import { Header } from './Header';
 
 @Injectable()
 export class ScrollTo {
@@ -6,19 +7,22 @@ export class ScrollTo {
     static instance: ScrollTo;
     states: any;
 
-    constructor() {
+    constructor(public header: Header) {
         this.states = {
             projects: 'projects',
             quiz: 'quiz',
             contact: 'contact',
             services: 'services',
-            main: 'main'
+            start: 'start'
         };
         return ScrollTo.instance = ScrollTo.instance || this;
     }
 
-    navigateToRoute(routeName: string, timeout: number | null) {
-        routeName = this.convertRouteParams(routeName);
+    navigateToRoute(routeName: string, timeout: number | null, shouldConvert: boolean = false) {
+        debugger;
+        if(shouldConvert){
+            routeName = this.convertRouteParams(routeName);
+        }
         let content = null;
         switch (routeName) {
             case this.states.projects:
@@ -33,12 +37,13 @@ export class ScrollTo {
             case this.states.services:
                 content = document.getElementsByTagName('app-house-services-session')[0];
                 break;
-            case this.states.main:
+            case this.states.start:
                 content = document.getElementsByTagName('app-vi-slider')[0];
                 break;
         }
 
         if (content) {
+            this.header.setActive(routeName);
             setTimeout(() => {
                 content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
             }, timeout);
@@ -55,8 +60,8 @@ export class ScrollTo {
                 return this.states.contact;
             case 'servicos':
                 return this.states.services;
-            default:
-                return routeParam;
+            case '':
+                return this.states.start;
         }
     }
 }

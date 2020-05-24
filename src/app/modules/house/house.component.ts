@@ -3,6 +3,7 @@ import { Menu } from 'src/app/components-controllers/Menu';
 import { Header } from 'src/app/components-controllers/Header';
 import { Title, Meta } from '@angular/platform-browser';
 import { Toast } from 'src/app/components-controllers/Toast';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-house',
@@ -17,6 +18,7 @@ export class HouseComponent implements OnInit {
   constructor(
     private titleService: Title,
     private metaTagService: Meta,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -28,30 +30,7 @@ export class HouseComponent implements OnInit {
   }
 
   onScroll(event) {
-    let scroll = document.getElementById('house-scroll-container')
-    let mainElements = [
-      document.getElementById('house-slider'),
-      document.getElementById('house-call-to-action'),
-      document.getElementById('house-projects'),
-      document.getElementById('house-services-session'),
-      document.getElementById('house-discover-style'),
-    ]
-
-    let yTopPositions = mainElements.map((mainElement) => {
-      let contentOffsetTop = mainElement.offsetTop;
-      var scrollTop = scroll.offsetTop;
-      return contentOffsetTop - scrollTop;
-    });
-
-    var a = scroll.scrollTop;
-
-    yTopPositions.forEach((elPosition, index) => {
-      if(index < yTopPositions.length - 1){
-        
-      } else {
-        
-      }
-    });
+    this.header.changeActiveOnScrollHouse();
   }
 
   setMenu() {
@@ -62,7 +41,7 @@ export class HouseComponent implements OnInit {
         subItems: [],
         hasMenu: false,
         logo: true,
-        routeName: 'start'
+        routeName: 'start',
       },
       {
         name: 'QUEM SOMOS',
@@ -135,63 +114,71 @@ export class HouseComponent implements OnInit {
   }
 
   setHeader() {
-    this.header = new Header();
+    this.header = new Header(this.router);
     this.header.items = [
       {
         name: 'INÍCIO',
         subItems: [],
         hasMenu: false,
         logo: true,
-        routeName: 'start'
+        routeName: 'start',
+        focused: true
       },
       {
         name: 'QUEM SOMOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'whoWeAre'
+        routeName: 'whoWeAre',
+        focused: false
       },
       {
         name: 'PROJETOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'projects'
+        routeName: 'projects',
+        focused: false
       },
       {
         name: 'SERVIÇOS',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'services'
+        routeName: 'services',
+        focused: false
       },
       {
         name: 'TESTE',
         subItems: [],
         hasMenu: true,
         logo: false,
-        routeName: 'quiz'
+        routeName: 'quiz',
+        focused: false
       },
       {
         name: 'PRÊMIO',
         subItems: [],
         hasMenu: true,
         logo: false,
-        routeName: 'prize'
+        routeName: 'prize',
+        focused: false
       },
       {
         name: 'BLOG',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'blog'
+        routeName: 'blog',
+        focused: false
       },
       {
         name: 'CONTATO',
         subItems: [],
         hasMenu: false,
         logo: false,
-        routeName: 'contact'
+        routeName: 'contact',
+        focused: false
       },
     ];
 

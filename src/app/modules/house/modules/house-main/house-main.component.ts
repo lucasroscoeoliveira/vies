@@ -25,9 +25,11 @@ export class HouseMainComponent implements OnInit {
     if(this.route.params){
       this.route.params.subscribe(params => {
         this.session = params['session'] ?? null;
-      });  
+      });
       if(this.session){
-        this.scroll.navigateToRoute(this.session, 500);
+        this.scroll.navigateToRoute(this.session, 500, true);
+      } else if(!this.session) {
+        this.scroll.navigateToRoute('', 500, true);
       }
     }
   }

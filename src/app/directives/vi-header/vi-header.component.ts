@@ -10,10 +10,9 @@ import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 })
 export class ViHeaderComponent implements OnInit {
 
-  @Input() header: Header;
   @Input() type: string;
 
-  constructor(private router: Router, private scroll: ScrollTo) { }
+  constructor(private router: Router, private scroll: ScrollTo, public header: Header) { }
 
   ngOnInit(): void {
   }
@@ -30,7 +29,7 @@ export class ViHeaderComponent implements OnInit {
     switch(route){
       case 'start':
         this.router.navigate(['casa/inicio']);
-        this.scroll.navigateToRoute(this.scroll.states.main, 300);
+        this.scroll.navigateToRoute(this.scroll.states.start, 300);
         break;
       case 'whoWeAre':
         this.router.navigate(['casa/quem-somos']);
@@ -58,6 +57,7 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.contact, 300);
         break;
     }
+    this.header.setActive(route);
   }
 
   getMainLogo() {

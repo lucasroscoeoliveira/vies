@@ -8,49 +8,72 @@
   display: flex;
   flex-direction: row;
   background-color: $color-white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 0 4em;
   justify-content: space-evenly;
   align-items: stretch;
   border-bottom: 1px solid #efefef;
 
   &__item {
-    padding: 0.8em;
+    padding: 0.8em 0;
     position: relative;
     display: flex;
     align-items: center;
-
-    .text-container {
-      height: 100%;
-      display: flex;
-      align-items: center;
-
-      .text--underline {
-        text-decoration: underline;
-      }
-    }
+    padding-bottom: 0;
 
     &:hover {
       background-color: rgba($color: #000000, $alpha: 0.05);
+    }
+
+    &__container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      .text-container {
+        height: 100%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 0.8em;
+        padding-bottom: 0.8em;
+      }
+
+      .active {
+        height: 5px;
+        width: 100%;
+        min-height: 5px;
+
+        &--green {
+          background-color: $color-green;
+        }
+
+        &--purple {
+          background-color: $color-purple;
+        }
+      }
     }
   }
 
   .icon {
     display: flex;
     &--green {
-        &::before{
-            color: $color-green;
-          }
-          color: $color-green;
+      padding-bottom: 0.8em;
+      color: $color-green;
+      &::before {
+        color: $color-green;
+      }
     }
 
     &--purple {
-        &::before{
-            color: $color-purple;
-          }
-          color: $color-purple;
+      padding-bottom: 0.8em;
+      color: $color-purple;
+      &::before {
+        color: $color-purple;
+      }
     }
-}
+  }
 
   .header__item:hover .header__menu {
     display: block;
@@ -60,18 +83,18 @@
     display: none;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 0.8em;
     margin-left: -0.8em;
     animation: growing 0.1s ease-in;
 
     &--green {
-        background-color: $color-green;
+      background-color: $color-green;
     }
 
     &--purple {
-        background-color: $color-purple;
+      background-color: $color-purple;
     }
 
     &__item {
@@ -90,6 +113,8 @@
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 0.8em;
+  margin-bottom: 0.8em;
   &--img {
     max-height: 1.8em;
   }
@@ -100,7 +125,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 

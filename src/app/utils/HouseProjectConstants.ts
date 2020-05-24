@@ -4,13 +4,13 @@ export default class HouseProjectConstants {
 
   static readonly FILTERS = {
     MAIN: 'main',
-    LIVING_ROOM : 'sala_estar',
-    KITCHEN : 'cozinha',
-    ROOM : 'quarto',
-    BEFORE_AFTER : 'antes_depois',
-    CHILD : 'infantil',
-    HOME_OFFICE : 'home_office',
-    BATHROOM : 'banheiro',
+    LIVING_ROOM: 'sala_estar',
+    KITCHEN: 'cozinha',
+    ROOM: 'quarto',
+    BEFORE_AFTER: 'antes_depois',
+    CHILD: 'infantil',
+    HOME_OFFICE: 'home_office',
+    BATHROOM: 'banheiro',
     LAYOUT: 'layout'
   }
 
@@ -43,18 +43,16 @@ export default class HouseProjectConstants {
     INFANTIL_GABRIEL: 26,
     INFANTIL_LAIS: 27,
     INFANTIL_THEO: 28,
-    QUARTO_TULIO: 29,
-    HOME_OFFICE_KATIA: 30,
-    COZINHA_CICA: 31,
-    COZINHA_HELOISA: 32,
-    COZINHA_JOICE: 33,
-    COZINHA_PAULO: 34,
-    COZINHA_REGIANE: 35,
-    SALA_JOICE: 36,
-    SALA_MONICA: 37,
-    SALA_PAULO: 38,
-    QUARTO_REGIANE: 39,
-    QUARTO_PAULO: 40,
+    HOME_OFFICE_KATIA: 29,
+    COZINHA_CICA: 30,
+    COZINHA_HELOISA: 31,
+    COZINHA_PAULO: 33,
+    COZINHA_REGIANE: 34,
+    SALA_JOICE: 35,
+    SALA_MONICA: 36,
+    SALA_PAULO: 37,
+    QUARTO_REGIANE: 38,
+    QUARTO_PAULO: 39,
   }
 
   static readonly PROJECTS = [
@@ -469,7 +467,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.HOME_OFFICE_10,
       active: false,
       description: 'HOME OFFICE - SANTO ANTÔNIO',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_TULIO,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
       main: false,
       filter: HouseProjectConstants.FILTERS.HOME_OFFICE
     },
@@ -591,8 +589,8 @@ export default class HouseProjectConstants {
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.KITCHEN_15,
       active: false,
-      description: 'ÁREA GOURMET - PADRE EUSTÁQUIO',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      description: 'ÁREA GOURMET - SANTA AMÉLIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
@@ -936,7 +934,7 @@ export default class HouseProjectConstants {
 
 
 
-    
+
 
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SALA,
