@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 import { Modal } from 'src/app/components-controllers/Modal';
@@ -55,12 +55,31 @@ export class HouseProjectViewComponent implements OnInit {
 
   move(direction: string) {
     if (direction === 'right') {
+      if(!this.visibleRightArrow()){
+        return;
+      }
       this.moveRight();
     }
     else {
+      if(!this.visibleLeftArrow()){
+        return;
+      }
       this.moveLeft();
     }
     this.setImage();
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    let keyPressed = event.keyCode;
+    debugger;
+    switch(keyPressed){
+      case 39:
+        this.move('right');
+        break;
+      case 37:
+        this.move('left');
+    }
   }
 
   moveRight() {
