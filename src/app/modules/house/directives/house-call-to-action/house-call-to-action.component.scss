@@ -43,8 +43,8 @@
         }
     
         .btns-container {
-            padding: 2em 0;
-            padding-bottom: 1em;
+            padding: 1em 0;
+            padding-bottom: 2em;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -71,6 +71,26 @@
             width: 100%;
         }
     }   
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .socials-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .social-image {
+                max-height: 30px;
+                margin: 0 0.5em;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 

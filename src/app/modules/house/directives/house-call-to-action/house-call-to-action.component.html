@@ -29,8 +29,10 @@
         </div>
 
         <div class="socials">
-            <span class="text">Acompanhe nossas redes socias</span>
-            
+            <span class="text margin-bottom-2">Acompanhe nossas redes socias!</span>
+            <div class="socials-container">
+                <img [src]="social" alt="" class="social-image" *ngFor="let social of socials">
+            </div>
         </div>
     
     </div>

@@ -15,6 +15,8 @@ export class HouseCallToActionComponent implements OnInit {
   intervalEvent: any;
   callPhrase: string;
 
+  socials: Array<string>;
+
   constructor(
     public whatsAppService: WhatsappService,
     public modal: Modal,
@@ -26,6 +28,11 @@ export class HouseCallToActionComponent implements OnInit {
       'NÃO QUER OBRAS, MAS QUER RENOVAR SUA CASA?',
       'O VALOR DO PROJETO CORRESPONDE A 5% DO VALOR DA REFORMA',
       'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
+    ]
+    this.socials = [
+      './assets/imgs/logofacebook.jpg',
+      './assets/imgs/logoinstagram.jpg',
+      './assets/imgs/logoyoutube.jpg',
     ]
     this.position = 0;
     this.callPhrase = this.phrases[this.position];
