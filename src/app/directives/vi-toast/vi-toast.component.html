@@ -1,0 +1,27 @@
+<div class="toast-container-desktop desktop" [ngClass]="{'toast-container-desktop--opened': toast.isOpen}">
+    <div class="toast-desktop">
+        <div class="icon--error margin-right-2" *ngIf="toast.type === 'error'">
+            <app-vi-svg icon="icon-close"></app-vi-svg>
+        </div>
+    
+        <div class="icon--success margin-right-2" *ngIf="toast.type === 'success'">
+            <app-vi-svg icon="icon-checkmark"></app-vi-svg>
+        </div>
+    
+        <h4 class="text">{{toast.message}}</h4>
+    </div>
+</div>
+
+<div class="toast-container-mobile mobile" [ngClass]="{'toast-container-mobile--opened': toast.isOpen}">
+    <div class="toast-mobile">
+        <div class="icon--error margin-right-2" *ngIf="toast.type === 'error'">
+            <app-vi-svg icon="icon-close"></app-vi-svg>
+        </div>
+    
+        <div class="icon--success margin-right-2" *ngIf="toast.type === 'success'">
+            <app-vi-svg icon="icon-checkmark"></app-vi-svg>
+        </div>
+    
+        <h4 class="text">{{toast.message}}</h4>
+    </div>
+</div>

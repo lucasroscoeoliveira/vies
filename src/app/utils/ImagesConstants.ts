@@ -49,6 +49,7 @@ export default class ImagesConstants {
             SALA_COZINHA_402_21: environment.s3_public + '/House/Projects/Portfolio/Main/21-SALA-COZINHA-402-PADRE-EUSTAQUIO.jpg',
             ANDAR_CASA_SANTA_AMELIA_22: environment.s3_public + '/House/Projects/Portfolio/Main/22-2-ANDAR-CASA-SANTA-AMELIA.jpg',
             RESID_LAGOA_SANTA_23: environment.s3_public + '/House/Projects/Portfolio/Main/23-RESIDENCIA-LAGOA-SANTA.jpg',
+            RESID_GUTIERREZ_24: environment.s3_public + '/House/Projects/Portfolio/Main/24-RESID-GUTIERREZ.jpg',
 
 
             BATHROOM_1: environment.s3_public + '/House/Projects/Portfolio/Bathroom/3-banheiro-ouro-preto.jpg',
@@ -211,7 +212,7 @@ export default class ImagesConstants {
             SALAS_CONJUGADAS_BELVEDERE: {
                 SALA: environment.s3_public + '/House/Projects/11-SALAS-CONJUGADAS-BELVEDERE/1-sala-belvedere.jpg',
                 SALA_2: environment.s3_public + '/House/Projects/11-SALAS-CONJUGADAS-BELVEDERE/2-sala-belvedere.jpg',
-                SALA_3: environment.s3_public + '/House/Projects/11-SALAS-CONJUGADAS-BELVEDERE/2-sala-belvedere.jpg',
+                SALA_3: environment.s3_public + '/House/Projects/11-SALAS-CONJUGADAS-BELVEDERE/3-sala-belvedere.jpg',
             },
             PREMIO_MORAR_MAIS: {
                 MORAR_MAIS: environment.s3_public + '/House/Projects/12-PREMIO-MORAR-MAIS-2018/1-morar-mais.jpg',
@@ -231,8 +232,6 @@ export default class ImagesConstants {
                 COZINHA_2: environment.s3_public + '/House/Projects/13-COZINHA-SION/2-cozinha-sion.jpg',
                 COZINHA_3: environment.s3_public + '/House/Projects/13-COZINHA-SION/3-cozinha-sion.jpg',
                 COZINHA_4: environment.s3_public + '/House/Projects/13-COZINHA-SION/4-cozinha-sion.jpg',
-                COZINHA_5: environment.s3_public + '/House/Projects/13-COZINHA-SION/5-cozinha-sion.jpg',
-                COZINHA_6: environment.s3_public + '/House/Projects/13-COZINHA-SION/6-cozinha-sion.jpg',
             },
             RESIDENCIA_CONTAGEM: {
                 SALA: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/1-sala-contagem.jpg',
@@ -309,7 +308,7 @@ export default class ImagesConstants {
                 AREA_1: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/7-area-gourmet-casa-santa-amelia.jpg',
                 LAYOUT: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/8-layout-casa-santa-amelia.jpg',
             },
-            RESIDENCIA_LAGOA_SANTA_2: {
+            RESIDENCIA_LAGOA_SANTA_2_GABI: {
                 SALA: environment.s3_public + '/House/Projects/23-RESIDENCIA-LAGOA-SANTA/1-sala-lagoa-santa.jpg',
                 SALA_2: environment.s3_public + '/House/Projects/23-RESIDENCIA-LAGOA-SANTA/2-sala-lagoa-santa.jpg',
                 SALA_3: environment.s3_public + '/House/Projects/23-RESIDENCIA-LAGOA-SANTA/3-sala-lagoa-santa.jpg',

@@ -1,0 +1,113 @@
+@import "../../../styles.scss";
+
+.toast-container-desktop {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    top: -3em;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    &--opened {
+        top: 1em;
+        opacity: 1;
+    }
+
+    .toast-desktop {
+        min-width: 250px;
+        z-index: 6;
+        border-radius: 2px;
+        color: $color-white;
+        background-color: $color-white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border: 1px solid #efefef;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em;
+
+        .icon {
+            margin-right: 1em;
+
+            &--error {
+                font-size: 1em;
+                padding: 0.4em;
+                border-radius: 100%;
+                background-color: $color-error;
+            }
+
+            &--success {
+                font-size: 1em;
+                padding: 0.4em;
+                border-radius: 100%;
+                background-color: $color-success;
+            }
+        }
+
+        h4 {
+            flex-grow: 1;
+            font-weight: 350;
+            text-align: center;
+        }
+    }
+}
+
+.toast-container-mobile {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    bottom: -3em;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    &--opened {
+        bottom: 1em;
+        opacity: 1;
+    }
+
+    .toast-mobile {
+        min-width: 250px;
+        z-index: 6;
+        border-radius: 2px;
+        color: $color-white;
+        background-color: $color-white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border: 1px solid #efefef;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em;
+
+        .icon {
+            margin-right: 1em;
+
+            &--error {
+                font-size: 1em;
+                padding: 0.4em;
+                border-radius: 100%;
+                background-color: $color-error;
+                color: $color-white;
+            }
+
+            &--success {
+                font-size: 1em;
+                padding: 0.4em;
+                border-radius: 100%;
+                background-color: $color-success;
+                color: $color-white !important;
+            }
+        }
+
+        h4 {
+            flex-grow: 1;
+            font-weight: 350;
+            text-align: center;
+        }
+    }
+}

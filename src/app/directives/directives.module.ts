@@ -7,6 +7,7 @@ import { ViHeaderComponent } from './vi-header/vi-header.component';
 import { ViMenuComponent } from './vi-menu/vi-menu.component';
 import { ViNavigationHeaderComponent } from './vi-navigation-header/vi-navigation-header.component';
 import { ViFooterComponent } from './vi-footer/vi-footer.component';
+import { ViToastComponent } from './vi-toast/vi-toast.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
 
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     ViHeaderComponent,
     ViNavigationHeaderComponent,
     ViFooterComponent,
+    ViToastComponent,
   ],
   exports: [
     ViButtonComponent,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     ViMenuComponent,
     ViHeaderComponent,
     ViNavigationHeaderComponent,
-    ViFooterComponent
+    ViFooterComponent,
+    ViToastComponent,
   ],
   imports: [
     CommonModule,

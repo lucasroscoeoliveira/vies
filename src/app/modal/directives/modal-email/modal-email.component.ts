@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Modal } from 'src/app/components-controllers/Modal';
 import { ClientAppService } from 'src/app/services/client-app.service';
 import { ClientModel } from 'src/app/models/ClientModel';
+import { Toast } from 'src/app/components-controllers/Toast';
 
 @Component({
   selector: 'app-modal-email',
@@ -17,28 +18,15 @@ export class ModalEmailComponent implements OnInit {
   message: string;
   subscribe: boolean;
   
-  constructor(public modal: Modal, public clientAppService: ClientAppService) { }
+  constructor(public modal: Modal, public clientAppService: ClientAppService, public toast: Toast) { }
 
   ngOnInit(): void {
     this.client = new ClientModel();
     this.focusInputName();
-    this.teste();
   }
 
   focusInputName() {
     document.getElementById("name_input").focus();
-  }
-
-  teste() {
-    this.clientAppService.get().subscribe(
-      (res: any) => {
-        debugger;
-        console.log('Criar um UI-ALERT');
-      },
-      (err) => {
-        console.log('Criar um UI-ALERT');
-      }
-    )
   }
 
   sendEmail() {
@@ -47,10 +35,10 @@ export class ModalEmailComponent implements OnInit {
       this.message
     ).subscribe(
       (res: any) => {
-        console.log('Criar um UI-ALERT');
+        this.toast.success('Email enviado com sucesso! Em breve retornaremos!');
       },
       (err) => {
-        console.log('Criar um UI-ALERT');
+        this.toast.error('Tivemos um problema! Tente novamente.');
       }
     )
     this.modal.executeCallBack();

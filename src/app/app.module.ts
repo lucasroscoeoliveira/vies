@@ -20,6 +20,7 @@ import { Menu } from '../app/components-controllers/Menu';
 import { Modal } from '../app/components-controllers/Modal';
 import { Testimonial } from '../app/components-controllers/Testimonial';
 import { ScrollTo } from '../app/components-controllers/ScrollTo';
+import { Toast } from '../app/components-controllers/Toast';
 
 import { WhatsappService } from './services/whatsapp.service';
 import { ClientAppService } from './services/client-app.service';
@@ -56,6 +57,7 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     Header,
     Menu,
     Modal,
+    Toast,
     WhatsappService,
     ClientAppService
   ],

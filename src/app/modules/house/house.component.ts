@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/components-controllers/Menu';
 import { Header } from 'src/app/components-controllers/Header';
 import { Title, Meta } from '@angular/platform-browser';
+import { Toast } from 'src/app/components-controllers/Toast';
 
 @Component({
   selector: 'app-house',
@@ -22,7 +23,7 @@ export class HouseComponent implements OnInit {
     this.setMenu();
     this.setHeader();
 
-    this.titleService.setTitle("Projetos de decoração de ambientes");
+    this.titleService.setTitle("Viés – Projetos residenciais");
     this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
   }
 

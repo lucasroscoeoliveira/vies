@@ -31,10 +31,22 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   initImages() {
-    this.images = HouseProjectConstants.PROJECTS_DETAIL.filter((image) => {
-      return image.filter === this.filter && image.id === this.id;
-    })
+    this.getImages();
     this.setImage();
+  }
+
+  getImages() {
+    let project = HouseProjectConstants.PROJECTS.find(project => project.id === this.id);
+    if (project && project.main) {
+      this.images = HouseProjectConstants.PROJECTS_DETAIL.filter((image) => {
+        return image.id === this.id;
+      });
+    } else {
+      this.images = HouseProjectConstants.PROJECTS_DETAIL.filter((image) => {
+        return image.filter === this.filter && image.id === this.id;
+      });
+    }
+    debugger;
   }
 
   setImage() {
@@ -42,7 +54,7 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   move(direction: string) {
-    if(direction === 'right'){
+    if (direction === 'right') {
       this.moveRight();
     }
     else {
@@ -52,7 +64,7 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   moveRight() {
-    if(this.currIndex === this.images.length - 1){
+    if (this.currIndex === this.images.length - 1) {
       this.currIndex = 0;
     } else {
       this.currIndex++;
@@ -60,7 +72,7 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   moveLeft() {
-    if(this.currIndex === 0){
+    if (this.currIndex === 0) {
       this.currIndex = this.images.length - 1;
     } else {
       this.currIndex--;

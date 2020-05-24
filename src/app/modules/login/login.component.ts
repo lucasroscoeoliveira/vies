@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle("Projetos de decoração e vitrinismo, design para casa e moda");
+    this.titleService.setTitle("Viés – Projetos residenciais e comerciais");
     this.metaTagService.updateTag({name: 'Vitrinismo', content: "Projeto de vitrines e interiores de loja"});
     this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
   }
