@@ -15,10 +15,6 @@ app-vi-social {
 
     .icon-container {
         pointer-events: all !important;
-        height: 3.2em;
-        background-color: $color-white;
-        width: 3.2em;
-        box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
         display: flex;
         border-radius: 100%;
         align-items: center;
@@ -36,9 +32,6 @@ app-vi-social {
             &--icon {
                 color: #6ACB5F;
             }
-        }
-        &:hover {
-            background-color: #efefef;
         }
     }
 }

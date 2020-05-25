@@ -1,9 +1,9 @@
 <div class="social-content">
-    <button class="icon-container" (click)="email()">
+    <app-vi-button type='white' class="icon-container round" (onClick)="email()" [round]="true">
         <app-vi-svg icon="icon-gmail" class="gmail--icon"></app-vi-svg>
-    </button>
-    <button class="icon-container" (click)="whatsApp()">
+    </app-vi-button>
+    <app-vi-button type='white' class="icon-container" (onClick)="whatsApp()" [round]="true">
         <app-vi-svg icon="icon-whatsapp" class="whatsapp--icon"></app-vi-svg>
-    </button>
+    </app-vi-button>
 </div>
 
