@@ -43,7 +43,7 @@
                 }
 
                 app-vi-button {
-                    min-width: 8em;min-width: 150px;
+                    min-width: 8em;
 
                     button {
                         width: 100%;
@@ -85,4 +85,24 @@
        } 
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .send {
+        flex-direction: column;
+        input {
+            max-width: 200px !important;
+            background-color: transparent;
+            margin: 0.5em 0;;
+            color: $color-white;
+        }
+
+        app-vi-button {
+            width: 200px;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
 }
