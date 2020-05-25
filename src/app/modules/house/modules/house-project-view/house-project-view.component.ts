@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 import { Modal } from 'src/app/components-controllers/Modal';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-house-project-view',
@@ -10,7 +11,7 @@ import { Modal } from 'src/app/components-controllers/Modal';
 })
 export class HouseProjectViewComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal) { }
+  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal, public scroll: ScrollTo) { }
   id: number;
   image: any;
   images: any;
@@ -106,6 +107,7 @@ export class HouseProjectViewComponent implements OnInit {
 
   goBack() {
     this.router.navigate(['casa/inicio', 'projetos']);
+    this.scroll.navigateToRoute(this.scroll.states.projects, 500);
   }
 
   openModal() {

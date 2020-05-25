@@ -46,34 +46,4 @@ export class ScrollTo {
             }
         }, timeout);
     }
-
-    // navigateToNewRoute(routeName: string) {
-    //     switch (routeName) {
-    //         case 'start':
-    //             this.router.navigate(['casa/inicio']);
-    //             case 'contact':
-    //             this.router.navigate(['casa/inicio', 'contato']);
-    //         case 'projects':
-    //             this.router.navigate(['casa/inicio', 'projetos']);
-    //         case 'services':
-    //             this.router.navigate(['casa/inicio', 'servicos']);
-    //         case 'quiz':
-    //             this.router.navigate(['casa/inicio', 'quiz']);
-    //     }
-    // }
-
-    // convertRouteParams(routeParam: string) {
-    //     switch (routeParam) {
-    //         case 'projetos':
-    //             return this.states.projects;
-    //         case 'quiz':
-    //             return this.states.quiz;
-    //         case 'contato':
-    //             return this.states.contact;
-    //         case 'servicos':
-    //             return this.states.services;
-    //         case '':
-    //             return this.states.start;
-    //     }
-    // }
 }
