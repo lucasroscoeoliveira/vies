@@ -21,13 +21,13 @@
                 <img [src]="image.source" alt="" unselectable="on">
             </div>
 
-            <div class="button-left desktop" (click)="move('left')">
+            <div class="button-left desktop" (click)="move('left')" *ngIf="images && images.length > 1">
                 <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
                     <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
                 </div>
             </div>
         
-            <div class="button-right desktop" (click)="move('right')">
+            <div class="button-right desktop" (click)="move('right')" *ngIf="images && images.length > 1">
                 <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
                     <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
                 </div>
@@ -36,7 +36,7 @@
     </div>
 
 
-    <div class="buttons-mobile mobile">
+    <div class="buttons-mobile mobile" *ngIf="images && images.length > 1">
         <div class="button-left margin-right-1" (click)="move('left')">
             <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
                 <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
