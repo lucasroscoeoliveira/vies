@@ -144,16 +144,11 @@
 
     .buttom-menu {
         pointer-events: visible;
-        height: 3.5em;
-        width: 3.5em;
-        box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
         display: flex;
         border-radius: 100%;
         align-items: center;
         justify-content: center;
         z-index: 2;
-        background-color: $color-white;
-        border: 1px solid #efefef;
 
         app-vi-svg {
             font-size: 35px;
