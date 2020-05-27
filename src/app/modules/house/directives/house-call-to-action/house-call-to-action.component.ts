@@ -10,11 +10,6 @@ import { Toast } from 'src/app/components-controllers/Toast';
 })
 export class HouseCallToActionComponent implements OnInit {
 
-  phrases: Array<string>;
-  position: number;
-  intervalEvent: any;
-  callPhrase: string;
-
   socials: Array<string>;
 
   constructor(
@@ -23,35 +18,12 @@ export class HouseCallToActionComponent implements OnInit {
     public toast: Toast) { }
 
   ngOnInit(): void {
-    this.phrases = [
-      'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
-      'NÃO QUER OBRAS, MAS QUER RENOVAR SUA CASA?',
-      'O VALOR DO PROJETO CORRESPONDE A 5% DO VALOR DA REFORMA',
-      'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
-    ]
+
     this.socials = [
       './assets/imgs/logofacebook.jpg',
       './assets/imgs/logoinstagram.jpg',
       './assets/imgs/logoyoutube.jpg',
     ]
-    this.position = 0;
-    this.callPhrase = this.phrases[this.position];
-    this.initializeInterval();
-  }
-
-  initializeInterval() {
-    this.intervalEvent = setInterval(() => {
-      this.changePhraseShown();
-    }, 3000);
-  }
-
-  changePhraseShown() {
-    if(this.position === 3){
-      this.position = 0;
-    } else {
-      this.position++;
-    }
-    this.callPhrase = this.phrases[this.position];
   }
 
   whatsApp() {

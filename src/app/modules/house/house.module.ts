@@ -12,7 +12,7 @@ import { HouseQuizComponent } from './modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house-main/house-main.component';
 import { HouseProjectViewComponent } from './modules/house-project-view/house-project-view.component';
-
+import { HousePresentationComponent } from './directives/house-presentation/house-presentation.component';
 import { AppRoutingModule } from '../../app-routing.module';
 
 @NgModule({
@@ -27,7 +27,8 @@ import { AppRoutingModule } from '../../app-routing.module';
     HouseQuizComponent,
     HouseServicesComponent,
     HouseMainComponent,
-    HouseProjectViewComponent
+    HouseProjectViewComponent,
+    HousePresentationComponent
   ],
   imports: [
     CommonModule,
