@@ -4,6 +4,7 @@ import { Header } from 'src/app/components-controllers/Header';
 import { Title, Meta } from '@angular/platform-browser';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Router } from '@angular/router';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-house',
@@ -18,7 +19,8 @@ export class HouseComponent implements OnInit {
   constructor(
     private titleService: Title,
     private metaTagService: Meta,
-    private router: Router
+    private router: Router,
+    public scrollTo: ScrollTo
   ) { }
 
   ngOnInit(): void {
@@ -30,7 +32,7 @@ export class HouseComponent implements OnInit {
   }
 
   onScroll(event) {
-    this.header.changeActiveOnScrollHouse();
+    this.scrollTo.changeActiveOnScrollHouse();
   }
 
   setMenu() {
