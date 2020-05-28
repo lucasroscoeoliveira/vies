@@ -55,13 +55,13 @@ export class HouseProjectViewComponent implements OnInit {
 
   move(direction: string) {
     if (direction === 'right') {
-      if(!this.visibleRightArrow()){
+      if (!this.visibleRightArrow()) {
         return;
       }
       this.moveRight();
     }
     else {
-      if(!this.visibleLeftArrow()){
+      if (!this.visibleLeftArrow()) {
         return;
       }
       this.moveLeft();
@@ -72,7 +72,7 @@ export class HouseProjectViewComponent implements OnInit {
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     let keyPressed = event.keyCode;
-    switch(keyPressed){
+    switch (keyPressed) {
       case 39:
         this.move('right');
         break;
@@ -106,7 +106,10 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['casa/inicio', 'projetos']);
+    this.router.navigate(['casa/inicio', 'projetos'], {
+      queryParams:
+        { tab: this.filter }
+    });
     this.scroll.navigateToRoute(this.scroll.states.projects, 500);
   }
 

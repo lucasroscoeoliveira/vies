@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Image } from 'src/app/components-controllers/Slider';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 
 @Component({
@@ -17,13 +17,23 @@ export class HouseProjectsComponent implements OnInit {
   tabs: any;
   pagesLabel: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.currentPosition = 0;
     this.initializeImages();
     this.setInitialActive();
     this.initializeTabs();
+    this.checkForParamTab();
+  }
+
+  checkForParamTab() {
+    const tabFilter: string = this.route.snapshot.queryParamMap.get('tab');
+
+    if(tabFilter){
+      let selectedTab = this.tabs.find(tab => tab.filter === tabFilter);
+      this.selectTab(selectedTab);
+    }
   }
 
   filterProjects(selectedTab: any) {

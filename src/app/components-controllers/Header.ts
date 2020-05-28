@@ -21,8 +21,6 @@ export class Header {
       }
       return item;
     });
-
-    console.log(routeName);
   }
 }
 
