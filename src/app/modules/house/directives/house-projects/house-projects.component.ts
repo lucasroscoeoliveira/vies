@@ -29,10 +29,11 @@ export class HouseProjectsComponent implements OnInit {
 
   checkForParamTab() {
     const tabFilter: string = this.route.snapshot.queryParamMap.get('tab');
+    const currentPosition: number = parseInt(this.route.snapshot.queryParamMap.get('current_position'));
 
     if(tabFilter){
       let selectedTab = this.tabs.find(tab => tab.filter === tabFilter);
-      this.selectTab(selectedTab);
+      this.selectTab(selectedTab, currentPosition);
     }
   }
 
@@ -143,11 +144,11 @@ export class HouseProjectsComponent implements OnInit {
     }
   }
 
-  selectTab(selectedTab: any) {
+  selectTab(selectedTab: any, customCurrentPosition?: number) {
     let content = document.getElementsByTagName('app-house-projects')[0];
     content.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     
-    this.currentPosition = 0;
+    this.currentPosition = customCurrentPosition ? customCurrentPosition : 0;
     this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
       if(tab.filter === selectedTab.filter) {
         this.filterProjects(selectedTab);
@@ -173,12 +174,20 @@ export class HouseProjectsComponent implements OnInit {
   }
 
   setPagesLabel() {
-    this.pagesLabel = (this.currentPosition + 1) + '/' + this.images.length / this.countActive
+    this.pagesLabel = (this.currentPosition + 1) + '/' + Math.ceil(this.images.length / this.countActive)
   }
 
   viewProjectDetail(image: Image)
   {
-    this.router.navigate(['casa/projeto', image.id, image.filter]);
+    const selectedTab = this.tabs.find(tab => tab.selected);
+
+    this.router.navigate(['casa/projeto', image.id, image.filter], {
+      queryParams:
+      { 
+        tab: selectedTab.filter,
+        current_position: this.currentPosition
+      }
+    });
   }
 
   disableArrowLeft() {

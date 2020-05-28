@@ -17,6 +17,8 @@ export class HouseProjectViewComponent implements OnInit {
   images: any;
   filter: string;
   currIndex: number;
+  routeParameters: any;
+  pagesLabel: string;
 
   ngOnInit(): void {
     this.initVariables();
@@ -29,6 +31,19 @@ export class HouseProjectViewComponent implements OnInit {
     });
     this.currIndex = 0;
     this.initImages();
+    this.checkForTabParams();
+    this.setPagesLabel();
+  }
+
+  setPagesLabel() {
+    this.pagesLabel = (this.currIndex + 1) + '/' + this.images.length;
+  }
+
+  checkForTabParams() {
+    this.routeParameters = {
+      tab : this.route.snapshot.queryParamMap.get('tab'),
+      currentPosition: parseInt(this.route.snapshot.queryParamMap.get('current_position'))
+    }
   }
 
   initImages() {
@@ -67,6 +82,7 @@ export class HouseProjectViewComponent implements OnInit {
       this.moveLeft();
     }
     this.setImage();
+    this.setPagesLabel();
   }
 
   @HostListener('window:keydown', ['$event'])
@@ -108,7 +124,10 @@ export class HouseProjectViewComponent implements OnInit {
   goBack() {
     this.router.navigate(['casa/inicio', 'projetos'], {
       queryParams:
-        { tab: this.filter }
+        { 
+          tab: this.routeParameters.tab,
+          current_position: this.routeParameters.currentPosition
+        }
     });
     this.scroll.navigateToRoute(this.scroll.states.projects, 500);
   }

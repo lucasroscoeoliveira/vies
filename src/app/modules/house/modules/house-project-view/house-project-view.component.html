@@ -5,11 +5,9 @@
             <span class="text text--green text--large">Voltar</span>
         </div>
     
-        <div>
-            <!-- <app-vi-button (onClick)="openModal()" type='green'>
-                <span class="text text--white">Faça um orçamento</span>
-            </app-vi-button> -->
-        </div>
+        <span class="text text--small">
+            {{pagesLabel}}
+        </span>
 
     </div>
 
@@ -42,6 +40,11 @@
                 <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
             </div>
         </div>
+
+        <span class="pages text text--small">
+            {{pagesLabel}}
+        </span>
+
         <div class="button-right margin-left-1" (click)="move('right')">
             <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
                 <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
