@@ -26,7 +26,13 @@ export class ModalEmailComponent implements OnInit {
   }
 
   focusInputName() {
-    document.getElementById("name_input").focus();
+    if(!this.getIsMobile()){
+      document.getElementById("name_input").focus();
+    }
+  }
+
+  getIsMobile() {
+    return screen.width < 900
   }
 
   sendEmail() {

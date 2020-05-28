@@ -51,7 +51,7 @@ export class ScrollTo {
 
         setTimeout(() => {
             this.blockScrollEvent = false;
-        }, 1300);
+        }, 1500);
     }
 
     changeActiveOnScrollHouse() {
