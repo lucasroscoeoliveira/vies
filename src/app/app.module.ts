@@ -16,6 +16,7 @@ import { HouseModule } from './modules/house/house.module';
 import { DirectivesModule } from './directives/directives.module';
 
 import { Slider } from '../app/components-controllers/Slider';
+import { Social } from '../app/components-controllers/Social';
 import { Header } from '../app/components-controllers/Header';
 import { Menu } from '../app/components-controllers/Menu';
 import { Modal } from '../app/components-controllers/Modal';
@@ -62,7 +63,8 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     Modal,
     Toast,
     WhatsappService,
-    ClientAppService
+    ClientAppService,
+    Social,
   ],
   bootstrap: [AppComponent]
 })

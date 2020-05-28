@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Menu } from 'src/app/components-controllers/Menu';
 import { Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Social } from 'src/app/components-controllers/Social';
 
 @Component({
   selector: 'app-vi-menu',
@@ -14,7 +15,7 @@ export class ViMenuComponent implements OnInit {
   @Input() menu: Menu;
   @Input() type: string;
 
-  constructor(private router: Router, public scroll: ScrollTo) { }
+  constructor(private router: Router, public scroll: ScrollTo, public social: Social) { }
 
   ngOnInit(): void {
     this.menuOpened = false;

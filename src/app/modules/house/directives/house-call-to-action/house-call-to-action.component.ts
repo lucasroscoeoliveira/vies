@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WhatsappService } from 'src/app/services/whatsapp.service';
 import { Modal } from 'src/app/components-controllers/Modal';
 import { Toast } from 'src/app/components-controllers/Toast';
+import { Social } from 'src/app/components-controllers/Social';
 
 @Component({
   selector: 'app-house-call-to-action',
@@ -10,19 +11,29 @@ import { Toast } from 'src/app/components-controllers/Toast';
 })
 export class HouseCallToActionComponent implements OnInit {
 
-  socials: Array<string>;
+  socials: Array<any>;
 
   constructor(
     public whatsAppService: WhatsappService,
     public modal: Modal,
-    public toast: Toast) { }
+    public toast: Toast,
+    public social: Social) { }
 
   ngOnInit(): void {
 
     this.socials = [
-      './assets/imgs/logofacebook.jpg',
-      './assets/imgs/logoinstagram.jpg',
-      './assets/imgs/logoyoutube.jpg',
+      {
+        source: './assets/imgs/logofacebook.jpg',
+        clickEvent: this.social.goToFacebook
+      },
+      {
+        source: './assets/imgs/logoinstagram.jpg',
+        clickEvent: this.social.goToInstagram
+      },
+      {
+        source: './assets/imgs/logoyoutube.jpg',
+        clickEvent: this.social.goToYoutube
+      },
     ]
   }
 

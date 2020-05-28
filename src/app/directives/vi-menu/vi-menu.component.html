@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="menu-content__social">
-            <div class="menu-content__social__item clickable" *ngFor="let social of menu.socials">
+            <div (click)="social.clickEvent()" class="menu-content__social__item clickable" *ngFor="let social of menu.socials">
                 <app-vi-svg icon="{{social.name}}" [ngClass]="{'icon--green': type === 'house', 'icon--purple': type === 'fashion'}"></app-vi-svg>
             </div>
         </div>

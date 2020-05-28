@@ -37,4 +37,5 @@ export class HeaderMenuItem {
 @Injectable()
 export class HeaderSubMenuItem {
   name: string;
+  clickEvent: any;
 }

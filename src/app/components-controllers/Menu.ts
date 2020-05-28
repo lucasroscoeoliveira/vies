@@ -12,7 +12,6 @@ export class Menu {
   }
 }
 
-@Injectable()
 export class MenuMenuItem {
   name: string;
   subItems: Array<MenuSubMenuItem>;
@@ -21,7 +20,7 @@ export class MenuMenuItem {
   routeName?: string;
 }
 
-@Injectable()
 export class MenuSubMenuItem {
   name: string;
+  clickEvent: any;
 }

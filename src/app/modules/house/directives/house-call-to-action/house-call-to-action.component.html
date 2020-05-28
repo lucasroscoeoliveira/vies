@@ -23,7 +23,7 @@
         <div class="socials">
             <span class="text margin-bottom-2">Acompanhe nossas redes socias!</span>
             <div class="socials-container">
-                <img [src]="social" alt="" class="social-image" *ngFor="let social of socials">
+                <img [src]="social.source" (click)="social.clickEvent()" alt="" class="social-image" *ngFor="let social of socials">
             </div>
         </div>
     

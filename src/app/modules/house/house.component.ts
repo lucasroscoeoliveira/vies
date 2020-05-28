@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Social } from 'src/app/components-controllers/Social';
 
 @Component({
   selector: 'app-house',
@@ -13,14 +14,15 @@ import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 })
 export class HouseComponent implements OnInit {
   title = "casa";
-  menu: Menu;
-  header: Header;
 
   constructor(
     private titleService: Title,
     private metaTagService: Meta,
     private router: Router,
-    public scrollTo: ScrollTo
+    public scrollTo: ScrollTo,
+    public menu: Menu,
+    public header: Header,
+    public social: Social
   ) { }
 
   ngOnInit(): void {
@@ -98,19 +100,24 @@ export class HouseComponent implements OnInit {
 
     this.menu.socials = [
       {
-        name: "icon-facebook"
+        name: "icon-facebook",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-instagram"
+        name: "icon-instagram",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-pinterest"
+        name: "icon-pinterest",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-linkedin2"
+        name: "icon-linkedin2",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-youtube"
+        name: "icon-youtube",
+        clickEvent: this.social.goToFacebook
       },
     ]
   }
@@ -186,19 +193,24 @@ export class HouseComponent implements OnInit {
 
     this.header.socials = [
       {
-        name: "icon-facebook"
+        name: "icon-facebook",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-instagram"
+        name: "icon-instagram",
+        clickEvent: this.social.goToInstagram
       },
       {
-        name: "icon-pinterest"
+        name: "icon-pinterest",
+        clickEvent: this.social.goToPinterest
       },
       {
-        name: "icon-linkedin2"
+        name: "icon-linkedin2",
+        clickEvent: this.social.goToLinkedin
       },
       {
-        name: "icon-youtube"
+        name: "icon-youtube",
+        clickEvent: this.social.goToYoutube
       },
     ]
   }
