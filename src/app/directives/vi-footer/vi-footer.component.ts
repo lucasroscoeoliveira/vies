@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Social } from 'src/app/components-controllers/Social';
 
 @Component({
   selector: 'app-vi-footer',
@@ -12,24 +13,31 @@ export class ViFooterComponent implements OnInit {
 
   @Input() type: string;
 
-  constructor() { }
+  constructor(
+    public social: Social
+  ) { }
 
   ngOnInit(): void {
     this.socials = [
       {
-        name: "icon-facebook"
+        name: "icon-facebook",
+        clickEvent: this.social.goToFacebook
       },
       {
-        name: "icon-instagram"
+        name: "icon-instagram",
+        clickEvent: this.social.goToInstagram
       },
       {
-        name: "icon-pinterest"
+        name: "icon-pinterest",
+        clickEvent: this.social.goToPinterest
       },
       {
-        name: "icon-linkedin2"
+        name: "icon-linkedin2",
+        clickEvent: this.social.goToLinkedin
       },
       {
-        name: "icon-youtube"
+        name: "icon-youtube",
+        clickEvent: this.social.goToYoutube
       },
     ]
   }

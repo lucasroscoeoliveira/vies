@@ -10,11 +10,11 @@ export class Social {
   }
 
   goToFacebook() {
-      window.open('https://www.facebook.com/viesdesigncasa/');
+      window.open('https://www.facebook.com/viescasa/');
   }
 
   goToInstagram() {
-    window.open('https://www.instagram.com/viesdesigncasa/?hl=pt-br');
+    window.open('https://instagram.com/viescasa?igshid=9zzhn2xo4fq2');
   }
 
   goToPinterest() {
@@ -26,6 +26,6 @@ export class Social {
   }
 
   goToLinkedin() {
-    window.open('https://www.linkedin.com/company/vi%C3%A9s-design---ambientes-para-moda/');
+    window.open('https://www.linkedin.com/company/vi%C3%A9s-design---ambientes-para-moda/about/?viewAsMember=true');
   }
 }

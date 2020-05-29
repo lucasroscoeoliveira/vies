@@ -41,7 +41,7 @@
 
         <div class="icons">
             <span class="text text--white">Acompanhe nossas redes sociais: </span>
-            <div class="social-icon clickable" *ngFor="let social of socials">
+            <div class="social-icon clickable" (click)="social.clickEvent()" *ngFor="let social of socials">
                 <app-vi-svg icon="{{social.name}}"></app-vi-svg>
             </div>
         </div>
@@ -49,7 +49,7 @@
 
     <div class="bottom-container bottom-mobile mobile">
         <div class="icons">
-            <div class="social-icon clickable" *ngFor="let social of socials">
+            <div class="social-icon clickable" *ngFor="let social of socials" (click)="social.clickEvent()">
                 <app-vi-svg icon="{{social.name}}"></app-vi-svg>
             </div>
         </div>

@@ -105,19 +105,19 @@ export class HouseComponent implements OnInit {
       },
       {
         name: "icon-instagram",
-        clickEvent: this.social.goToFacebook
+        clickEvent: this.social.goToInstagram
       },
       {
         name: "icon-pinterest",
-        clickEvent: this.social.goToFacebook
+        clickEvent: this.social.goToPinterest
       },
       {
         name: "icon-linkedin2",
-        clickEvent: this.social.goToFacebook
+        clickEvent: this.social.goToLinkedin
       },
       {
         name: "icon-youtube",
-        clickEvent: this.social.goToFacebook
+        clickEvent: this.social.goToYoutube
       },
     ]
   }

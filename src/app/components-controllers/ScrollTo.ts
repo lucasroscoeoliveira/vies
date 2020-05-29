@@ -21,7 +21,7 @@ export class ScrollTo {
         return ScrollTo.instance = ScrollTo.instance || this;
     }
 
-    navigateToRoute(routeName: string, timeout: number | null) {
+    navigateToRoute(routeName: string, timeout: number) {
         this.blockScrollEvent = true;
 
         setTimeout(() => {
