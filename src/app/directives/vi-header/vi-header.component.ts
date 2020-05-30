@@ -60,6 +60,8 @@ export class ViHeaderComponent implements OnInit {
     this.header.setActive(route);
   }
 
+  
+
   getMainLogo() {
     if(this.type === 'house'){
       return './assets/imgs/logo-casa-horizontal.png';

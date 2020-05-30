@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Social } from 'src/app/components-controllers/Social';
+import { ClientModel } from 'src/app/models/ClientModel';
+import { ClientAppService } from 'src/app/services/client-app.service';
+import { Toast } from 'src/app/components-controllers/Toast';
 
 @Component({
   selector: 'app-vi-footer',
@@ -10,14 +13,20 @@ export class ViFooterComponent implements OnInit {
 
   email: string;
   socials: any;
+  client: ClientModel;
 
   @Input() type: string;
 
   constructor(
-    public social: Social
+    public social: Social,
+    public clientAppService: ClientAppService,
+    public toast: Toast
   ) { }
 
   ngOnInit(): void {
+    this.client = new ClientModel();
+    this.client.Name = "Sem nome";
+    this.client.Subscribe = true;
     this.socials = [
       {
         name: "icon-facebook",
@@ -43,6 +52,20 @@ export class ViFooterComponent implements OnInit {
   }
 
   sendEmail() {
-
+    let mailData = {
+      message: "Gostaria de receber a NewsLetter da Vies Design",
+      from: 'Vies Casa'
+    }
+    this.clientAppService.create(
+      this.client,
+      mailData
+    ).subscribe(
+      (res: any) => {
+        this.toast.success('Email enviado com sucesso! A partir de agora você irá receber as novidades da Viés!', 4);
+      },
+      (err) => {
+        this.toast.error(err);
+      }
+    )
   }
 }

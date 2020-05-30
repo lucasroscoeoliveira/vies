@@ -14,10 +14,10 @@ export class ClientAppService {
     this.api = environment.api + '/clients';
   }
 
-  create(client: ClientModel, message: string) {
+  create(client: ClientModel, mailData: any) {
     return this.http.post(`${this.api}`, {
       client: client,
-      message: message
+      mailData: mailData
     });
   }
 

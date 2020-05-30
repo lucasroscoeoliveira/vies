@@ -36,9 +36,13 @@ export class ModalEmailComponent implements OnInit {
   }
 
   sendEmail() {
+    let mailData = {
+      message: this.message,
+      from: 'Vies Casa'
+    }
     this.clientAppService.create(
       this.client,
-      this.message
+      mailData
     ).subscribe(
       (res: any) => {
         this.toast.success('Email enviado com sucesso! Em breve retornaremos!');
