@@ -1,25 +1,26 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
-import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
+import ImagesConstants from 'src/app/utils/ImagesConstants';
 
 @Component({
-  selector: 'app-house-prize-view',
-  templateUrl: './house-prize-view.component.html',
-  styleUrls: ['./house-prize-view.component.scss']
+  selector: 'app-prize-view',
+  templateUrl: './prize-view.component.html',
+  styleUrls: ['./prize-view.component.scss']
 })
-export class HousePrizeViewComponent implements OnInit {
+export class PrizeViewComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute, 
     private router: Router, 
-    public scroll: ScrollTo) { }
-
+    public scroll: ScrollTo
+  ) { }
   id: number;
   image: any;
   images: any;
   currIndex: number;
   pagesLabel: string;
+  @Input() type: string;
 
   ngOnInit(): void {
     this.initVariables();
@@ -28,6 +29,7 @@ export class HousePrizeViewComponent implements OnInit {
   initVariables() {
     this.route.params.subscribe(params => {
       this.id = +params['id'];
+      this.type = params['type'] === 'casa' ? 'house' : 'fashion';
     });
     this.currIndex = this.id ? this.id - 1 : 0;
     this.initImages();
@@ -44,7 +46,7 @@ export class HousePrizeViewComponent implements OnInit {
   }
 
   getImages() {
-    this.images = HouseProjectConstants.PRIZES;
+    this.images = ImagesConstants.PRIZES;
   }
 
   setImage() {
@@ -93,8 +95,15 @@ export class HousePrizeViewComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['casa/premios']);
-    this.scroll.navigateToRoute(this.scroll.states.projects, 500);
+    let routeType = this.getRouteNameFromType();
+    this.router.navigate(['premios', routeType]);
+  }
+
+  getRouteNameFromType() {
+    if(this.type === 'fashion'){
+      return 'negocio';
+    }
+    return 'casa';
   }
 
   @HostListener('window:keydown', ['$event'])
@@ -108,5 +117,4 @@ export class HousePrizeViewComponent implements OnInit {
         this.move('left');
     }
   }
-
 }

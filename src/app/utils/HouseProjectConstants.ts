@@ -2448,43 +2448,4 @@ export default class HouseProjectConstants {
       filter: HouseProjectConstants.FILTERS.HOME_OFFICE
     },
   ]
-
-  static readonly PRIZES = [
-    {
-      id: 1,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1
-    },
-    {
-      id: 2,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2
-    },
-    {
-      id: 3,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3
-    },
-    {
-      id: 4,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4
-    },
-    {
-      id: 5,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_5
-    },
-    {
-      id: 6,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_6
-    },
-    {
-      id: 7,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_7
-    },
-    {
-      id: 8,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_8
-    },
-    {
-      id: 9,
-      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_9
-    },
-  ]
 }

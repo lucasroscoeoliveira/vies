@@ -1,7 +1,11 @@
 .text {
-  font-family: Roboto;
+  font-family: Century-Gothic;
   font-size: 1.1rem !important;
   color: #7f7f7f;
+
+  &--disco {
+    font-family: Disco !important;
+  }
 
   &--small {
     font-size: 0.9rem !important;
@@ -44,7 +48,7 @@
   }
 
   &--bold {
-    font-weight: 500;
+    font-weight: bold;
   }
 
   &--thin {
@@ -67,4 +71,3 @@
     text-decoration: underline;
   }
 }
-

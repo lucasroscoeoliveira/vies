@@ -30,7 +30,11 @@
       </div>
     </div>
 
-    <app-vi-button type='green' class="budget" (onClick)="navigateToHouse('contato')"> 
+    <app-vi-button *ngIf="type === 'house'" type='green' class="budget" (onClick)="navigateToHouse('contato')"> 
+      <span class="text text--white">Quero um orçamento</span>
+    </app-vi-button>
+
+    <app-vi-button *ngIf="type === 'fashion'" type='purple' class="budget" (onClick)="navigateToFashion('contato')"> 
       <span class="text text--white">Quero um orçamento</span>
     </app-vi-button>
   </div>

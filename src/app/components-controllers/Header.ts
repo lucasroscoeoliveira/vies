@@ -13,6 +13,9 @@ export class Header {
   }
 
   setActive(routeName: string){
+    if(!this.items){
+      return;
+    }
     this.items = this.items.map((item) => {
       if(item.routeName === routeName){
         item.focused = true;

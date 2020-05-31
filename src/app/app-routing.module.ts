@@ -4,12 +4,11 @@ import { LoginComponent } from './modules/login/login.component';
 import { FashionComponent } from './modules/fashion/fashion.component';
 import { HouseComponent } from './modules/house/house.component';
 import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
-import { HousePrizeComponent } from './modules/house/modules/house-prize/house-prize.component';
+import { PrizeViewComponent } from './modules/prize-view/prize-view.component';
+import { PrizeComponent } from './modules/prize/prize.component';
 import { HouseQuizComponent } from './modules/house/modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house/modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house/modules/house-main/house-main.component';
-import { HouseProjectViewComponent } from './modules/house/modules/house-project-view/house-project-view.component';
-import { HousePrizeViewComponent } from './modules/house/modules/house-prize-view/house-prize-view.component';
 
 const routes: Routes = [
   {
@@ -19,7 +18,15 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   },
   {
-    path: 'moda', component: FashionComponent
+    path: 'premios/detalhe/:type/:id',
+    component: PrizeViewComponent,
+  },
+  {
+    path: 'premios/:type',
+    component: PrizeComponent,
+  },
+  {
+    path: 'negocio', component: FashionComponent
   },
   {
     path: 'casa', 
@@ -37,18 +44,6 @@ const routes: Routes = [
       {
         path: 'inicio/:session',
         component: HouseMainComponent,
-      },
-      {
-        path: 'projeto/:id/:tab',
-        component: HouseProjectViewComponent,
-      },
-      {
-        path: 'premios/detalhe/:id',
-        component: HousePrizeViewComponent,
-      },
-      {
-        path: 'premios',
-        component: HousePrizeComponent,
       },
       {
         path: 'quiz',

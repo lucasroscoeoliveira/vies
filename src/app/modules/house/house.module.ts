@@ -12,9 +12,7 @@ import { HousePrizeComponent } from './modules/house-prize/house-prize.component
 import { HouseQuizComponent } from './modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house-main/house-main.component';
-import { HouseProjectViewComponent } from './modules/house-project-view/house-project-view.component';
 import { HousePresentationComponent } from './directives/house-presentation/house-presentation.component';
-import { HousePrizeViewComponent } from './modules/house-prize-view/house-prize-view.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +26,7 @@ import { HousePrizeViewComponent } from './modules/house-prize-view/house-prize-
     HouseQuizComponent,
     HouseServicesComponent,
     HouseMainComponent,
-    HouseProjectViewComponent,
     HousePresentationComponent,
-    HousePrizeViewComponent
   ],
   imports: [
     CommonModule,

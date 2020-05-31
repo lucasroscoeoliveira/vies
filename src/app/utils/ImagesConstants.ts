@@ -1,6 +1,16 @@
 import { environment } from 'src/environments/environment';
 
 export default class ImagesConstants {
+
+    static readonly FASHION_IMAGES = {
+        MOBILE: {
+            MOB_CLARA_1: environment.s3_public + '/Fashion/Mobile/1-MOB-CLARA.jpg',
+            MOB_OTICA_2: environment.s3_public + '/Fashion/Mobile/2-MOB-OTICA.jpg',
+            MOB_VANZI_3: environment.s3_public + '/Fashion/Mobile/3-MOB-VANZI.jpg',
+            MOB_LAJU_4: environment.s3_public + '/Fashion/Mobile/4-MOB-LAJU.jpg',
+            MOB_SALAO_5: environment.s3_public + '/Fashion/Mobile/5-MOB-SALAO.jpg'
+        },
+    }
     
     static readonly HOUSE_IMAGES = {
         SALA_SANTA_AMELIA_1: environment.s3_public + '/House/1-SALA-SANTA-AMELIA.jpg',
@@ -471,4 +481,43 @@ export default class ImagesConstants {
         MARINA: environment.s3_public + '/MARINA.jpg',
         AMANDA: environment.s3_public + '/AMANDA.jpg',
     }
+
+    static readonly PRIZES = [
+        {
+          id: 1,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1
+        },
+        {
+          id: 2,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2
+        },
+        {
+          id: 3,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3
+        },
+        {
+          id: 4,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4
+        },
+        {
+          id: 5,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_5
+        },
+        {
+          id: 6,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_6
+        },
+        {
+          id: 7,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_7
+        },
+        {
+          id: 8,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_8
+        },
+        {
+          id: 9,
+          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_9
+        },
+      ]
 }

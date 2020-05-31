@@ -1,4 +1,4 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .login {
   display: flex;
@@ -7,9 +7,10 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow: auto;
 
   .main-container {
-    padding-top: 3em;
+    padding-top: 1em;
     flex-grow: 1;
     min-height: 0;
     display: flex;
@@ -19,7 +20,55 @@
     width: 100%;
 
     .img-logo {
-      max-height: 45%;
+      max-height: 3em;
+    }
+
+    .sector-container {
+      padding: 0.5em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .content {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        cursor: pointer;
+
+        &--purple {
+          &:hover {
+            box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+          }
+        }
+
+        &--green {
+          &:hover {
+            box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
+          }
+        }
+
+        .content-image {
+          object-fit: fill;
+          display: flex;
+          grid-column-start: 1;
+          grid-row-start: 1;
+          grid-column-end: 2;
+          grid-column-end: 2;
+          justify-content: center;
+          align-items: center;
+
+          .image {
+            transition: all 0.6s;
+            max-height: 29vh;
+            object-fit: contain;
+            border-radius: 5px;
+          }
+        }
+      }
     }
 
     .buttons-container {
@@ -28,17 +77,21 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: 3em;
+      flex-grow: 1;
     }
   }
 
   .footer {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .transparent {
+    opacity: 0;
   }
 }
 
@@ -47,6 +100,34 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
+}
+
+
+@media only screen and (min-width: 901px) {
+  .label-btn {
+    font-size: 1.4rem !important;
+  }
+
+  .img-logo {
+    max-height: 8em !important;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+
+  .image {
+    max-height: unset !important;
+  }
+
+  .choose {
+    margin-bottom: 2em;
+  }
+
+  .sector-container {
+    padding: 1.5em !important;
+  }
 }

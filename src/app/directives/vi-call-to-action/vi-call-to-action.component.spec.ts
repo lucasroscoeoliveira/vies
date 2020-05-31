@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HouseProjectViewComponent } from './house-project-view.component';
+import { ViCallToActionComponent } from './vi-call-to-action.component';
 
-describe('HouseProjectViewComponent', () => {
-  let component: HouseProjectViewComponent;
-  let fixture: ComponentFixture<HouseProjectViewComponent>;
+describe('ViCallToActionComponent', () => {
+  let component: ViCallToActionComponent;
+  let fixture: ComponentFixture<ViCallToActionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HouseProjectViewComponent ]
+      declarations: [ ViCallToActionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HouseProjectViewComponent);
+    fixture = TestBed.createComponent(ViCallToActionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

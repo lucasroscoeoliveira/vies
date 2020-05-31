@@ -16,6 +16,14 @@
   }
 }
 
+.purple {
+  background-color: $color-purple;
+
+  &:focus {
+    background-color: $color-purple-2;
+  }
+}
+
 .danger {
   background-color: $color-danger;
 

@@ -31,6 +31,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ModalComponent } from './modal/modal.component';
 import { ModalEmailComponent } from './modal/directives/modal-email/modal-email.component';
 import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
+import { PrizeViewComponent } from './modules/prize-view/prize-view.component';
+import { PrizeComponent } from './modules/prize/prize.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
     ModalEmailComponent,
     ModalComponent,
     WhoWeAreComponent,
+    PrizeViewComponent,
+    PrizeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'vies'}),

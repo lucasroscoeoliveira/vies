@@ -28,19 +28,19 @@ export class ScrollTo {
             let content = null;
             switch (routeName) {
                 case this.states.projects:
-                    content = document.getElementsByTagName('app-house-projects')[0];
+                    content = document.getElementById('house-projects');
                     break;
                 case this.states.quiz:
-                    content = document.getElementsByTagName('app-house-discover-style')[0];
+                    content = document.getElementById('house-discover-style');
                     break;
                 case this.states.contact:
-                    content = document.getElementsByTagName('app-house-call-to-action')[0];
+                    content = document.getElementById('house-call-to-action');
                     break;
                 case this.states.services:
-                    content = document.getElementsByTagName('app-house-services-session')[0];
+                    content = document.getElementById('house-services-session');
                     break;
                 case this.states.vies:
-                    content = document.getElementsByTagName('app-vi-slider')[0];
+                    content = document.getElementById('house-slider');
                     break;
             }
             if (content) {

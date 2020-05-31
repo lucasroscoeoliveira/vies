@@ -1,25 +1,24 @@
-<main class="project-view" >
-    <div class="project-view__header">
+
+<main class="prize-view" >
+    <app-vi-header class="desktop" [type]="type"></app-vi-header>
+    <div class="prize-view__header">
         <div class="go-back clickable" (click)="goBack()">
             <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-            <span class="text text--green text--large">Voltar</span>
+            <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large">Voltar</span>
         </div>
     
-        <span class="text page-label">
+        <span class="text text--small">
             {{pagesLabel}}
         </span>
 
-        <div class="separator"></div>
-
     </div>
 
-    <div class="project-view__body">
+    <div class="prize-view__body">
         <div class="image-container"       
             (swiperight)="move('left')" 
             (swipeleft)="move('right')">
             <div class="display" *ngIf="image && image.source">
                 <img [src]="image.source" alt="" unselectable="on">
-                <img *ngIf="image.sourceBefore" [src]="image.sourceBefore" alt="" unselectable="on">
             </div>
 
             <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">

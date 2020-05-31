@@ -1,4 +1,4 @@
-@import '../../../../../styles.scss';
+@import '../../../styles.scss';
 
 .content {
     width: 100%;
@@ -7,6 +7,7 @@
     justify-content: center;
     padding: 1em;
     align-items: center;
+    overflow: auto;
 
     .images-container {
         display: flex;
@@ -19,7 +20,7 @@
             background-color: $color-white;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             margin: 1em;
-            max-width: 26em;
+            max-width: 30em;
 
             &:hover {
                 box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
