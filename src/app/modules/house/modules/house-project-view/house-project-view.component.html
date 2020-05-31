@@ -1,0 +1,56 @@
+<main class="project-view" >
+    <div class="project-view__header">
+        <div class="go-back clickable" (click)="goBack()">
+            <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+            <span class="text text--green text--large">Voltar</span>
+        </div>
+    
+        <span class="text">
+            {{pagesLabel}}
+        </span>
+
+        <div></div>
+
+    </div>
+
+    <div class="project-view__body">
+        <div class="image-container"       
+            (swiperight)="move('left')" 
+            (swipeleft)="move('right')">
+            <div class="display" *ngIf="image && image.source">
+                <img [src]="image.source" alt="" unselectable="on">
+                <img *ngIf="image.sourceBefore" [src]="image.sourceBefore" alt="" unselectable="on">
+            </div>
+
+            <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">
+                <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
+                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                </div>
+            </div>
+        
+            <div class="button-right desktop" (click)="move('right')" [hidden]="!images || images.length <= 1">
+                <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
+                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="buttons-mobile mobile" [hidden]="!images || images.length <= 1">
+        <div class="button-left margin-right-1" (click)="move('left')">
+            <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
+                <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+            </div>
+        </div>
+
+        <div class="button-right margin-left-1" (click)="move('right')">
+            <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
+                <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+

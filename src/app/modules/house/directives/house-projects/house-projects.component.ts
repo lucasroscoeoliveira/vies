@@ -121,8 +121,7 @@ export class HouseProjectsComponent implements OnInit {
 
   move(direction: string) {
     this.setCountActive();
-    let maxPosition = Math.floor(this.images.length / this.countActive);
-
+    let maxPosition = Math.ceil(this.images.length / this.countActive);
     if(direction === 'right' && this.currentPosition < maxPosition - 1) {
         this.currentPosition ++;
     } else if(direction === 'left' && this.currentPosition > 0){
@@ -180,7 +179,6 @@ export class HouseProjectsComponent implements OnInit {
   viewProjectDetail(image: Image)
   {
     const selectedTab = this.tabs.find(tab => tab.selected);
-
     this.router.navigate(['casa/projeto', image.id, image.filter], {
       queryParams:
       { 
@@ -195,6 +193,8 @@ export class HouseProjectsComponent implements OnInit {
   }
 
   disableArrowRight() {
-    return ((this.currentPosition + 1) * this.countActive) >= this.images.length;
+    let maxPosition = Math.ceil(this.images.length / this.countActive);
+
+    return ((this.currentPosition + 1) >= maxPosition);
   }
 }

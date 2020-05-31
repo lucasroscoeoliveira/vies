@@ -42,7 +42,7 @@ import { PrizeComponent } from './modules/prize/prize.component';
     ModalComponent,
     WhoWeAreComponent,
     PrizeViewComponent,
-    PrizeComponent
+    PrizeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'vies'}),

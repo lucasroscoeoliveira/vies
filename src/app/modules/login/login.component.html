@@ -7,9 +7,9 @@
 
       <div class="sector-container">
         <div class="content">
-          <div class="content-image content--green" *ngFor="let image of houseImages">
+          <a routerLink="/casa" class="content-image content--green" *ngFor="let image of houseImages">
             <img [src]="image.source" alt="" class="image image--green" [ngClass]="{'transparent': !image.active}">
-          </div>
+          </a>
         </div>
 
         <app-vi-button [type]='"white"' class="margin-top-2">
@@ -23,9 +23,9 @@
 
       <div class="sector-container">
         <div class="content">
-          <div class="content-image content--purple" *ngFor="let image of fashionImages">
+          <a routerLink="/negocio" class="content-image content--purple" *ngFor="let image of fashionImages">
             <img [src]="image.source" alt="" class="image image--purple" [ngClass]="{'transparent': !image.active}">
-          </div>
+          </a>
         </div>
         <app-vi-button [type]='"white"' class="margin-top-2">
           <a routerLink="/negocio" routerLinkActive="active">
