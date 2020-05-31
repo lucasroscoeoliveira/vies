@@ -46,6 +46,7 @@ export default class HouseProjectConstants {
     HOME_OFFICE_KATIA: 29,
     COZINHA_CICA: 30,
     COZINHA_HELOISA: 31,
+    COZINHA_JOICE: 32,
     COZINHA_PAULO: 33,
     COZINHA_REGIANE: 34,
     SALA_JOICE: 35,
@@ -53,6 +54,7 @@ export default class HouseProjectConstants {
     SALA_PAULO: 37,
     QUARTO_REGIANE: 38,
     QUARTO_PAULO: 39,
+    HOME_OFFICE_MORAR_MAIS: 40
   }
 
   static readonly PROJECTS = [
@@ -865,12 +867,6 @@ export default class HouseProjectConstants {
       filter: HouseProjectConstants.FILTERS.ROOM
     },
   ]
-
-
-
-
-
-
 
   static readonly PROJECTS_DETAIL = [
     {
@@ -1975,6 +1971,520 @@ export default class HouseProjectConstants {
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
       filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_GABRIEL,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_GABRIEL,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_GABRIEL,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_4_BEFORE_2,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_2,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_GABRIEL,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_THEO,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_THEO,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_THEO,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_4_BEFORE_2,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_2,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_THEO,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.HOME_OFFICE_KATIA.HOME_OFFICE_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.HOME_OFFICE_KATIA,
+      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.HOME_OFFICE_KATIA.HOME_OFFICE_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.HOME_OFFICE_KATIA,
+      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_PAULO,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_PAULO,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_PAULO,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_5_BEFORE_2,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_2,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4_BEFORE_2,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_2,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_5_BEFORE_3,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_3,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_6_BEFORE_4,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_4_BEFORE_1,
+      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_1,
+      active: false,
+      beforeAfter: true,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
+      filter: HouseProjectConstants.FILTERS.ROOM
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.HOME_OFFICE_MORAR_MAIS.HOME_OFFICE_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.HOME_OFFICE_MORAR_MAIS,
+      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.HOME_OFFICE_MORAR_MAIS.HOME_OFFICE_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.HOME_OFFICE_MORAR_MAIS,
+      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.HOME_OFFICE_MORAR_MAIS.HOME_OFFICE_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.HOME_OFFICE_MORAR_MAIS,
+      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
+    },
+  ]
+
+  static readonly PRIZES = [
+    {
+      id: 1,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1
+    },
+    {
+      id: 2,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2
+    },
+    {
+      id: 3,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3
+    },
+    {
+      id: 4,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4
+    },
+    {
+      id: 5,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_5
+    },
+    {
+      id: 6,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_6
+    },
+    {
+      id: 7,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_7
+    },
+    {
+      id: 8,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_8
+    },
+    {
+      id: 9,
+      source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_9
     },
   ]
 }

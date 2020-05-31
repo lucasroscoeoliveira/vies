@@ -37,6 +37,9 @@ export class HouseProjectViewComponent implements OnInit {
 
   setPagesLabel() {
     this.pagesLabel = (this.currIndex + 1) + '/' + this.images.length;
+    if(this.image.sourceBefore){
+      this.pagesLabel += ' (Antes X Depois)';
+    }
   }
 
   checkForTabParams() {
@@ -47,6 +50,7 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   initImages() {
+    debugger;
     this.getImages();
     this.setImage();
   }

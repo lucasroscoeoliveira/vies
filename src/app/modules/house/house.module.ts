@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from '../../app-routing.module';
 import { HouseComponent } from './house.component';
 import { HouseCallToActionComponent } from './directives/house-call-to-action/house-call-to-action.component';
 import { HouseServicesSessionComponent } from './directives/house-services-session/house-services-session.component';
@@ -13,7 +14,7 @@ import { HouseServicesComponent } from './modules/house-services/house-services.
 import { HouseMainComponent } from './modules/house-main/house-main.component';
 import { HouseProjectViewComponent } from './modules/house-project-view/house-project-view.component';
 import { HousePresentationComponent } from './directives/house-presentation/house-presentation.component';
-import { AppRoutingModule } from '../../app-routing.module';
+import { HousePrizeViewComponent } from './modules/house-prize-view/house-prize-view.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AppRoutingModule } from '../../app-routing.module';
     HouseServicesComponent,
     HouseMainComponent,
     HouseProjectViewComponent,
-    HousePresentationComponent
+    HousePresentationComponent,
+    HousePrizeViewComponent
   ],
   imports: [
     CommonModule,
