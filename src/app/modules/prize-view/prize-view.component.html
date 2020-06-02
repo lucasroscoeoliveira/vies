@@ -1,17 +1,9 @@
 
 <main class="prize-view" >
     <app-vi-header class="desktop"></app-vi-header>
-    <div class="prize-view__header">
-        <div class="go-back clickable" (click)="goBack()">
-            <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
-            <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large">Voltar</span>
-        </div>
-    
-        <span class="text text--small">
-            {{pagesLabel}}
-        </span>
-
-    </div>
+    <app-vi-navigation-header [title]="'Prêmio'" type='neutral' (onGoBack)="goBack()">
+        <span class="text text--white">{{pagesLabel}}</span>    
+    </app-vi-navigation-header>
 
     <div class="prize-view__body">
         <div class="image-container"       
