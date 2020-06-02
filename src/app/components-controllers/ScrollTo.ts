@@ -64,7 +64,7 @@ export class ScrollTo {
       }
       if (content) {
         this.header.setActive(routeName);
-        content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        content.scrollIntoView();
       }
     }, timeout);
 
