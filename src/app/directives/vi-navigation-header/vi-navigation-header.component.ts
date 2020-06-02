@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-vi-navigation-header',
@@ -8,10 +9,9 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 export class ViNavigationHeaderComponent implements OnInit {
 
   @Input() title: string;
-  @Input() type: string;
   @Output() onGoBack = new EventEmitter();
 
-  constructor() { }
+  constructor(public header: Header) { }
 
   ngOnInit(): void {
   }

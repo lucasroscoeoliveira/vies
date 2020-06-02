@@ -6,26 +6,6 @@
     display: flex;
     flex-direction: column;
 
-    &__header {
-        width: 100%;
-        padding: 0.5em 1em;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
-
-        .go-back {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            app-vi-svg {
-                display: flex;
-                color: $color-green;
-                font-size: 2em;
-                align-items: center;
-            }
-        }
-    }
-
     &__body {
         flex-grow: 1;
         display: grid;
