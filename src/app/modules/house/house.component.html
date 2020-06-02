@@ -1,11 +1,11 @@
 
 <main class="house-container">
-    <app-vi-header class="desktop" type='house'></app-vi-header>
+    <app-vi-header class="desktop"></app-vi-header>
     <div class="house" id="house-scroll-container" (scroll)="onScroll($event)">
         <router-outlet></router-outlet>
     </div>
 </main>
-<app-vi-menu class="mobile" [menu]="menu" type='house'></app-vi-menu>  
+<app-vi-menu class="mobile"></app-vi-menu>  
 <app-vi-toast></app-vi-toast>
 <app-vi-social class="relative"></app-vi-social>
 

@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Slider } from 'src/app/components-controllers/Slider';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import { Header } from 'src/app/components-controllers/Header';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-house-main',
-  templateUrl: './house-main.component.html',
-  styleUrls: ['./house-main.component.scss']
+  selector: 'app-fashion-main',
+  templateUrl: './fashion-main.component.html',
+  styleUrls: ['./fashion-main.component.scss']
 })
-export class HouseMainComponent implements OnInit {
+export class FashionMainComponent implements OnInit {
+
   title = "início";
   imageConstants: ImagesConstants;
   session: string;
@@ -19,7 +19,8 @@ export class HouseMainComponent implements OnInit {
     public slider: Slider,
     public header: Header,
     private route: ActivatedRoute, 
-    private router: Router) { }
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.initializeRouteParams();
@@ -34,7 +35,7 @@ export class HouseMainComponent implements OnInit {
       if(this.session){
         this.header.setActive(this.session);
       } else {
-        this.router.navigate(['casa/inicio', 'vies']);
+        this.router.navigate(['negocio/inicio', 'vies']);
         this.header.setActive('vies');
       }
     }
@@ -44,34 +45,35 @@ export class HouseMainComponent implements OnInit {
     this.slider.items = [
       {
         id: 1,
-        source: './assets/imgs/1-SALA-SANTA-AMELIA.jpg',
-        sourceMobile: './assets/imgs/mobile/1-MOB-SALA-SANTA-AMELIA.jpg',
+        source: './assets/imgs/1-CLARA.jpg',
+        sourceMobile: './assets/imgs/mobile/1-MOB-CLARA.jpg',
         active: true,
       },
       {
         id: 2,
-        source: ImagesConstants.HOUSE_IMAGES.DESKTOP.MORAR_MAIS_2,
-        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_MORAR_MAIS_2,
+        source: ImagesConstants.FASHION_IMAGES.DESKTOP.OTICA,
+        sourceMobile: ImagesConstants.FASHION_IMAGES.MOBILE.MOB_OTICA_2,
         active: false,
       },
       {
         id: 3,
-        source: ImagesConstants.HOUSE_IMAGES.DESKTOP.SALAS_SAVASSI_3,
-        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALAS_SAVASSI_3,
+        source: ImagesConstants.FASHION_IMAGES.DESKTOP.VANZI,
+        sourceMobile: ImagesConstants.FASHION_IMAGES.MOBILE.MOB_VANZI_3,
         active: false,
       },
       {
         id: 4,
-        source: ImagesConstants.HOUSE_IMAGES.DESKTOP.SALAS_BURITIS_4,
-        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_SALA_BURITIS_4,
+        source: ImagesConstants.FASHION_IMAGES.DESKTOP.LAJU,
+        sourceMobile: ImagesConstants.FASHION_IMAGES.MOBILE.MOB_LAJU_4,
         active: false,
       },
       {
         id: 5,
-        source: ImagesConstants.HOUSE_IMAGES.DESKTOP.COZINHA_SION_5,
-        sourceMobile: ImagesConstants.HOUSE_IMAGES.MOBILE.MOB_COZINHA_SION_5,
+        source: ImagesConstants.FASHION_IMAGES.DESKTOP.SALAO,
+        sourceMobile: ImagesConstants.FASHION_IMAGES.MOBILE.MOB_SALAO_5,
         active: false,
       },
     ]
   }
+
 }

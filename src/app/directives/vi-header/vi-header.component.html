@@ -3,17 +3,17 @@
     <div (click)="onClick(item.routeName)" class="clickable header__item" *ngFor="let item of header.items" mat-menu-item>
       <div class="header__item__container">
         <div *ngIf="!item.logo" class="text-container">
-          <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
+          <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
         </div>
         <div class="logo" *ngIf="item.logo">
-          <img class="logo--img clickable" [src]="getMainLogo()">
+          <img class="logo--img clickable" [src]="getMainLogo()" (click)="changeVies('main')">
         </div>
-        <div class="active" [hidden]="!item.focused" [ngClass]="{'active--green': type === 'house', 'active--purple': type === 'fashion'}">
+        <div class="active" [hidden]="!item.focused" [ngClass]="{'active--green': header.type === 'house', 'active--purple': header.type === 'fashion'}">
         </div>
       </div>
 
   
-      <div class="header__menu" [ngClass]="{'header__menu--green': type === 'house', 'header__menu--purple': type === 'fashion'}">
+      <div class="header__menu" [ngClass]="{'header__menu--green': header.type === 'house', 'header__menu--purple': header.type === 'fashion'}">
         <div class="header__menu__item clickable" *ngFor="let subItem of item.subItems">
           <span class="text text--white text--small unselectable">{{subItem.name}}</span>
         </div>
@@ -21,20 +21,20 @@
     </div>
   
     <div class="header__item clickable header__social" *ngFor="let social of header.socials">
-      <app-vi-svg icon="{{social.name}}" (click)="social.clickEvent()" class="icon" [ngClass]="{'icon--green': type === 'house', 'icon--purple': type === 'fashion'}"></app-vi-svg>
+      <app-vi-svg icon="{{social.name}}" (click)="social.clickEvent()" class="icon" [ngClass]="{'icon--green': header.type === 'house', 'icon--purple': header.type === 'fashion'}"></app-vi-svg>
     </div>
   
     <div class="header__item">
       <div class="logo">
-        <img class="logo--img clickable" [src]="getSecondaryLogo()">
+        <img class="logo--img clickable" [src]="getSecondaryLogo()" (click)="changeVies('secondary')">
       </div>
     </div>
 
-    <app-vi-button *ngIf="type === 'house'" type='green' class="budget" (onClick)="navigateToHouse('contato')"> 
+    <app-vi-button *ngIf="header.type === 'house'" type='green' class="budget" (onClick)="navigateToHouse('contato')"> 
       <span class="text text--white">Quero um orçamento</span>
     </app-vi-button>
 
-    <app-vi-button *ngIf="type === 'fashion'" type='purple' class="budget" (onClick)="navigateToFashion('contato')"> 
+    <app-vi-button *ngIf="header.type === 'fashion'" type='purple' class="budget" (onClick)="navigateToFashion('contato')"> 
       <span class="text text--white">Quero um orçamento</span>
     </app-vi-button>
   </div>

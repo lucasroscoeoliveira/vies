@@ -1,25 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-house-presentation',
-  templateUrl: './house-presentation.component.html',
-  styleUrls: ['./house-presentation.component.scss']
+  selector: 'app-fashion-presentation',
+  templateUrl: './fashion-presentation.component.html',
+  styleUrls: ['./fashion-presentation.component.scss']
 })
-export class HousePresentationComponent implements OnInit {
+export class FashionPresentationComponent implements OnInit {
 
   callPhrase: string;
   phrases: Array<string>;
   position: number;
   intervalEvent: any;
-
+  
   constructor() { }
 
   ngOnInit(): void {
     this.position = 0;
     this.phrases = [
-      'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
-      'NÃO QUER OBRAS, MAS QUER RENOVAR SUA CASA?',
-      'O VALOR DO PROJETO CORRESPONDE A 5% DO VALOR DA REFORMA',
+      'FIDELIZE SEUS CLIENTE COM UM ESPAÇO ATRATIVO',
+      'TORNE O AMBIENTE UM ALIADO DO SEU NEGÓCIO',
+      'AMBIENTES BEM PENSADOS GERAM MAIS RESULTADOS',
+      'PROJETOS CORRESPONDEM DE 2 A 5% DOS CUSTOS DA REFORMA',
+      'TENHA SUA VITRINE COMO UM VENDEDOR A MAIS!',
     ];
     this.callPhrase = this.phrases[this.position];
     this.initializeInterval();
@@ -39,5 +41,4 @@ export class HousePresentationComponent implements OnInit {
     }
     this.callPhrase = this.phrases[this.position];
   }
-
 }

@@ -10,6 +10,10 @@ import { HouseQuizComponent } from './modules/house/modules/house-quiz/house-qui
 import { HouseServicesComponent } from './modules/house/modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house/modules/house-main/house-main.component';
 import { HouseProjectViewComponent } from './modules/house/modules/house-project-view/house-project-view.component';
+import { FashionMainComponent } from './modules/fashion/modules/fashion-main/fashion-main.component';
+import { FashionQuizComponent } from './modules/fashion/modules/fashion-quiz/fashion-quiz.component';
+import { FashionServicesComponent } from './modules/fashion/modules/fashion-services/fashion-services.component';
+import { FashionProjectViewComponent } from './modules/fashion/modules/fashion-project-view/fashion-project-view.component';
 
 const routes: Routes = [
   {
@@ -27,7 +31,8 @@ const routes: Routes = [
     component: PrizeComponent,
   },
   {
-    path: 'negocio', component: FashionComponent
+    path: 'quem-somos',
+    component: WhoWeAreComponent,
   },
   {
     path: 'casa', 
@@ -58,12 +63,39 @@ const routes: Routes = [
         path: 'projeto/:id/:tab',
         component: HouseProjectViewComponent,
       },
-      {
-        path: 'quem-somos',
-        component: WhoWeAreComponent,
-      },
     ]
   },
+  {
+    path: 'negocio',
+    component: FashionComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: 'full'
+      },
+      {
+        path: 'inicio',
+        component: FashionMainComponent,
+      },
+      {
+        path: 'inicio/:session',
+        component: FashionMainComponent,
+      },
+      {
+        path: 'quiz',
+        component: FashionQuizComponent,
+      },
+      {
+        path: 'servicos',
+        component: FashionServicesComponent,
+      },
+      {
+        path: 'projeto/:id/:tab',
+        component: FashionProjectViewComponent,
+      },
+    ]
+  }
 ];
 
 @NgModule({

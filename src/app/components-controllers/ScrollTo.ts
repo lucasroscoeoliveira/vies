@@ -6,110 +6,133 @@ import { Router } from '@angular/router';
 @Injectable()
 export class ScrollTo {
 
-    static instance: ScrollTo;
-    states: any;
-    blockScrollEvent: boolean = false;
+  static instance: ScrollTo;
+  states: any;
+  blockScrollEvent: boolean = false;
+  type: string = 'house';
+  projectDivId: string;
+  quizDivId: string;
+  contactDivId: string;
+  servicesDivId: string;
+  viesDivId: string;
+  scrollContainer: string;
 
-    constructor(public header: Header, public router: Router) {
-        this.states = {
-            projects: 'projetos',
-            quiz: 'quiz',
-            contact: 'contato',
-            services: 'servicos',
-            vies: 'vies'
-        };
-        return ScrollTo.instance = ScrollTo.instance || this;
-    }
+  constructor(public header: Header, public router: Router) {
+    this.states = {
+      projects: 'projetos',
+      quiz: 'quiz',
+      contact: 'contato',
+      services: 'servicos',
+      vies: 'vies'
+    };
+    this.setMainDivs();
+    return ScrollTo.instance = ScrollTo.instance || this;
+  }
 
-    navigateToRoute(routeName: string, timeout: number) {
-        this.blockScrollEvent = true;
+  setMainDivs() {
+    this.scrollContainer = this.type === 'house' ? 'house-scroll-container' : 'fashion-scroll-container';
+    this.projectDivId = this.type === 'house' ? 'house-projects' : 'fashion-projects';
+    this.quizDivId = this.type === 'house' ? 'house-discover-style' : 'fashion-discover-style';
+    this.contactDivId = this.type === 'house' ? 'house-call-to-action' : 'fashion-call-to-action';
+    this.servicesDivId = this.type === 'house' ? 'house-services-session' : 'fashion-services-session';
+    this.viesDivId = this.type === 'house' ? 'house-slider' : 'fashion-slider';
+  }
 
-        setTimeout(() => {
-            let content = null;
-            switch (routeName) {
-                case this.states.projects:
-                    content = document.getElementById('house-projects');
-                    break;
-                case this.states.quiz:
-                    content = document.getElementById('house-discover-style');
-                    break;
-                case this.states.contact:
-                    content = document.getElementById('house-call-to-action');
-                    break;
-                case this.states.services:
-                    content = document.getElementById('house-services-session');
-                    break;
-                case this.states.vies:
-                    content = document.getElementById('house-slider');
-                    break;
-            }
-            if (content) {
-                this.header.setActive(routeName);
-                content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-            }
-        }, timeout);
+  navigateToRoute(routeName: string, timeout: number, type: string) {
+    this.blockScrollEvent = true;
+    this.type = type;
+    this.setMainDivs();
 
-        setTimeout(() => {
-            this.blockScrollEvent = false;
-        }, 1500);
-    }
-
-    changeActiveOnScrollHouse() {
-
-        if(this.blockScrollEvent){
-            return;
-        }
-
-        let scroll = document.getElementById('house-scroll-container')
-        let mainElements = [
-          document.getElementById('house-projects'),
-          document.getElementById('house-services-session'),
-          document.getElementById('house-discover-style'),
-          document.getElementById('house-call-to-action'),
-        ]
-    
-        if(!scroll){
-          return;
-        }
-    
-        let yTopPositions = mainElements.map((mainElement) => {
-          if(!mainElement){
-            return;
-          }
-          let contentOffsetTop = mainElement.offsetTop;
-          var scrollTop = scroll.offsetTop;
-          return contentOffsetTop - scrollTop;
-        });
-    
-        let currentPosition = scroll.scrollTop + 100;
-        yTopPositions.forEach((elPosition, index) => {
-          if(index < yTopPositions.length - 1){
-            if(currentPosition >= yTopPositions[index] && currentPosition < yTopPositions[index + 1]){
-              switch(index){
-                case 0:
-                  this.router.navigate(['casa/inicio', 'projetos']);
-                  this.header.setActive('projetos');
-                  break;
-                case 1:
-                  this.router.navigate(['casa/inicio', 'servicos']);
-                  this.header.setActive('servicos');
-                  break;
-                case 2:
-                  this.router.navigate(['casa/inicio', 'quiz']);
-                  this.header.setActive('quiz');
-                  break;
-              }
-            }
-          } else {
-            if(currentPosition <= yTopPositions[0]){
-              this.router.navigate(['casa/inicio', 'vies']);
-              this.header.setActive('vies');
-            }
-            if(currentPosition >= yTopPositions[yTopPositions.length - 1]){
-              this.router.navigate(['casa/inicio', 'contato']);
-              this.header.setActive('contato');
-            }
-          }
-        });
+    setTimeout(() => {
+      let content = null;
+      switch (routeName) {
+        case this.states.projects:
+          content = document.getElementById(this.projectDivId);
+          break;
+        case this.states.quiz:
+          content = document.getElementById(this.quizDivId);
+          break;
+        case this.states.contact:
+          content = document.getElementById(this.contactDivId);
+          break;
+        case this.states.services:
+          content = document.getElementById(this.servicesDivId);
+          break;
+        case this.states.vies:
+          content = document.getElementById(this.viesDivId);
+          break;
       }
+      if (content) {
+        this.header.setActive(routeName);
+        content.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      }
+    }, timeout);
+
+    setTimeout(() => {
+      this.blockScrollEvent = false;
+    }, 1500);
+  }
+
+  changeActiveOnScroll(type: string) {
+    this.type = type;
+    this.setMainDivs();
+
+    if (this.blockScrollEvent) {
+      return;
+    }
+
+    let scroll = document.getElementById(this.scrollContainer);
+    let mainElements = [
+      document.getElementById(this.projectDivId),
+      document.getElementById(this.servicesDivId),
+      document.getElementById(this.quizDivId),
+      document.getElementById(this.contactDivId),
+    ]
+
+    if (!scroll) {
+      return;
+    }
+
+    let yTopPositions = mainElements.map((mainElement) => {
+      if (!mainElement) {
+        return;
+      }
+      let contentOffsetTop = mainElement.offsetTop;
+      var scrollTop = scroll.offsetTop;
+      return contentOffsetTop - scrollTop;
+    });
+
+    let currentPosition = scroll.scrollTop + 50;
+    let prefix = this.type === 'house' ? 'casa' : 'negocio';
+
+    yTopPositions.forEach((elPosition, index) => {
+      if (index < yTopPositions.length - 1) {
+        if (currentPosition >= yTopPositions[index] && currentPosition < yTopPositions[index + 1]) {
+          switch (index) {
+            case 0:
+              this.router.navigate([`${prefix}/inicio`, 'projetos']);
+              this.header.setActive('projetos');
+              break;
+            case 1:
+              this.router.navigate([`${prefix}/inicio`, 'servicos']);
+              this.header.setActive('servicos');
+              break;
+            case 2:
+              this.router.navigate([`${prefix}/inicio`, 'quiz']);
+              this.header.setActive('quiz');
+              break;
+          }
+        }
+      } else {
+        if (currentPosition <= yTopPositions[0]) {
+          this.router.navigate([`${prefix}/inicio`, 'vies']);
+          this.header.setActive('vies');
+        }
+        if (currentPosition >= yTopPositions[yTopPositions.length - 1]) {
+          this.router.navigate([`${prefix}/inicio`, 'contato']);
+          this.header.setActive('contato');
+        }
+      }
+    });
+  }
 }

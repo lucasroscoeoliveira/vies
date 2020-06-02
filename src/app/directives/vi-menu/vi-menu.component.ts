@@ -12,13 +12,20 @@ import { Social } from 'src/app/components-controllers/Social';
 export class ViMenuComponent implements OnInit {
 
   menuOpened: boolean;
-  @Input() menu: Menu;
-  @Input() type: string;
+  typeColor: string;
 
-  constructor(private router: Router, public scroll: ScrollTo, public social: Social) { }
+  constructor(
+    private router: Router,
+    public scroll: ScrollTo,
+    public social: Social,
+    public menu: Menu) { }
 
   ngOnInit(): void {
     this.menuOpened = false;
+    this.typeColor = this.menu.type === 'house' ? 'green' : 'purple';
+    if (!this.menu.items || this.menu.items.length === 0) {
+      this.menu.setMenu('house');
+    }
   }
 
   toggleMenu() {
@@ -41,7 +48,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   onClickMenu(route: string) {
-    if(this.type === 'house'){
+    if(this.menu.type === 'house'){
       this.navigateToHouse(route);
     } else {
       console.log('implementar o fashion header');
@@ -49,26 +56,60 @@ export class ViMenuComponent implements OnInit {
     this.closeMenu();
   }
 
+  navigateToFashion(route: string) {
+    switch(route){
+      case 'vies':
+        this.router.navigate(['negocio/inicio', 'vies']);
+        this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'fashion');
+        break;
+      case 'quem-somos':
+        this.router.navigate(['quem-somos']);
+        break;
+      case 'projetos':
+        this.router.navigate(['negocio/inicio', 'projetos']);
+        this.scroll.navigateToRoute(this.scroll.states.projects, 300, 'fashion');
+        break;
+      case 'servicos':
+        this.router.navigate(['negocio/inicio', 'servicos']);
+        this.scroll.navigateToRoute(this.scroll.states.services, 300, 'fashion');
+        break;
+      case 'quiz':
+        this.router.navigate(['negocio/inicio', 'quiz']);
+        this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
+        break;
+      case 'prize':
+        this.router.navigate(['negocio/premios']);
+        break;
+      case 'premio':
+        this.router.navigate(['negocio/premios']);
+        break;
+      case 'contato':
+        this.router.navigate(['negocio/inicio', 'contato']);
+        this.scroll.navigateToRoute(this.scroll.states.contact, 300, 'fashion');
+        break;
+    }
+  }
+
   navigateToHouse(route: string) {
     switch(route){
       case 'vies':
         this.router.navigate(['casa/inicio', 'vies']);
-        this.scroll.navigateToRoute(this.scroll.states.vies, 300);
+        this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'house');
         break;
       case 'quem-somos':
-        this.router.navigate(['casa/quem-somos']);
+        this.router.navigate(['quem-somos']);
         break;
       case 'projetos':
         this.router.navigate(['casa/inicio', 'projetos']);
-        this.scroll.navigateToRoute(this.scroll.states.projects, 300);
+        this.scroll.navigateToRoute(this.scroll.states.projects, 300, 'house');
         break;
       case 'servicos':
         this.router.navigate(['casa/inicio', 'servicos']);
-        this.scroll.navigateToRoute(this.scroll.states.services, 300);
+        this.scroll.navigateToRoute(this.scroll.states.services, 300, 'house');
         break;
       case 'quiz':
         this.router.navigate(['casa/inicio', 'quiz']);
-        this.scroll.navigateToRoute(this.scroll.states.quiz, 300);
+        this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
       case 'prize':
         this.router.navigate(['casa/premios']);
@@ -78,13 +119,13 @@ export class ViMenuComponent implements OnInit {
         break;
       case 'contato':
         this.router.navigate(['casa/inicio', 'contato']);
-        this.scroll.navigateToRoute(this.scroll.states.contact, 300);
+        this.scroll.navigateToRoute(this.scroll.states.contact, 300, 'house');
         break;
     }
   }
 
   getMainLogo() {
-    if(this.type === 'house'){
+    if(this.menu.type === 'house'){
       return './assets/imgs/logo-casa-horizontal.png';
     } else {
       return './assets/imgs/logo-moda-horizontal.png';
@@ -92,7 +133,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   getSecondaryLogo() {
-    if(this.type === 'house'){
+    if(this.menu.type === 'house'){
       return './assets/imgs/logo-moda-horizontal.png';
     } else {
       return './assets/imgs/logo-casa-horizontal.png';

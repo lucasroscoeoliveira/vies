@@ -11,8 +11,6 @@ import { Social } from 'src/app/components-controllers/Social';
 })
 export class ViHeaderComponent implements OnInit {
 
-  @Input() type: string;
-
   constructor(
     private router: Router, 
     private scroll: ScrollTo, 
@@ -20,41 +18,74 @@ export class ViHeaderComponent implements OnInit {
     public social: Social) { }
 
   ngOnInit(): void {
-    this.setHeader();
+    if (!this.header.items || this.header.items.length === 0) {
+      this.header.setHeader('house');
+    }
   }
 
   onClick(route: string) {
-    if(this.type === 'house'){
+    if(this.header.type === 'house'){
       this.navigateToHouse(route);
     } else {
-      console.log('implementar o fashion header');
+      this.navigateToFashion(route);
     }
   }
 
   navigateToFashion(route: string) {
-    
+    switch(route){
+      case 'vies':
+        this.router.navigate(['negocio/inicio', 'vies']);
+        this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'fashion');
+        break;
+      case 'quem-somos':
+        this.router.navigate(['quem-somos']);
+        break;
+      case 'projetos':
+        this.router.navigate(['negocio/inicio', 'projetos']);
+        this.scroll.navigateToRoute(this.scroll.states.projects, 300, 'fashion');
+        break;
+      case 'servicos':
+        this.router.navigate(['negocio/inicio', 'servicos']);
+        this.scroll.navigateToRoute(this.scroll.states.services, 300, 'fashion');
+        break;
+      case 'quiz':
+        this.router.navigate(['negocio/inicio', 'quiz']);
+        this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
+        break;
+      case 'premio':
+        this.router.navigate(['negocio/casa']);
+        break;
+      case 'blog':
+        //falta implementar o blog
+        break;
+      case 'contato':
+        this.router.navigate(['negocio/inicio', 'contato']);
+        this.scroll.navigateToRoute(this.scroll.states.contact, 300, 'fashion');
+        break;
+    }
+    this.header.setActive(route);
   }
 
   navigateToHouse(route: string) {
     switch(route){
       case 'vies':
         this.router.navigate(['casa/inicio', 'vies']);
-        this.scroll.navigateToRoute(this.scroll.states.vies, 300);
+        this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'house');
         break;
       case 'quem-somos':
-        this.router.navigate(['casa/quem-somos']);
+        this.router.navigate(['quem-somos']);
         break;
       case 'projetos':
         this.router.navigate(['casa/inicio', 'projetos']);
-        this.scroll.navigateToRoute(this.scroll.states.projects, 300);
+        this.scroll.navigateToRoute(this.scroll.states.projects, 300, 'house');
         break;
       case 'servicos':
         this.router.navigate(['casa/inicio', 'servicos']);
-        this.scroll.navigateToRoute(this.scroll.states.services, 300);
+        this.scroll.navigateToRoute(this.scroll.states.services, 300, 'house');
         break;
       case 'quiz':
         this.router.navigate(['casa/inicio', 'quiz']);
-        this.scroll.navigateToRoute(this.scroll.states.quiz, 300);
+        this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
       case 'premio':
         this.router.navigate(['premios/casa']);
@@ -64,16 +95,14 @@ export class ViHeaderComponent implements OnInit {
         break;
       case 'contato':
         this.router.navigate(['casa/inicio', 'contato']);
-        this.scroll.navigateToRoute(this.scroll.states.contact, 300);
+        this.scroll.navigateToRoute(this.scroll.states.contact, 300, 'house');
         break;
     }
     this.header.setActive(route);
   }
 
-  
-
   getMainLogo() {
-    if(this.type === 'house'){
+    if(this.header.type === 'house'){
       return './assets/imgs/logo-casa-horizontal.png';
     } else {
       return './assets/imgs/logo-moda-horizontal.png';
@@ -81,103 +110,26 @@ export class ViHeaderComponent implements OnInit {
   }
 
   getSecondaryLogo() {
-    if(this.type === 'house'){
+    if(this.header.type === 'house'){
       return './assets/imgs/logo-moda-horizontal.png';
     } else {
       return './assets/imgs/logo-casa-horizontal.png';
     }
   }
 
-  setHeader() {
-    this.header = new Header(this.router);
-    this.header.items = [
-      {
-        name: 'INÍCIO',
-        subItems: [],
-        hasMenu: false,
-        logo: true,
-        routeName: 'vies',
-        focused: true
-      },
-      {
-        name: 'QUEM SOMOS',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'quem-somos',
-        focused: false
-      },
-      {
-        name: 'PROJETOS',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'projetos',
-        focused: false
-      },
-      {
-        name: 'SERVIÇOS',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'servicos',
-        focused: false
-      },
-      {
-        name: 'TESTE',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'quiz',
-        focused: false
-      },
-      {
-        name: 'PRÊMIO',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'premio',
-        focused: false
-      },
-      {
-        name: 'BLOG',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'blog',
-        focused: false
-      },
-      {
-        name: 'CONTATO',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'contato',
-        focused: false
-      },
-    ];
-
-    this.header.socials = [
-      {
-        name: "icon-facebook",
-        clickEvent: this.social.goToFacebook
-      },
-      {
-        name: "icon-instagram",
-        clickEvent: this.social.goToInstagram
-      },
-      {
-        name: "icon-pinterest",
-        clickEvent: this.social.goToPinterest
-      },
-      {
-        name: "icon-linkedin2",
-        clickEvent: this.social.goToLinkedin
-      },
-      {
-        name: "icon-youtube",
-        clickEvent: this.social.goToYoutube
-      },
-    ]
+  changeVies(position: string) {
+    if (position === 'main') {
+      if (this.header.type === 'house') {
+        this.navigateToHouse('vies');
+      } else {
+        this.navigateToFashion('vies')
+      }
+    } else {
+      if (this.header.type === 'house') {
+        this.navigateToFashion('vies');
+      } else {
+        this.navigateToHouse('vies')
+      }
+    }
   }
 }

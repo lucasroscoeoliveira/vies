@@ -3,6 +3,13 @@ import { environment } from 'src/environments/environment';
 export default class ImagesConstants {
 
     static readonly FASHION_IMAGES = {
+        DESKTOP: {
+            CLARA: environment.s3_public + '/Fashion/1-carrosselclara.jpg',
+            OTICA: environment.s3_public + '/Fashion/2-carrosselotica.jpg',
+            VANZI: environment.s3_public + '/Fashion/3-carrosselvanzi.jpg',
+            LAJU: environment.s3_public + '/Fashion/4-carrossellaju.jpg',
+            SALAO: environment.s3_public + '/Fashion/5-carrossel-salao.jpg',
+        },
         MOBILE: {
             MOB_CLARA_1: environment.s3_public + '/Fashion/Mobile/1-MOB-CLARA.jpg',
             MOB_OTICA_2: environment.s3_public + '/Fashion/Mobile/2-MOB-OTICA.jpg',
@@ -13,11 +20,13 @@ export default class ImagesConstants {
     }
     
     static readonly HOUSE_IMAGES = {
-        SALA_SANTA_AMELIA_1: environment.s3_public + '/House/1-SALA-SANTA-AMELIA.jpg',
-        MORAR_MAIS_2: environment.s3_public + '/House/2-MORAR-MAIS.jpg',
-        SALAS_SAVASSI_3: environment.s3_public + '/House/3-SALAS-SAVASSI.jpg',
-        SALAS_BURITIS_4: environment.s3_public + '/House/4-SALAS-BURITIS.jpg',
-        COZINHA_SION_5: environment.s3_public + '/House/5-COZINHA-SION.jpg',
+        DESKTOP: {
+            SALA_SANTA_AMELIA_1: environment.s3_public + '/House/1-SALA-SANTA-AMELIA.jpg',
+            MORAR_MAIS_2: environment.s3_public + '/House/2-MORAR-MAIS.jpg',
+            SALAS_SAVASSI_3: environment.s3_public + '/House/3-SALAS-SAVASSI.jpg',
+            SALAS_BURITIS_4: environment.s3_public + '/House/4-SALAS-BURITIS.jpg',
+            COZINHA_SION_5: environment.s3_public + '/House/5-COZINHA-SION.jpg',
+        },
         QUIZ: {
             DESCOLADO: environment.s3_public + '/House/Quiz/descolado.jpg',
             INDUSTRIAL: environment.s3_public + '/House/Quiz/industrial.jpg',

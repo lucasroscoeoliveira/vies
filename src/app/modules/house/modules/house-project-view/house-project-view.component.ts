@@ -132,7 +132,7 @@ export class HouseProjectViewComponent implements OnInit {
           current_position: this.routeParameters.currentPosition
         }
     });
-    this.scroll.navigateToRoute(this.scroll.states.projects, 500);
+    this.scroll.navigateToRoute(this.scroll.states.projects, 500, 'house');
   }
 
   openModal() {

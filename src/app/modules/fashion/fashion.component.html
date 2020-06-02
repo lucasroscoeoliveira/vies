@@ -1,9 +1,9 @@
 <main class="fashion-container">
-  <app-vi-header class="desktop" type='fashion'></app-vi-header>
-  <div class="fasion" id="fashion-scroll-container" (scroll)="onScroll($event)">
+  <app-vi-header class="desktop"></app-vi-header>
+  <div class="fashion" id="fashion-scroll-container" (scroll)="onScroll($event)">
       <router-outlet></router-outlet>
   </div>
 </main>
-<app-vi-menu class="mobile" [menu]="menu" type='fashion'></app-vi-menu>  
+<app-vi-menu class="mobile"></app-vi-menu>  
 <app-vi-toast></app-vi-toast>
 <app-vi-social class="relative"></app-vi-social>
