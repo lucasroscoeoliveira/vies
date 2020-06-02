@@ -12,8 +12,8 @@ import { Social } from 'src/app/components-controllers/Social';
 export class ViHeaderComponent implements OnInit {
 
   constructor(
-    private router: Router, 
-    private scroll: ScrollTo, 
+    private router: Router,
+    private scroll: ScrollTo,
     public header: Header,
     public social: Social) { }
 
@@ -24,7 +24,7 @@ export class ViHeaderComponent implements OnInit {
   }
 
   onClick(route: string) {
-    if(this.header.type === 'house'){
+    if (this.header.type === 'house') {
       this.navigateToHouse(route);
     } else {
       this.navigateToFashion(route);
@@ -32,7 +32,7 @@ export class ViHeaderComponent implements OnInit {
   }
 
   navigateToFashion(route: string) {
-    switch(route){
+    switch (route) {
       case 'vies':
         this.router.navigate(['negocio/inicio', 'vies']);
         this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'fashion');
@@ -53,7 +53,7 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
         break;
       case 'premio':
-        this.router.navigate(['negocio/casa']);
+        this.router.navigate(['premios']);
         break;
       case 'blog':
         //falta implementar o blog
@@ -67,7 +67,7 @@ export class ViHeaderComponent implements OnInit {
   }
 
   navigateToHouse(route: string) {
-    switch(route){
+    switch (route) {
       case 'vies':
         this.router.navigate(['casa/inicio', 'vies']);
         this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'house');
@@ -88,7 +88,7 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
       case 'premio':
-        this.router.navigate(['premios/casa']);
+        this.router.navigate(['premios']);
         break;
       case 'blog':
         //falta implementar o blog
@@ -102,7 +102,7 @@ export class ViHeaderComponent implements OnInit {
   }
 
   getMainLogo() {
-    if(this.header.type === 'house'){
+    if (this.header.type === 'house') {
       return './assets/imgs/logo-casa-horizontal.png';
     } else {
       return './assets/imgs/logo-moda-horizontal.png';
@@ -110,7 +110,7 @@ export class ViHeaderComponent implements OnInit {
   }
 
   getSecondaryLogo() {
-    if(this.header.type === 'house'){
+    if (this.header.type === 'house') {
       return './assets/imgs/logo-moda-horizontal.png';
     } else {
       return './assets/imgs/logo-casa-horizontal.png';

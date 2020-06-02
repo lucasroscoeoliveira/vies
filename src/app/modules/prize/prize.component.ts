@@ -13,7 +13,6 @@ export class PrizeComponent implements OnInit {
   headerImages: any;
   projectImages: any;
   videoImages: any;
-  type: string;
 
   constructor(
     public router: Router,
@@ -25,14 +24,7 @@ export class PrizeComponent implements OnInit {
     this.setHeaderImages();
     this.setProjectImages();
     this.setVideoImages();
-
     this.header.setActive('premio');
-
-    if(this.route.params){
-      this.route.params.subscribe(params => {
-        this.type = params['type'] === 'casa' ? 'house' : 'fashion';
-      });
-    }
   }
 
   setHeaderImages() {
@@ -100,14 +92,14 @@ export class PrizeComponent implements OnInit {
   }
 
   goToPrizeView(projectImage: any) {
-    let routeType = this.getRouteNameFromType();
-    this.router.navigate(['premios/detalhe', routeType, projectImage.id]);
+    this.router.navigate(['premios/detalhe', projectImage.id]);
   }
 
-  getRouteNameFromType() {
-    if(this.type === 'fashion'){
-      return 'negocio';
+  goBackToInitial() {
+    if (this.header.type === 'house') {
+      this.router.navigate(['casa/inicio', 'vies']);
+    } else {
+      this.router.navigate(['negocio/inicio', 'vies']);
     }
-    return 'casa';
   }
 }

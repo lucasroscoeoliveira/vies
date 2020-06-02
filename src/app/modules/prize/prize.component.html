@@ -1,38 +1,39 @@
 <app-vi-header class="desktop"></app-vi-header>
+<app-vi-navigation-header [title]="'Quem Somos'" type='neutral' (onGoBack)="goBackToInitial()" class="mobile"></app-vi-navigation-header>
 
 <div class="content">
-    <h1 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large-2 text--centered margin-top-3">MOSTRA DE DECORAÇÃO</h1>
-    <h2 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large text--centered margin-top-2">Morar Mais por Menos - 2018 em Belo Horizonte | MG</h2>
+    <h1 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large-2 text--centered margin-top-3">MOSTRA DE DECORAÇÃO</h1>
+    <h2 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large text--centered margin-top-2">Morar Mais por Menos - 2018 em Belo Horizonte | MG</h2>
 
     <div class="images-container">
         <div class="prize-card" *ngFor="let headerImage of headerImages">
             <img [src]="headerImage.image" alt="">
             <div class="labels flex-center">
-                <h3 class="text text--green text--centered" [innerHTML]="headerImage.label" ></h3>
+                <h3 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--centered" [innerHTML]="headerImage.label" ></h3>
             </div>
         </div>
     </div>
 
     <div class="label-container text--centered">
         <span class="text text--large">Na era das influenciadoras digitais, apresentamos um quarto inspirado nas </span>
-        <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--bold text--large">necessidades de uma blogueira. </span>
+        <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--bold text--large">necessidades de uma blogueira. </span>
         <span class="text text--large">Moderno e funcional, o quarto da blogueira cumpre a função de </span>
-        <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--bold text--large">dormitório, escritório e espaço para fotos. </span>
+        <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--bold text--large">dormitório, escritório e espaço para fotos. </span>
         <span class="text text--large">A paleta de cores cria mosaicos e a criatividade dá </span>
-        <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--bold text--large">novas funções para itens da moda. </span>
+        <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--bold text--large">novas funções para itens da moda. </span>
     </div>
 
-    <h2 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large-2 text--centered margin-top-3 margin-bottom-2">FOTOS</h2>
+    <h2 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large-2 text--centered margin-top-3 margin-bottom-2">FOTOS</h2>
     <div class="images-container">
         <div class="prize-card clickable" *ngFor="let projectImage of projectImages" (click)="goToPrizeView(projectImage)">
             <img [src]="projectImage.image" alt="" class="image--adjust">
             <div class="labels-image flex-end">
-                <h3 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--thin">+ Veja mais</h3>
+                <h3 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--thin">+ Veja mais</h3>
             </div>
         </div>
     </div>
 
-    <h2 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large-2 text--centered margin-top-3 margin-bottom-2">VÍDEOS</h2>
+    <h2 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large-2 text--centered margin-top-3 margin-bottom-2">VÍDEOS</h2>
     <div class="images-container">
         <div class="prize-card clickable" *ngFor="let videoImage of videoImages" (click)="viewVideo(videoImage)">
             <div class="prize-card__video">
@@ -42,7 +43,7 @@
                 </div>
             </div>
             <div class="labels-video flex-center">
-                <h3 [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--centered" [innerHTML]="videoImage.label" ></h3>
+                <h3 [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--centered" [innerHTML]="videoImage.label" ></h3>
             </div>
         </div>
     </div>

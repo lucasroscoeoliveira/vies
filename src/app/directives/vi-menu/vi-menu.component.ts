@@ -51,7 +51,7 @@ export class ViMenuComponent implements OnInit {
     if(this.menu.type === 'house'){
       this.navigateToHouse(route);
     } else {
-      console.log('implementar o fashion header');
+      this.navigateToFashion(route);
     }
     this.closeMenu();
   }
@@ -77,11 +77,8 @@ export class ViMenuComponent implements OnInit {
         this.router.navigate(['negocio/inicio', 'quiz']);
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
         break;
-      case 'prize':
-        this.router.navigate(['negocio/premios']);
-        break;
       case 'premio':
-        this.router.navigate(['negocio/premios']);
+        this.router.navigate(['premios']);
         break;
       case 'contato':
         this.router.navigate(['negocio/inicio', 'contato']);
@@ -111,11 +108,8 @@ export class ViMenuComponent implements OnInit {
         this.router.navigate(['casa/inicio', 'quiz']);
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
-      case 'prize':
-        this.router.navigate(['casa/premios']);
-        break;
       case 'premio':
-        this.router.navigate(['casa/premios']);
+        this.router.navigate(['premios']);
         break;
       case 'contato':
         this.router.navigate(['casa/inicio', 'contato']);

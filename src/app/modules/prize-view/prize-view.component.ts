@@ -96,7 +96,7 @@ export class PrizeViewComponent implements OnInit {
 
   goBack() {
     let routeType = this.getRouteNameFromType();
-    this.router.navigate(['premios', routeType]);
+    this.router.navigate(['premios']);
   }
 
   getRouteNameFromType() {

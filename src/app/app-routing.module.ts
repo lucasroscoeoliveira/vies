@@ -23,11 +23,11 @@ const routes: Routes = [
     path: 'login', component: LoginComponent
   },
   {
-    path: 'premios/detalhe/:type/:id',
+    path: 'premios/detalhe/:id',
     component: PrizeViewComponent,
   },
   {
-    path: 'premios/:type',
+    path: 'premios',
     component: PrizeComponent,
   },
   {

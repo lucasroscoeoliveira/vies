@@ -22,7 +22,11 @@ export class WhoWeAreComponent implements OnInit {
   }
 
   goBackToInitial() {
-    this.router.navigate(['casa/inicio', 'vies']);
+    if (this.header.type === 'house') {
+      this.router.navigate(['casa/inicio', 'vies']);
+    } else {
+      this.router.navigate(['negocio/inicio', 'vies']);
+    }
   }
 
 }
