@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-prize-view',
@@ -12,7 +13,8 @@ export class PrizeViewComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute, 
-    private router: Router, 
+    private router: Router,
+    public header: Header,
     public scroll: ScrollTo
   ) { }
   id: number;
@@ -20,7 +22,6 @@ export class PrizeViewComponent implements OnInit {
   images: any;
   currIndex: number;
   pagesLabel: string;
-  @Input() type: string;
 
   ngOnInit(): void {
     this.initVariables();
@@ -29,7 +30,6 @@ export class PrizeViewComponent implements OnInit {
   initVariables() {
     this.route.params.subscribe(params => {
       this.id = +params['id'];
-      this.type = params['type'] === 'casa' ? 'house' : 'fashion';
     });
     this.currIndex = this.id ? this.id - 1 : 0;
     this.initImages();
@@ -95,15 +95,7 @@ export class PrizeViewComponent implements OnInit {
   }
 
   goBack() {
-    let routeType = this.getRouteNameFromType();
     this.router.navigate(['premios']);
-  }
-
-  getRouteNameFromType() {
-    if(this.type === 'fashion'){
-      return 'negocio';
-    }
-    return 'casa';
   }
 
   @HostListener('window:keydown', ['$event'])

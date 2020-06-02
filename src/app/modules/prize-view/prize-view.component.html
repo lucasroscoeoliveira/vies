@@ -3,8 +3,8 @@
     <app-vi-header class="desktop"></app-vi-header>
     <div class="prize-view__header">
         <div class="go-back clickable" (click)="goBack()">
-            <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-            <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text--large">Voltar</span>
+            <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
+            <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--large">Voltar</span>
         </div>
     
         <span class="text text--small">
@@ -23,13 +23,13 @@
 
             <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">
                 <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                    <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
                 </div>
             </div>
         
             <div class="button-right desktop" (click)="move('right')" [hidden]="!images || images.length <= 1">
                 <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                    <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
                 </div>
             </div>
         </div>
@@ -39,13 +39,13 @@
     <div class="buttons-mobile mobile" [hidden]="!images || images.length <= 1">
         <div class="button-left margin-right-1" (click)="move('left')">
             <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
             </div>
         </div>
 
         <div class="button-right margin-left-1" (click)="move('right')">
             <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
             </div>
         </div>
     </div>

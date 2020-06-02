@@ -10,7 +10,7 @@
                     <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
                 </div>
                 <div class="logo" *ngIf="item.logo">
-                    <img class="logo--img clickable" [src]="getMainLogo()">
+                    <img class="logo--img clickable" [src]="getMainLogo()" (click)="changeVies('main')">
                 </div>
                 <div class="menu-content__sub" [ngClass]="{'menu-content__sub--green': menu.type === 'house', 'menu-content__sub--purple': menu.type === 'fashion'}">
                     <div class="menu-content__sub__item clickable" *ngFor="let subItem of item.subItems">
@@ -21,7 +21,7 @@
     
             <div class="menu-content__item">
                 <div class="logo">
-                    <img class="logo--img clickable" [src]="getSecondaryLogo()">
+                    <img class="logo--img clickable" [src]="getSecondaryLogo()" (click)="changeVies('secondary')">
                 </div>
             </div>
         </div>

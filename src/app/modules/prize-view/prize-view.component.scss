@@ -19,7 +19,6 @@
             align-items: center;
             app-vi-svg {
                 display: flex;
-                color: $color-green;
                 font-size: 2em;
                 align-items: center;
             }
@@ -93,7 +92,6 @@
         cursor: pointer;
         app-vi-svg {
             font-size: 35px;
-            color: $color-green;
             display: flex;
 
             &:hover {

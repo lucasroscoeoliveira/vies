@@ -133,4 +133,20 @@ export class ViMenuComponent implements OnInit {
       return './assets/imgs/logo-casa-horizontal.png';
     }
   }
+
+  changeVies(position: string) {
+    if (position === 'main') {
+      if (this.menu.type === 'house') {
+        this.navigateToHouse('vies');
+      } else {
+        this.navigateToFashion('vies')
+      }
+    } else {
+      if (this.menu.type === 'house') {
+        this.navigateToFashion('vies');
+      } else {
+        this.navigateToHouse('vies')
+      }
+    }
+  }
 }
