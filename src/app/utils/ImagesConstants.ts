@@ -17,6 +17,111 @@ export default class ImagesConstants {
             MOB_LAJU_4: environment.s3_public + '/Fashion/Mobile/4-MOB-LAJU.jpg',
             MOB_SALAO_5: environment.s3_public + '/Fashion/Mobile/5-MOB-SALAO.jpg'
         },
+        QUIZ: {
+            //CORRIGIR
+            DESCOLADO: environment.s3_public + '/House/Quiz/descolado.jpg',
+            INDUSTRIAL: environment.s3_public + '/House/Quiz/industrial.jpg',
+            MODERNO: environment.s3_public + '/House/Quiz/moderno.jpg',
+            RUSTICO: environment.s3_public + '/House/Quiz/rustico.jpg',
+        },
+        PROJECTS: {
+            VANZI_1: environment.s3_public + '/Fashion/Projects/Main/1-vanzi.jpg',
+            LAJU_2: environment.s3_public + '/Fashion/Projects/Main/2-laju.jpg',
+            FITSU_CASUAL_3: environment.s3_public + '/Fashion/Projects/Main/3-fitsu.jpg',
+            LELIV_4: environment.s3_public + '/Fashion/Projects/Main/4-leliv.jpg',
+            CLARA_5: environment.s3_public + '/Fashion/Projects/Main/5-clara.jpg',
+            SALAO_6: environment.s3_public + '/Fashion/Projects/Main/6-Salao-bc.jpg',
+            TRESCHIC_7: environment.s3_public + '/Fashion/Projects/Main/7-treschic.jpg',
+            CONSULTORIO_8: environment.s3_public + '/Fashion/Projects/Main/8-Consultorio.jpg',
+            OTICA_9: environment.s3_public + '/Fashion/Projects/Main/9-otica.jpg',
+            LAECLA_10: environment.s3_public + '/Fashion/Projects/Main/10-laecla.jpg',
+            MARIARIBEIRO_11: environment.s3_public + '/Fashion/Projects/Main/11-mariaribeiro.jpg',
+            MOME_12: environment.s3_public + '/Fashion/Projects/Main/12-mome.jpg',
+            LANAHAIR_13: environment.s3_public + '/Fashion/Projects/Main/13-lanahair.jpg',
+            CERRA_14: environment.s3_public + '/Fashion/Projects/Main/14-cerra-douro.jpg',
+            MADAH_15: environment.s3_public + '/Fashion/Projects/Main/15-madah.jpg',
+            AMALINUS_16: environment.s3_public + '/Fashion/Projects/Main/16-amalinus.jpg',
+            FOSTER_17: environment.s3_public + '/Fashion/Projects/Main/17-foster.jpg',
+            CASA_ALLEGRA_18: environment.s3_public + '/Fashion/Projects/Main/18-casa-allegra.jpg',
+            FITSU_19: environment.s3_public + '/Fashion/Projects/Main/19-fitsu.jpg',
+            K9_20: environment.s3_public + '/Fashion/Projects/Main/20-k9.jpg',
+            MODAFEMININA_21: environment.s3_public + '/Fashion/Projects/Main/21-modafeminina.jpg',
+            MYBABY_22: environment.s3_public + '/Fashion/Projects/Main/22-mybaby.jpg',
+            COSMOPOLITAN_23: environment.s3_public + '/Fashion/Projects/Main/23-cosmopolitan.jpg',   
+            MARCELA_RABELO_24: environment.s3_public + '/Fashion/Projects/Main/24-marcela-rabelo.jpg',
+
+
+            COMERCIAL_GENERAL_1_CONSULTORIO: environment.s3_public + '/Fashion/Projects/Comercial-general/1-Consultorio.jpg',
+            COMERCIAL_GENERAL_2_SALAO: environment.s3_public + '/Fashion/Projects/Comercial-general/2-Salao-bc.jpg',
+            COMERCIAL_GENERAL_3_MORARMAIS: environment.s3_public + '/Fashion/Projects/Comercial-general/3-Morarmais.jpg',
+            COMERCIAL_GENERAL_4_SALAO: environment.s3_public + '/Fashion/Projects/Comercial-general/4-Salao-ar.jpg',
+            COMERCIAL_GENERAL_5_SAPUCANET: environment.s3_public + '/Fashion/Projects/Comercial-general/5-Sapucanet.jpg',
+            COMERCIAL_GENERAL_6_GRAFICA: environment.s3_public + '/Fashion/Projects/Comercial-general/6-Grafica.jpg',
+            COMERCIAL_GENERAL_7_AUTO_ESCOLA: environment.s3_public + '/Fashion/Projects/Comercial-general/7-Auto-escola.jpg',
+            COMERCIAL_GENERAL_8_RESTAURANTE: environment.s3_public + '/Fashion/Projects/Comercial-general/8-Restaurante.jpg',
+
+
+            SHOP_WINDOW_1_FITSU: environment.s3_public + '/Fashion/Projects/Shop-window/1-fitsu-casual.jpg',
+            SHOP_WINDOW_2_LAJU: environment.s3_public + '/Fashion/Projects/Shop-window/2-laju.jpg',
+            SHOP_WINDOW_3_VANZI: environment.s3_public + '/Fashion/Projects/Shop-window/3-vanzi.jpg',
+            SHOP_WINDOW_4_MADAH: environment.s3_public + '/Fashion/Projects/Shop-window/4-madah.jpg',
+            SHOP_WINDOW_5_TRESCHIC: environment.s3_public + '/Fashion/Projects/Shop-window/5-treschic.jpg',
+            SHOP_WINDOW_6_MARIARIBEIRO: environment.s3_public + '/Fashion/Projects/Shop-window/6-mariaribeiro.jpg',
+            SHOP_WINDOW_7_CLARA: environment.s3_public + '/Fashion/Projects/Shop-window/7-clara.jpg',
+            SHOP_WINDOW_8_CLARAVERAO: environment.s3_public + '/Fashion/Projects/Shop-window/8-claraverao.jpg',
+            SHOP_WINDOW_9_FITSU: environment.s3_public + '/Fashion/Projects/Shop-window/9-fitsu.jpg',
+            SHOP_WINDOW_10_FERIADONACIONAL: environment.s3_public + '/Fashion/Projects/Shop-window/10-feriadonacional.jpg',
+            SHOP_WINDOW_11_LALU: environment.s3_public + '/Fashion/Projects/Shop-window/11-lalu.jpg',
+            SHOP_WINDOW_12_AMALINUS: environment.s3_public + '/Fashion/Projects/Shop-window/12-amalinus.jpg',
+            SHOP_WINDOW_13_CASA_ALLEGRA: environment.s3_public + '/Fashion/Projects/Shop-window/13-casa-allegra.jpg',
+            SHOP_WINDOW_14_MOME: environment.s3_public + '/Fashion/Projects/Shop-window/14-mome.jpg',
+            SHOP_WINDOW_15_LAECLA: environment.s3_public + '/Fashion/Projects/Shop-window/15-laecla.jpg',
+            SHOP_WINDOW_16_OTICA: environment.s3_public + '/Fashion/Projects/Shop-window/16-otica.jpg',
+            SHOP_WINDOW_17_COSMOPOLITAN: environment.s3_public + '/Fashion/Projects/Shop-window/17-cosmopolitan.jpg',
+            SHOP_WINDOW_18_K9: environment.s3_public + '/Fashion/Projects/Shop-window/18-k9.jpg',
+            SHOP_WINDOW_19_FOSTER: environment.s3_public + '/Fashion/Projects/Shop-window/19-foster.jpg',
+            SHOP_WINDOW_20_BRINKEL: environment.s3_public + '/Fashion/Projects/Shop-window/20-brinkel.jpg',
+            SHOP_WINDOW_21_CLAU: environment.s3_public + '/Fashion/Projects/Shop-window/21-clau.jpg',
+            SHOP_WINDOW_22_MARRE: environment.s3_public + '/Fashion/Projects/Shop-window/22-marre.jpg',
+
+
+            STORE_1_VANZI: environment.s3_public + '/Fashion/Projects/Stores/1-vanzi.jpg',
+            STORE_2_LAJU: environment.s3_public + '/Fashion/Projects/Stores/2-laju.jpg',
+            STORE_3_FITSU: environment.s3_public + '/Fashion/Projects/Stores/3-fitsu.jpg',
+            STORE_4_CLARA: environment.s3_public + '/Fashion/Projects/Stores/4-clara.jpg',
+            STORE_5_LELIV: environment.s3_public + '/Fashion/Projects/Stores/5-leliv.jpg',
+            STORE_6_MOME: environment.s3_public + '/Fashion/Projects/Stores/6-mome.jpg',
+            STORE_7_OTICA: environment.s3_public + '/Fashion/Projects/Stores/7-otica.jpg',
+            STORE_8_LAECLA: environment.s3_public + '/Fashion/Projects/Stores/8-laecla.jpg',
+            STORE_9_LANAHAIR: environment.s3_public + '/Fashion/Projects/Stores/9-lanahair.jpg',
+            STORE_10_AMALINUS: environment.s3_public + '/Fashion/Projects/Stores/10-amalinus.jpg',
+            STORE_11_CASA_ALLEGRA: environment.s3_public + '/Fashion/Projects/Stores/11-casa-allegra.jpg',
+            STORE_12_FOSTER: environment.s3_public + '/Fashion/Projects/Stores/12-foster.jpg',
+            STORE_13_MYBABY: environment.s3_public + '/Fashion/Projects/Stores/13-mybaby.jpg',
+            STORE_14_COSMOPOLITAN: environment.s3_public + '/Fashion/Projects/Stores/14-cosmopolitan.jpg',
+            STORE_15_CERRA: environment.s3_public + '/Fashion/Projects/Stores/15-cerra-douro.jpg',
+            STORE_16_SINTONIA: environment.s3_public + '/Fashion/Projects/Stores/16-sintonia.jpg',
+            STORE_17_MARCELA: environment.s3_public + '/Fashion/Projects/Stores/17-marcela-ribeiro.jpg',
+            STORE_18_VICENTINA: environment.s3_public + '/Fashion/Projects/Stores/18-vicentina.jpg',
+            STORE_19_MODAFEMININA: environment.s3_public + '/Fashion/Projects/Stores/19-modafeminina.jpg',
+            STORE_20_NOUS: environment.s3_public + '/Fashion/Projects/Stores/20-nous.jpg',
+            STORE_21_KALLA: environment.s3_public + '/Fashion/Projects/Stores/21-kalla.jpg',
+            STORE_22_CLOSET: environment.s3_public + '/Fashion/Projects/Stores/22-closet.jpg',
+            STORE_23_BAMBINO: environment.s3_public + '/Fashion/Projects/Stores/23-bambino.jpg',
+
+
+            VISUAL_IDENTITY_1_ANA_MOREIRA: environment.s3_public + '/Fashion/Projects/Visual-Identity/1ana-moreira.jpg',
+            VISUAL_IDENTITY_2_CASA_ALLEGRA: environment.s3_public + '/Fashion/Projects/Visual-Identity/2casa-allegra.jpg',
+            VISUAL_IDENTITY_3_CLARA_FONTUNELLE: environment.s3_public + '/Fashion/Projects/Visual-Identity/3clara-fontenelle.jpg',
+            VISUAL_IDENTITY_4_CLOSET01: environment.s3_public + '/Fashion/Projects/Visual-Identity/4closet01.jpg',
+            VISUAL_IDENTITY_5_GI_CONFEITARIA: environment.s3_public + '/Fashion/Projects/Visual-Identity/5gi-confeitaria.jpg',
+            VISUAL_IDENTITY_6_KAILLA: environment.s3_public + '/Fashion/Projects/Visual-Identity/6kailla.jpg',
+            VISUAL_IDENTITY_7_MARCELA_RABELO: environment.s3_public + '/Fashion/Projects/Visual-Identity/7marcela-rabelo.jpg',
+            VISUAL_IDENTITY_8_VANZI: environment.s3_public + '/Fashion/Projects/Visual-Identity/8vanzi.jpg',
+            VISUAL_IDENTITY_9_VICENTINA: environment.s3_public + '/Fashion/Projects/Visual-Identity/9vicentina.jpg',
+            VISUAL_IDENTITY_10_LAJU: environment.s3_public + '/Fashion/Projects/Visual-Identity/10laju.jpg',
+        }
+
     }
     
     static readonly HOUSE_IMAGES = {
@@ -43,17 +148,6 @@ export default class ImagesConstants {
             MOB_SALAS_SAVASSI_3: environment.s3_public + '/House/Mobile/3-MOB-SALAS-SAVASSI.jpg',
             MOB_SALA_BURITIS_4: environment.s3_public + '/House/Mobile/4-MOB-SALA-BURITIS.jpg',
             MOB_COZINHA_SION_5: environment.s3_public + '/House/Mobile/5-MOB-COZINHA-SION.jpg'
-        },
-        PRIZES: {
-            BLOGUEIRA_PREMIO_1: environment.s3_public + '/House/Prize/blogueira-premio1.jpg',
-            BLOGUEIRA_PREMIO_2: environment.s3_public + '/House/Prize/blogueira-premio2.jpg',
-            BLOGUEIRA_PREMIO_3: environment.s3_public + '/House/Prize/blogueira-premio3.jpg',
-            BLOGUEIRA_PREMIO_4: environment.s3_public + '/House/Prize/blogueira-premio4.jpg',
-            BLOGUEIRA_PREMIO_5: environment.s3_public + '/House/Prize/blogueira-premio5.jpg',
-            BLOGUEIRA_PREMIO_6: environment.s3_public + '/House/Prize/blogueira-premio6.jpg',
-            BLOGUEIRA_PREMIO_7: environment.s3_public + '/House/Prize/blogueira-premio7.jpg',
-            BLOGUEIRA_PREMIO_8: environment.s3_public + '/House/Prize/blogueira-premio8.jpg',
-            BLOGUEIRA_PREMIO_9: environment.s3_public + '/House/Prize/blogueira-premio9.jpg',
         },
         PROJECTS: {
             SANTO_AGOSTINHO_1: environment.s3_public + '/House/Projects/Portfolio/Main/01-SANTO-AGOSTINHO.jpg',
@@ -489,44 +583,56 @@ export default class ImagesConstants {
     static readonly SHARED_IMAGES = {
         MARINA: environment.s3_public + '/MARINA.jpg',
         AMANDA: environment.s3_public + '/AMANDA.jpg',
+
+        PRIZES: {
+            BLOGUEIRA_PREMIO_1: environment.s3_public + '/House/Prize/blogueira-premio1.jpg',
+            BLOGUEIRA_PREMIO_2: environment.s3_public + '/House/Prize/blogueira-premio2.jpg',
+            BLOGUEIRA_PREMIO_3: environment.s3_public + '/House/Prize/blogueira-premio3.jpg',
+            BLOGUEIRA_PREMIO_4: environment.s3_public + '/House/Prize/blogueira-premio4.jpg',
+            BLOGUEIRA_PREMIO_5: environment.s3_public + '/House/Prize/blogueira-premio5.jpg',
+            BLOGUEIRA_PREMIO_6: environment.s3_public + '/House/Prize/blogueira-premio6.jpg',
+            BLOGUEIRA_PREMIO_7: environment.s3_public + '/House/Prize/blogueira-premio7.jpg',
+            BLOGUEIRA_PREMIO_8: environment.s3_public + '/House/Prize/blogueira-premio8.jpg',
+            BLOGUEIRA_PREMIO_9: environment.s3_public + '/House/Prize/blogueira-premio9.jpg',
+        },
     }
 
     static readonly PRIZES = [
         {
           id: 1,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1
         },
         {
           id: 2,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2
         },
         {
           id: 3,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3
         },
         {
           id: 4,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4
         },
         {
           id: 5,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_5
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_5
         },
         {
           id: 6,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_6
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_6
         },
         {
           id: 7,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_7
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_7
         },
         {
           id: 8,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_8
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_8
         },
         {
           id: 9,
-          source: ImagesConstants.HOUSE_IMAGES.PRIZES.BLOGUEIRA_PREMIO_9
+          source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_9
         },
       ]
 }

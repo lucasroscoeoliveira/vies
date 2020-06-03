@@ -1,1 +1,22 @@
-<p style="height: 500px;">fashion-testimonials works!</p>
+<div class="fashion-testimonials">
+    <div class="fashion-testimonials__header">
+        <span class="text text--purple text--large text--centered text--bold margin-bottom-2">DEPOIMENTOS</span> 
+    </div>
+
+    <div class="fashion-testimonials__container">
+        <div class="fashion-testimonials__container__card" *ngFor="let testimonial of testimonials">
+            <img [src]="testimonial.image" alt="" class="image">
+
+            <div class="fashion-testimonials__container__card__labels">
+                <span class="margin-top-2 text text--small">{{testimonial.description}}</span>
+                <span class="margin-top-1 text--small text--purple name">{{testimonial.name}}</span>
+            </div>
+
+            <div class="margin-top-2 fashion-testimonials__container__card__footer">
+                <app-vi-svg class="check" icon="icon-checkmark"></app-vi-svg>
+                <span class="text text--white text--small">{{testimonial.projectName}}</span>
+            </div>
+        </div>
+    </div>
+
+</div>

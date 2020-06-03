@@ -1,4 +1,4 @@
-<div class="vi-footer" [ngClass]="{'vi-footer--green': type === 'house', 'vi-footer--purple': type === 'fashion', 'vi-footer--gradient': type === 'neutral' }">
+<div class="vi-footer" [ngClass]="{'vi-footer--green': header.type === 'house', 'vi-footer--purple': header.type === 'fashion'}">
     
     <div class="top-container">
         <div class="content margin-bottom-3">
@@ -30,7 +30,7 @@
                     placeholder="seuemail@email.com"
                     type="text">
                 <app-vi-button wide='true' [type]="'white'" [submit]="true" (onClick)="sendEmail()">
-                    <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text">Enviar</span>
+                    <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text">Enviar</span>
                 </app-vi-button>
             </div>
         </div>

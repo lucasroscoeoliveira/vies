@@ -5,15 +5,11 @@
     margin: 0;
 
     &--green {
-        background-color: $color-green;
+        background-image: linear-gradient(to right, $color-green , $color-purple);
     }
 
     &--purple {
-        background-color: $color-purple;
-    }
-
-    &--gradient {
-        background-image: linear-gradient(to right, $color-green , $color-purple);
+        background-image: linear-gradient(to left, $color-green , $color-purple);
     }
 
     .top-container {

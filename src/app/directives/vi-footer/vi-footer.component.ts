@@ -3,6 +3,7 @@ import { Social } from 'src/app/components-controllers/Social';
 import { ClientModel } from 'src/app/models/ClientModel';
 import { ClientAppService } from 'src/app/services/client-app.service';
 import { Toast } from 'src/app/components-controllers/Toast';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-vi-footer',
@@ -15,12 +16,11 @@ export class ViFooterComponent implements OnInit {
   socials: any;
   client: ClientModel;
 
-  @Input() type: string;
-
   constructor(
     public social: Social,
     public clientAppService: ClientAppService,
-    public toast: Toast
+    public toast: Toast,
+    public header: Header
   ) { }
 
   ngOnInit(): void {

@@ -1,1 +1,60 @@
-<p style="height: 500px;">fashion-projects works!</p>
+<div class="fashion-projects-header">
+    <span class="text text--purple text--large text--centered text--bold">PORTFÓLIO</span>
+</div>
+
+<div class="fashion-projects-tabs">
+    <button class="tab-content text--bold" (click)="selectTab(tab)" *ngFor="let tab of tabs"
+        [ngClass]="{'tab-content--selected': tab.selected}">
+        <span [ngClass]="{'text--purple': tab.selected}" class="text text--centered text--small">{{tab.name}}</span>
+    </button>
+</div>
+
+<div class="fashion-projects">
+    <div class="fashion-projects__container" (swiperight)="move('left')" (swipeleft)="move('right')">
+        <div class="clickable" *ngFor="let image of imagesFiltered()" class="card" (click)="viewProjectDetail(image)">
+            <img [src]="image.source" alt="" class="card__image">
+            <div class="description desktop">
+                <div class="description__content">
+                    <div></div>
+                    <span class="text text--purple text--small-2 text--bold text--centered">{{image.description}}</span>
+                    <span class="text text--purple text--small-2 text--bold">VEJA MAIS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fashion-projects__button-left desktop">
+        <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')"
+            [ngClass]="{'disabled': disableArrowLeft()}">
+            <div class="buttom-menu">
+                <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+            </div>
+        </app-vi-button>
+    </div>
+
+    <div class="fashion-projects__button-right desktop">
+        <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')"
+            [ngClass]="{'disabled': disableArrowRight()}">
+            <div class="buttom-menu">
+                <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+            </div>
+        </app-vi-button>
+    </div>
+
+
+</div>
+
+<div class="fashion-projects__footer">
+    <div class="arrow-container mobile">
+        <button [ngClass]="{'disabled': disableArrowLeft()}">
+            <app-vi-svg icon="icon-keyboard_arrow_left" class="arrow mobile" (click)="move('left')"></app-vi-svg>
+        </button>
+        <button [ngClass]="{'disabled': disableArrowRight()}">
+            <app-vi-svg icon="icon-keyboard_arrow_right" class="arrow mobile" (click)="move('right')"></app-vi-svg>
+        </button>
+    </div>
+
+    <span class="pages text text--small">
+        {{pagesLabel}}
+    </span>
+</div>

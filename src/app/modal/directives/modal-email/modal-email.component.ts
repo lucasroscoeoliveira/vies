@@ -3,6 +3,7 @@ import { Modal } from 'src/app/components-controllers/Modal';
 import { ClientAppService } from 'src/app/services/client-app.service';
 import { ClientModel } from 'src/app/models/ClientModel';
 import { Toast } from 'src/app/components-controllers/Toast';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-modal-email',
@@ -16,13 +17,25 @@ export class ModalEmailComponent implements OnInit {
 
   client: ClientModel;
   message: string;
+  logoImage: string
   subscribe: boolean;
+  btnColor: string;
   
-  constructor(public modal: Modal, public clientAppService: ClientAppService, public toast: Toast) { }
+  constructor(public modal: Modal, public clientAppService: ClientAppService, public toast: Toast, public header: Header) { }
 
   ngOnInit(): void {
     this.client = new ClientModel();
     this.focusInputName();
+    this.setLogoImage();
+    this.btnColor = this.getBtnType();
+  }
+
+  setLogoImage() {
+    this.logoImage = this.header.type === 'header' ? "../../../../assets/imgs/logo-casa-horizontal.png" : "../../../../assets/imgs/logo-moda-horizontal.png"
+  }
+
+  getBtnType() {
+    return this.header.type === 'house' ? 'green' : 'purple';
   }
 
   focusInputName() {
@@ -36,9 +49,11 @@ export class ModalEmailComponent implements OnInit {
   }
 
   sendEmail() {
+    let from = this.header.type === 'house' ? 'Vies Casa' : 'Viés Negócio';
+
     let mailData = {
       message: this.message,
-      from: 'Vies Casa'
+      from: from
     }
     this.clientAppService.create(
       this.client,
@@ -48,7 +63,7 @@ export class ModalEmailComponent implements OnInit {
         this.toast.success('Email enviado com sucesso! Em breve retornaremos!');
       },
       (err) => {
-        this.toast.error(err);
+        this.toast.error(err.message);
       }
     )
     this.modal.executeCallBack();

@@ -1,21 +1,21 @@
 
 <div class="call-to-action-container">
 
-    <div class="call-to-action">    
+    <div class="call-to-action" [ngClass]="{'call-to-action--green': header.type === 'house', 'call-to-action--purple': header.type === 'fashion'}">    
         <h1 class="text text--bold text--centered text--large-2">Dúvidas? Entre em contato com a gente!</h1>
     
         <div class="btns-container">
             <app-vi-button (onClick)="whatsApp()" [type]='"white"' [wide]="setIsMobile()">
                 <span class="btn-content">
                     <app-vi-svg icon="icon-whatsapp" class="whatsapp margin-right-1"></app-vi-svg>  
-                    <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text-center">Entre em contato por WhatsApp</span>
+                    <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text-center">Entre em contato por WhatsApp</span>
                 </span>
             </app-vi-button>
         
             <app-vi-button (onClick)="email()" [type]='"white"' [wide]="setIsMobile()">
                 <span class="btn-content">
                     <app-vi-svg icon="icon-gmail" class="email margin-right-1"></app-vi-svg>  
-                    <span [ngClass]="{'text--green': type === 'house', 'text--purple': type === 'fashion'}" class="text text-center">Entre em contato por Email</span>
+                    <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text-center">Entre em contato por Email</span>
                 </span>
             </app-vi-button>
         </div>

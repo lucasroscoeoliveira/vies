@@ -1,6 +1,6 @@
 <div class="modal-email__header">
     <div class="content-logo">
-        <img src="../../../../assets/imgs/logo-casa-horizontal.png" class="logo-vies" alt="">
+        <img [src]="logoImage" class="logo-vies" alt="">
     </div>
     <app-vi-svg (click)="closeModal()" icon="icon-close"></app-vi-svg>
 </div>
@@ -13,16 +13,14 @@
                 id="name_input"
                 [(ngModel)]="client.Name" 
                 [ngModelOptions]="{standalone: true}"
-                class="input-default-house"
-                type="text">
+                [ngClass]="{'input-default-house': header.type === 'house', 'input-default-fashion': header.type === 'fashion'}"                type="text">
         </div>
     </div>
     <div class="modal-email__body__content-2">
         <div class="name-input-container margin-top-2">
             <span class="text">Digite seu email:</span>
             <input 
-                class="input-default-house"
-                [(ngModel)]="client.Email" 
+            [ngClass]="{'input-default-house': header.type === 'house', 'input-default-fashion': header.type === 'fashion'}"                [(ngModel)]="client.Email" 
                 [ngModelOptions]="{standalone: true}"
                 type="text" 
                 placeholder="Ex: seuemail@email.com">
@@ -31,8 +29,7 @@
             <span class="text">Digite seu telefone</span>
             <input  
                 mask="(00) 00000-0000"
-                class="input-default-house"
-                [(ngModel)]="client.Phone" 
+                [ngClass]="{'input-default-house': header.type === 'house', 'input-default-fashion': header.type === 'fashion'}"                [(ngModel)]="client.Phone" 
                 [ngModelOptions]="{standalone: true}"
                 placeholder="(31) 99999-9999"
                 type="text">
@@ -45,7 +42,7 @@
           rows="5"
           [(ngModel)]="message"
           [ngModelOptions]="{standalone: true}"
-          class="input-default-house">
+          [ngClass]="{'input-default-house': header.type === 'house', 'input-default-fashion': header.type === 'fashion'}">
       </textarea>
     </div>
 
@@ -53,7 +50,7 @@
         <app-vi-button [type]="'danger'" (onClick)="closeModal()" class="desktop" >
             <span class="text text--white">Cancelar</span>
         </app-vi-button>
-        <app-vi-button [type]="'green'" [submit]="true" (onClick)="sendEmail()">
+        <app-vi-button [type]="btnColor" [submit]="true" (onClick)="sendEmail()">
             <span class="text text--white">Enviar</span>
         </app-vi-button>
     </div>

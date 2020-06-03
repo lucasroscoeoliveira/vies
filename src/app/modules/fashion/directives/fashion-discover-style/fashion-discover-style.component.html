@@ -1,1 +1,27 @@
-<p style="height: 500px;">fashion-discover-style works!</p>
+<div class="content">
+    <div class="header">
+        <span class="text text--purple text--large text--centered margin-bottom-3 text--bold">TESTE - DESCUBRA SEU ESTILO!</span> 
+    </div>
+
+    <div class="discover-style-card">
+        <div class="images-container">
+            <img [src]="styleImage.source" *ngFor="let styleImage of styleImages" alt="" class="style-image">
+        </div>
+
+        <div class="content">
+            <div class="labels-container">
+
+                <h3 class="main-text">
+                    <span class="text--centered">
+                        <span class="text text--purple text--centered title text--large">SEU ESTILO É&nbsp;</span>
+                        <span class="text text--purple text--italic text--centered title text--large">{{fashionType}}?</span>
+                    </span>
+                </h3>
+            </div>
+    
+            <app-vi-button class="btn-container" [type]="'purple'">
+                <span class="text text--white">FAÇA O TESTE!</span>
+            </app-vi-button>
+        </div>        
+    </div>
+</div>

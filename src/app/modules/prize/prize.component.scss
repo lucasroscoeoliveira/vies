@@ -22,10 +22,21 @@
             margin: 1em;
             max-width: 25em;
 
-            &:hover {
-                box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
-                .h3 {
-                    font-weight: 800;
+            &--green {
+                &:hover {
+                    box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
+                    .h3 {
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            &--purple {
+                &:hover {
+                    box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+                    .h3 {
+                        font-weight: 800;
+                    }
                 }
             }
 

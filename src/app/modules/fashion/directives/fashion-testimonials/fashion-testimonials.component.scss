@@ -1,0 +1,70 @@
+@import '../../../../../styles.scss';
+
+.fashion-testimonials {
+    padding-bottom: 2em;
+    &__header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
+        padding-top: 2em;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &__card {
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 1em;
+            display: flex;
+            height: 485px;
+            background-color: $color-white;
+            width: 280px;
+            flex-direction: column;
+            border: 1px solid #efefef;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+            }
+        
+
+            .image {
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            &__labels {
+                display: flex;
+                flex-direction: column;
+                padding: 0 1em;
+                flex-grow: 1;
+            }
+
+            &__footer {
+                width: 100%;
+                padding: 1em;
+                background-color: $color-purple;
+                min-height: 4em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                .check {
+                    color: $color-white;
+                    font-size: 16px;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}

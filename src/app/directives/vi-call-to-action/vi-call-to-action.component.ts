@@ -3,6 +3,7 @@ import { WhatsappService } from 'src/app/services/whatsapp.service';
 import { Modal } from 'src/app/components-controllers/Modal';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Social } from 'src/app/components-controllers/Social';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-vi-call-to-action',
@@ -12,14 +13,14 @@ import { Social } from 'src/app/components-controllers/Social';
 export class ViCallToActionComponent implements OnInit {
 
   socials: Array<any>;
-  @Input() type: string;
-
 
   constructor(    
     public whatsAppService: WhatsappService,
     public modal: Modal,
     public toast: Toast,
-    public social: Social) { }
+    public social: Social,
+    public header: Header
+  ) { }
 
   ngOnInit(): void {
     this.socials = [

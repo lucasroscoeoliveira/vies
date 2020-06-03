@@ -23,8 +23,16 @@
         background-color: $color-white;
         margin: 2em 3em;
 
-        &:hover {
-            box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
+        &--green{
+            &:hover {
+                box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
+            }
+        }
+
+        &--purple {
+            &:hover {
+                box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+            }
         }
     
         .btns-container {
