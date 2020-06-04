@@ -33,6 +33,8 @@ import { ModalEmailComponent } from './modal/directives/modal-email/modal-email.
 import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
 import { PrizeViewComponent } from './modules/prize-view/prize-view.component';
 import { PrizeComponent } from './modules/prize/prize.component';
+import { ViesPdfViewerComponent } from './modules/vies-pdf-viewer/vies-pdf-viewer.component';
+import { SafePipe } from './filters/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -43,9 +45,11 @@ import { PrizeComponent } from './modules/prize/prize.component';
     WhoWeAreComponent,
     PrizeViewComponent,
     PrizeComponent,
+    ViesPdfViewerComponent,
+    SafePipe,
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'vies'}),
+    BrowserModule.withServerTransition({ appId: 'vies' }),
     TransferHttpCacheModule,
     AppRoutingModule,
     HttpClientModule,

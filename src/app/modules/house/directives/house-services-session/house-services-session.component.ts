@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-house-services-session',
@@ -13,7 +14,7 @@ export class HouseServicesSessionComponent implements OnInit {
   serviceLabels: any;
   consultLabels: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.projectImage = ImagesConstants.HOUSE_IMAGES.SERVICES.PROJETO;
@@ -45,6 +46,10 @@ export class HouseServicesSessionComponent implements OnInit {
         subtitle: ''
       },
     ]
+  }
+
+  showPdf(id: number) {
+    this.router.navigate(['conteudo', id]);
   }
 
   setServiceLabels() {

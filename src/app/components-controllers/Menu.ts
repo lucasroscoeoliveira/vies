@@ -6,10 +6,13 @@ export class Menu {
 
   static instance: Menu;
   type: string;
-  @Input() items: Array<MenuMenuItem>;
-  @Input() socials: Array<MenuSubMenuItem>;
+  items: Array<MenuMenuItem>;
+  socials: Array<MenuSubMenuItem>;
 
-  constructor(public social: Social){
+  constructor(public social: Social) {
+    if (!this.type) {
+      this.type = 'house';
+    }
     return Menu.instance = Menu.instance || this;
   }
 

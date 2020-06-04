@@ -1,0 +1,9 @@
+<div class="vies-pdf-viewer">
+    <app-vi-header class="desktop"></app-vi-header>
+    <app-vi-navigation-header [title]="'Voltar'" type='neutral' (onGoBack)="goBack()"></app-vi-navigation-header>
+    <div class="vies-pdf-container">
+        <embed class="expand" [src]="pdf | safe: 'resourceUrl'" type="application/pdf">
+    </div>
+</div>
+<app-vi-social class="mobile"></app-vi-social>
+<app-vi-menu class="mobile"></app-vi-menu>

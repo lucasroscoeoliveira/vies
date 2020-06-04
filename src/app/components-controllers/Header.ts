@@ -6,11 +6,14 @@ import { Social } from './Social';
 export class Header {
 
   static instance: Header;
-  @Input() items: Array<HeaderMenuItem>;
-  @Input() socials: Array<HeaderSubMenuItem>;
+  items: Array<HeaderMenuItem>;
+  socials: Array<HeaderSubMenuItem>;
   type: string;
 
-  constructor(private social: Social){
+  constructor(private social: Social) {
+    if (!this.type) {
+      this.type = 'house';
+    }
     return Header.instance = Header.instance || this;
   }
 

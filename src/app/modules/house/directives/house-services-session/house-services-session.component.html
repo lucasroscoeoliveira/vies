@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>            
-            <app-vi-button [wide]="true" type='green' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
+            <app-vi-button (onClick)="showPdf(1)" [wide]="true" type='green' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
 
         <div class="card-services">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <app-vi-button [wide]="true" class="margin-2" type='green'><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
+            <app-vi-button (onClick)="showPdf(2)" [wide]="true" class="margin-2" type='green'><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
     </div>
 </div>

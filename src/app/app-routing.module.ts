@@ -14,6 +14,7 @@ import { FashionMainComponent } from './modules/fashion/modules/fashion-main/fas
 import { FashionQuizComponent } from './modules/fashion/modules/fashion-quiz/fashion-quiz.component';
 import { FashionServicesComponent } from './modules/fashion/modules/fashion-services/fashion-services.component';
 import { FashionProjectViewComponent } from './modules/fashion/modules/fashion-project-view/fashion-project-view.component';
+import { ViesPdfViewerComponent } from './modules/vies-pdf-viewer/vies-pdf-viewer.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'quem-somos',
     component: WhoWeAreComponent,
+  },
+  {
+    path: 'conteudo/:id',
+    component: ViesPdfViewerComponent,
   },
   {
     path: 'casa', 
