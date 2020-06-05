@@ -1,1 +1,28 @@
-<p style="height: 500px;">fashion-services-session works!</p>
+<div class="fashion-services">
+    <span class="text text--purple text--large text--centered margin-bottom-2 text--bold">SERVIÇOS</span>
+
+    <div class="cards-container">
+        <div class="card-services" *ngFor="let serviceCard of serviceCards">
+            <div class="top-container">
+                <div class="circle margin-bottom-2">
+                    <app-vi-svg icon="{{serviceCard.image}}" class="service-icon"></app-vi-svg>
+                </div>
+                <span class="text text--purple text--large margin-bottom-2 name">{{serviceCard.title}}</span>
+                <span class="text margin-bottom-2">{{serviceCard.subtitle}}</span>
+        
+                <div class="labels-content">
+                    <div class="label-content" *ngFor="let serviceLabel of serviceCard.labels">
+                        <span class="label-content--adjust">
+                            <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
+                            <h1 class="text text--small" [innerHTML]="serviceLabel.main"></h1>
+                            <span></span>
+                        </span>
+                        <h4 [hidden]="!(serviceLabel.description && serviceLabel.description.length > 0)" 
+                            [innerHTML]="serviceLabel.description" class="text text--small text--center text--thin"></h4>
+                    </div>
+                </div>
+            </div>            
+            <app-vi-button (onClick)="showPdf(serviceCard.pdfId)" [wide]="true" type='purple' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
+        </div>
+    </div>
+</div>

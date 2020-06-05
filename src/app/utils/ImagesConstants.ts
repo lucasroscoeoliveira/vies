@@ -101,11 +101,11 @@ export default class ImagesConstants {
             STORE_14_COSMOPOLITAN: environment.s3_public + '/Fashion/Projects/Stores/14-cosmopolitan.jpg',
             STORE_15_CERRA: environment.s3_public + '/Fashion/Projects/Stores/15-cerra-douro.jpg',
             STORE_16_SINTONIA: environment.s3_public + '/Fashion/Projects/Stores/16-sintonia.jpg',
-            STORE_17_MARCELA: environment.s3_public + '/Fashion/Projects/Stores/17-marcela-ribeiro.jpg',
+            STORE_17_MARCELA: environment.s3_public + '/Fashion/Projects/Stores/17-marcela-rabelo.jpg',
             STORE_18_VICENTINA: environment.s3_public + '/Fashion/Projects/Stores/18-vicentina.jpg',
             STORE_19_MODAFEMININA: environment.s3_public + '/Fashion/Projects/Stores/19-modafeminina.jpg',
             STORE_20_NOUS: environment.s3_public + '/Fashion/Projects/Stores/20-nous.jpg',
-            STORE_21_KALLA: environment.s3_public + '/Fashion/Projects/Stores/21-kalla.jpg',
+            STORE_21_KALLA: environment.s3_public + '/Fashion/Projects/Stores/21-kailla.jpg',
             STORE_22_CLOSET: environment.s3_public + '/Fashion/Projects/Stores/22-closet.jpg',
             STORE_23_BAMBINO: environment.s3_public + '/Fashion/Projects/Stores/23-bambino.jpg',
 

@@ -1,0 +1,120 @@
+@import '../../../../../styles.scss';
+
+.fashion-services {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    flex-direction: column;
+
+    .cards-container {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card-services {
+            padding: 1.5em;
+            padding-bottom: 1em;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: $color-white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 1em 2em;
+            flex-direction: column;
+            border-radius: 5px;
+            width: 25em;
+            justify-content: space-between;
+
+            .top-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            &:hover {
+                box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+                .name {
+                    font-weight: 500;
+                }
+            }
+
+            .labels-content {
+                width: 100%;
+                .label-content {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    &--adjust{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                    }
+    
+                    span {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .check-icon {
+                            color: $color-purple;
+                            font-size: 1.2em;
+                            margin-right: 0.5em;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 5em;
+                height: 5em;
+                border-radius: 100%;
+                border: 0.3em solid $color-purple;
+
+                .service-icon {
+                    color: $color-purple;
+                    font-size: 3em;
+                    display: flex;
+                }
+            }
+
+            app-vi-button {
+                min-width: 80%;
+            }
+        }
+    }
+
+    .service-image {
+        max-height: 12em;
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card-services {
+        flex-grow: 1 !important;
+        min-width: 21em !important;
+        padding: 1em !important;
+    }
+
+    .labels-content {
+        min-height: 10em !important;
+    }
+
+    .label-content--adjust {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+}
