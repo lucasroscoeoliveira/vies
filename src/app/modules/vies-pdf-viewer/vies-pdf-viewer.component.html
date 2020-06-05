@@ -2,7 +2,8 @@
     <app-vi-header class="desktop"></app-vi-header>
     <app-vi-navigation-header [title]="'Voltar'" type='neutral' (onGoBack)="goBack()"></app-vi-navigation-header>
     <div class="vies-pdf-container">
-        <embed class="expand" [src]="pdf | safe: 'resourceUrl'" type="application/pdf">
+        <embed *ngIf="!setIsMobile()" class="expand" [src]="pdf | safe: 'resourceUrl'" type="application/pdf">
+        <iframe *ngIf="setIsMobile()" class="expand" [src]="pdf | safe: 'resourceUrl'" type="application/pdf"></iframe>
     </div>
 </div>
 <app-vi-social class="mobile"></app-vi-social>

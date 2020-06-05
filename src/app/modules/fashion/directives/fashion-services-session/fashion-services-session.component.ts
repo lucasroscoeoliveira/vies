@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fashion-services-session',
@@ -9,7 +10,7 @@ export class FashionServicesSessionComponent implements OnInit {
 
   serviceCards: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.setServiceCards();
@@ -139,7 +140,7 @@ export class FashionServicesSessionComponent implements OnInit {
   }
 
   showPdf(pdfId: number) {
-
+    this.router.navigate(['conteudo', pdfId]);
   }
 
 }

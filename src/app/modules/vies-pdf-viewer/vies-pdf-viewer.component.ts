@@ -47,4 +47,8 @@ export class ViesPdfViewerComponent implements OnInit {
         break;        
     }
   }
+
+  setIsMobile() {
+    return screen.width < 900
+  }
 }
