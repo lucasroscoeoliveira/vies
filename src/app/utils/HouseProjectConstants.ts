@@ -6,7 +6,7 @@ export default class HouseProjectConstants {
     MAIN: 'main',
     LIVING_ROOM: 'sala_estar',
     KITCHEN: 'cozinha',
-    ROOM: 'quarto',
+    BEDROOM: 'quarto',
     BEFORE_AFTER: 'antes_depois',
     CHILD: 'infantil',
     HOME_OFFICE: 'home_office',
@@ -68,7 +68,7 @@ export default class HouseProjectConstants {
       description: 'RESIDÊNCIA - GUTIERREZ',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.RESID_LAGOA_SANTA_23,
@@ -108,7 +108,7 @@ export default class HouseProjectConstants {
       description: 'RESIDÊNCIA - VARGINHA - MG',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.QUARTO_BEBE_CAICARA_18,
@@ -124,7 +124,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO E HOME OFFICE - SION',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.PLANALTO_16,
@@ -164,7 +164,7 @@ export default class HouseProjectConstants {
       description: 'PRÊMIO MOSTRA DE DECORAÇÃO - MORAR MAIS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BELVEDERE_11,
@@ -204,7 +204,7 @@ export default class HouseProjectConstants {
       description: 'SUÍTE - OURO PRETO',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SUITE_OURO_PRETO,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.FUNCIONARIOS_6,
@@ -236,7 +236,7 @@ export default class HouseProjectConstants {
       description: 'RESIDÊNCIA - BURITIS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
       main: true,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ANCHIETA_2,
@@ -748,7 +748,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - GUTIERREZ',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_2,
@@ -756,7 +756,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - SION',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_3,
@@ -764,7 +764,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - LAGOA SANTA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_4,
@@ -772,7 +772,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO BLOGUEIRA - MORAR MAIS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_5,
@@ -780,7 +780,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - BURITIS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_6,
@@ -788,7 +788,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - CONTAGEM',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_7,
@@ -796,7 +796,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - GUTIERREZ',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_8,
@@ -804,7 +804,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - BURITIS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_9,
@@ -812,7 +812,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - SANTA MARIA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_10,
@@ -820,7 +820,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - LAGOA SANTA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     // {
     //   source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_11,
@@ -828,7 +828,7 @@ export default class HouseProjectConstants {
     //   description: 'QUARTO CASAL - SANTA AMÉLIA',
     //   id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SANTA_AMELIA,
     //   main: false,
-    //   filter: HouseProjectConstants.FILTERS.ROOM
+    //   filter: HouseProjectConstants.FILTERS.BEDROOM
     // },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_12,
@@ -836,7 +836,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - SAVASSI',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_13,
@@ -844,7 +844,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - FUNCIONÁRIOS',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_14,
@@ -852,7 +852,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO SOLTEIRO - OURO PRETO',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SUITE_OURO_PRETO,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_15,
@@ -860,7 +860,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO CASAL - VARGINHA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_16,
@@ -868,7 +868,7 @@ export default class HouseProjectConstants {
       description: 'QUARTO HÓSPEDES - SANTA BRANCA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
       main: false,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
   ]
 
@@ -920,7 +920,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_ANCHIETA.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_ANCHIETA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_ANCHIETA.BANHEIRO,
@@ -970,25 +970,25 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SOLTEIRO,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SOLTEIRO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
 
@@ -1034,13 +1034,13 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LOURDES.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LOURDES,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LOURDES.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LOURDES,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LOURDES.HOME_OFFICE,
@@ -1074,10 +1074,24 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.QUARTO_FUNCIONARIOS,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.LAVABO_FUNCIONARIOS,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
+      filter: HouseProjectConstants.FILTERS.BATHROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.SALA_FUNCIONARIOS_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.SALA_FUNCIONARIOS,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
+      filter: HouseProjectConstants.FILTERS.BATHROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.SALA_FUNCIONARIOS_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_FUNCIONARIOS.SALA_FUNCIONARIOS_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_FUNCIONARIOS,
       filter: HouseProjectConstants.FILTERS.BATHROOM
@@ -1089,13 +1103,13 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SUITE_OURO_PRETO.SOLTEIRA_OURO_PRETO,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SUITE_OURO_PRETO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SUITE_OURO_PRETO.SOLTEIRA_OURO_PRETO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SUITE_OURO_PRETO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SUITE_OURO_PRETO.BANHEIRO_OURO_PRETO,
@@ -1165,13 +1179,34 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.BANHEIRO_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.BANHEIRO,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
+      filter: HouseProjectConstants.FILTERS.BATHROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.BANHEIRO_ANTES_5,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.BANHEIRO_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
+      filter: HouseProjectConstants.FILTERS.BATHROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.INFANTIL_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_SAVASSI.INFANTIL,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_SAVASSI,
+      filter: HouseProjectConstants.FILTERS.CHILD
     },
 
 
@@ -1191,6 +1226,13 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.AREA_GOURMET_SANTA_AMELIA.AREA_GOURMET_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.AREA_GOURMET_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.AREA_GOURMET_SANTA_AMELIA.AREA_GOURMET_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.AREA_GOURMET_SANTA_AMELIA.AREA_GOURMET,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.AREA_GOURMET_SANTA_AMELIA,
       filter: HouseProjectConstants.FILTERS.KITCHEN
@@ -1228,6 +1270,13 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PADRE_EUSTAQUIO,
       filter: HouseProjectConstants.FILTERS.BATHROOM
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PADRE_EUSTAQUIO.SALA_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PADRE_EUSTAQUIO.SALA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PADRE_EUSTAQUIO,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
 
 
 
@@ -1258,68 +1307,75 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_4,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_5,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_6,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_7,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_8,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_9,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_10,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_11,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS_12_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.PREMIO_MORAR_MAIS.MORAR_MAIS,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
 
@@ -1344,6 +1400,20 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_SION,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_SION.COZINHA_4_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_SION.COZINHA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_SION,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_SION.COZINHA_5_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_SION.COZINHA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_SION,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
 
 
 
@@ -1364,19 +1434,40 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_1,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.SALA_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.SALA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_CONTAGEM.CASAL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_CONTAGEM,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
 
@@ -1435,19 +1526,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_1,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.BANHEIRO_2,
@@ -1455,6 +1546,43 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
       filter: HouseProjectConstants.FILTERS.BATHROOM
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.SALA_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.SALA_4,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.SALA_ANTES_5,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.SALA_5,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.COZINHA_ANTES_5,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.SALA_5,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_TULIO.CASAL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+
+
 
 
 
@@ -1490,6 +1618,20 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PLANALTO,
       filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PLANALTO.SALA_6_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PLANALTO.SALA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PLANALTO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PLANALTO.SALA_7_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_PLANALTO.SALA_4,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_PLANALTO,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
 
 
 
@@ -1498,19 +1640,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_HOME_OFFICE_SION.QUARTO,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_HOME_OFFICE_SION.QUARTO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_HOME_OFFICE_SION.QUARTO_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_HOME_OFFICE_SION,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_HOME_OFFICE_SION.HOME_OFFICE,
@@ -1546,6 +1688,13 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_BEBE_CAICARA,
       filter: HouseProjectConstants.FILTERS.CHILD
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_BEBE_CAICARA.INFANTIL_CAICARA_4_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_BEBE_CAICARA.INFANTIL_CAICARA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_BEBE_CAICARA,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
 
 
 
@@ -1573,19 +1722,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_VARGINHA.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_VARGINHA.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_VARGINHA.CASAL_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_VARGINHA,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_VARGINHA.BANHEIRO,
@@ -1635,7 +1784,21 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_101,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
-
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO.SALA_4_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO.SALA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_101,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO.SALA_5_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO.SALA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_101,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    
 
 
 
@@ -1676,10 +1839,6 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_402,
       filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
-
-
-
-    
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_5,
       active: false,
@@ -1692,6 +1851,27 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_402,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_7_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_402,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_8_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_402,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_9_ANTES_6,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_COZINHA_PADRE_EUSTAQUIO_2.SALA_6,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_COZINHA_PADRE_EUSTAQUIO_402,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
 
 
 
@@ -1699,31 +1879,31 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_4,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_5,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.AREA,
@@ -1741,8 +1921,51 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.LAYOUT,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.LAYOUT
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_ANTES_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_4,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_ANTES_5,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.SALA_5,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.AREA_GOURMET_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.AREA,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.AREA_GOURMET_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.ANDAR_CASA_SANTA_AMELIA.AREA_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
+      filter: HouseProjectConstants.FILTERS.KITCHEN
+    },
+    
 
 
 
@@ -1794,19 +2017,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.CASAL_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL,
@@ -1946,19 +2169,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.BANHEIRO,
@@ -1982,19 +2205,19 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.INFANTIL,
@@ -2090,7 +2313,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_4_BEFORE_2,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_GABRIEL.INFANTIL_2,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_GABRIEL,
@@ -2118,7 +2341,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
@@ -2126,7 +2349,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_LAIS.INFANTIL_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_LAIS,
@@ -2155,7 +2378,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_4_BEFORE_2,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_THEO.INFANTIL_2,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_THEO,
@@ -2199,7 +2422,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_CICA.COZINHA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
@@ -2229,7 +2452,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
@@ -2237,7 +2460,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_HELOISA.COZINHA_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_HELOISA,
@@ -2266,7 +2489,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
@@ -2274,7 +2497,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_JOICE.COZINHA_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
@@ -2298,7 +2521,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_PAULO.COZINHA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_PAULO,
@@ -2328,7 +2551,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
@@ -2336,7 +2559,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.COZINHA_REGIANE.COZINHA_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_REGIANE,
@@ -2366,7 +2589,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
@@ -2374,7 +2597,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_5_BEFORE_2,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_2,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
@@ -2382,7 +2605,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_JOICE.SALA_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_JOICE,
@@ -2418,7 +2641,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4_BEFORE_2,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_2,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
@@ -2426,7 +2649,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_5_BEFORE_3,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_3,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
@@ -2434,7 +2657,7 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_6_BEFORE_4,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.SALA_PAULO.SALA_4,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
@@ -2448,27 +2671,27 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_1,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_REGIANE.QUARTO_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_REGIANE,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
 
@@ -2478,27 +2701,27 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_1,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_3,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_4_BEFORE_1,
-      sourceBefore: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.QUARTO_PAULO.QUARTO_1,
       active: false,
       beforeAfter: true,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_PAULO,
-      filter: HouseProjectConstants.FILTERS.ROOM
+      filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
 

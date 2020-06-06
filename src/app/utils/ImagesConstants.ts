@@ -303,6 +303,8 @@ export default class ImagesConstants {
                 SALA_FUNCIONARIOS_2: environment.s3_public + '/House/Projects/6-RESIDENCIA-FUNCIONARIOS/2-sala-funcionarios.jpg',
                 QUARTO_FUNCIONARIOS: environment.s3_public + '/House/Projects/6-RESIDENCIA-FUNCIONARIOS/3-quarto-funcionarios.jpg',
                 LAVABO_FUNCIONARIOS: environment.s3_public + '/House/Projects/6-RESIDENCIA-FUNCIONARIOS/4-lavabo-funcionarios.jpg',
+                SALA_FUNCIONARIOS_ANTES_1: environment.s3_public + '/House/Projects/6-RESIDENCIA-FUNCIONARIOS/5-sala-funcionarios-antes1.jpg',
+                SALA_FUNCIONARIOS_ANTES_2: environment.s3_public + '/House/Projects/6-RESIDENCIA-FUNCIONARIOS/6-sala-funcionarios-antes2.jpg',
             },
             SUITE_OURO_PRETO: {
                 SOLTEIRA_OURO_PRETO: environment.s3_public + '/House/Projects/7-SUITE-OURO-PRETO/1-solteira-ouro-preto.jpg',
@@ -321,11 +323,15 @@ export default class ImagesConstants {
                 INFANTIL_2: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/6-infantil-savassi.jpg',
                 CASAL: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/7-casal-savassi.jpg',
                 CASAL_2: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/8-casal-savassi.jpg',
+                BANHEIRO_ANTES_4: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/10-banheiro-savassi-antes4.jpg',
+                INFANTIL_ANTES_4: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/11-infantil-savassi-antes4.jpg',
+                BANHEIRO_ANTES_5: environment.s3_public + '/House/Projects/8-RESIDENCIA-SAVASSI/12-banheiro-savassi-antes5.jpg',
             },
             AREA_GOURMET_SANTA_AMELIA: {
                 AREA_GOURMET: environment.s3_public + '/House/Projects/9-AREA-GOURMET-SANTA-AMELIA/1-area-gourmet-santa-amelia.jpg',
                 AREA_GOURMET_2: environment.s3_public + '/House/Projects/9-AREA-GOURMET-SANTA-AMELIA/2-area-gourmet-santa-amelia.jpg',
                 AREA_GOURMET_3: environment.s3_public + '/House/Projects/9-AREA-GOURMET-SANTA-AMELIA/3-area-gourmet-santa-amelia.jpg',
+                AREA_GOURMET_ANTES_1: environment.s3_public + '/House/Projects/9-AREA-GOURMET-SANTA-AMELIA/4-area-gourmet-santa-amelia-antes1.jpg',
             },
             RESIDENCIA_PADRE_EUSTAQUIO: {
                 SALA: environment.s3_public + '/House/Projects/10-RESIDENCIA-PADRE-EUSTAQUIO/1-sala-solange-padre-eustaquio.jpg',
@@ -333,6 +339,7 @@ export default class ImagesConstants {
                 COZINHA: environment.s3_public + '/House/Projects/10-RESIDENCIA-PADRE-EUSTAQUIO/3-cozinha-solange-padre-eustaquio.jpg',
                 COZINHA_2: environment.s3_public + '/House/Projects/10-RESIDENCIA-PADRE-EUSTAQUIO/4-cozinha-solange-padre-eustaquio.jpg',
                 BANHEIRO: environment.s3_public + '/House/Projects/10-RESIDENCIA-PADRE-EUSTAQUIO/5-banheiro-solange-padre-eustaquio.jpg',
+                SALA_ANTES_1: environment.s3_public + '/House/Projects/10-RESIDENCIA-PADRE-EUSTAQUIO/6-sala-solange-padre-eustaquio-antes1.jpg',
             },
             SALAS_CONJUGADAS_BELVEDERE: {
                 SALA: environment.s3_public + '/House/Projects/11-SALAS-CONJUGADAS-BELVEDERE/1-sala-belvedere.jpg',
@@ -351,11 +358,14 @@ export default class ImagesConstants {
                 MORAR_MAIS_9: environment.s3_public + '/House/Projects/12-PREMIO-MORAR-MAIS-2018/9-morar-mais.jpg',
                 MORAR_MAIS_10: environment.s3_public + '/House/Projects/12-PREMIO-MORAR-MAIS-2018/10-morar-mais.jpg',
                 MORAR_MAIS_11: environment.s3_public + '/House/Projects/12-PREMIO-MORAR-MAIS-2018/11-morar-mais.jpg',
+                MORAR_MAIS_12_ANTES_1: environment.s3_public + '/House/Projects/12-PREMIO-MORAR-MAIS-2018/11-morar-mais.jpg',
             },
             COZINHA_SION: {
                 COZINHA: environment.s3_public + '/House/Projects/13-COZINHA-SION/1-cozinha-sion.jpg',
                 COZINHA_2: environment.s3_public + '/House/Projects/13-COZINHA-SION/2-cozinha-sion.jpg',
                 COZINHA_3: environment.s3_public + '/House/Projects/13-COZINHA-SION/3-cozinha-sion.jpg',
+                COZINHA_4_ANTES_2: environment.s3_public + '/House/Projects/13-COZINHA-SION/3-cozinha-sion.jpg',
+                COZINHA_5_ANTES_3: environment.s3_public + '/House/Projects/13-COZINHA-SION/3-cozinha-sion.jpg',
             },
             RESIDENCIA_CONTAGEM: {
                 SALA: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/1-sala-contagem.jpg',
@@ -363,6 +373,9 @@ export default class ImagesConstants {
                 CASAL_1: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/3-casal-contagem.jpg',
                 CASAL_2: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/4-casal-contagem.jpg',
                 CASAL_3: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/5-casal-contagem.jpg',
+                SALA_ANTES_2: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/6-sala-contagem-antes2.jpg',
+                CASAL_ANTES_3: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/7-casal-contagem-antes3.jpg',
+                CASAL_ANTES_4: environment.s3_public + '/House/Projects/14-RESIDENCIA-CONTAGEM/8-casal-contagem-antes4.jpg',
             },
             RESIDENCIA_LAGOA_SANTA_TULIO: {
                 SALA: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/1-sala-tulio-lagoa-santa.jpg',
@@ -377,6 +390,11 @@ export default class ImagesConstants {
                 CASAL_2: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/10-casal-tulio-lagoa-santa.jpg',
                 CASAL_3: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/11-casal-tulio-lagoa-santa.jpg',
                 BANHEIRO_2: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/12-banheiro-tulio-lagoa-santa.jpg',
+                SALA_ANTES_4: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/13-sala-tulio-lagoa-santa-antes4.jpg',
+                SALA_ANTES_5: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/14-sla-tulio-lagoa-santa-antes5.jpg',
+                COZINHA_ANTES_5: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/15-cozinha-tulio-lagoa-santa-antes5.jpg',
+                CASAL_ANTES_1: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/16-casal-tulio-lagoa-santa-antes9.jpg',
+                CASAL_ANTES_3: environment.s3_public + '/House/Projects/15-RESIDENCIA-LAGOA-SANTA/17-casal-tulio-lagoa-santa-antes11.jpg',
             },
             RESIDENCIA_PLANALTO: {
                 SALA: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/1-sala-planalto.jpg',
@@ -384,6 +402,8 @@ export default class ImagesConstants {
                 SALA_3: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/3-sala-planalto.jpg',
                 SALA_4: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/4-sala-planalto.jpg',
                 SALA_5: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/5-sala-planalto.jpg',
+                SALA_6_ANTES_2: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/6-sala-planalto-antes2.jpg',
+                SALA_7_ANTES_4: environment.s3_public + '/House/Projects/16-RESIDENCIA-PLANALTO/7-sala-planalto-antes4.jpg',
             },
             QUARTO_HOME_OFFICE_SION: {
                 QUARTO: environment.s3_public + '/House/Projects/17-QUARTO-E-HOME-OFFICE-SION/1-quarto-sion.jpg',
@@ -396,6 +416,7 @@ export default class ImagesConstants {
                 INFANTIL_CAICARA: environment.s3_public + '/House/Projects/18-QUARTO-BEBE-CAICARA/1-infantil-caicara.jpg',
                 INFANTIL_CAICARA_2: environment.s3_public + '/House/Projects/18-QUARTO-BEBE-CAICARA/2-infantil-caicara.jpg',
                 INFANTIL_CAICARA_3: environment.s3_public + '/House/Projects/18-QUARTO-BEBE-CAICARA/3-infantil-caicara.jpg',
+                INFANTIL_CAICARA_4_ANTES_1: environment.s3_public + '/House/Projects/18-QUARTO-BEBE-CAICARA/4-infantil-caicara-antes1.jpg',
             },
             RESIDENCIA_VARGINHA: {
                 ESTAR: environment.s3_public + '/House/Projects/19-RESIDENCIA-VARGINHA-MG/1-estar-varginha.jpg',
@@ -413,6 +434,8 @@ export default class ImagesConstants {
                 SALA_3: environment.s3_public + '/House/Projects/20-SALA-E-COZINHA-101-PADRE-EUSTAQUIO/3-sala-102-padre-esutaquio.jpg',
                 COZINHA: environment.s3_public + '/House/Projects/20-SALA-E-COZINHA-101-PADRE-EUSTAQUIO/4-cozinha-102-padre-esutaquio.jpg',
                 COZINHA_2: environment.s3_public + '/House/Projects/20-SALA-E-COZINHA-101-PADRE-EUSTAQUIO/5-cozinha-102-padre-esutaquio.jpg',
+                SALA_4_ANTES_1: environment.s3_public + '/House/Projects/20-SALA-E-COZINHA-101-PADRE-EUSTAQUIO/6-sala-102-padre-esutaquio-antes1.jpg',
+                SALA_5_ANTES_3: environment.s3_public + '/House/Projects/20-SALA-E-COZINHA-101-PADRE-EUSTAQUIO/7-sala-102-padre-esutaquio-antes3.jpg',
             },
             SALA_COZINHA_PADRE_EUSTAQUIO_2: {
                 SALA: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/1-sala-402-padre-esutaquio.jpg',
@@ -421,6 +444,9 @@ export default class ImagesConstants {
                 SALA_4: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/4-sala-402-padre-esutaquio.jpg',
                 SALA_5: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/5-sala-402-padre-esutaquio.jpg',
                 SALA_6: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/6-sala-402-padre-esutaquio.jpg',
+                SALA_7_ANTES_1: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/7-sala-402-padre-esutaquio-antes1.jpg',
+                SALA_8_ANTES_3: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/8-sala-402-padre-esutaquio-antes3.jpg',
+                SALA_9_ANTES_6: environment.s3_public + '/House/Projects/21-SALA-E-COZINHA-402-PADRE-EUSTAQUIO/9-sala-402-padre-esutaquio-antes6.jpg',
             },
             ANDAR_CASA_SANTA_AMELIA: {
                 SALA: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/1-sala-casa-santa-amelia.jpg',
@@ -431,6 +457,12 @@ export default class ImagesConstants {
                 AREA: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/6-area-gourmet-casa-santa-amelia.jpg',
                 AREA_1: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/7-area-gourmet-casa-santa-amelia.jpg',
                 LAYOUT: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/8-layout-casa-santa-amelia.jpg',
+                SALA_ANTES_1: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/9-sala-casa-santa-amelia-antes1.jpg',
+                SALA_ANTES_2: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/10-sala-casa-santa-amelia-antes2.jpg',
+                SALA_ANTES_4: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/11-sala-casa-santa-amelia-antes4.jpg',
+                SALA_ANTES_5: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/12-sala-casa-santa-amelia-antes5.jpg',
+                AREA_GOURMET_ANTES_1: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/13-area-gourmet-casa-santa-amelia-antes6.jpg',
+                AREA_GOURMET_ANTES_2: environment.s3_public + '/House/Projects/22-2-ANDAR-CASA-SANTA-AMELIA/14-area-gourmet-casa-santa-amelia-antes7.jpg',
             },
             RESIDENCIA_LAGOA_SANTA_2_GABI: {
                 SALA: environment.s3_public + '/House/Projects/23-RESIDENCIA-LAGOA-SANTA/1-sala-lagoa-santa.jpg',

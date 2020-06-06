@@ -37,9 +37,6 @@ export class HouseProjectViewComponent implements OnInit {
 
   setPagesLabel() {
     this.pagesLabel = (this.currIndex + 1) + '/' + this.images.length;
-    if(this.image.sourceBefore){
-      this.pagesLabel += ' (Antes X Depois)';
-    }
   }
 
   checkForTabParams() {
@@ -71,8 +68,11 @@ export class HouseProjectViewComponent implements OnInit {
     this.image = this.images[this.currIndex];
   }
 
+  isBeforeAfter() {
+    return this.image.sourceAfter;
+  }
+
   move(direction: string) {
-    debugger;
     if (direction === 'right') {
       if (this.disableArrowRight()) {
         return;

@@ -70,7 +70,7 @@ export class HouseProjectsComponent implements OnInit {
       },
       {
         name: 'QUARTOS',
-        filter: HouseProjectConstants.FILTERS.ROOM,
+        filter: HouseProjectConstants.FILTERS.BEDROOM,
         selected: false
       },
       {
