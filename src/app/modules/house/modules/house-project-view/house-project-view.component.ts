@@ -72,14 +72,15 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   move(direction: string) {
+    debugger;
     if (direction === 'right') {
-      if (!this.visibleRightArrow()) {
+      if (this.disableArrowRight()) {
         return;
       }
       this.moveRight();
     }
     else {
-      if (!this.visibleLeftArrow()) {
+      if (this.disableArrowLeft()) {
         return;
       }
       this.moveLeft();
@@ -101,27 +102,23 @@ export class HouseProjectViewComponent implements OnInit {
   }
 
   moveRight() {
-    if (this.currIndex === this.images.length - 1) {
-      this.currIndex = 0;
-    } else {
+    if (this.currIndex < this.images.length - 1) {
       this.currIndex++;
     }
   }
 
   moveLeft() {
-    if (this.currIndex === 0) {
-      this.currIndex = this.images.length - 1;
-    } else {
+    if (this.currIndex > 0) {
       this.currIndex--;
     }
   }
 
-  visibleRightArrow() {
-    return this.currIndex < this.images.length - 1;
+  disableArrowLeft() {
+    return this.currIndex === 0
   }
 
-  visibleLeftArrow() {
-    return this.currIndex > 0
+  disableArrowRight() {
+    return this.currIndex >= this.images.length - 1;
   }
 
   goBack() {

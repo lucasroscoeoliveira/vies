@@ -25,7 +25,7 @@
 
     <div class="fashion-projects__button-left desktop">
         <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')"
-            [ngClass]="{'disabled': disableArrowLeft()}">
+            [isDisabled] = "disableArrowLeft()">
             <div class="buttom-menu">
                 <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
             </div>
@@ -34,7 +34,7 @@
 
     <div class="fashion-projects__button-right desktop">
         <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')"
-            [ngClass]="{'disabled': disableArrowRight()}">
+            [isDisabled] = "disableArrowRight()">
             <div class="buttom-menu">
                 <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
             </div>

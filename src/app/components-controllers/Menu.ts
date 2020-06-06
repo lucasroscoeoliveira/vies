@@ -96,13 +96,13 @@ export class Menu {
         logo: false,
         routeName: 'premio'
       },
-      {
-        name: 'BLOG',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'blog'
-      },
+      // {
+      //   name: 'BLOG',
+      //   subItems: [],
+      //   hasMenu: false,
+      //   logo: false,
+      //   routeName: 'blog'
+      // },
       {
         name: 'CONTATO',
         subItems: [],
@@ -157,13 +157,13 @@ export class Menu {
         logo: false,
         routeName: 'premio'
       },
-      {
-        name: 'BLOG',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'blog'
-      },
+      // {
+      //   name: 'BLOG',
+      //   subItems: [],
+      //   hasMenu: false,
+      //   logo: false,
+      //   routeName: 'blog'
+      // },
       {
         name: 'CONTATO',
         subItems: [],

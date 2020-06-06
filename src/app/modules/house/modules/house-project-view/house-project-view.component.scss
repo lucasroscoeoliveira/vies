@@ -58,34 +58,6 @@
         align-items: center;
     }
 
-    .buttom-menu {
-        pointer-events: visible;
-        height: 3.5em;
-        width: 3.5em;
-        box-shadow: 0.4px 5px 4px 0 rgba(0, 0, 0, 0.3);
-        display: flex;
-        border-radius: 100%;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-        background-color: $color-white;
-        border: 1px solid #efefef;
-
-        cursor: pointer;
-        app-vi-svg {
-            font-size: 35px;
-            color: $color-green;
-            display: flex;
-
-            &:hover {
-                opacity: 0.8;
-            }
-            &:active {
-                opacity: 1;
-            }
-        }
-    }
-
     .buttons-mobile {
         bottom: 6em;
         display: flex;
@@ -96,9 +68,11 @@
         position: absolute;
     }
 
-    .disabled {
-        opacity: 0.5;
-        cursor: not-allowed; 
+    .arrow-container{
+            app-vi-svg {
+                font-size: 1.5em;
+                color: $color-green;
+            }
     }
 }
 

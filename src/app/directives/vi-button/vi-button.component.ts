@@ -11,6 +11,7 @@ export class ViButtonComponent implements OnInit {
   @Input() wide: boolean;
   @Input() round: boolean;
   @Input() submit: boolean;
+  @Input() isDisabled: boolean;
   @Output() onClick = new EventEmitter();
 
   constructor() { }
@@ -19,7 +20,9 @@ export class ViButtonComponent implements OnInit {
   }
 
   btnClicked() {
-    this.onClick.emit();
+    if (!this.isDisabled) {
+      this.onClick.emit();
+    }
   }
 
   getBtnType() {

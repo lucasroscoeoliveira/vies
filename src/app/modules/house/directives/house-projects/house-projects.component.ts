@@ -16,6 +16,7 @@ export class HouseProjectsComponent implements OnInit {
   countActive: number;
   tabs: any;
   pagesLabel: string;
+  
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 

@@ -3,7 +3,7 @@
         <span class="text">{{pagesLabel}}</span>    
     </app-vi-navigation-header>
     <div class="project-view__body">
-        <div class="image-container"       
+        <div class="image-container arrow-container"       
             (swiperight)="move('left')" 
             (swipeleft)="move('right')">
             <div class="display" *ngIf="image && image.source">
@@ -11,32 +11,40 @@
                 <img *ngIf="image.sourceBefore" [src]="image.sourceBefore" alt="" unselectable="on">
             </div>
 
-            <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">
-                <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-                </div>
+            <div class="button-left desktop" [hidden]="!images || images.length <= 1">
+                <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')" [isDisabled] = "disableArrowLeft()">
+                    <div class="buttom-menu">
+                        <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                    </div>
+                </app-vi-button>
             </div>
         
-            <div class="button-right desktop" (click)="move('right')" [hidden]="!images || images.length <= 1">
-                <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
-                </div>
+            <div class="button-right desktop" [hidden]="!images || images.length <= 1">
+                <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')" [isDisabled] = "disableArrowRight()">
+                    <div class="buttom-menu">
+                        <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                    </div>
+                </app-vi-button>
             </div>
         </div>
     </div>
 
 
-    <div class="buttons-mobile mobile" [hidden]="!images || images.length <= 1">
+    <div class="buttons-mobile mobile arrow-container" [hidden]="!images || images.length <= 1">
         <div class="button-left margin-right-1" (click)="move('left')">
-            <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-            </div>
+            <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')" [isDisabled] = "disableArrowLeft()">
+                <div class="buttom-menu">
+                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
+                </div>
+            </app-vi-button>
         </div>
 
         <div class="button-right margin-left-1" (click)="move('right')">
-            <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
-            </div>
+            <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')" [isDisabled] = "disableArrowRight()">
+                <div class="buttom-menu">
+                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
+                </div>
+            </app-vi-button>
         </div>
     </div>
 </main>

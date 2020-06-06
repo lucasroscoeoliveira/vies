@@ -117,14 +117,14 @@ export class Header {
         routeName: 'premio',
         focused: false
       },
-      {
-        name: 'BLOG',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'blog',
-        focused: false
-      },
+      // {
+      //   name: 'BLOG',
+      //   subItems: [],
+      //   hasMenu: false,
+      //   logo: false,
+      //   routeName: 'blog',
+      //   focused: false
+      // },
       {
         name: 'CONTATO',
         subItems: [],
@@ -186,14 +186,14 @@ export class Header {
         routeName: 'premio',
         focused: false
       },
-      {
-        name: 'BLOG',
-        subItems: [],
-        hasMenu: false,
-        logo: false,
-        routeName: 'blog',
-        focused: false
-      },
+      // {
+      //   name: 'BLOG',
+      //   subItems: [],
+      //   hasMenu: false,
+      //   logo: false,
+      //   routeName: 'blog',
+      //   focused: false
+      // },
       {
         name: 'CONTATO',
         subItems: [],
