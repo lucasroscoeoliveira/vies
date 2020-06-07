@@ -17,7 +17,6 @@ export class ModalEmailComponent implements OnInit {
 
   client: ClientModel;
   message: string;
-  logoImage: string
   subscribe: boolean;
   btnColor: string;
   
@@ -26,12 +25,7 @@ export class ModalEmailComponent implements OnInit {
   ngOnInit(): void {
     this.client = new ClientModel();
     this.focusInputName();
-    this.setLogoImage();
     this.btnColor = this.getBtnType();
-  }
-
-  setLogoImage() {
-    this.logoImage = this.header.type === 'header' ? "../../../../assets/imgs/logo-casa-horizontal.png" : "../../../../assets/imgs/logo-moda-horizontal.png"
   }
 
   getBtnType() {
