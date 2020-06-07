@@ -1,5 +1,5 @@
 <div class="menu">
-    <div class="background mobile" (click)="closeMenu()" [hidden]="!menuOpened">
+    <div class="background mobile" (click)="closeMenu()" *ngIf="menuOpened" (swipeleft)="toggleMenu()">
 
     </div>
 

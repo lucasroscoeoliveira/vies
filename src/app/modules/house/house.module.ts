@@ -29,7 +29,7 @@ import { HouseProjectViewComponent } from './modules/house-project-view/house-pr
   imports: [
     CommonModule,
     DirectivesModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
   ]

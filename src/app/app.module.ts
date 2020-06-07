@@ -1,4 +1,5 @@
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
@@ -36,6 +37,13 @@ import { PrizeComponent } from './modules/prize/prize.component';
 import { ViesPdfViewerComponent } from './modules/vies-pdf-viewer/vies-pdf-viewer.component';
 import { SafePipe } from './filters/safe.pipe';
 
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+      'pinch': { enable: false },
+      'rotate': { enable: false }
+  }
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +67,7 @@ import { SafePipe } from './filters/safe.pipe';
     HammerModule,
     DirectivesModule,
     FormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
   ],
   providers: [
     Slider,
@@ -73,6 +81,10 @@ import { SafePipe } from './filters/safe.pipe';
     WhatsappService,
     ClientAppService,
     Social,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
   ],
   bootstrap: [AppComponent]
 })

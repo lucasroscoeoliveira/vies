@@ -41,7 +41,7 @@ import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.c
   imports: [
     CommonModule,
     FormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
   ]
 })
 export class DirectivesModule { }
