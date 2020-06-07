@@ -1,0 +1,17 @@
+<div class="content">
+    <div class="header">
+        <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text text--large text--centered margin-bottom-3 text--bold">PRÊMIO MORAR MAIS - QUARTO DA BLOGUEIRA</span> 
+    </div>
+
+    <div class="discover-style-card" [ngClass]="{'card--green': menu.type === 'house', 'card--purple': menu.type === 'fashion'}">
+        <div class="images-container">
+            <img [src]="styleImage.source" *ngFor="let styleImage of styleImages" alt="" class="style-image">
+        </div>
+
+        <div class="content">    
+            <app-vi-button class="btn-container" [type]="getBtnType()"(onClick)="goToPrize()">
+                <span class="text text--white">SAIBA MAIS</span>
+            </app-vi-button>
+        </div>        
+    </div>
+</div>

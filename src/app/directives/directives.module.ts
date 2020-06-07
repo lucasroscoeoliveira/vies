@@ -12,6 +12,7 @@ import { ViFooterComponent } from './vi-footer/vi-footer.component';
 import { ViToastComponent } from './vi-toast/vi-toast.component';
 import { ViSocialComponent } from './vi-social/vi-social.component';
 import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.component';
+import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.c
     ViToastComponent,
     ViSocialComponent,
     ViCallToActionComponent,
+    ViPrizeSessionComponent,
   ],
   exports: [
     ViButtonComponent,
@@ -37,6 +39,7 @@ import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.c
     ViToastComponent,
     ViSocialComponent,
     ViCallToActionComponent,
+    ViPrizeSessionComponent
   ],
   imports: [
     CommonModule,

@@ -76,11 +76,11 @@ export class FashionProjectsComponent implements OnInit {
         filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY,
         selected: false
       },
-      {
-        name: 'ANTES X DEPOIS',
-        filter: FashionProjectConstants.FILTERS.BEFORE_AFTER,
-        selected: false
-      }
+      // {
+      //   name: 'ANTES X DEPOIS',
+      //   filter: FashionProjectConstants.FILTERS.BEFORE_AFTER,
+      //   selected: false
+      // }
     ]
   }
 

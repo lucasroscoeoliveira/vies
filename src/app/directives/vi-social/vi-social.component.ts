@@ -15,7 +15,7 @@ export class ViSocialComponent implements OnInit {
   }
 
   whatsApp() {
-    this.whatsAppService.sendMessage(5531993357579);
+    this.whatsAppService.sendMessage(5531991557975);
   }
 
   email() {

@@ -32,7 +32,7 @@ export class ViMenuComponent implements OnInit {
     this.menuOpened = !this.menuOpened;
     let drawer = document.getElementById("menu-content");
 
-    if(this.menuOpened){
+    if (this.menuOpened) {
       drawer.style.width = "300px";
     } else {
       drawer.style.width = "0";
@@ -40,7 +40,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   closeMenu() {
-    if(this.menuOpened){
+    if (this.menuOpened) {
       this.menuOpened = false;
       let drawer = document.getElementById("menu-content");
       drawer.style.width = "0px";
@@ -48,7 +48,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   onClickMenu(route: string) {
-    if(this.menu.type === 'house'){
+    if (this.menu.type === 'house') {
       this.navigateToHouse(route);
     } else {
       this.navigateToFashion(route);
@@ -57,7 +57,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   navigateToFashion(route: string) {
-    switch(route){
+    switch (route) {
       case 'vies':
         this.router.navigate(['negocio/inicio', 'vies']);
         this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'fashion');
@@ -78,7 +78,8 @@ export class ViMenuComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
         break;
       case 'premio':
-        this.router.navigate(['premios']);
+        this.router.navigate(['negocio/inicio', 'premio']);
+        this.scroll.navigateToRoute(this.scroll.states.prize, 300, 'fashion');
         break;
       case 'contato':
         this.router.navigate(['negocio/inicio', 'contato']);
@@ -88,7 +89,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   navigateToHouse(route: string) {
-    switch(route){
+    switch (route) {
       case 'vies':
         this.router.navigate(['casa/inicio', 'vies']);
         this.scroll.navigateToRoute(this.scroll.states.vies, 300, 'house');
@@ -109,7 +110,8 @@ export class ViMenuComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
       case 'premio':
-        this.router.navigate(['premios']);
+        this.router.navigate(['casa/inicio', 'premio']);
+        this.scroll.navigateToRoute(this.scroll.states.prize, 300, 'house');
         break;
       case 'contato':
         this.router.navigate(['casa/inicio', 'contato']);
@@ -119,7 +121,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   getMainLogo() {
-    if(this.menu.type === 'house'){
+    if (this.menu.type === 'house') {
       return './assets/imgs/logo-casa-horizontal.png';
     } else {
       return './assets/imgs/logo-moda-horizontal.png';
@@ -127,7 +129,7 @@ export class ViMenuComponent implements OnInit {
   }
 
   getSecondaryLogo() {
-    if(this.menu.type === 'house'){
+    if (this.menu.type === 'house') {
       return './assets/imgs/logo-moda-horizontal.png';
     } else {
       return './assets/imgs/logo-casa-horizontal.png';

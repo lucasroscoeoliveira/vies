@@ -53,7 +53,8 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'fashion');
         break;
       case 'premio':
-        this.router.navigate(['premios']);
+        this.router.navigate(['negocio/inicio', 'premio']);
+        this.scroll.navigateToRoute(this.scroll.states.prize, 300, 'fashion');
         break;
       case 'blog':
         //falta implementar o blog
@@ -88,7 +89,8 @@ export class ViHeaderComponent implements OnInit {
         this.scroll.navigateToRoute(this.scroll.states.quiz, 300, 'house');
         break;
       case 'premio':
-        this.router.navigate(['premios']);
+        this.router.navigate(['casa/inicio', 'premio']);
+        this.scroll.navigateToRoute(this.scroll.states.prize, 300, 'house');
         break;
       case 'blog':
         //falta implementar o blog

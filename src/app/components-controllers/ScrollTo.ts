@@ -11,10 +11,11 @@ export class ScrollTo {
   blockScrollEvent: boolean = false;
   type: string = 'house';
   projectDivId: string;
-  quizDivId: string;
+  //quizDivId: string;
   contactDivId: string;
   servicesDivId: string;
   viesDivId: string;
+  prizeSessionDivId: string;
   scrollContainer: string;
 
   constructor(public header: Header, public router: Router) {
@@ -23,7 +24,8 @@ export class ScrollTo {
       quiz: 'quiz',
       contact: 'contato',
       services: 'servicos',
-      vies: 'vies'
+      vies: 'vies',
+      prize: 'premio'
     };
     this.setMainDivs();
     return ScrollTo.instance = ScrollTo.instance || this;
@@ -32,10 +34,11 @@ export class ScrollTo {
   setMainDivs() {
     this.scrollContainer = this.type === 'house' ? 'house-scroll-container' : 'fashion-scroll-container';
     this.projectDivId = this.type === 'house' ? 'house-projects' : 'fashion-projects';
-    this.quizDivId = this.type === 'house' ? 'house-discover-style' : 'fashion-discover-style';
+    //this.quizDivId = this.type === 'house' ? 'house-discover-style' : 'fashion-discover-style';
     this.contactDivId = this.type === 'house' ? 'house-call-to-action' : 'fashion-call-to-action';
     this.servicesDivId = this.type === 'house' ? 'house-services-session' : 'fashion-services-session';
     this.viesDivId = this.type === 'house' ? 'house-slider' : 'fashion-slider';
+    this.prizeSessionDivId = this.type === 'house' ? 'house-prize-session' : 'fashion-prize-session';
   }
 
   navigateToRoute(routeName: string, timeout: number, type: string) {
@@ -49,9 +52,9 @@ export class ScrollTo {
         case this.states.projects:
           content = document.getElementById(this.projectDivId);
           break;
-        case this.states.quiz:
-          content = document.getElementById(this.quizDivId);
-          break;
+        // case this.states.quiz:
+        //   content = document.getElementById(this.quizDivId);
+        //   break;
         case this.states.contact:
           content = document.getElementById(this.contactDivId);
           break;
@@ -60,6 +63,9 @@ export class ScrollTo {
           break;
         case this.states.vies:
           content = document.getElementById(this.viesDivId);
+          break;
+        case this.states.prize:
+          content = document.getElementById(this.prizeSessionDivId);
           break;
       }
       if (content) {
@@ -85,7 +91,8 @@ export class ScrollTo {
     let mainElements = [
       document.getElementById(this.projectDivId),
       document.getElementById(this.servicesDivId),
-      document.getElementById(this.quizDivId),
+      //document.getElementById(this.quizDivId),
+      document.getElementById(this.prizeSessionDivId),
       document.getElementById(this.contactDivId),
     ]
 
@@ -117,9 +124,13 @@ export class ScrollTo {
               this.router.navigate([`${prefix}/inicio`, 'servicos']);
               this.header.setActive('servicos');
               break;
+            // case 2:
+            //   this.router.navigate([`${prefix}/inicio`, 'quiz']);
+            //   this.header.setActive('quiz');
+            //   break;
             case 2:
-              this.router.navigate([`${prefix}/inicio`, 'quiz']);
-              this.header.setActive('quiz');
+              this.router.navigate([`${prefix}/inicio`, 'premio']);
+              this.header.setActive('premio');
               break;
           }
         }

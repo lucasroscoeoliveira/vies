@@ -90,13 +90,13 @@ export class Menu {
         logo: false,
         routeName: 'servicos'
       },
-      {
-        name: 'TESTE',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'quiz'
-      },
+      // {
+      //   name: 'TESTE',
+      //   subItems: [],
+      //   hasMenu: true,
+      //   logo: false,
+      //   routeName: 'quiz'
+      // },
       {
         name: 'PRÊMIO',
         subItems: [],
@@ -151,13 +151,13 @@ export class Menu {
         logo: false,
         routeName: 'servicos'
       },
-      {
-        name: 'TESTE',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'quiz'
-      },
+      // {
+      //   name: 'TESTE',
+      //   subItems: [],
+      //   hasMenu: true,
+      //   logo: false,
+      //   routeName: 'quiz'
+      // },
       {
         name: 'PRÊMIO',
         subItems: [],

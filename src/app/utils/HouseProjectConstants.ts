@@ -608,14 +608,6 @@ export default class HouseProjectConstants {
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
     },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_3,
-      active: false,
-      description: 'SALA - SANTA AMÉLIA',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
-      main: false,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
-    },
 
 
 
@@ -736,6 +728,14 @@ export default class HouseProjectConstants {
       active: false,
       description: 'SALA - SANTA BRANCA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.SALA_PAULO,
+      main: false,
+      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.PROJECTS.ROOM_3,
+      active: false,
+      description: 'SALA - SANTA AMÉLIA',
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.SEGUNDO_ANDAR_SANTA_AMELIA,
       main: false,
       filter: HouseProjectConstants.FILTERS.LIVING_ROOM
     },

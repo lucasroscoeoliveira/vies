@@ -14,11 +14,11 @@
                     <div class="label-content" *ngFor="let serviceLabel of serviceCard.labels">
                         <span class="label-content--adjust">
                             <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
-                            <h1 class="text text--small" [innerHTML]="serviceLabel.main"></h1>
+                            <h1 class="text text--small text--start" [innerHTML]="serviceLabel.main"></h1>
                             <span></span>
                         </span>
                         <h4 [hidden]="!(serviceLabel.description && serviceLabel.description.length > 0)" 
-                            [innerHTML]="serviceLabel.description" class="text text--small text--center text--thin"></h4>
+                            [innerHTML]="serviceLabel.description" class="text text--small text--thin margin-left-3 text--start margin-top-0"></h4>
                     </div>
                 </div>
             </div>            

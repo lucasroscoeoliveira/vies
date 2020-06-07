@@ -88,11 +88,11 @@ export class HouseProjectsComponent implements OnInit {
         filter: HouseProjectConstants.FILTERS.BATHROOM,
         selected: false
       },
-      {
-        name: 'ANTES x DEPOIS',
-        filter: HouseProjectConstants.FILTERS.BEFORE_AFTER,
-        selected: false
-      },
+      // {
+      //   name: 'ANTES x DEPOIS',
+      //   filter: HouseProjectConstants.FILTERS.BEFORE_AFTER,
+      //   selected: false
+      // },
     ]
   }
 

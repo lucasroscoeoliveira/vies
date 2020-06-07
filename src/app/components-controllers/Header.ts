@@ -110,14 +110,14 @@ export class Header {
         routeName: 'servicos',
         focused: false
       },
-      {
-        name: 'TESTE',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'quiz',
-        focused: false
-      },
+      // {
+      //   name: 'TESTE',
+      //   subItems: [],
+      //   hasMenu: true,
+      //   logo: false,
+      //   routeName: 'quiz',
+      //   focused: false
+      // },
       {
         name: 'PRÊMIO',
         subItems: [],
@@ -180,14 +180,14 @@ export class Header {
         routeName: 'servicos',
         focused: false
       },
-      {
-        name: 'TESTE',
-        subItems: [],
-        hasMenu: true,
-        logo: false,
-        routeName: 'quiz',
-        focused: false
-      },
+      // {
+      //   name: 'TESTE',
+      //   subItems: [],
+      //   hasMenu: true,
+      //   logo: false,
+      //   routeName: 'quiz',
+      //   focused: false
+      // },
       {
         name: 'PRÊMIO',
         subItems: [],
