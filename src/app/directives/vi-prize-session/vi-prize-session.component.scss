@@ -115,7 +115,7 @@
 
     .style-image {
         flex-grow: 1;
-        width: 50% !important;
+        width: calc(50% - 0.4em) !important;
     }
 }
 
