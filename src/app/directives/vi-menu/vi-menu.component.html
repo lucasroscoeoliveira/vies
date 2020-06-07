@@ -9,8 +9,11 @@
                 <div *ngIf="!item.logo" class="text-container">
                     <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
                 </div>
-                <div class="logo" *ngIf="item.logo">
-                    <img class="logo--img clickable" [src]="getMainLogo()" (click)="changeVies('main')">
+                <div class="logo clickable" *ngIf="item.logo" (click)="changeVies('main')">
+                    <img class="logo--img" [src]="getMainLogo()">
+                    <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text margin-left-2 text--disco text--low-large text--bold">
+                        {{item.logoLabel}}
+                    </span>
                 </div>
                 <div class="menu-content__sub" [ngClass]="{'menu-content__sub--green': menu.type === 'house', 'menu-content__sub--purple': menu.type === 'fashion'}">
                     <div class="menu-content__sub__item clickable" *ngFor="let subItem of item.subItems">
@@ -20,16 +23,31 @@
             </div>
     
             <div class="menu-content__item">
-                <div class="logo">
-                    <img class="logo--img clickable" [src]="getSecondaryLogo()" (click)="changeVies('secondary')">
+                <div class="logo clickable" (click)="changeVies('secondary')">
+                    <img class="logo--img" [src]="getSecondaryLogo()">
+                    <span [ngClass]="{'text--green': menu.type === 'fashion', 'text--purple': menu.type === 'house'}" class="text margin-left-2 text--disco text--low-large text--bold">
+                        {{menu.getSecondaryLogoLabel()}}
+                    </span>
+                </div>
+            </div>
+
+            <app-vi-button *ngIf="menu.type === 'house'" type='green' class="margin-1" (onClick)="onClickMenu('contato')"> 
+                <span class="text text--white">Quero um orçamento</span>
+              </app-vi-button>
+          
+              <app-vi-button *ngIf="menu.type === 'fashion'" type='purple' class="margin-1" (onClick)="onClickMenu('contato')"> 
+                <span class="text text--white">Quero um orçamento</span>
+              </app-vi-button>
+        </div>
+        <div class="social-container">
+            <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text text--small unselectable margin-bottom-2"> Acompanhe nossas redes sociais: </span>   
+            <div class="menu-content__social">
+                <div (click)="social.clickEvent()" class="menu-content__social__item clickable" *ngFor="let social of menu.socials">
+                    <app-vi-svg icon="{{social.name}}" [ngClass]="{'icon--green': menu.type === 'house', 'icon--purple': menu.type === 'fashion'}"></app-vi-svg>
                 </div>
             </div>
         </div>
-        <div class="menu-content__social">
-            <div (click)="social.clickEvent()" class="menu-content__social__item clickable" *ngFor="let social of menu.socials">
-                <app-vi-svg icon="{{social.name}}" [ngClass]="{'icon--green': menu.type === 'house', 'icon--purple': menu.type === 'fashion'}"></app-vi-svg>
-            </div>
-        </div>
+
     </div>
 
     <app-vi-button class="button-menu" [type]='typeColor' [round]="true" (onClick)="toggleMenu()">

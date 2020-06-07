@@ -33,7 +33,7 @@ export class ViMenuComponent implements OnInit {
     let drawer = document.getElementById("menu-content");
 
     if(this.menuOpened){
-      drawer.style.width = "250px";
+      drawer.style.width = "300px";
     } else {
       drawer.style.width = "0";
     }

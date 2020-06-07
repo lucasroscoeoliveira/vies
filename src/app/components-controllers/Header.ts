@@ -31,6 +31,14 @@ export class Header {
     });
   }
 
+  getSecondaryLogoLabel() {
+    if (this.type === 'house') {
+      return 'negócios';
+    } else {
+      return 'casa';
+    }
+  }
+
   setHeader(type: string) {
     this.type = type;
 
@@ -75,6 +83,7 @@ export class Header {
         hasMenu: false,
         logo: true,
         routeName: 'vies',
+        logoLabel: 'casa',
         focused: true
       },
       {
@@ -143,6 +152,7 @@ export class Header {
         subItems: [],
         hasMenu: false,
         logo: true,
+        logoLabel: 'negócio',
         routeName: 'vies',
         focused: true
       },
@@ -212,6 +222,7 @@ export class HeaderMenuItem {
   subItems: Array<HeaderSubMenuItem>;
   hasMenu: boolean;
   logo: boolean;
+  logoLabel?: string;
   routeName?: string;
   focused?: boolean;
 }

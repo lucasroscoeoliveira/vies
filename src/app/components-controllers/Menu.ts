@@ -16,6 +16,14 @@ export class Menu {
     return Menu.instance = Menu.instance || this;
   }
 
+  getSecondaryLogoLabel() {
+    if (this.type === 'house') {
+      return 'negócios';
+    } else {
+      return 'casa';
+    }
+  }
+
   setMenu(type: string) {
     this.type = type;
 
@@ -181,6 +189,7 @@ export class MenuMenuItem {
   subItems: Array<MenuSubMenuItem>;
   hasMenu: boolean;
   logo: boolean;
+  logoLabel?: string;
   routeName?: string;
 }
 

@@ -5,8 +5,11 @@
         <div *ngIf="!item.logo" class="text-container">
           <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text text--small unselectable"> {{item.name}} </span>
         </div>
-        <div class="logo" *ngIf="item.logo">
-          <img class="logo--img clickable" [src]="getMainLogo()" (click)="changeVies('main')">
+        <div class="logo clickable" (click)="changeVies('main')" *ngIf="item.logo">
+          <img class="logo--img" [src]="getMainLogo()">
+          <span [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" class="text margin-left-2 text--disco text--low-large text--bold">
+            {{item.logoLabel}}
+          </span>
         </div>
         <div class="active" [hidden]="!item.focused" [ngClass]="{'active--green': header.type === 'house', 'active--purple': header.type === 'fashion'}">
         </div>
@@ -25,8 +28,11 @@
     </div>
   
     <div class="header__item">
-      <div class="logo">
-        <img class="logo--img clickable" [src]="getSecondaryLogo()" (click)="changeVies('secondary')">
+      <div class="logo clickable" (click)="changeVies('secondary')">
+        <img class="logo--img" [src]="getSecondaryLogo()">
+        <span [ngClass]="{'text--green': header.type === 'fashion', 'text--purple': header.type === 'house'}" class="text margin-left-2 text--disco text--low-large text--bold">
+          {{header.getSecondaryLogoLabel()}}
+        </span>
       </div>
     </div>
 
