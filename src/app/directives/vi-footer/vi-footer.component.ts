@@ -64,7 +64,7 @@ export class ViFooterComponent implements OnInit {
         this.toast.success('Email enviado com sucesso! A partir de agora você irá receber as novidades da Viés!', 4);
       },
       (err) => {
-        this.toast.error(err);
+        this.toast.error(err.error.text);
       }
     )
   }

@@ -57,7 +57,7 @@ export class ModalEmailComponent implements OnInit {
         this.toast.success('Email enviado com sucesso! Em breve retornaremos!');
       },
       (err) => {
-        this.toast.error(err.message);
+        this.toast.error(err.error.text);
       }
     )
     this.modal.executeCallBack();
