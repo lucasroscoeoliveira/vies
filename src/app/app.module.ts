@@ -1,6 +1,7 @@
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image'; // <-- import it
 import { NgModule } from '@angular/core';
 
 import { TransferHttpCacheModule } from '@nguniversal/common';  
@@ -59,6 +60,7 @@ export class MyHammerConfig extends HammerGestureConfig {
   imports: [
     BrowserModule.withServerTransition({ appId: 'vies' }),
     TransferHttpCacheModule,
+    LazyLoadImageModule,
     AppRoutingModule,
     HttpClientModule,
     FashionModule,
