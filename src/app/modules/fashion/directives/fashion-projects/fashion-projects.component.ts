@@ -168,7 +168,7 @@ export class FashionProjectsComponent implements OnInit {
   viewProjectDetail(image: Image)
   {
     const selectedTab = this.tabs.find(tab => tab.selected);
-    this.router.navigate(['casa/projeto', image.id, image.filter], {
+    this.router.navigate(['negocio/projeto', image.id, image.filter], {
       queryParams:
       { 
         tab: selectedTab.filter,

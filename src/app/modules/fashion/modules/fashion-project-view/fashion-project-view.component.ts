@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Modal } from 'src/app/components-controllers/Modal';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import FashionProjectConstants from 'src/app/utils/FashionProjectConstants';
 
 @Component({
   selector: 'app-fashion-project-view',
@@ -7,9 +11,131 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FashionProjectViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal, public scroll: ScrollTo) { }
+  id: number;
+  image: any;
+  images: any;
+  filter: string;
+  currIndex: number;
+  routeParameters: any;
+  pagesLabel: string;
 
-  ngOnInit(): void {
+ngOnInit(): void {
+    this.initVariables();
+  }
+
+  initVariables() {
+    this.route.params.subscribe(params => {
+      this.id = +params['id'];
+      this.filter = params['tab'];
+    });
+    this.currIndex = 0;
+    this.checkForTabParams();
+    this.initImages();
+    this.setPagesLabel();
+  }
+
+  setPagesLabel() {
+    this.pagesLabel = (this.currIndex + 1) + '/' + this.images.length;
+  }
+
+  checkForTabParams() {
+    this.routeParameters = {
+      tab : this.route.snapshot.queryParamMap.get('tab'),
+      currentPosition: parseInt(this.route.snapshot.queryParamMap.get('current_position'))
+    }
+  }
+
+  initImages() {
+    this.getImages();
+    this.setImage();
+  }
+
+  getImages() {
+    let project = FashionProjectConstants.PROJECTS.find(project => project.id === this.id);
+    if (project && project.main && this.routeParameters.tab === 'main') {
+      this.images = FashionProjectConstants.PROJECTS_DETAIL.filter((image) => {
+        return image.id === this.id && !image.removeFromMain;
+      });
+    } else {
+      this.images = FashionProjectConstants.PROJECTS_DETAIL.filter((image) => {
+        return image.filter === this.filter && image.id === this.id;
+      });
+    }
+  }
+
+  setImage() {
+    this.image = this.images[this.currIndex];
+  }
+
+  isBeforeAfter() {
+    return this.image.sourceAfter;
+  }
+
+  move(direction: string) {
+    if (direction === 'right') {
+      if (this.disableArrowRight()) {
+        return;
+      }
+      this.moveRight();
+    }
+    else {
+      if (this.disableArrowLeft()) {
+        return;
+      }
+      this.moveLeft();
+    }
+    this.setImage();
+    this.setPagesLabel();
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    let keyPressed = event.keyCode;
+    switch (keyPressed) {
+      case 39:
+        this.move('right');
+        break;
+      case 37:
+        this.move('left');
+    }
+  }
+
+  moveRight() {
+    if (this.currIndex < this.images.length - 1) {
+      this.currIndex++;
+    }
+  }
+
+  moveLeft() {
+    if (this.currIndex > 0) {
+      this.currIndex--;
+    }
+  }
+
+  disableArrowLeft() {
+    return this.currIndex === 0
+  }
+
+  disableArrowRight() {
+    return this.currIndex >= this.images.length - 1;
+  }
+
+  goBack() {
+    this.router.navigate(['negocio/inicio', 'projetos'], {
+      queryParams:
+        { 
+          tab: this.routeParameters.tab,
+          current_position: this.routeParameters.currentPosition
+        }
+    });
+    this.scroll.navigateToRoute(this.scroll.states.projects, 500, 'fashion');
+  }
+
+  openModal() {
+    this.modal.open(
+      'app-modal-email'
+    )
   }
 
 }
