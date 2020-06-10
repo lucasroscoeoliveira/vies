@@ -1242,12 +1242,6 @@ export default class FashionProjectConstants {
             filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_BC_6.SALAO_BC_5_GERAL,
-            active: false,
-            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO,
-            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
-        },
-        {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_BC_6.SALAO_BC_6_GERAL,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO,
@@ -1736,12 +1730,14 @@ export default class FashionProjectConstants {
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_4_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_1_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_4_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_1_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
@@ -1749,12 +1745,14 @@ export default class FashionProjectConstants {
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_5_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_2_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_5_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_2_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
@@ -1762,12 +1760,14 @@ export default class FashionProjectConstants {
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_6_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_3_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_6_LOJA_VITRINE,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AMALINUS_16.AMALINUS_3_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.AMALINUS,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,

@@ -189,7 +189,6 @@ export default class ImagesConstants {
                 SALAO_BC_2_GERAL: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/2-salaobc-geral.jpg',
                 SALAO_BC_3_GERAL: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/3-salaobc-geral.jpg',
                 SALAO_BC_4_GERAL: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/4-salaobc-geral.jpg',
-                SALAO_BC_5_GERAL: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/5-salaobc-geral.jpg',
                 SALAO_BC_6_GERAL: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/6-salaobc-geral.jpg',
                 SALAO_BC_7_GERAL_ANTES1: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/7-salaobc-geral-antes1.jpg',
                 SALAO_BC_8_GERAL_ANTES2: environment.s3_public + '/Fashion/Projects/6-SALAO-BC/8-salaobc-geral-antes2.jpg',
