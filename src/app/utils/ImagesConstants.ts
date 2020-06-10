@@ -165,9 +165,9 @@ export default class ImagesConstants {
             },
             LELIV_4: {
                 LELIV_LOJA_1: environment.s3_public + '/Fashion/Projects/4-LELIV/1-leliv-loja.jpg',
-                LELIV_LOJA_2: environment.s3_public + '/Fashion/Projects/4-LELIV/1-leliv-loja.jpg',
-                LELIV_LOJA_3: environment.s3_public + '/Fashion/Projects/4-LELIV/1-leliv-loja.jpg',
-                LELIV_LOJA_4_ANTES_2: environment.s3_public + '/Fashion/Projects/4-LELIV/1-leliv-loja-antes2.jpg',
+                LELIV_LOJA_2: environment.s3_public + '/Fashion/Projects/4-LELIV/2-leliv-loja.jpg',
+                LELIV_LOJA_3: environment.s3_public + '/Fashion/Projects/4-LELIV/3-leliv-loja.jpg',
+                LELIV_LOJA_4_ANTES_2: environment.s3_public + '/Fashion/Projects/4-LELIV/4-leliv-loja-antes2.jpg',
             },
             CLARA_5: {
                 CLARA_1_LOJA_VITRINE_ID_1: environment.s3_public + '/Fashion/Projects/5-CLARA/1-clara-loja-vitrine-id.jpg',
