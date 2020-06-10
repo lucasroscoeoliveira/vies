@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../../app-routing.module';
 import { HouseComponent } from './house.component';
+import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
 import { HouseServicesSessionComponent } from './directives/house-services-session/house-services-session.component';
 import { HouseProjectsComponent } from './directives/house-projects/house-projects.component';
 import { HouseTestimonialsComponent } from './directives/house-testimonials/house-testimonials.component';
@@ -30,6 +31,7 @@ import { HouseProjectViewComponent } from './modules/house-project-view/house-pr
     CommonModule,
     DirectivesModule,
     AppRoutingModule,
+    LazyLoadImageModule
   ],
   providers: [
   ]
