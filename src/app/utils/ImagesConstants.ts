@@ -179,7 +179,7 @@ export default class ImagesConstants {
                 CLARA_7_LOJA_VITRINE_ANTES_1: environment.s3_public + '/Fashion/Projects/5-CLARA/7-clara-loja-vitrine-antes1.jpg',
                 CLARA_8_LOJA_ANTES2: environment.s3_public + '/Fashion/Projects/5-CLARA/8-clara-loja-antes2.jpg',
                 CLARA_9_LOJA_ANTES4: environment.s3_public + '/Fashion/Projects/5-CLARA/9-clara-loja-antes4.jpg',
-                CLARA_10_LOJA_ANTES6: environment.s3_public + '/Fashion/Projects/5-CLARA/10-clara-loja-antes6.jpg',
+                CLARA_10_LOJA_ANTES6: environment.s3_public + '/Fashion/Projects/5-CLARA/10clara-loja-antes6.jpg',
                 CLARA_11_ID: environment.s3_public + '/Fashion/Projects/5-CLARA/11-clara-id.jpg',
                 CLARA_12_ID: environment.s3_public + '/Fashion/Projects/5-CLARA/12-clara-id.jpg',
                 CLARA_13_ID: environment.s3_public + '/Fashion/Projects/5-CLARA/13-clara-id.jpg',
