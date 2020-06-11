@@ -36,6 +36,7 @@ import { PrizeViewComponent } from './modules/prize-view/prize-view.component';
 import { PrizeComponent } from './modules/prize/prize.component';
 import { ViesPdfViewerComponent } from './modules/vies-pdf-viewer/vies-pdf-viewer.component';
 import { SafePipe } from './filters/safe.pipe';
+import { HouseModule } from './modules/house/house.module';
 
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
@@ -63,6 +64,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     AppRoutingModule,
     HttpClientModule,
     FashionModule,
+    HouseModule,
     BrowserAnimationsModule,
     HammerModule,
     DirectivesModule,
