@@ -12,7 +12,6 @@ import { FashionProjectsComponent } from './directives/fashion-projects/fashion-
 import { FashionServicesSessionComponent } from './directives/fashion-services-session/fashion-services-session.component';
 import { FashionDiscoverStyleComponent } from './directives/fashion-discover-style/fashion-discover-style.component';
 import { FashionTestimonialsComponent } from './directives/fashion-testimonials/fashion-testimonials.component';
-import { DirectivesModule } from 'src/app/directives/directives.module';
 import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
 
 
@@ -32,7 +31,6 @@ import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
   imports: [
     CommonModule,
     FashionRoutingModule,
-    DirectivesModule,
     LazyLoadImageModule
   ],
   providers: [

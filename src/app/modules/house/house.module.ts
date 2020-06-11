@@ -6,7 +6,6 @@ import { HouseServicesSessionComponent } from './directives/house-services-sessi
 import { HouseProjectsComponent } from './directives/house-projects/house-projects.component';
 import { HouseTestimonialsComponent } from './directives/house-testimonials/house-testimonials.component';
 import { HouseDiscoverStyleComponent } from './directives/house-discover-style/house-discover-style.component';
-import { DirectivesModule } from 'src/app/directives/directives.module';
 import { HouseQuizComponent } from './modules/house-quiz/house-quiz.component';
 import { HouseServicesComponent } from './modules/house-services/house-services.component';
 import { HouseMainComponent } from './modules/house-main/house-main.component';
@@ -32,7 +31,6 @@ import { HouseRoutingModule } from './house-routing.module';
     CommonModule,
     HouseRoutingModule,
     LazyLoadImageModule,
-    DirectivesModule,
   ],
   providers: [
   ]
