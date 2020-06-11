@@ -32,7 +32,7 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     CommonModule,
     HouseRoutingModule,
     LazyLoadImageModule,
-    DirectivesModule
+    DirectivesModule.forRoot()
   ],
   providers: [
   ]

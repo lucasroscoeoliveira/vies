@@ -33,7 +33,7 @@ import { DirectivesModule } from 'src/app/directives/directives.module';
     CommonModule,
     FashionRoutingModule,
     LazyLoadImageModule,
-    DirectivesModule
+    DirectivesModule.forRoot()
   ],
   providers: [
   ]
