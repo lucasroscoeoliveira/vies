@@ -13,6 +13,11 @@ import { ViToastComponent } from './vi-toast/vi-toast.component';
 import { ViSocialComponent } from './vi-social/vi-social.component';
 import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.component';
 import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.component';
+import { Slider } from '../components-controllers/Slider';
+import { Social } from '../components-controllers/Social';
+import { Header } from '../components-controllers/Header';
+import { Menu } from '../components-controllers/Menu';
+import { Toast } from '../components-controllers/Toast';
 
 @NgModule({
   declarations: [
@@ -47,4 +52,4 @@ import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.com
     NgxMaskModule.forRoot(),
   ]
 })
-export class DirectivesModule { }
+export class DirectivesModule {}
