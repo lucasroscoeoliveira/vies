@@ -5,6 +5,8 @@ import { WhoWeAreComponent } from './modules/who-we-are/who-we-are.component';
 import { PrizeViewComponent } from './modules/prize-view/prize-view.component';
 import { PrizeComponent } from './modules/prize/prize.component';
 import { ViesPdfViewerComponent } from './modules/vies-pdf-viewer/vies-pdf-viewer.component';
+import { HouseModule } from './modules/house/house.module';
+import { FashionModule } from './modules/fashion/fashion.module';
 
 const routes: Routes = [
   {
@@ -31,11 +33,11 @@ const routes: Routes = [
   },
   {
     path: 'casa',
-    loadChildren: './modules/house/house.module#HouseModule'
+    loadChildren: () => HouseModule
   },
   {
     path: 'negocio',
-    loadChildren: './modules/fashion/fashion.module#FashionModule'
+    loadChildren: () => FashionModule
   },
 ];
 
