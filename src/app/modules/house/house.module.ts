@@ -13,6 +13,8 @@ import { HouseServicesComponent } from './modules/house-services/house-services.
 import { HouseMainComponent } from './modules/house-main/house-main.component';
 import { HousePresentationComponent } from './directives/house-presentation/house-presentation.component';
 import { HouseProjectViewComponent } from './modules/house-project-view/house-project-view.component';
+import { HouseRoutingModule } from './house-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -29,9 +31,9 @@ import { HouseProjectViewComponent } from './modules/house-project-view/house-pr
   ],
   imports: [
     CommonModule,
+    HouseRoutingModule,
+    LazyLoadImageModule,
     DirectivesModule,
-    AppRoutingModule,
-    LazyLoadImageModule
   ],
   providers: [
   ]
