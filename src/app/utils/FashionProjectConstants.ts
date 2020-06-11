@@ -38,7 +38,7 @@ export default class FashionProjectConstants {
         MARCELA_RABELO: 24,
         CLARA_VERAO: 25,
         FERIADO_NACIONAL: 26,
-        LAJU_2: 27,
+        LALU: 27,
         BRINKEL: 28,
         CLAU: 29,
         MARRE: 30,
@@ -68,7 +68,7 @@ export default class FashionProjectConstants {
             filter: FashionProjectConstants.FILTERS.MAIN
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.PROJECTS.LAJU_2,
+            source: ImagesConstants.FASHION_IMAGES.PROJECTS.LAJU,
             active: false,
             description: 'LAJU',
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
@@ -406,7 +406,7 @@ export default class FashionProjectConstants {
             source: ImagesConstants.FASHION_IMAGES.PROJECTS.SHOP_WINDOW_11_LALU,
             active: false,
             description: 'LAJU',
-            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU_2,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
             main: false,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
         },
@@ -769,7 +769,7 @@ export default class FashionProjectConstants {
             source: ImagesConstants.FASHION_IMAGES.PROJECTS.VISUAL_IDENTITY_10_LAJU,
             active: false,
             description: 'LAJU',
-            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU_2,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
             main: false,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
@@ -908,88 +908,88 @@ export default class FashionProjectConstants {
 
 
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_1_LOJA_VITRINE,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_1_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_1_LOJA_VITRINE,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_1_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
             removeFromMain: true
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_2_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LALU_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_3_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_3_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_4_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_4_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_5_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_5_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_6_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_6_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_7_LOJA_ANTES1,
-            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_1_LOJA_VITRINE,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_7_LOJA_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_1_LOJA_VITRINE,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_8_LOJA_ANTES2,
-            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_2_LOJA,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_8_LOJA_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LALU_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_9_ID,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_9_ID,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_10_ID,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_10_ID,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_11_ID,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_11_ID,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_12_ID,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_12_ID,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LAJU_2.LAJU_13_ID,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU.LAJU_13_ID,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.LAJU,
             filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
@@ -1794,6 +1794,1009 @@ export default class FashionProjectConstants {
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.FOSTER,
             filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_1_LOJA_VITRINE_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_1_LOJA_VITRINE_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_1_LOJA_VITRINE_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_5_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_6_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_1_LOJA_VITRINE_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_6_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_1_LOJA_VITRINE_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_7_LOJA_ANTES3,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_8_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_9_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CASA_ALLEGRA_18.CASA_ALLEGRA_10_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CASA_ALLEGRA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_4_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_5_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FITSU_19.FITSU_6_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FITSU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_4_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_5_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_6_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.K9_20.K9_7_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.K9,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_5_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_6_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_7_LOJA_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_8_LOJA_ANTES4,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MYBABY_22.MY_BABY_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MYBABY,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_5_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_5_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_6_LOJA_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VERAO_25.CLARA_VERAO_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA_VERAO,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VERAO_25.CLARA_VERAO_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA_VERAO,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VERAO_25.CLARA_VERAO_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA_VERAO,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FERIADO_NACIONAL_26.FERIADO_NACIONAL_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FERIADO_NACIONAL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FERIADO_NACIONAL_26.FERIADO_NACIONAL_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FERIADO_NACIONAL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FERIADO_NACIONAL_26.FERIADO_NACIONAL_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FERIADO_NACIONAL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FERIADO_NACIONAL_26.FERIADO_NACIONAL_4_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FERIADO_NACIONAL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.FERIADO_NACIONAL_26.FERIADO_NACIONAL_5_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.FERIADO_NACIONAL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU_27.LALU_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU_27.LALU_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU_27.LALU_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.LALU_27.LALU_4_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.LALU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLAU_29.CLAU_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLAU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLAU_29.CLAU_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLAU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLAU_29.CLAU_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLAU,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARRE_30.MARRE_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARRE,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARRE_30.MARRE_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARRE,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARRE_30.MARRE_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARRE,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SINTONIA_31.SINTONIA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SINTONIA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SINTONIA_31.SINTONIA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SINTONIA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SINTONIA_31.SINTONIA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SINTONIA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.NOUS,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.NOUS,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.NOUS,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_4_LOJA_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.NOUS,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_5_LOJA_ANTES3,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.NOUS_33.NOUS_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.NOUS,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_4_LOJA_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_5_LOJA_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_6_LOJA_ANTES3,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_7_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_7_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_8_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_8_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_9_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_9_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_10_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.KAILLA_34.KAILLA_10_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.KAILLA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_4_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_4_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_5_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_5_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_6_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLOSET_35.CLOSET_6_LOJA_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLOSET,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.BAMBINO_36.BAMBINO_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.BAMBINO,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.BAMBINO_36.BAMBINO_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.BAMBINO,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.BAMBINO_36.BAMBINO_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.BAMBINO,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_5_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_6_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_7_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_8_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_9_GERAL_ANTES_1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MORAR_MAIS_37.MORAR_MAIS_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_5_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SAPUCANET_39.SAPUCANET_6_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SAPUCANET,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_5_GERAL_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_6_GERAL_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.GRAFICA_40.GRAFICA_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GRAFICA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_5_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_6_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_7_GERAL_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_8_GERAL_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_9_GERAL_ANTES3,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.AUTO_ESCOLA_41.AUTO_ESCOLA_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.AUTO_ESCOLA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.RESTAURANTE_42.RESTAURANTE_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.RESTAURANTE,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.RESTAURANTE_42.RESTAURANTE_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.RESTAURANTE,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.RESTAURANTE_42.RESTAURANTE_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.RESTAURANTE,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.RESTAURANTE_42.RESTAURANTE_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.RESTAURANTE,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.RESTAURANTE_42.RESTAURANTE_5_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.RESTAURANTE,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.ANA_MOREIRA_43.ANA_MOREIRA_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.ANA_MOREIRA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.ANA_MOREIRA_43.ANA_MOREIRA_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.ANA_MOREIRA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.ANA_MOREIRA_43.ANA_MOREIRA_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.ANA_MOREIRA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.ANA_MOREIRA_43.ANA_MOREIRA_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.ANA_MOREIRA,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GI_44.GI_1_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GI,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GI_44.GI_2_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GI,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GI_44.GI_3_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GI,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.GI_44.GI_4_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.GI,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_1_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_2_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_3_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_4_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_5_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_6_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_7_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VITRINES_45.CLARA_8_VITRINE,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CLARA,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
         },
     ]
 }

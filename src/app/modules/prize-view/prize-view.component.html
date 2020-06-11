@@ -10,7 +10,7 @@
             (swiperight)="move('left')" 
             (swipeleft)="move('right')">
             <div class="display" *ngIf="image && image.source">
-                <img [src]="image.source" alt="" unselectable="on">
+                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.source" [useSrcset]="true" alt="" unselectable="on">
             </div>
 
             <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">

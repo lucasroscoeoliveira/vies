@@ -26,7 +26,7 @@ export default class ImagesConstants {
         },
         PROJECTS: {
             VANZI_1: environment.s3_public + '/Fashion/Projects/Portfolio/Main/1-vanzi.jpg',
-            LAJU_2: environment.s3_public + '/Fashion/Projects/Portfolio/Main/2-laju.jpg',
+            LAJU: environment.s3_public + '/Fashion/Projects/Portfolio/Main/2-laju.jpg',
             FITSU_CASUAL_3: environment.s3_public + '/Fashion/Projects/Portfolio/Main/3-fitsu.jpg',
             LELIV_4: environment.s3_public + '/Fashion/Projects/Portfolio/Main/4-leliv.jpg',
             CLARA_5: environment.s3_public + '/Fashion/Projects/Portfolio/Main/5-clara.jpg',
@@ -136,9 +136,9 @@ export default class ImagesConstants {
                 VANZI_11_LOJA_ID: environment.s3_public + '/Fashion/Projects/1-VANZI/11-vanzi-loja-id.jpg',
                 VANZI_12_LOJA_ID: environment.s3_public + '/Fashion/Projects/1-VANZI/12-vanzi-loja-id.jpg',
             },
-            LAJU_2: {
+            LALU: {
                 LAJU_1_LOJA_VITRINE: environment.s3_public + '/Fashion/Projects/2-LAJU/1-laju-loja-vitrine.jpg',
-                LAJU_2_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/2-laju-loja.jpg',
+                LALU_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/2-laju-loja.jpg',
                 LAJU_3_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/3-laju-loja.jpg',
                 LAJU_4_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/4-laju-loja.jpg',
                 LAJU_5_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/5-laju-loja.jpg',
