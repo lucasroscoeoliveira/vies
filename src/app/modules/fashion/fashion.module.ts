@@ -32,7 +32,6 @@ import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
   imports: [
     CommonModule,
     FashionRoutingModule,
-    CommonModule,
     DirectivesModule,
     LazyLoadImageModule
   ],

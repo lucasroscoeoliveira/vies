@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from '../../app-routing.module';
 import { HouseComponent } from './house.component';
 import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
 import { HouseServicesSessionComponent } from './directives/house-services-session/house-services-session.component';
