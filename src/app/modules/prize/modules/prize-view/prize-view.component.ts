@@ -24,6 +24,7 @@ export class PrizeViewComponent implements OnInit {
   pagesLabel: string;
 
   ngOnInit(): void {
+    debugger;
     this.initVariables();
   }
 

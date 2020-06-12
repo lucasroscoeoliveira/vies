@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from '../../app-routing.module';
 import { FashionComponent } from './fashion.component';
 import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
-import { DirectivesModule } from 'src/app/directives/directives.module';
 import { FashionMainComponent } from './modules/fashion-main/fashion-main.component';
 import { FashionProjectViewComponent } from './modules/fashion-project-view/fashion-project-view.component';
 import { FashionQuizComponent } from './modules/fashion-quiz/fashion-quiz.component';
@@ -13,6 +11,8 @@ import { FashionProjectsComponent } from './directives/fashion-projects/fashion-
 import { FashionServicesSessionComponent } from './directives/fashion-services-session/fashion-services-session.component';
 import { FashionDiscoverStyleComponent } from './directives/fashion-discover-style/fashion-discover-style.component';
 import { FashionTestimonialsComponent } from './directives/fashion-testimonials/fashion-testimonials.component';
+import { DirectivesModule } from 'src/app/directives/directives.module';
+import { FashionRoutingModule } from './fashion-routing.module';
 
 
 @NgModule({
@@ -30,9 +30,9 @@ import { FashionTestimonialsComponent } from './directives/fashion-testimonials/
   ],
   imports: [
     CommonModule,
-    DirectivesModule,
-    AppRoutingModule,
-    LazyLoadImageModule
+    FashionRoutingModule,
+    LazyLoadImageModule,
+    DirectivesModule.forRoot(),
   ],
   providers: [
   ]
