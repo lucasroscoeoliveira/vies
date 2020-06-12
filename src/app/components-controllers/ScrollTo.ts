@@ -16,6 +16,7 @@ export class ScrollTo {
   servicesDivId: string;
   viesDivId: string;
   prizeSessionDivId: string;
+  testimonialSessionDivId: string;
   scrollContainer: string;
 
   constructor(public header: Header, public router: Router) {
@@ -25,7 +26,8 @@ export class ScrollTo {
       contact: 'contato',
       services: 'servicos',
       vies: 'vies',
-      prize: 'premio'
+      prize: 'premio',
+      testimonial: 'depoimento'
     };
     this.setMainDivs();
     return ScrollTo.instance = ScrollTo.instance || this;
@@ -39,6 +41,7 @@ export class ScrollTo {
     this.servicesDivId = this.type === 'house' ? 'house-services-session' : 'fashion-services-session';
     this.viesDivId = this.type === 'house' ? 'house-slider' : 'fashion-slider';
     this.prizeSessionDivId = this.type === 'house' ? 'house-prize-session' : 'fashion-prize-session';
+    this.testimonialSessionDivId = this.type === 'house' ? 'house-testimonials' : 'fashion-testimonials';
   }
 
   navigateToRoute(routeName: string, timeout: number, type: string) {
@@ -67,6 +70,9 @@ export class ScrollTo {
         case this.states.prize:
           content = document.getElementById(this.prizeSessionDivId);
           break;
+        case this.states.testimonial:
+          content = document.getElementById(this.testimonialSessionDivId);
+          break;
       }
       if (content) {
         this.header.setActive(routeName);
@@ -93,6 +99,7 @@ export class ScrollTo {
       document.getElementById(this.servicesDivId),
       //document.getElementById(this.quizDivId),
       document.getElementById(this.prizeSessionDivId),
+      document.getElementById(this.testimonialSessionDivId),
       document.getElementById(this.contactDivId),
     ]
 
@@ -129,6 +136,10 @@ export class ScrollTo {
             //   this.header.setActive('quiz');
             //   break;
             case 2:
+              this.router.navigate([`${prefix}/inicio`, 'premio']);
+              this.header.setActive('premio');
+              break;
+            case 3:
               this.router.navigate([`${prefix}/inicio`, 'premio']);
               this.header.setActive('premio');
               break;

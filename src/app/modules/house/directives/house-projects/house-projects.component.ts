@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Image } from 'src/app/components-controllers/Slider';
-import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 
 @Component({
@@ -18,7 +18,7 @@ export class HouseProjectsComponent implements OnInit {
   pagesLabel: string;
   
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, public scrollTo: ScrollTo) { }
 
   ngOnInit(): void {
     this.currentPosition = 0;
@@ -45,6 +45,10 @@ export class HouseProjectsComponent implements OnInit {
       this.images = HouseProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter && !image.main);
     }
     this.setInitialActive();
+  }
+
+  navigateToProjectsSession() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.projects, 300, 'house');
   }
 
   imagesFiltered() {

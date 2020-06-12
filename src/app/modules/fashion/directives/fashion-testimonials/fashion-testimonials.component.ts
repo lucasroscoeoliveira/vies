@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Testimonial } from 'src/app/components-controllers/Testimonial';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Header } from 'src/app/components-controllers/Header';
 
 @Component({
   selector: 'app-fashion-testimonials',
@@ -12,7 +14,11 @@ export class FashionTestimonialsComponent implements OnInit {
   testimonials: Array<Testimonial>;
   imageConstants: ImagesConstants;
 
-  constructor() { }
+  constructor(public scrollTo: ScrollTo, public header:Header) { }
+
+  navigateToProjectsSession() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.testimonial, 300, this.header.type);
+  }
 
   ngOnInit(): void {
     this.testimonials = [

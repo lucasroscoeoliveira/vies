@@ -18,7 +18,7 @@ export class Header {
   }
 
   setActive(routeName: string){
-    if(!this.items){
+    if(!this.items || !this.items.find(item => item.routeName === routeName)){
       return;
     }
     this.items = this.items.map((item) => {

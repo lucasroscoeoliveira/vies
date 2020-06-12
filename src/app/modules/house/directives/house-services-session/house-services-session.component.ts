@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Router } from '@angular/router';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-house-services-session',
@@ -14,13 +15,17 @@ export class HouseServicesSessionComponent implements OnInit {
   serviceLabels: any;
   consultLabels: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public scrollTo: ScrollTo) { }
 
   ngOnInit(): void {
     this.projectImage = ImagesConstants.HOUSE_IMAGES.SERVICES.PROJETO;
     this.consultImage = ImagesConstants.HOUSE_IMAGES.SERVICES.CONSULTORIA;
     this.setServiceLabels();
     this.setConsultLabels();
+  }
+
+  navigateToProjectsSession() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.services, 300, 'house');
   }
 
   setConsultLabels() {

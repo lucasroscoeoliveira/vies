@@ -4,6 +4,7 @@ import { ClientModel } from 'src/app/models/ClientModel';
 import { ClientAppService } from 'src/app/services/client-app.service';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Header } from 'src/app/components-controllers/Header';
+import Utils from 'src/app/utils/Utils';
 
 @Component({
   selector: 'app-vi-footer',
@@ -52,6 +53,10 @@ export class ViFooterComponent implements OnInit {
   }
 
   sendEmail() {
+    if (!Utils.validateEmail(this.client.Email)) {
+      this.toast.error('Por favor, insira um email válido!');
+      return;
+    }
     let mailData = {
       message: "Gostaria de receber a NewsLetter da Vies Design",
       from: 'Vies Casa'

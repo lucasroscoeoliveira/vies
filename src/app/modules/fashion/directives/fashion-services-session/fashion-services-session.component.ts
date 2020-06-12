@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-fashion-services-session',
@@ -10,10 +11,14 @@ export class FashionServicesSessionComponent implements OnInit {
 
   serviceCards: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public scrollTo: ScrollTo) { }
 
   ngOnInit(): void {
     this.setServiceCards();
+  }
+
+  navigateToProjectsSession() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.services, 300, 'fashion');
   }
 
   setServiceCards() {

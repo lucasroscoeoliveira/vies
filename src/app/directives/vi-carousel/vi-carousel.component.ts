@@ -26,6 +26,11 @@ export class ViCarouselComponent implements OnInit {
   initContainerSize() {
     this.containerDiv = document.getElementById('carousel-container');
     this.containerDiv.style.width = 100 * this.images.length + '%';
+
+    if (this.currentIndex !== 0) {
+      let calc = (this.currentIndex) * 100;
+      this.containerDiv.style.transform = `translateX(-${calc}vw)`;
+    }
   }
 
   move(direction: string) {

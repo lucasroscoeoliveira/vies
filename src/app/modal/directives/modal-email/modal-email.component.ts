@@ -4,6 +4,7 @@ import { ClientAppService } from 'src/app/services/client-app.service';
 import { ClientModel } from 'src/app/models/ClientModel';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Header } from 'src/app/components-controllers/Header';
+import Utils from 'src/app/utils/Utils';
 
 @Component({
   selector: 'app-modal-email',
@@ -44,6 +45,11 @@ export class ModalEmailComponent implements OnInit {
 
   sendEmail() {
     let from = this.header.type === 'house' ? 'Vies Casa' : 'Viés Negócio';
+
+    if (!Utils.validateEmail(this.client.Email)) {
+      this.toast.error('Por favor, insira um email válido!');
+      return;
+    }
 
     let mailData = {
       message: this.message,

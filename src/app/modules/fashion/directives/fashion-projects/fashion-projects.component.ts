@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { Image } from 'src/app/components-controllers/Slider';
 import { Router, ActivatedRoute } from '@angular/router';
 import FashionProjectConstants from 'src/app/utils/FashionProjectConstants';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-fashion-projects',
@@ -16,7 +17,7 @@ export class FashionProjectsComponent implements OnInit {
   tabs: any;
   pagesLabel: string;
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, public scrollTo: ScrollTo) { }
 
   ngOnInit(): void {
     this.currentPosition = 0;
@@ -24,6 +25,10 @@ export class FashionProjectsComponent implements OnInit {
     this.setInitialActive();
     this.initializeTabs();
     this.checkForParamTab();
+  }
+
+  navigateToProjectsSession() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.projects, 300, 'fashion');
   }
 
   checkForParamTab() {
