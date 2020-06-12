@@ -22,13 +22,13 @@
     </div>
 
     <div class="button-left" [hidden]="!images || images.length <= 1">
-        <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')">
+        <app-vi-button [isDisabled]="checkLeftDisabled()" [round]='true' type='white' class="" (onClick)="move('left')">
             <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
         </app-vi-button>
     </div>
 
     <div class="button-right" [hidden]="!images || images.length <= 1">
-        <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')">
+        <app-vi-button [isDisabled]="checkRightDisabled()" [round]='true' type='white' class="" (onClick)="move('right')">
             <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
         </app-vi-button>
     </div>

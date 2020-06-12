@@ -45,6 +45,14 @@ export class ViCarouselComponent implements OnInit {
     }
   }
 
+  checkLeftDisabled() {
+    return this.currentIndex === 0;
+  }
+
+  checkRightDisabled() {
+    return this.currentIndex === this.images.length - 1;
+  }
+
   isBeforeAfter(image: any) {
     return image.sourceAfter;
   }

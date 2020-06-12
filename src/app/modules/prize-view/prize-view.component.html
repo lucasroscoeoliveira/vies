@@ -2,47 +2,12 @@
 <main class="prize-view" >
     <app-vi-header class="desktop"></app-vi-header>
     <app-vi-navigation-header [title]="'Voltar'" type='neutral' (onGoBack)="goBack()">
-        <span class="text">{{pagesLabel}}</span>    
+        <span class="text">{{getPagesLabel()}}</span>    
     </app-vi-navigation-header>
 
     <div class="prize-view__body">
-        <div class="image-container"       
-            (swiperight)="move('left')" 
-            (swipeleft)="move('right')">
-            <div class="display" *ngIf="image && image.source">
-                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.source" [useSrcset]="true" alt="" unselectable="on">
-            </div>
-
-            <div class="button-left desktop" (click)="move('left')" [hidden]="!images || images.length <= 1">
-                <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                    <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
-                </div>
-            </div>
-        
-            <div class="button-right desktop" (click)="move('right')" [hidden]="!images || images.length <= 1">
-                <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                    <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
-                </div>
-            </div>
-        </div>
+        <app-vi-carousel (counterChange)="updateCurrIndex($event)" [(currentIndex)]="currIndex" [images]="images"></app-vi-carousel>
     </div>
-
-
-    <div class="buttons-mobile mobile" [hidden]="!images || images.length <= 1">
-        <div class="button-left margin-right-1" (click)="move('left')">
-            <div class="buttom-menu" [ngClass]="{'disabled': !visibleLeftArrow()}">
-                <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
-            </div>
-        </div>
-
-        <div class="button-right margin-left-1" (click)="move('right')">
-            <div class="buttom-menu" [ngClass]="{'disabled': !visibleRightArrow()}">
-                <app-vi-svg [ngClass]="{'text--green': header.type === 'house', 'text--purple': header.type === 'fashion'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
-            </div>
-        </div>
-    </div>
-    <app-vi-menu class="mobile"></app-vi-menu>    
-
 </main>
 
 
