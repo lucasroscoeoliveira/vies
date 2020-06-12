@@ -14,6 +14,24 @@
         transition: all 0.6s ease-in;
     }
 
+    .before-after-container {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 1em;
+        .before-after-label {
+            padding: 0.6em;
+            border-radius: 35px;
+            display: flex;
+            margin-top: 1em;
+            max-width: 12em;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+        }
+    }
+
     &__item {
         width: 100vw;
         display: flex;
@@ -31,48 +49,16 @@
             max-width: 100%;
         }
     }
-}
 
-.button-left {
-    height: 100%;
-    position: absolute;
-    top: calc(50% - 16px);
-    left: 1em;
-}
-
-.button-right {
-    height: 100%;
-    position: absolute;
-    top: calc(50% - 16px);
-    right: 1em;
-}
-
-app-vi-svg {
-    font-size: 1.5em;
-}
-
-.green {
-    color: $color-green;
-}
-.purple {
-    color: $color-purple;
-}
-
-.before-after-container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    top: 1em;
-    .before-after-label {
-        padding: 0.6em;
-        border-radius: 35px;
-        display: flex;
-        margin-top: 1em;
-        max-width: 12em;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-white;
+    app-vi-svg {
+        font-size: 1.5em;
+    }
+    
+    .green {
+        color: $color-green;
+    }
+    .purple {
+        color: $color-purple;
     }
 }
 
@@ -93,19 +79,18 @@ app-vi-svg {
         }
     }
 
-    .button-left {
-        height: 100%;
+    .btns-container {
         position: absolute;
-        left: 6em;
         top: calc(100% - 4em);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        app-vi-button {
+            margin: 0 1em;
+        }
     }
-    
-    .button-right {
-        height: 100%;
-        position: absolute;
-        right: 6em;
-        top: calc(100% - 4em);
-    }
+
 }
 
 @media only screen and (min-width: 1101px) {
@@ -119,5 +104,17 @@ app-vi-svg {
         padding: 1em 0.5em;
         max-width: calc(50% - 0.5em);
         height: unset !important;
+    }
+
+    .btns-container {
+        position: absolute;
+        top: calc(50% - 4em);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        app-vi-button {
+            margin: 0 1em;
+        }
     }
 }
