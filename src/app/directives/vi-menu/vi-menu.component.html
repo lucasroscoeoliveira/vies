@@ -12,7 +12,7 @@
                 <div class="logo clickable" *ngIf="item.logo" (click)="changeVies('main')">
                     <img class="logo--img" [src]="getMainLogo()">
                     <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}" class="text margin-left-2 text--disco text--low-large text--bold">
-                        {{item.logoLabel}}
+                        {{menu.getPrimaryLogoLabel()}}
                     </span>
                 </div>
                 <div class="menu-content__sub" [ngClass]="{'menu-content__sub--green': menu.type === 'house', 'menu-content__sub--purple': menu.type === 'fashion'}">

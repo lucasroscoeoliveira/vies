@@ -24,6 +24,14 @@ export class Menu {
     }
   }
 
+  getPrimaryLogoLabel() {
+    if (this.type === 'house') {
+      return 'casa';
+    } else {
+      return 'negócios';
+    }
+  }
+
   setMenu(type: string) {
     this.type = type;
 
