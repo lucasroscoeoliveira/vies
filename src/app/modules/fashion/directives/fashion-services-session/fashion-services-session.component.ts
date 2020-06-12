@@ -24,7 +24,7 @@ export class FashionServicesSessionComponent implements OnInit {
   setServiceCards() {
     this.serviceCards = [
       {
-        image: 'icon-bullhorn',
+        image: 'icon-project',
         title: 'PROJETO COMPLETO',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -49,7 +49,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-bullhorn',
+        image: 'icon-shop-window',
         title: 'VITRINISMO',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -91,7 +91,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-bullhorn',
+        image: 'icon-branding',
         title: 'IDENTIDADE VISUAL',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -105,7 +105,7 @@ export class FashionServicesSessionComponent implements OnInit {
         btnLabel: 'VEJA UM EXEMPLO DE ENTREGA'
       },
       {
-        image: 'icon-bullhorn',
+        image: 'icon-visual-merchandising',
         title: 'VISUAL MERCHANDISING',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -117,7 +117,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-bullhorn',
+        image: 'icon-training',
         title: 'CURSOS | PALESTRAS | WORKSHOPS',
         subtitle: 'PRESENCIAL',
         labels: [
