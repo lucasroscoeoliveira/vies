@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './modules/login/login.component';
 import { FashionModule } from './modules/fashion/fashion.module';
 import { HouseModule } from './modules/house/house.module';
 import { WhoWeAreModule } from './modules/who-we-are/who-we-are.module';
 import { ViesPdfViewerModule } from './modules/vies-pdf-viewer/vies-pdf-viewer.module';
 import { PrizeModule } from './modules/prize/prize.module';
+import { LoginModule } from './modules/login/login.module';
 
 const routes: Routes = [
   {
     path: '', redirectTo: 'login', pathMatch: 'full'
   },
   {
-    path: 'login', component: LoginComponent
+    path: 'login',
+    loadChildren: () => LoginModule
   },
   {
     path: 'premios',

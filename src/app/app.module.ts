@@ -21,7 +21,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ModalModule } from './modal/modal.module';
 import { LoginModule } from './modules/login/login.module';
-
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
       'pinch': { enable: false },
