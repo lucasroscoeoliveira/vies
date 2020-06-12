@@ -9,8 +9,8 @@
             (swiperight)="move('left')" 
             (swipeleft)="move('right')">
             <div class="display">
-                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.source" [useSrcset]="true" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}">
-                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.sourceAfter" [useSrcset]="true" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}" *ngIf="image.sourceAfter">
+                <img [src]="image.source" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}">
+                <img [src]="image.sourceAfter" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}" *ngIf="image.sourceAfter">
             </div>
 
             <div class="button-left desktop" [hidden]="!images || images.length <= 1">
