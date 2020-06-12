@@ -13,6 +13,8 @@ import { ViToastComponent } from './vi-toast/vi-toast.component';
 import { ViSocialComponent } from './vi-social/vi-social.component';
 import { ViCallToActionComponent } from './vi-call-to-action/vi-call-to-action.component';
 import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.component';
+import { ViCarouselComponent } from './vi-carousel/vi-carousel.component';
+import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.com
     ViSocialComponent,
     ViCallToActionComponent,
     ViPrizeSessionComponent,
+    ViCarouselComponent
   ],
   exports: [
     ViButtonComponent,
@@ -39,11 +42,13 @@ import { ViPrizeSessionComponent } from './vi-prize-session/vi-prize-session.com
     ViToastComponent,
     ViSocialComponent,
     ViCallToActionComponent,
-    ViPrizeSessionComponent
+    ViPrizeSessionComponent,
+    ViCarouselComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
+    LazyLoadImageModule,
     NgxMaskModule.forRoot(),
   ]
 })

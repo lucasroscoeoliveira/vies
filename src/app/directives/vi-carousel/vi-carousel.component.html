@@ -1,0 +1,36 @@
+<div class="vi-carousel">
+
+    <div class="vi-carousel__display" id="carousel-container">
+        <div class="vi-carousel__item" *ngFor="let image of images"
+            (swiperight)="move('left')" 
+            (swipeleft)="move('right')">
+
+            <div class="before-after-container">
+                <div class="before-after-label text" *ngIf="image.sourceAfter">ANTES X DEPOIS</div>
+            </div>
+
+            <img 
+                [src]="image.source" 
+                unselectable="on"
+                [ngClass]="{'image-before-after': isBeforeAfter(image)}">
+
+            <img [src]="image.sourceAfter" 
+                unselectable="on"
+                [ngClass]="{'image-before-after': isBeforeAfter(image)}"
+                *ngIf="image.sourceAfter">
+        </div>
+    </div>
+
+    <div class="button-left" [hidden]="!images || images.length <= 1">
+        <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
+        </app-vi-button>
+    </div>
+
+    <div class="button-right" [hidden]="!images || images.length <= 1">
+        <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
+        </app-vi-button>
+    </div>
+
+</div>

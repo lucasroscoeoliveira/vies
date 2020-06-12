@@ -18,7 +18,6 @@ export class HouseProjectViewComponent implements OnInit {
   filter: string;
   currIndex: number;
   routeParameters: any;
-  pagesLabel: string;
 
   ngOnInit(): void {
     this.initVariables();
@@ -32,11 +31,14 @@ export class HouseProjectViewComponent implements OnInit {
     this.currIndex = 0;
     this.checkForTabParams();
     this.initImages();
-    this.setPagesLabel();
   }
 
-  setPagesLabel() {
-    this.pagesLabel = (this.currIndex + 1) + '/' + this.images.length;
+  updateCurrIndex(currentIndex: number) {
+    this.currIndex = currentIndex;
+  }
+
+  getPagesLabel() {
+    return (this.currIndex + 1) + '/' + this.images.length;
   }
 
   checkForTabParams() {
@@ -48,7 +50,6 @@ export class HouseProjectViewComponent implements OnInit {
 
   initImages() {
     this.getImages();
-    this.setImage();
   }
 
   getImages() {
@@ -62,63 +63,6 @@ export class HouseProjectViewComponent implements OnInit {
         return image.filter === this.filter && image.id === this.id;
       });
     }
-  }
-
-  setImage() {
-    this.image = this.images[this.currIndex];
-  }
-
-  isBeforeAfter() {
-    return this.image.sourceAfter;
-  }
-
-  move(direction: string) {
-    if (direction === 'right') {
-      if (this.disableArrowRight()) {
-        return;
-      }
-      this.moveRight();
-    }
-    else {
-      if (this.disableArrowLeft()) {
-        return;
-      }
-      this.moveLeft();
-    }
-    this.setImage();
-    this.setPagesLabel();
-  }
-
-  @HostListener('window:keydown', ['$event'])
-  handleKeyboardEvent(event: KeyboardEvent) {
-    let keyPressed = event.keyCode;
-    switch (keyPressed) {
-      case 39:
-        this.move('right');
-        break;
-      case 37:
-        this.move('left');
-    }
-  }
-
-  moveRight() {
-    if (this.currIndex < this.images.length - 1) {
-      this.currIndex++;
-    }
-  }
-
-  moveLeft() {
-    if (this.currIndex > 0) {
-      this.currIndex--;
-    }
-  }
-
-  disableArrowLeft() {
-    return this.currIndex === 0
-  }
-
-  disableArrowRight() {
-    return this.currIndex >= this.images.length - 1;
   }
 
   goBack() {

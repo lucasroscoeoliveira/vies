@@ -1,52 +1,8 @@
 <main class="project-view" >
     <app-vi-navigation-header [title]="'Voltar'" type='neutral' (onGoBack)="goBack()">
-        <span class="text">{{pagesLabel}}</span>    
+        <span class="text">{{getPagesLabel()}}</span>    
     </app-vi-navigation-header>
     <div class="project-view__body">
-        <div class="before-after-label text" *ngIf="image.sourceAfter">ANTES X DEPOIS</div>
-
-        <div class="image-container arrow-container"       
-            (swiperight)="move('left')" 
-            (swipeleft)="move('right')">
-            <div class="display">
-                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.source" [useSrcset]="true" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}">
-                <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.sourceAfter" [useSrcset]="true" alt="" unselectable="on" [ngClass]="{'image-before-after': isBeforeAfter()}" *ngIf="image.sourceAfter">
-            </div>
-
-            <div class="button-left desktop" [hidden]="!images || images.length <= 1">
-                <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')" [isDisabled] = "disableArrowLeft()">
-                    <div class="buttom-menu">
-                        <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-                    </div>
-                </app-vi-button>
-            </div>
-        
-            <div class="button-right desktop" [hidden]="!images || images.length <= 1">
-                <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')" [isDisabled] = "disableArrowRight()">
-                    <div class="buttom-menu">
-                        <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
-                    </div>
-                </app-vi-button>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="buttons-mobile mobile arrow-container" [hidden]="!images || images.length <= 1">
-        <div class="button-left margin-right-1">
-            <app-vi-button [round]='true' type='white' class="" (onClick)="move('left')" [isDisabled] = "disableArrowLeft()">
-                <div class="buttom-menu">
-                    <app-vi-svg icon="icon-keyboard_arrow_left"></app-vi-svg>
-                </div>
-            </app-vi-button>
-        </div>
-
-        <div class="button-right margin-left-1">
-            <app-vi-button [round]='true' type='white' class="" (onClick)="move('right')" [isDisabled] = "disableArrowRight()">
-                <div class="buttom-menu">
-                    <app-vi-svg icon="icon-keyboard_arrow_right"></app-vi-svg>
-                </div>
-            </app-vi-button>
-        </div>
+        <app-vi-carousel (counterChange)="updateCurrIndex($event)" [(currentIndex)]="currIndex" [images]="images"></app-vi-carousel>
     </div>
 </main>
