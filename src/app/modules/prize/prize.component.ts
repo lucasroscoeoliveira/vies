@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Header } from 'src/app/components-controllers/Header';
 import { environment } from 'src/environments/environment';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-prize',
@@ -17,10 +18,12 @@ export class PrizeComponent implements OnInit {
   constructor(
     public router: Router,
     public header: Header,
+    public scroll: ScrollTo,
     private route: ActivatedRoute, 
   ) { }
 
   ngOnInit(): void {
+    this.header.setActive(this.scroll.states.prize);
     this.setHeaderImages();
     this.setProjectImages();
     this.setVideoImages();

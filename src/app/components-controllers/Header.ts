@@ -17,8 +17,11 @@ export class Header {
     return Header.instance = Header.instance || this;
   }
 
-  setActive(routeName: string){
-    if(!this.items || !this.items.find(item => item.routeName === routeName)){
+  setActive(routeName: string) {
+    if (!this.items) {
+      this.setHeader(this.type);
+    }
+    if(!this.items.find(item => item.routeName === routeName)){
       return;
     }
     this.items = this.items.map((item) => {

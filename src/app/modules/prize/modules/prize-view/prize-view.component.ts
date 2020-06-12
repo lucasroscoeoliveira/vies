@@ -33,6 +33,7 @@ export class PrizeViewComponent implements OnInit {
     });
     this.currIndex = this.id ? this.id - 1 : 0;
     this.initImages();
+    this.header.setActive(this.scroll.states.prize);
   }
 
   initImages() {
