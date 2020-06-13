@@ -59,6 +59,8 @@ export default class HouseProjectConstants {
     INFANTIL_VALENTINA_LAGOA_SANTA: 42,
     INFANTIL_LAIS_GUTIERREZ: 43,
     INFANTIL_TULIO_GUTIERREZ: 44,
+    QUARTO_SOLTEIRO_GUTIERREZ: 45,
+    QUARTO_CASAL_GUTIERREZ: 46
   }
 
   static readonly PROJECTS = [
@@ -561,7 +563,7 @@ export default class HouseProjectConstants {
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.KITCHEN_13,
       active: false,
-      description: 'COZINHA EXTERNA - SANTA AMÉLIA',
+      description: 'COZINHA GOURMET - SANTA AMÉLIA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_CICA,
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
@@ -577,7 +579,7 @@ export default class HouseProjectConstants {
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.KITCHEN_15,
       active: false,
-      description: 'COZINHA - PADRE EUSTÁQUIO',
+      description: 'COZINHA GOURMET - PADRE EUSTÁQUIO',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_JOICE,
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
@@ -585,7 +587,7 @@ export default class HouseProjectConstants {
     {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.KITCHEN_16,
       active: false,
-      description: 'ÁREA GOURMET - SANTA BRANCA',
+      description: 'COZINHA - SANTA BRANCA',
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.COZINHA_PAULO,
       main: false,
       filter: HouseProjectConstants.FILTERS.KITCHEN
@@ -736,7 +738,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_1,
       active: false,
       description: 'QUARTO SOLTEIRO - GUTIERREZ',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
       main: false,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
@@ -784,7 +786,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_7,
       active: false,
       description: 'QUARTO CASAL - GUTIERREZ',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
       main: false,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
@@ -2486,6 +2488,78 @@ export default class HouseProjectConstants {
       sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.INFANTIL_4,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_ANTES_1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.SOLTEIRO_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_ANTES_2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_ANTES_3,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_GUTIERREZ.CASAL_3,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_GUTIERREZ,
       filter: HouseProjectConstants.FILTERS.CHILD
     },
 
