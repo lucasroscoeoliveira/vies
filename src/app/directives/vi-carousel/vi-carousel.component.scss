@@ -102,7 +102,7 @@
 
     .image-before-after {
         padding: 1em 0.5em;
-        max-width: calc(50% - 0.5em);
+        max-width: calc(50% - 0.5em) !important;
         height: unset !important;
     }
 

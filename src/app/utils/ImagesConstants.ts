@@ -277,7 +277,7 @@ export default class ImagesConstants {
                 FOSTER_3_LOJA: environment.s3_public + '/Fashion/Projects/17-FOSTER/3-foster-loja.jpg',
             },
             CASA_ALLEGRA_18: {
-                CASA_ALLEGRA_1_LOJA_VITRINE_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/1-casa-allegra-loja-vitrine.jpg',
+                CASA_ALLEGRA_1_LOJA_VITRINE_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/1-casa-allegra-loja-vitrine-id.jpg',
                 CASA_ALLEGRA_2_LOJA: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/2-casa-allegra-loja.jpg',
                 CASA_ALLEGRA_3_LOJA: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/3-casa-allegra-loja.jpg',
                 CASA_ALLEGRA_4_LOJA: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/4-casa-allegra-loja.jpg',
@@ -285,8 +285,8 @@ export default class ImagesConstants {
                 CASA_ALLEGRA_6_LOJA_VITRINE_ANTES1: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/6-casa-allegra-loja-vitrine-antes1.jpg',
                 CASA_ALLEGRA_7_LOJA_ANTES3: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/7-casa-allegra-loja-antes3.jpg',
                 CASA_ALLEGRA_8_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/8-casa-allegra-id.jpg',
-                CASA_ALLEGRA_9_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/9-casa-allegra-id.jpg',
-                CASA_ALLEGRA_10_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/10casa-allegra-id.jpg',
+                CASA_ALLEGRA_9_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/9-casa-allegra-id.jpeg',
+                CASA_ALLEGRA_10_ID: environment.s3_public + '/Fashion/Projects/18-CASA-ALLEGRA/10-casa-allegra-id.jpeg',
             },
             FITSU_19: {
                 FITSU_1_VITRINE: environment.s3_public + '/Fashion/Projects/19-FITSU/1-fitsu-vitrine.jpg',

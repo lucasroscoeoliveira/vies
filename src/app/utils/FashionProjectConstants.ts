@@ -1645,8 +1645,8 @@ export default class FashionProjectConstants {
             filter: FashionProjectConstants.FILTERS.STORE
         },
         {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CERRA_DOURO_14.CERRA_DOURO_1_LOJA,
-            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CERRA_DOURO_14.CERRA_DOURO_6_LOJA_ANTES1,
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CERRA_DOURO_14.CERRA_DOURO_6_LOJA_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CERRA_DOURO_14.CERRA_DOURO_1_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.CERRA,
             filter: FashionProjectConstants.FILTERS.STORE
