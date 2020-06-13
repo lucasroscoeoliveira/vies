@@ -60,7 +60,9 @@ export default class HouseProjectConstants {
     INFANTIL_LAIS_GUTIERREZ: 43,
     INFANTIL_TULIO_GUTIERREZ: 44,
     QUARTO_SOLTEIRO_GUTIERREZ: 45,
-    QUARTO_CASAL_GUTIERREZ: 46
+    QUARTO_CASAL_GUTIERREZ: 46,
+    QUARTO_SOLTEIRO_BURITIS: 47,
+    QUARTO_CASAL_BURITIS: 48
   }
 
   static readonly PROJECTS = [
@@ -770,7 +772,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_5,
       active: false,
       description: 'QUARTO CASAL - BURITIS',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_BURITIS,
       main: false,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
@@ -794,7 +796,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_8,
       active: false,
       description: 'QUARTO SOLTEIRO - BURITIS',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_BURITIS,
       main: false,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
@@ -980,6 +982,39 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SOLTEIRO_2,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_BURITIS,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.CASAL,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_BURITIS,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.CASAL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_CASAL_BURITIS,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+
+
+
+
+
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SOLTEIRO,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_BURITIS,
+      filter: HouseProjectConstants.FILTERS.BEDROOM
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_BURITIS.SOLTEIRO_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.QUARTO_SOLTEIRO_BURITIS,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
 
