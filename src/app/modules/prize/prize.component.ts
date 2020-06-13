@@ -51,20 +51,30 @@ export class PrizeComponent implements OnInit {
   }
 
   setProjectImages() {
-    this.projectImages = [
-      {
-        id: 1,
-        image: environment.s3_public + '/House/Prize/capablogueira-premio1.jpg',
-      },
-      {
-        id: 2,
-        image: environment.s3_public + '/House/Prize/capablogueira-premio2.jpg',
-      },
-      {
-        id: 3,
-        image: environment.s3_public + '/House/Prize/capablogueira-premio3.jpg',
-      },
-    ]
+    if (screen.width > 900) {
+      this.projectImages = [
+        {
+          id: 1,
+          image: environment.s3_public + '/House/Prize/capablogueira-premio1.jpg',
+        },
+        {
+          id: 2,
+          image: environment.s3_public + '/House/Prize/capablogueira-premio2.jpg',
+        },
+        {
+          id: 3,
+          image: environment.s3_public + '/House/Prize/capablogueira-premio3.jpg',
+        },
+      ]
+    } else {
+      this.projectImages = [
+        {
+          id: 1,
+          image: environment.s3_public + '/House/Prize/capablogueira-premio1.jpg',
+        }
+      ]
+    }
+
   }
 
   setVideoImages() {

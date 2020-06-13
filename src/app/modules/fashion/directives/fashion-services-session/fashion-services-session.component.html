@@ -1,8 +1,13 @@
-<div class="fashion-services clickable" (click)="navigateToProjectsSession()">
+<div class="fashion-services">
     <span class="text text--purple text--large text--centered margin-bottom-2 text--bold">SERVIÇOS</span>
 
     <div class="cards-container">
         <div class="card-services" *ngFor="let serviceCard of serviceCards">
+            <span class="add-btn mobile" (click)="toggleOpened(serviceCard)">
+                <span [hidden]="!serviceCard.opened">-</span>                
+                <span [hidden]="serviceCard.opened">+</span>
+            </span>
+
             <div class="top-container">
                 <div class="circle margin-bottom-2">
                     <app-vi-svg icon="{{serviceCard.image}}" class="service-icon"></app-vi-svg>
@@ -10,7 +15,7 @@
                 <span class="text text--purple text--large margin-bottom-2 name">{{serviceCard.title}}</span>
                 <span class="text margin-bottom-2">{{serviceCard.subtitle}}</span>
         
-                <div class="labels-content">
+                <div class="labels-content" [hidden]="!serviceCard.opened">
                     <div class="label-content" *ngFor="let serviceLabel of serviceCard.labels">
                         <span class="label-content--adjust">
                             <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
@@ -22,7 +27,7 @@
                     </div>
                 </div>
             </div>            
-            <app-vi-button (onClick)="showPdf(serviceCard.pdfId)" [wide]="true" type='purple' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
+            <app-vi-button [hidden]="!serviceCard.opened" (onClick)="showPdf(serviceCard.pdfId)" [wide]="true" type='purple' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
     </div>
 </div>

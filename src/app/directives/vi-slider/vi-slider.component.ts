@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Slider, Image } from 'src/app/components-controllers/Slider';
+import { Header } from 'src/app/components-controllers/Header';
+import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 
 @Component({
   selector: 'app-vi-slider',
@@ -12,7 +14,7 @@ export class ViSliderComponent implements OnInit {
   @Input() intervalNumber: number;
   intervalEvent: any;
 
-  constructor() { }
+  constructor(public header: Header, public scrollTo: ScrollTo) { }
 
   ngOnInit(): void {
     this.InitializeInterval();
@@ -55,5 +57,9 @@ export class ViSliderComponent implements OnInit {
     this.intervalEvent = setInterval(() => {
       this.changeImageShown();
     }, this.intervalNumber)
+  }
+
+  goToProjects() {
+    this.scrollTo.navigateToRoute(this.scrollTo.states.projects, 300, this.header.type);
   }
 }

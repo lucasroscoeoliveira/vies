@@ -1,3 +1,3 @@
-<button class="button unselectable" type="{{getBtnType()}}" (click)="btnClicked()" [ngClass]="{'white': type === 'white', 'purple': type === 'purple', 'green': type === 'green', 'danger': type === 'danger', 'wide': wide === true, 'round': round === true, 'disabled': isDisabled === true}">
+<button class="button unselectable" type="{{getBtnType()}}" (click)="btnClicked()" [ngClass]="{'whatsapp': type === 'whatsapp', 'white': type === 'white', 'purple': type === 'purple', 'green': type === 'green', 'danger': type === 'danger', 'wide': wide === true, 'round': round === true, 'disabled': isDisabled === true}">
   <ng-content class="btn-content"></ng-content>
 </button>

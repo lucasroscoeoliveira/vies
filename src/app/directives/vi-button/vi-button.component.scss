@@ -8,6 +8,14 @@
   }
 }
 
+.whatsapp {
+  background-color: $color-whatsapp;
+
+  &:focus {
+    background-color: $color-white-2;
+  }
+}
+
 .green {
   background-color: $color-green;
 

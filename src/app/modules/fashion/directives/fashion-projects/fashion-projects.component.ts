@@ -62,18 +62,18 @@ export class FashionProjectsComponent implements OnInit {
         selected: true
       },
       {
-        name: 'COMERCIAL GERAL',
-        filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL,
+        name: 'LOJAS',
+        filter: FashionProjectConstants.FILTERS.STORE,
         selected: false
       },
       {
-        name: 'VITRINE',
+        name: 'VITRINES',
         filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
         selected: false
       },
       {
-        name: 'LOJA',
-        filter: FashionProjectConstants.FILTERS.STORE,
+        name: 'COMERCIAL GERAL',
+        filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL,
         selected: false
       },
       {

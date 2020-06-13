@@ -21,6 +21,10 @@ export class FashionServicesSessionComponent implements OnInit {
     this.scrollTo.navigateToRoute(this.scrollTo.states.services, 300, 'fashion');
   }
 
+  toggleOpened(serviceCard: any) {
+    serviceCard.opened = !serviceCard.opened
+  }
+
   setServiceCards() {
     this.serviceCards = [
       {
@@ -142,6 +146,11 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       }
     ]
+
+    this.serviceCards = this.serviceCards.map((serviceCard: any) => {
+      serviceCard.opened = screen.width > 901
+      return serviceCard;
+    })
   }
 
   showPdf(pdfId: number) {

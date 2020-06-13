@@ -28,11 +28,26 @@
             border-radius: 5px;
             width: 25em;
             justify-content: space-between;
+            position: relative;
+            min-width: calc(32% - 3em);
+
+            .add-btn {
+                right: 0.5em;
+                top: 0em;
+                padding: 0.5em;
+                position: absolute;
+
+                span {
+                    font-size: 35px;
+                    color: $color-purple;
+                }
+            }
 
             .top-container {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                width: 100%;
             }
 
             &:hover {

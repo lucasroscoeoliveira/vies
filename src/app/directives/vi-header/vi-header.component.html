@@ -24,11 +24,11 @@
       <app-vi-svg icon="{{social.name}}" (click)="social.clickEvent()" class="icon" [ngClass]="{'icon--green': header.type === 'house', 'icon--purple': header.type === 'fashion'}"></app-vi-svg>
     </div>
   
-    <div class="header__item">
+    <!-- <div class="header__item">
       <div class="logo clickable" (click)="changeVies('secondary')">
         <img class="logo--img" [src]="getSecondaryLogo()">
       </div>
-    </div>
+    </div> -->
 
     <app-vi-button *ngIf="header.type === 'house'" type='green' class="budget" (onClick)="navigateToHouse('contato')"> 
       <span class="text text--white">Quero um orçamento</span>
@@ -36,6 +36,15 @@
 
     <app-vi-button *ngIf="header.type === 'fashion'" type='purple' class="budget" (onClick)="navigateToFashion('contato')"> 
       <span class="text text--white">Quero um orçamento</span>
+    </app-vi-button>
+
+
+    <app-vi-button style="min-width: 160px;" *ngIf="header.type === 'fashion'" type='green' class="budget" (onClick)="changeVies('secondary')"> 
+      <span class="text text--white">Casa</span>
+    </app-vi-button>
+
+    <app-vi-button style="min-width: 160px;" *ngIf="header.type === 'house'" type='purple' class="budget" (onClick)="changeVies('secondary')"> 
+      <span class="text text--white">Comercial</span>
     </app-vi-button>
   </div>
   
