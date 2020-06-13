@@ -1,7 +1,7 @@
 
 <main class="house-container">
     <app-vi-header class="desktop"></app-vi-header>
-    <div class="house" id="house-scroll-container" (scroll)="onScroll($event)">
+    <div class="house" id="house-scroll-container" (scroll)="onScroll($event)" (swiperight)="menu.openMenu()">
         <router-outlet></router-outlet>
     </div>
 </main>

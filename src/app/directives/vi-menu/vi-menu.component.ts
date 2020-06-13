@@ -11,7 +11,6 @@ import { Social } from 'src/app/components-controllers/Social';
 })
 export class ViMenuComponent implements OnInit {
 
-  menuOpened: boolean;
   typeColor: string;
 
   constructor(
@@ -21,7 +20,7 @@ export class ViMenuComponent implements OnInit {
     public menu: Menu) { }
 
   ngOnInit(): void {
-    this.menuOpened = false;
+    this.menu.menuOpened = false;
     this.typeColor = this.menu.type === 'house' ? 'green' : 'purple';
     if (!this.menu.items || this.menu.items.length === 0) {
       this.menu.setMenu('house');
@@ -29,10 +28,10 @@ export class ViMenuComponent implements OnInit {
   }
 
   toggleMenu() {
-    this.menuOpened = !this.menuOpened;
+    this.menu.menuOpened = !this.menu.menuOpened;
     let drawer = document.getElementById("menu-content");
 
-    if (this.menuOpened) {
+    if (this.menu.menuOpened) {
       drawer.style.width = "300px";
     } else {
       drawer.style.width = "0";
@@ -40,8 +39,8 @@ export class ViMenuComponent implements OnInit {
   }
 
   closeMenu() {
-    if (this.menuOpened) {
-      this.menuOpened = false;
+    if (this.menu.menuOpened) {
+      this.menu.menuOpened = false;
       let drawer = document.getElementById("menu-content");
       drawer.style.width = "0px";
     }

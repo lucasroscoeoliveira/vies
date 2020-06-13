@@ -8,12 +8,19 @@ export class Menu {
   type: string;
   items: Array<MenuMenuItem>;
   socials: Array<MenuSubMenuItem>;
+  menuOpened: boolean;
 
   constructor(public social: Social) {
     if (!this.type) {
       this.type = 'house';
     }
     return Menu.instance = Menu.instance || this;
+  }
+
+  openMenu() {
+    this.menuOpened = true;
+    let drawer = document.getElementById("menu-content");
+    drawer.style.width = "300px";
   }
 
   getSecondaryLogoLabel() {
