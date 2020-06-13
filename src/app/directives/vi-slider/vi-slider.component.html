@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" (swiperight)="menu.openMenu()">
   <div class="content__image" *ngFor="let image of images" (click)="goToProjects()">
     <img [src]="image.source" alt="" class="image" *ngIf="!setIsMobile()" [ngClass]="{'transparent': !image.active}">
     <img [src]="image.sourceMobile" alt="" class="image" *ngIf="setIsMobile()" [ngClass]="{'transparent': !image.active}">

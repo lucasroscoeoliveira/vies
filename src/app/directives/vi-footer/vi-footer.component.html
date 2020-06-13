@@ -1,4 +1,4 @@
-<div class="vi-footer" [ngClass]="{'vi-footer--green': header.type === 'house', 'vi-footer--purple': header.type === 'fashion'}">
+<div class="vi-footer" (swiperight)="menu.openMenu()" [ngClass]="{'vi-footer--green': header.type === 'house', 'vi-footer--purple': header.type === 'fashion'}">
     
     <div class="top-container">
         <div class="content margin-bottom-3">

@@ -13,7 +13,7 @@
     <div class="house-projects__container" (swiperight)="move('left')" (swipeleft)="move('right')">
         <div class="clickable" *ngFor="let image of imagesFiltered()" class="card" (click)="viewProjectDetail(image)">
             <img [defaultImage]="'./assets/imgs/placeholder.png'" [lazyLoad]="image.source" [useSrcset]="true" alt="" class="card__image">
-            <div class="description desktop">
+            <div class="description">
                 <div class="description__content">
                     <div></div>
                     <span class="text text--green text--small-2 text--bold text--centered desktop">{{image.description}}</span>

@@ -5,6 +5,7 @@ import { ClientAppService } from 'src/app/services/client-app.service';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Header } from 'src/app/components-controllers/Header';
 import Utils from 'src/app/utils/Utils';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-vi-footer',
@@ -21,7 +22,8 @@ export class ViFooterComponent implements OnInit {
     public social: Social,
     public clientAppService: ClientAppService,
     public toast: Toast,
-    public header: Header
+    public header: Header,
+    public menu: Menu
   ) { }
 
   ngOnInit(): void {

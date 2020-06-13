@@ -27,8 +27,21 @@
             margin: 1em 2em;
             flex-direction: column;
             border-radius: 5px;
-            min-width: 30em;
             justify-content: space-between;
+            position: relative;
+            min-width: calc(32% - 3em);
+
+            .add-btn {
+                right: 0.5em;
+                top: 0em;
+                padding: 0.5em;
+                position: absolute;
+
+                span {
+                    font-size: 35px;
+                    color: $color-green;
+                }
+            }
 
             .top-container {
                 display: flex;

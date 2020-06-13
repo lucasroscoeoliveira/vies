@@ -30,23 +30,27 @@ export class ViPrizeSessionComponent implements OnInit {
     this.router.navigate(['premios']);
   }
 
+  viewVideo() {
+    window.open('https://www.youtube.com/watch?v=27FJ89SR__E');
+  }
+
   ngOnInit(): void {
     this.styleImages = [
       {
         id: 1,
-        source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_1,
+        source: ImagesConstants.SHARED_IMAGES.PRIZES.CAPA_VIDEO_3,
       },
       {
         id: 2,
-        source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_2,
+        source: ImagesConstants.SHARED_IMAGES.PRIZES.MORAR_MAIS_2,
       },
       {
         id: 3,
-        source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_3,
+        source: ImagesConstants.SHARED_IMAGES.PRIZES.MORAR_MAIS_3,
       },
       {
         id: 4,
-        source: ImagesConstants.SHARED_IMAGES.PRIZES.BLOGUEIRA_PREMIO_4,
+        source: ImagesConstants.SHARED_IMAGES.PRIZES.MORAR_MAIS_1,
       },
     ];
   }

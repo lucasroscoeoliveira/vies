@@ -3,6 +3,7 @@ import { Testimonial } from 'src/app/components-controllers/Testimonial';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import { Header } from 'src/app/components-controllers/Header';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-house-testimonials',
@@ -14,7 +15,7 @@ export class HouseTestimonialsComponent implements OnInit {
   testimonials: Array<Testimonial>;
   imageConstants: ImagesConstants;
 
-  constructor(public scrollTo: ScrollTo, public header:Header) { }
+  constructor(public scrollTo: ScrollTo, public header:Header, public menu: Menu) { }
 
   navigateToProjectsSession() {
     this.scrollTo.navigateToRoute(this.scrollTo.states.testimonial, 300, this.header.type);

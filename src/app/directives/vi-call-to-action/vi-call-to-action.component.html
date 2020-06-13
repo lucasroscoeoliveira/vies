@@ -1,5 +1,5 @@
 
-<div class="call-to-action-container">
+<div class="call-to-action-container" (swiperight)="menu.openMenu()">
 
     <div class="call-to-action" [ngClass]="{'call-to-action--green': header.type === 'house', 'call-to-action--purple': header.type === 'fashion'}">    
         <h1 class="text text--bold text--centered text--large-2">Dúvidas? Entre em contato com a gente!</h1>

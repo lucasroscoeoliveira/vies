@@ -4,6 +4,7 @@ import { Modal } from 'src/app/components-controllers/Modal';
 import { Toast } from 'src/app/components-controllers/Toast';
 import { Social } from 'src/app/components-controllers/Social';
 import { Header } from 'src/app/components-controllers/Header';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-vi-call-to-action',
@@ -19,7 +20,8 @@ export class ViCallToActionComponent implements OnInit {
     public modal: Modal,
     public toast: Toast,
     public social: Social,
-    public header: Header
+    public header: Header,
+    public menu: Menu
   ) { }
 
   ngOnInit(): void {

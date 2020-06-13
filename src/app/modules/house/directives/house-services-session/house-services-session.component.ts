@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-house-services-session',
@@ -10,80 +11,96 @@ import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 })
 export class HouseServicesSessionComponent implements OnInit {
 
-  projectImage: string;
-  consultImage: string;
-  serviceLabels: any;
-  consultLabels: any;
+  serviceCards: any;
 
-  constructor(private router: Router, public scrollTo: ScrollTo) { }
+  constructor(private router: Router, public scrollTo: ScrollTo, public menu: Menu) { }
 
   ngOnInit(): void {
-    this.projectImage = ImagesConstants.HOUSE_IMAGES.SERVICES.PROJETO;
-    this.consultImage = ImagesConstants.HOUSE_IMAGES.SERVICES.CONSULTORIA;
-    this.setServiceLabels();
-    this.setConsultLabels();
+    this.setServiceCards();
   }
 
   navigateToProjectsSession() {
     this.scrollTo.navigateToRoute(this.scrollTo.states.services, 300, 'house');
   }
 
-  setConsultLabels() {
-    this.consultLabels = [
+  toggleOpened(serviceCard: any) {
+    serviceCard.opened = !serviceCard.opened
+  }
+
+  setServiceCards() {
+    this.serviceCards = [
       {
         id: 1,
-        title: 'SOLUÇÕES SIMPLIFICADAS',
-        subtitle: ''
+        title: 'PROJETO COMPLETO',
+        subtitle: 'PRESENCIAL|ONLINE',
+        image: 'icon-home3',
+        mainImage: ImagesConstants.HOUSE_IMAGES.SERVICES.PROJETO,
+        labels: [
+          {
+            id: 1,
+            title: 'SOLUÇÕES 100% PERSONALIZADAS',
+            subtitle: ''
+          },
+          {
+            id: 2,
+            title: 'PLANTA LAYOUT COMPLETA',
+            subtitle: ''
+          },
+          {
+            id: 3,
+            title: '3D REALÍSTICO',
+            subtitle: ''
+          },
+          {
+            id: 4,
+            title: 'ESPECIFICAÇÕES E DETALHAMENTO COMPLETO',
+            subtitle: '(Móveis, marcenaria, marmoraria, iluminação,<br> tomadas, revestimentos...)'
+          },
+          {
+            id: 5,
+            title: 'INDICAÇÃO DE FORNECEDORES<br> E SUPORTE TÉCNICO',
+            subtitle: ''
+          },
+        ]
       },
       {
-        id: 2,
-        title: 'PLANTA LAYOUT',
-        subtitle: ''
-      },
-      {
-        id: 3,
-        title: '3D BÁSICO',
-        subtitle: ''
-      },
-      {
-        id: 4,
-        title: 'ESPECIFICAÇÕES E MEDIDAS BÁSICAS',
-        subtitle: ''
-      },
+        id: 1,
+        title: 'PROJETO COMPLETO',
+        subtitle: 'PRESENCIAL|ONLINE',
+        mainImage: ImagesConstants.HOUSE_IMAGES.SERVICES.CONSULTORIA,
+        image: 'icon-clipboard',
+        labels: [
+          {
+            id: 1,
+            title: 'SOLUÇÕES SIMPLIFICADAS',
+            subtitle: ''
+          },
+          {
+            id: 2,
+            title: 'PLANTA LAYOUT',
+            subtitle: ''
+          },
+          {
+            id: 3,
+            title: '3D BÁSICO',
+            subtitle: ''
+          },
+          {
+            id: 4,
+            title: 'ESPECIFICAÇÕES E MEDIDAS BÁSICAS',
+            subtitle: ''
+          }
+        ]
+      }
     ]
+
+    this.serviceCards = this.serviceCards.map((serviceCard: any) => {
+      serviceCard.opened = screen.width > 901
+      return serviceCard;
+    })
   }
 
   showPdf(id: number) {
     this.router.navigate(['conteudo', id]);
-  }
-
-  setServiceLabels() {
-    this.serviceLabels = [
-      {
-        id: 1,
-        title: 'SOLUÇÕES 100% PERSONALIZADAS',
-        subtitle: ''
-      },
-      {
-        id: 2,
-        title: 'PLANTA LAYOUT COMPLETA',
-        subtitle: ''
-      },
-      {
-        id: 3,
-        title: '3D REALÍSTICO',
-        subtitle: ''
-      },
-      {
-        id: 4,
-        title: 'ESPECIFICAÇÕES E DETALHAMENTO COMPLETO',
-        subtitle: '(Móveis, marcenaria, marmoraria, iluminação,<br> tomadas, revestimentos...)'
-      },
-      {
-        id: 5,
-        title: 'INDICAÇÃO DE FORNECEDORES<br> E SUPORTE TÉCNICO',
-        subtitle: ''
-      },
-    ]
   }
 }

@@ -1,19 +1,24 @@
-<div class="house-services">
+<div class="house-services" (swiperight)="menu.openMenu()">
     <span class="text text--green text--large text--centered margin-bottom-2 text--bold clickable"  (click)="navigateToProjectsSession()">SERVIÇOS</span>
 
     <div class="cards-container">
-        <div class="card-services">
+        <div class="card-services" *ngFor="let serviceCard of serviceCards">
+            <span class="add-btn mobile" (click)="toggleOpened(serviceCard)">
+                <span [hidden]="!serviceCard.opened">-</span>                
+                <span [hidden]="serviceCard.opened">+</span>
+            </span>
+
             <div class="top-container">
                 <div class="circle margin-bottom-2 mobile">
-                    <app-vi-svg icon="icon-home3" class="service-icon"></app-vi-svg>
+                    <app-vi-svg icon="{{serviceCard.image}}" class="service-icon"></app-vi-svg>
                 </div>
-                <span class="text text--green text--large margin-bottom-2 name">PROJETO COMPLETO</span>
-                <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
+                <span class="text text--green text--large margin-bottom-1 name">{{serviceCard.title}}</span>
+                <span [hidden]="!serviceCard.opened" class="text margin-bottom-2 margin-top-2">{{serviceCard.subtitle}}</span>
     
-                <img [src]="projectImage" alt="" class="service-image desktop">
+                <img [src]="serviceCard.mainImage" alt="" class="service-image desktop">
     
-                <div class="labels-content">
-                    <div class="label-content" *ngFor="let serviceLabel of serviceLabels">
+                <div class="labels-content" [hidden]="!serviceCard.opened">
+                    <div class="label-content" *ngFor="let serviceLabel of serviceCard.labels">
                         <span class="label-content--adjust">
                             <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
                             <h1 class="text text--small text--start" [innerHTML]="serviceLabel.title"></h1>
@@ -24,30 +29,7 @@
                     </div>
                 </div>
             </div>            
-            <app-vi-button (onClick)="showPdf(1)" [wide]="true" type='green' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
-        </div>
-
-        <div class="card-services">
-            <div class="top-container">
-                <div class="circle margin-bottom-2 mobile">
-                    <app-vi-svg icon="icon-clipboard" class="service-icon"></app-vi-svg>
-                </div>
-                <span class="text text--green text--large margin-bottom-2 name">CONSULTORIA</span>
-                <span class="text margin-bottom-2">PRESENCIAL|ONLINE</span>
-    
-                <img [src]="consultImage" alt="" class="service-image desktop">
-    
-                <div class="labels-content">
-                    <div class="label-content"  *ngFor="let consultLabel of consultLabels">
-                        <span class="label-content--adjust">
-                            <app-vi-svg icon="icon-checkmark" class="check-icon"></app-vi-svg>
-                            <h1 class="text text--small">{{consultLabel.title}}</h1>
-                            <span></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <app-vi-button (onClick)="showPdf(2)" [wide]="true" class="margin-2" type='green'><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
+            <app-vi-button [hidden]="!serviceCard.opened || true" (onClick)="showPdf(1)" [wide]="true" type='green' class="margin-2"><span class="text text--white">VEJA UM EXEMPLO DE ENTREGA</span></app-vi-button>
         </div>
     </div>
 </div>

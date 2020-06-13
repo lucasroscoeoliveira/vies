@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import ImagesConstants from 'src/app/utils/ImagesConstants';
 import { Router } from '@angular/router';
 import { Header } from 'src/app/components-controllers/Header';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-who-we-are',
@@ -13,7 +14,7 @@ export class WhoWeAreComponent implements OnInit {
   marina: string;
   amanda: string;
 
-  constructor(private router: Router, public header: Header) { }
+  constructor(private router: Router, public header: Header, public menu: Menu) { }
 
   ngOnInit(): void {
     this.marina = ImagesConstants.SHARED_IMAGES.MARINA;

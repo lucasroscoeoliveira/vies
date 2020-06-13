@@ -1,6 +1,6 @@
-<main class="content">
+<main class="content" (swiperight)="menu.openMenu()">
     <app-vi-header></app-vi-header>
-    <app-vi-navigation-header [title]="'Quem Somos'" type='neutral' (onGoBack)="goBackToInitial()" class="mobile"></app-vi-navigation-header>
+    <app-vi-navigation-header [title]="'Voltar'" type='neutral' (onGoBack)="goBackToInitial()" class="mobile"></app-vi-navigation-header>
 
     <div class="screen">
         <div class="screen-content margin-bottom-2">

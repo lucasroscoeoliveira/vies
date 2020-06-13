@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-fashion-services-session',
@@ -11,7 +12,7 @@ export class FashionServicesSessionComponent implements OnInit {
 
   serviceCards: any;
 
-  constructor(private router: Router, public scrollTo: ScrollTo) { }
+  constructor(private router: Router, public scrollTo: ScrollTo, public menu: Menu) { }
 
   ngOnInit(): void {
     this.setServiceCards();
@@ -28,7 +29,7 @@ export class FashionServicesSessionComponent implements OnInit {
   setServiceCards() {
     this.serviceCards = [
       {
-        image: 'icon-project',
+        image: 'icon-PROJETO',
         title: 'PROJETO COMPLETO',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -53,7 +54,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-shop-window',
+        image: 'icon-VITRINISMO',
         title: 'VITRINISMO',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -74,7 +75,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-bullhorn',
+        image: 'icon-CONSULTORIA',
         title: 'CONSULTORIA',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -95,7 +96,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-branding',
+        image: 'icon-ID-VISUAL',
         title: 'IDENTIDADE VISUAL',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -109,7 +110,7 @@ export class FashionServicesSessionComponent implements OnInit {
         btnLabel: 'VEJA UM EXEMPLO DE ENTREGA'
       },
       {
-        image: 'icon-visual-merchandising',
+        image: 'icon-VISUAL-MERCH',
         title: 'VISUAL MERCHANDISING',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [
@@ -121,7 +122,7 @@ export class FashionServicesSessionComponent implements OnInit {
         pdfId: 1,
       },
       {
-        image: 'icon-training',
+        image: 'icon-PALESTRAS',
         title: 'CURSOS | PALESTRAS | WORKSHOPS',
         subtitle: 'PRESENCIAL',
         labels: [

@@ -1006,6 +1006,15 @@ export default class ImagesConstants {
             BLOGUEIRA_PREMIO_7: environment.s3_public + '/House/Prize/blogueira-premio7.jpg',
             BLOGUEIRA_PREMIO_8: environment.s3_public + '/House/Prize/blogueira-premio8.jpg',
             BLOGUEIRA_PREMIO_9: environment.s3_public + '/House/Prize/blogueira-premio9.jpg',
+            CAPA_BLOGUEIRA_1: environment.s3_public + '/House/Prize/capablogueira-premio1.jpg',
+            CAPA_BLOGUEIRA_2: environment.s3_public + '/House/Prize/capablogueira-premio2.jpg',
+            CAPA_BLOGUEIRA_3: environment.s3_public + '/House/Prize/capablogueira-premio3.jpg',
+            CAPA_VIDEO_1: environment.s3_public + '/House/Prize/capavideo-bastidores.jpg',
+            CAPA_VIDEO_2: environment.s3_public + '/House/Prize/capavideo-processo.jpg',
+            CAPA_VIDEO_3: environment.s3_public + '/House/Prize/capa-video-globohorizonte.jpg',
+            MORAR_MAIS_1: environment.s3_public + '/House/Prize/morarmais-deborah.jpg',
+            MORAR_MAIS_2: environment.s3_public + '/House/Prize/morarmais-revista.jpg',
+            MORAR_MAIS_3: environment.s3_public + '/House/Prize/morarmais-socias.jpg',
         },
     }
 
