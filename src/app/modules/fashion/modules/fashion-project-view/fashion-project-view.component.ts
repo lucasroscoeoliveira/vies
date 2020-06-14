@@ -53,6 +53,7 @@ ngOnInit(): void {
   }
 
   getImages() {
+    debugger;
     let project = FashionProjectConstants.PROJECTS.find(project => project.id === this.id);
     if (project && project.main && this.routeParameters.tab === 'main') {
       this.images = FashionProjectConstants.PROJECTS_DETAIL.filter((image) => {

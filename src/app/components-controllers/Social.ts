@@ -25,7 +25,7 @@ export class Social {
     window.open('https://www.youtube.com/user/viesdesign');
   }
 
-  goToLinkedin() {
-    window.open('https://www.linkedin.com/company/vi%C3%A9s-design---ambientes-para-moda/about/?viewAsMember=true');
-  }
+  // goToLinkedin() {
+  //   window.open('https://www.linkedin.com/company/vi%C3%A9s-design---ambientes-para-moda/about/?viewAsMember=true');
+  // }
 }

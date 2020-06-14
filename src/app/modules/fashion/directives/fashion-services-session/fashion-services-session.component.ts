@@ -110,7 +110,7 @@ export class FashionServicesSessionComponent implements OnInit {
         btnLabel: 'VEJA UM EXEMPLO DE ENTREGA'
       },
       {
-        image: 'icon-VISUAL-MERCH',
+        image: 'icon-VISUAL-MERCH-1icon-VISUAL-MERCH',
         title: 'VISUAL MERCHANDISING',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [

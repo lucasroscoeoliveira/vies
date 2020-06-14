@@ -1,24 +1,24 @@
 <div class="content" (swiperight)="menu.openMenu()">
     <div class="header clickable" (click)="navigateToProjectsSession()">
         <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}"
-            class="text text--large text--centered margin-bottom-3 text--bold">PRÊMIO - QUARTO DA <br> BLOGUEIRA</span>
+            class="text text--large text--centered margin-bottom-3 text--bold">PRÊMIO - QUARTO DA BLOGUEIRA</span>
     </div>
 
     <div class="discover-style-card"
         [ngClass]="{'card--green': menu.type === 'house', 'card--purple': menu.type === 'fashion'}">
         <div class="images-container">
-            <img [src]="styleImage.source" *ngFor="let styleImage of styleImages" alt="" class="style-image">
+            <img [src]="styleImage.source" (onClick)="goToPrize()" *ngFor="let styleImage of styleImages" alt="" class="style-image clickable">
         </div>
 
         <div class="content">
-            <span class="text text--centered margin-2">Ganhamos o 2º lugar e fomos capa da Revista do Evento!</span>
+            <span class="text text--centered margin-2 text--bold">Ganhamos o 2º lugar e fomos capa da Revista do Evento!</span>
 
             <app-vi-button [type]="getBtnType()" (onClick)="goToPrize()">
                 <span class="text text--white">SAIBA MAIS</span>
             </app-vi-button>
 
             <div class="midia clickable" (click)="viewVideo()">
-                <span class="text ">Na mídia </span>
+                <span class="text text--bold">Na mídia </span>
                 <app-vi-svg icon="icon-play2" class="text--normal text--small"></app-vi-svg>
             </div>
 

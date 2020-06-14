@@ -43,10 +43,10 @@ export class ViFooterComponent implements OnInit {
         name: "icon-pinterest",
         clickEvent: this.social.goToPinterest
       },
-      {
-        name: "icon-linkedin2",
-        clickEvent: this.social.goToLinkedin
-      },
+      // {
+      //   name: "icon-linkedin2",
+      //   clickEvent: this.social.goToLinkedin
+      // },
       {
         name: "icon-youtube",
         clickEvent: this.social.goToYoutube
