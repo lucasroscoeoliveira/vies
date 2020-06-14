@@ -32,13 +32,14 @@ export class ViProjectsComponent implements OnInit {
   initVariables() {
     this.initImages();
     this.initImagesFormatted();
-    this.initContainerSize();
     this.setPagesLabel();
+    this.initContainerSize();
     this.initializeTabs();
     this.checkForParamTab();
   }
 
   initImages() {
+    this.images = [];
     if (this.header.type === 'fashion') {
       this.images = FashionProjectConstants.PROJECTS.filter(image => image.main);
     } else {
@@ -92,11 +93,11 @@ export class ViProjectsComponent implements OnInit {
   }
 
   initContainerSize() {
-    this.containerDiv = document.getElementById('projects-carousel-container');
-    this.containerDiv.style.width = 100 * this.imagesFormatted.length + 'vw';
-    if (this.currentIndex !== 0) {
+    setTimeout(() => {
+      this.containerDiv = document.getElementById('projects-carousel-container');
+      this.containerDiv.style.width = 100 * this.imagesFormatted.length + 'vw';
       this.setPosition();
-    }
+    }, 200)
   }
 
   setPosition() {

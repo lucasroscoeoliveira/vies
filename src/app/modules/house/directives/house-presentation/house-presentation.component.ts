@@ -17,9 +17,11 @@ export class HousePresentationComponent implements OnInit {
   ngOnInit(): void {
     this.position = 0;
     this.phrases = [
-      'SINTA-SE EM CASA! PROJETAMOS SEU LAR, SEUS SONHOS!',
-      'NÃO QUER OBRAS, MAS QUER RENOVAR SUA CASA?',
-      'O VALOR DO PROJETO CORRESPONDE A 5% DO VALOR DA REFORMA',
+      'SINTA-SE EM CASA! SEU LAR COMO VOCÊ SEMPRE SONHOU!',
+      'APENAS 2 A 5% DO INVESTIMENTO TOTAL É DESTINADO AO PROJETO',
+      'TENHA SEU PROJETO, O CUSTO-BENEFÍCIO VAI TE SURPEENDER!',
+      'O PROJETO OU CONSULTORIA VAI TE FAZER SENTIR-SE EM CASA!',
+      'É POSSÍVEL TRANFORMAR SEM GRANDES OBRAS E COM BAIXOS CUSTOS!',
     ];
     this.callPhrase = this.phrases[this.position];
     this.initializeInterval();
