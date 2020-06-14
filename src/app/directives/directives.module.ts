@@ -22,6 +22,8 @@ import { Slider } from '../components-controllers/Slider';
 import { Social } from '../components-controllers/Social';
 import { ScrollTo } from '../components-controllers/ScrollTo';
 import { Testimonial } from '../components-controllers/Testimonial';
+import { ViProjectsComponent } from './vi-projects/vi-projects.component';
+import { ViTestimonialsComponent } from './vi-testimonials/vi-testimonials.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { Testimonial } from '../components-controllers/Testimonial';
     ViSocialComponent,
     ViCallToActionComponent,
     ViPrizeSessionComponent,
-    ViCarouselComponent
+    ViCarouselComponent,
+    ViProjectsComponent,
+    ViTestimonialsComponent
   ],
   exports: [
     ViButtonComponent,
@@ -50,7 +54,9 @@ import { Testimonial } from '../components-controllers/Testimonial';
     ViSocialComponent,
     ViCallToActionComponent,
     ViPrizeSessionComponent,
-    ViCarouselComponent
+    ViCarouselComponent,
+    ViProjectsComponent,
+    ViTestimonialsComponent
   ],
   imports: [
     CommonModule,

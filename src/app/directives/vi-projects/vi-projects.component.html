@@ -1,0 +1,53 @@
+<div class="vi-projects-header clickable" (click)="navigateToProjectsSession()">
+    <span class="text text--large text--centered text--bold" [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}">{{title}}</span>
+</div>
+
+<div class="vi-projects-tabs">
+    <button class="tab-content text--bold" (click)="selectTab(tab)" *ngFor="let tab of tabs"
+        [ngClass]="{'tab-content--selected': tab.selected, 'purple': header.type === 'fashion', 'green': header.type === 'house'}">
+        <span [ngClass]="{'text--purple': tab.selected && header.type === 'fashion', 'text--green': tab.selected && header.type === 'house'}" class="text text--centered text--small">{{tab.name}}</span>
+    </button>
+</div>
+
+<div class="vi-projects">
+
+    <div class="vi-projects__display" id="projects-carousel-container" (swiperight)="move('left')"
+        (swipeleft)="move('right')">
+        <div class="vi-projects__item" *ngFor="let imageFormatted of imagesFormatted">
+
+            <div class="vi-projects__item__container" *ngFor="let image of imageFormatted.images" (click)="viewProjectDetail(image)">
+                <img [src]="image.source" unselectable="on">
+                <div class="description">
+                    <div class="description__content">
+                        <div></div>
+                        <span [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}" class="text text--small-2 text--bold text--centered desktop">{{image.description}}</span>
+                        <span [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}" class="text text--small-2 text--bold desktop">VEJA MAIS +</span>
+                        <span [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}" class="text text--small-2 text--bold mobile">Veja mais +</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="btns-container desktop" [hidden]="!imagesFormatted || imagesFormatted.length <= 1">
+        <app-vi-button [isDisabled]="checkLeftDisabled()" [round]='true' type='white' class="" (onClick)="move('left')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
+        </app-vi-button>
+        <app-vi-button [isDisabled]="checkRightDisabled()" [round]='true' type='white' class="" (onClick)="move('right')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
+        </app-vi-button>
+    </div>
+
+    <div class="vi-projects-label">
+        <app-vi-button [isDisabled]="checkLeftDisabled()" [round]='true' type='white' class="" (onClick)="move('left')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_left"></app-vi-svg>
+        </app-vi-button>
+        <div class="vi-projects-label__content">
+            <span class="text">{{pagesLabel}}</span>
+        </div>
+        <app-vi-button [isDisabled]="checkRightDisabled()" [round]='true' type='white' class="" (onClick)="move('right')">
+            <app-vi-svg [ngClass]="{'purple': header.type === 'fashion', 'green': header.type === 'house'}" icon="icon-keyboard_arrow_right"></app-vi-svg>
+        </app-vi-button>
+    </div>
+</div>
