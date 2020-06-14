@@ -167,6 +167,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .vi-projects__display {
+        transition: all 0.3s ease-in;
+    }
+
     .vi-projects__item {
         width: 100vw;
         display: grid;

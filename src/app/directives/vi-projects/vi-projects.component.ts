@@ -95,9 +95,13 @@ export class ViProjectsComponent implements OnInit {
     this.containerDiv = document.getElementById('projects-carousel-container');
     this.containerDiv.style.width = 100 * this.imagesFormatted.length + 'vw';
     if (this.currentIndex !== 0) {
-      let calc = (this.currentIndex) * 100;
-      this.containerDiv.style.transform = `translateX(-${calc}vw)`;
+      this.setPosition();
     }
+  }
+
+  setPosition() {
+    let calc = (this.currentIndex) * 100;
+    this.containerDiv.style.transform = `translateX(-${calc}vw)`;
   }
 
   move(direction: string) {
@@ -149,6 +153,7 @@ export class ViProjectsComponent implements OnInit {
       }
     });
     this.setPagesLabel();
+    this.setPosition();
     this.scroll.navigateToRoute(this.scroll.states.projects, 300, this.header.type);
   }
 
