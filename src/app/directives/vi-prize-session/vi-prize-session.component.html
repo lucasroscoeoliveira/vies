@@ -1,5 +1,5 @@
 <div class="content" (swiperight)="menu.openMenu()">
-    <div class="header clickable" (click)="navigateToProjectsSession()">
+    <div class="header clickable" (click)="navigateToPrizeSession()">
         <span [ngClass]="{'text--green': menu.type === 'house', 'text--purple': menu.type === 'fashion'}"
             class="text text--large text--centered margin-bottom-3 text--bold">PRÊMIO - QUARTO DA BLOGUEIRA</span>
     </div>
@@ -7,7 +7,7 @@
     <div class="discover-style-card"
         [ngClass]="{'card--green': menu.type === 'house', 'card--purple': menu.type === 'fashion'}">
         <div class="images-container">
-            <img [src]="styleImage.source" (onClick)="goToPrize()" *ngFor="let styleImage of styleImages" alt="" class="style-image clickable">
+            <img [src]="styleImage.source" *ngFor="let styleImage of styleImages" alt="" class="style-image">
         </div>
 
         <div class="content">

@@ -18,12 +18,14 @@ export class FashionServicesSessionComponent implements OnInit {
     this.setServiceCards();
   }
 
-  navigateToProjectsSession() {
+  navigateToServicesSession() {
     this.scrollTo.navigateToRoute(this.scrollTo.states.services, 300, 'fashion');
   }
 
   toggleOpened(serviceCard: any) {
-    serviceCard.opened = !serviceCard.opened
+    if (screen.width < 1100) {
+      serviceCard.opened = !serviceCard.opened
+    }
   }
 
   setServiceCards() {
@@ -110,7 +112,7 @@ export class FashionServicesSessionComponent implements OnInit {
         btnLabel: 'VEJA UM EXEMPLO DE ENTREGA'
       },
       {
-        image: 'icon-VISUAL-MERCH-1icon-VISUAL-MERCH',
+        image: 'icon-VISUAL-MERCH-1',
         title: 'VISUAL MERCHANDISING',
         subtitle: 'PRESENCIAL | ONLINE',
         labels: [

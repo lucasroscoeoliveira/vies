@@ -1,0 +1,179 @@
+@import '../../../styles.scss';
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.vi-testimonials {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &__container-carousel {
+        overflow: hidden;
+        display: flex;
+        transition: all 0.3s ease-in;
+
+        .item-container {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .vi-testimonials__container__card {
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                margin: 1em;
+                display: flex;
+                height: 30em;
+                background-color: $color-white;
+                width: 280px;
+                flex-direction: column;
+                border: 1px solid #efefef;
+                border-radius: 5px;
+
+                .image {
+                    width: 100%;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+    
+                &__labels {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 1em;
+                    flex-grow: 1;
+                }
+    
+                &__footer {
+                    width: 100%;
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+    
+                    .check {
+                        color: $color-white;
+                        font-size: 16px;
+                        margin-right: 0.5em;
+                    }
+                }
+            }
+
+            .shadow-green {
+                &:hover {
+                    box-shadow: 0px 12px 20px 0px rgba($color-green, 0.4);
+                }
+            }
+
+            .shadow-purple {
+                &:hover {
+                    box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.4);
+                }
+            }
+        }
+    }
+}
+
+.testimonials-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        padding: 1em;
+
+        &__bol {
+            background-color: #efefef;
+            border-radius: 100%;
+            width: 0.6em;
+            height: 0.6em;
+        }
+    }
+}
+
+.desktop-testimonials {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &__card {
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 1em;
+            display: flex;
+            height: 30em;
+            background-color: $color-white;
+            width: 280px;
+            flex-direction: column;
+            border: 1px solid #efefef;
+            border-radius: 5px;
+
+            .image {
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            &__labels {
+                display: flex;
+                flex-direction: column;
+                padding: 0 1em;
+                flex-grow: 1;
+            }
+
+            &__footer {
+                width: 100%;
+                padding: 1em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                .check {
+                    color: $color-white;
+                    font-size: 16px;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+.green {
+    color: $color-green;
+}
+.purple {
+    color: $color-purple;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-purple {
+    background-color: $color-purple;
+}
+
+.selected-green {
+    background-color: $color-green;
+    width: 0.8em;
+    height: 0.8em;
+    box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.2);
+}
+
+.selected-purple {
+    background-color: $color-purple;
+    width: 0.8em;
+    height: 0.8em;
+    box-shadow: 0px 12px 20px 0px rgba($color-purple, 0.2);
+}

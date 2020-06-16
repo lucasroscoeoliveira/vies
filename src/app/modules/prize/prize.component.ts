@@ -110,9 +110,11 @@ export class PrizeComponent implements OnInit {
 
   goBackToInitial() {
     if (this.header.type === 'house') {
-      this.router.navigate(['casa/inicio', 'vies']);
+      this.router.navigate(['casa/inicio', 'premio']);
+      this.scroll.navigateToRoute(this.scroll.states.prize, 300, this.header.type);
     } else {
-      this.router.navigate(['negocio/inicio', 'vies']);
+      this.router.navigate(['negocio/inicio', 'premio']);
+      this.scroll.navigateToRoute(this.scroll.states.prize, 300, this.header.type);
     }
   }
 }

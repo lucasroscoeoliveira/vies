@@ -22,7 +22,7 @@ export class ViPrizeSessionComponent implements OnInit {
     return 'purple';
   }
 
-  navigateToProjectsSession() {
+  navigateToPrizeSession() {
     this.scrollTo.navigateToRoute(this.scrollTo.states.prize, 300, this.menu.type);
   }
 

@@ -1,5 +1,5 @@
 <div class="fashion-services" (swiperight)="menu.openMenu()">
-    <span class="text text--purple text--large text--centered margin-bottom-2 text--bold clickable"  (click)="navigateToProjectsSession()">SERVIÇOS</span>
+    <span class="text text--purple text--large text--centered margin-bottom-2 text--bold clickable"  (click)="navigateToServicesSession()">SERVIÇOS</span>
 
     <div class="cards-container">
         <div class="card-services" *ngFor="let serviceCard of serviceCards">
@@ -10,7 +10,7 @@
 
             <div class="top-container">
                 <div class="circle margin-bottom-2">
-                    <app-vi-svg icon="{{serviceCard.image}}" class="service-icon"></app-vi-svg>
+                    <app-vi-svg icon="{{serviceCard.image}}" (click)="toggleOpened(serviceCard)" class="service-icon"></app-vi-svg>
                 </div>
                 <span class="text text--purple text--large margin-bottom-1 name">{{serviceCard.title}}</span>
                 <span [hidden]="!serviceCard.opened" class="text margin-bottom-2 margin-top-2">{{serviceCard.subtitle}}</span>

@@ -1,1 +1,49 @@
-<p>vi-testimonials works!</p>
+<div class="header clickable" (click)="navigateToProjectsSession()">
+    <span [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}" class="text text--large text--centered text--bold margin-bottom-2">DEPOIMENTOS</span> 
+</div>
+
+<div class="vi-testimonials" *ngIf="mobileView()">
+    <div class="vi-testimonials__container-carousel" id="vi-testimonials-container" 
+        (swiperight)="move('left')" 
+        (swipeleft)="move('right')">
+        <div class="item-container" *ngFor="let testimonial of testimonials">
+            <div class="vi-testimonials__container__card" [ngClass]="{'shadow-purple': header.type === 'fashion', 'shadow-green': header.type === 'house'}">
+                <img [src]="testimonial.image" alt="" class="image">
+    
+                <div class="vi-testimonials__container__card__labels">
+                    <span class="margin-top-2 text text--small">{{testimonial.description}}</span>
+                    <span class="margin-top-1 text--small name" [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}">{{testimonial.name}}</span>
+                </div>
+    
+                <div class="margin-top-2 vi-testimonials__container__card__footer" [ngClass]="{'bg-purple': header.type === 'fashion', 'bg-green': header.type === 'house'}">
+                    <app-vi-svg class="check" icon="icon-checkmark"></app-vi-svg>
+                    <span class="text text--white text--small">{{testimonial.projectName}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testimonials-footer" *ngIf="mobileView()">
+    <div class="testimonials-footer__item" (click)="selectTestimonial(testimonial)" *ngFor="let testimonial of testimonials">
+        <div class="testimonials-footer__item__bol" [ngClass]="{'selected-green': header.type === 'house' && testimonial.active, 'selected-purple': header.type === 'fashion' && testimonial.active}"></div>
+    </div>
+</div>
+
+
+
+<div class="desktop-testimonials__container" *ngIf="!mobileView()">
+    <div class="desktop-testimonials__container__card" [ngClass]="{'shadow-purple': header.type === 'fashion', 'shadow-green': header.type === 'house'}" *ngFor="let testimonial of testimonials">
+        <img [src]="testimonial.image" alt="" class="image">
+
+        <div class="desktop-testimonials__container__card__labels">
+            <span class="margin-top-2 text text--small">{{testimonial.description}}</span>
+            <span class="margin-top-1 text--small name" [ngClass]="{'text--purple': header.type === 'fashion', 'text--green': header.type === 'house'}">{{testimonial.name}}</span>
+        </div>
+
+        <div class="margin-top-2 desktop-testimonials__container__card__footer" [ngClass]="{'bg-purple': header.type === 'fashion', 'bg-green': header.type === 'house'}">
+            <app-vi-svg class="check" icon="icon-checkmark"></app-vi-svg>
+            <span class="text text--white text--small">{{testimonial.projectName}}</span>
+        </div>
+    </div>
+</div>

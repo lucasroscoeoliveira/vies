@@ -62,7 +62,7 @@ export class ViProjectsComponent implements OnInit {
   }
 
   initImagesFormatted() {
-    if (screen.width <= 500) {
+    if (screen.width <= 1100) {
       this.coutItems = 4;
       this.formatImages(this.coutItems);
     } else {
@@ -97,7 +97,7 @@ export class ViProjectsComponent implements OnInit {
       this.containerDiv = document.getElementById('projects-carousel-container');
       this.containerDiv.style.width = 100 * this.imagesFormatted.length + 'vw';
       this.setPosition();
-    }, 200)
+    }, 300)
   }
 
   setPosition() {

@@ -24,7 +24,9 @@ export class HouseServicesSessionComponent implements OnInit {
   }
 
   toggleOpened(serviceCard: any) {
-    serviceCard.opened = !serviceCard.opened
+    if (screen.width < 1100) {
+      serviceCard.opened = !serviceCard.opened
+    }
   }
 
   setServiceCards() {
