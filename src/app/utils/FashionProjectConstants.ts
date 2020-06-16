@@ -1962,7 +1962,8 @@ export default class FashionProjectConstants {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_1_LOJA,
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.COSMOPOLITAN,
-            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
+            removeFromMain: true,
         },
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.COSMOPOLITAN_23.COSMOPOLITAN_2_LOJA,
