@@ -62,7 +62,7 @@ export class ViProjectsComponent implements OnInit {
   }
 
   initImagesFormatted() {
-    if (screen.width <= 1100) {
+    if (screen.width <= 1300) {
       this.coutItems = 4;
       this.formatImages(this.coutItems);
     } else {
@@ -102,7 +102,9 @@ export class ViProjectsComponent implements OnInit {
 
   setPosition() {
     let calc = (this.currentIndex) * 100;
-    this.containerDiv.style.transform = `translateX(-${calc}vw)`;
+    if (this.containerDiv) {
+      this.containerDiv.style.transform = `translateX(-${calc}vw)`;
+    }
   }
 
   move(direction: string) {

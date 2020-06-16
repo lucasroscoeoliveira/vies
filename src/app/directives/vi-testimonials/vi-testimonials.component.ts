@@ -46,7 +46,9 @@ export class ViTestimonialsComponent implements OnInit {
 
   move(direction: string) {
     let calc = 0;
-
+    if (!this.mobileView()) {
+      return;
+    }
     if (direction === 'right' && this.currentIndex < this.testimonials.length - 1) {
       this.currentIndex++;
       calc = (this.currentIndex) * 100;

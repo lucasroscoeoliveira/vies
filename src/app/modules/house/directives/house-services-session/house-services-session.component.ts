@@ -67,7 +67,7 @@ export class HouseServicesSessionComponent implements OnInit {
       },
       {
         id: 1,
-        title: 'PROJETO COMPLETO',
+        title: 'CONSULTORIA',
         subtitle: 'PRESENCIAL|ONLINE',
         mainImage: ImagesConstants.HOUSE_IMAGES.SERVICES.CONSULTORIA,
         image: 'icon-clipboard',

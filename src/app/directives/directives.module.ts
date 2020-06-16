@@ -24,7 +24,6 @@ import { ScrollTo } from '../components-controllers/ScrollTo';
 import { Testimonial } from '../components-controllers/Testimonial';
 import { ViProjectsComponent } from './vi-projects/vi-projects.component';
 import { ViTestimonialsComponent } from './vi-testimonials/vi-testimonials.component';
-
 @NgModule({
   declarations: [
     ViButtonComponent,

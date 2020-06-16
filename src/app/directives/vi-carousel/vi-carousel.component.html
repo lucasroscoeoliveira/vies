@@ -10,14 +10,14 @@
             </div>
 
             <img 
-                [src]="image.source" 
-                unselectable="on"
-                [ngClass]="{'image-before-after': isBeforeAfter(image)}">
+            [src]="image.source" 
+            unselectable="on"
+            [ngClass]="{'image-before-after': isBeforeAfter(image)}">
 
             <img [src]="image.sourceAfter" 
-                unselectable="on"
-                [ngClass]="{'image-before-after': isBeforeAfter(image)}"
-                *ngIf="image.sourceAfter">
+            unselectable="on"
+            [ngClass]="{'image-before-after': isBeforeAfter(image)}"
+            *ngIf="image.sourceAfter">
         </div>
     </div>
 

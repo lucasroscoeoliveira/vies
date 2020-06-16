@@ -12,7 +12,9 @@
     }
 
     &__item {
-        width: 100vw;
+        width:  calc(100vw);
+        box-sizing: border-box;
+        overflow: hidden;
         display: grid;
         overflow: hidden;
         justify-content: center;
@@ -21,7 +23,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 1em;
-        padding: 0 1em;
+        padding: 0 1.5em;
         padding-bottom: 2em;
 
         &__container {
@@ -166,7 +168,7 @@
     color: $color-purple;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
     .vi-projects__display {
         transition: all 0.3s ease-in;
     }
