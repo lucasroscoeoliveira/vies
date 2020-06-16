@@ -30,9 +30,6 @@ export class ViProjectsComponent implements OnInit {
   }
 
   initVariables() {
-    this.initImages();
-    this.initImagesFormatted();
-    this.setPagesLabel();
     this.initContainerSize();
     this.initializeTabs();
     this.checkForParamTab();
@@ -47,20 +44,6 @@ export class ViProjectsComponent implements OnInit {
     }
   }
 
-  setPagesLabel() {
-    this.pagesLabel = 'Página ' + (this.currentIndex + 1) + ' de ' + Math.ceil(this.imagesFormatted.length)
-  }
-
-  checkForParamTab() {
-    const tabFilter: string = this.route.snapshot.queryParamMap.get('tab');
-    const currentPosition: number = parseInt(this.route.snapshot.queryParamMap.get('current_position'));
-
-    if(tabFilter){
-      let selectedTab = this.tabs.find(tab => tab.filter === tabFilter);
-      this.selectTab(selectedTab, currentPosition);
-    }
-  }
-
   initImagesFormatted() {
     if (screen.width <= 1300) {
       this.coutItems = 4;
@@ -70,7 +53,7 @@ export class ViProjectsComponent implements OnInit {
       this.formatImages(this.coutItems);
     }
   }
- 
+
   formatImages(count: number) {
     this.imagesFormatted = [];
     let totalSliced = Math.ceil(this.images.length / count);
@@ -92,12 +75,29 @@ export class ViProjectsComponent implements OnInit {
     this.setPagesLabel();
   }
 
+  setPagesLabel() {
+    this.pagesLabel = 'Página ' + (this.currentIndex + 1) + ' de ' + Math.ceil(this.imagesFormatted.length)
+  }
+
+  checkForParamTab() {
+    const tabFilter: string = this.route.snapshot.queryParamMap.get('tab');
+    const currentPosition: number = parseInt(this.route.snapshot.queryParamMap.get('current_position'));
+    this.initImages();
+    this.initImagesFormatted();
+
+    if(tabFilter){
+      let selectedTab = this.tabs.find(tab => tab.filter === tabFilter);
+      this.selectTab(selectedTab, currentPosition);
+    }
+    this.initContainerSize();
+  }
+
   initContainerSize() {
     setTimeout(() => {
       this.containerDiv = document.getElementById('projects-carousel-container');
       this.containerDiv.style.width = 100 * this.imagesFormatted.length + 'vw';
       this.setPosition();
-    }, 300)
+    }, 50)
   }
 
   setPosition() {
@@ -105,6 +105,7 @@ export class ViProjectsComponent implements OnInit {
     if (this.containerDiv) {
       this.containerDiv.style.transform = `translateX(-${calc}vw)`;
     }
+    this.setPagesLabel();
   }
 
   move(direction: string) {
@@ -155,13 +156,12 @@ export class ViProjectsComponent implements OnInit {
         tab.selected = false;
       }
     });
-    this.setPagesLabel();
     this.setPosition();
+    this.initContainerSize();
     this.scroll.navigateToRoute(this.scroll.states.projects, 300, this.header.type);
   }
 
   filterProjects(selectedTab: any) {
-    this.currentIndex = 0;
     if (this.header.type === 'fashion') {
       if(selectedTab.filter === FashionProjectConstants.FILTERS.MAIN){
         this.images = FashionProjectConstants.PROJECTS.filter(image => image.main);
@@ -178,6 +178,7 @@ export class ViProjectsComponent implements OnInit {
       }
     }
     this.formatImages(this.coutItems);
+    this.setPagesLabel();
   }
 
   navigateToProjectsSession() {
