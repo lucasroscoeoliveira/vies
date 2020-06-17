@@ -338,9 +338,9 @@ export default class ImagesConstants {
                 MARCELA_RABELO_4_LOJA: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/4-marcela-rabelo-loja.jpg',
                 MARCELA_RABELO_5_LOJA_VITRINE_ANTES1: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/5-marcela-rabelo-loja-antes1.jpg',
                 MARCELA_RABELO_6_LOJA_VITRINE_ANTES2: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/6-marcela-rabelo-loja-antes2.jpg',
-                MARCELA_RABELO_7_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/7-marcela-rabelo-id.jpg',
-                MARCELA_RABELO_8_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/8-marcela-rabelo-id.jpg',
-                MARCELA_RABELO_9_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/9-marcela-rabelo-id.jpg',
+                MARCELA_RABELO_7_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/7-marcelarabelo-id.jpg',
+                MARCELA_RABELO_8_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/8-marcelarabelo-id.jpg',
+                MARCELA_RABELO_9_ID: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/9-marcelarabelo-id.jpg',
             },
             CLARA_VERAO_25: {
                 CLARA_VERAO_1_VITRINE: environment.s3_public + '/Fashion/Projects/25-CLARA-VERAO/1-clara-verao-vitrine.jpg',
