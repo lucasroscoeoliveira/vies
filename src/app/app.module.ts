@@ -21,12 +21,17 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ModalModule } from './modal/modal.module';
 import { LoginModule } from './modules/login/login.module';
+
+import { registerLocaleData } from '@angular/common';
+import localeBr from '@angular/common/locales/br';
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
       'pinch': { enable: false },
       'rotate': { enable: false }
   }
 }
+
+registerLocaleData(localeBr, 'pt-BR');
 
 @NgModule({
   declarations: [
