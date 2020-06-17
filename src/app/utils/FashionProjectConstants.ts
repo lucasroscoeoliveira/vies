@@ -1242,13 +1242,7 @@ export default class FashionProjectConstants {
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.TRESCHIC,
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
         },
-        {
-            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.TRESCHIC_7.TRESCHIC_3_VITRINE,
-            active: false,
-            id: FashionProjectConstants.PROJECT_IDENTIFIERS.TRESCHIC,
-            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
-        },
-
+        
 
 
 
