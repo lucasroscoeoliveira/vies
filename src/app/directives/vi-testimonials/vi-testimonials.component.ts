@@ -93,7 +93,7 @@ export class ViTestimonialsComponent implements OnInit {
           id: 4,
           image: ImagesConstants.HOUSE_IMAGES.PROJECTS.QUARTO_HOME_OFF_SION_17,
           name: 'Lucas Oliveira',
-          description: '“Gostei muito dos resultados do meu quarto e home office que projetaram. Além de tornarem os dois ambientes muito mais funcionais e organizados, ficaram no estilo que eu queria.”',
+          description: '“Meu quarto e home office ficaram como eu queria! As meninas tornaram os ambientes bem bonitos, funcionais e organizados. Atenderam a todos os meus pedidos. Obrigado!”',
           projectName: "Projeto Quarto Solteiro",
           active: false
         },
