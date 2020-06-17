@@ -208,6 +208,7 @@ export default class ImagesConstants {
                 CONSULTORIO_7_GERAL: environment.s3_public + '/Fashion/Projects/8-CONSULTORIO/7-consultorio-geral.jpg',
                 CONSULTORIO_8_GERAL: environment.s3_public + '/Fashion/Projects/8-CONSULTORIO/8-consultorio-geral.jpg',
                 CONSULTORIO_9_GERAL: environment.s3_public + '/Fashion/Projects/8-CONSULTORIO/9-consultorio-geral.jpg',
+                CONSULTORIO_10_GERAL_ANTES1: environment.s3_public + '/Fashion/Projects/8-CONSULTORIO/10-consultorio-geral-antes1.jpg',
             },
             OTICA_9: {
                 OTICA_1_LOJA: environment.s3_public + '/Fashion/Projects/9-OTICA/1-otica-loja.jpg',
@@ -306,7 +307,11 @@ export default class ImagesConstants {
                 K9_7_VITRINE: environment.s3_public + '/Fashion/Projects/20-K9/7-k9-vitrine.jpg',
             },
             MODAFEMININA_21: {
-
+                MODAFEMININA_1_LOJA: environment.s3_public + '/Fashion/Projects/21-MODA-FEMININA/1-moda-feminina-loja.jpg',
+                MODAFEMININA_2_LOJA: environment.s3_public + '/Fashion/Projects/21-MODA-FEMININA/2-moda-feminina-loja.jpg',
+                MODAFEMININA_3_LOJA: environment.s3_public + '/Fashion/Projects/21-MODA-FEMININA/3-moda-feminina-loja.jpg',
+                MODAFEMININA_4_LOJA: environment.s3_public + '/Fashion/Projects/21-MODA-FEMININA/4-moda-feminina-loja.jpg',
+                MODAFEMININA_5_LOJA_ANTES_1: environment.s3_public + '/Fashion/Projects/21-MODA-FEMININA/5-moda-feminina-loja.jpg',
             },
             MYBABY_22: {
                 MY_BABY_1_LOJA: environment.s3_public + '/Fashion/Projects/22-MY-BABY/1-mybaby-loja.jpg',
@@ -325,6 +330,14 @@ export default class ImagesConstants {
                 COSMOPOLITAN_4_LOJA: environment.s3_public + '/Fashion/Projects/23-COSMOPOLITAN/4-cosmopolitan-loja.jpg',
                 COSMOPOLITAN_5_LOJA_VITRINE_ANTES1: environment.s3_public + '/Fashion/Projects/23-COSMOPOLITAN/5-cosmopolitan-loja-vitrine-antes1.jpg',
                 COSMOPOLITAN_6_LOJA_ANTES2: environment.s3_public + '/Fashion/Projects/23-COSMOPOLITAN/6-cosmopolitan-loja-antes2.jpg',
+            },
+            MARCELA_RABELO_24: {
+                MARCELA_RABELO_1_LOJA: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/1-marcela-rabelo-loja.jpg',
+                MARCELA_RABELO_2_LOJA: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/2-marcela-rabelo-loja.jpg',
+                MARCELA_RABELO_3_LOJA: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/3-marcela-rabelo-loja.jpg',
+                MARCELA_RABELO_4_LOJA: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/4-marcela-rabelo-loja.jpg',
+                MARCELA_RABELO_5_LOJA_VITRINE_ANTES1: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/5-marcela-rabelo-loja-antes1.jpg',
+                MARCELA_RABELO_6_LOJA_VITRINE_ANTES2: environment.s3_public + '/Fashion/Projects/24-MARCELA-RABELO/6-marcela-rabelo-loja-antes2.jpg',
             },
             CLARA_VERAO_25: {
                 CLARA_VERAO_1_VITRINE: environment.s3_public + '/Fashion/Projects/25-CLARA-VERAO/1-clara-verao-vitrine.jpg',
@@ -345,7 +358,8 @@ export default class ImagesConstants {
                 LALU_4_VITRINE: environment.s3_public + '/Fashion/Projects/27-LALU/4-lalu-vitrine.jpg',
             },
             BRINKEL_28: {
-
+                BRINKEL_1_GERAL: environment.s3_public + '/Fashion/Projects/28-BRINKEL/1-brinkel.jpg',
+                BRINKEL_2_GERAL_ANTES1: environment.s3_public + '/Fashion/Projects/28-BRINKEL/2-brinkel-antes1.jpg',
             },
             CLAU_29: {
                 CLAU_1_VITRINE: environment.s3_public + '/Fashion/Projects/29-CLAU/1-clau-vitrine.jpg',
@@ -367,6 +381,9 @@ export default class ImagesConstants {
                 VINCENTINA_2_LOJA: environment.s3_public + '/Fashion/Projects/32-VICENTINA/2-vicentina-loja.jpg',
                 VINCENTINA_3_LOJA: environment.s3_public + '/Fashion/Projects/32-VICENTINA/3-vicentina-loja.jpg',
                 VINCENTINA_4_LOJA: environment.s3_public + '/Fashion/Projects/32-VICENTINA/4-vicentina-loja.jpg',
+                VINCENTINA_5_ID: environment.s3_public + '/Fashion/Projects/32-VICENTINA/5-vicentina-id.jpg',
+                VINCENTINA_6_ID: environment.s3_public + '/Fashion/Projects/32-VICENTINA/6-vicentina-id.jpg',
+                VINCENTINA_7_ID: environment.s3_public + '/Fashion/Projects/32-VICENTINA/7-vicentina-id.jpg',
             },
             NOUS_33: {
                 NOUS_1_LOJA: environment.s3_public + '/Fashion/Projects/33-NOUS/1-nous-loja.jpg',
@@ -412,7 +429,10 @@ export default class ImagesConstants {
                 MORAR_MAIS_9_GERAL_ANTES_1: environment.s3_public + '/Fashion/Projects/37-MORAR-MAIS/9-morar-mais-antes-1.jpg',
             },
             SALAO_AR_38: {
-
+                SALAO_1_GERAL: environment.s3_public + '/Fashion/Projects/38-SALAO-AR/1-salao-a.jpg',
+                SALAO_2_GERAL: environment.s3_public + '/Fashion/Projects/38-SALAO-AR/2-salao-a.jpg',
+                SALAO_3_GERAL: environment.s3_public + '/Fashion/Projects/38-SALAO-AR/3-salao-a.jpg',
+                SALAO_4_GERAL: environment.s3_public + '/Fashion/Projects/38-SALAO-AR/4-salao-a.jpg',
             },
             SAPUCANET_39: {
                 SAPUCANET_1_GERAL: environment.s3_public + '/Fashion/Projects/39-SAPUCANET/1-fastnet.jpg',
@@ -882,14 +902,14 @@ export default class ImagesConstants {
                 SOLTEIRO_ANTES_1: environment.s3_public + '/House/Projects/24-RESIDENCIA-GUTIERREZ/34-solteiro-gutierrez-antes17.jpg',
                 SOLTEIRO_ANTES_3: environment.s3_public + '/House/Projects/24-RESIDENCIA-GUTIERREZ/35-solteiro-gutierrez-antes19.jpg',
                 INFANTIL_ANTES_2: environment.s3_public + '/House/Projects/24-RESIDENCIA-GUTIERREZ/36-infantil-gutierrez-antes21.jpg',
-                INFANTIL_ANTES_4: environment.s3_public + '/House/Projects/24-RESIDENCIA-GUTIERREZ/37-infantil-gutierrez-antes23.jpg',
-
-            
+                INFANTIL_ANTES_4: environment.s3_public + '/House/Projects/24-RESIDENCIA-GUTIERREZ/37-infantil-gutierrez-antes23.jpg',            
             },
             INFANTIL_ARTUR: {
                 INFANTIL_1: environment.s3_public + '/House/Projects/25-INFANTIL-ARTUR/intantil-arthur1.jpg',
                 INFANTIL_2: environment.s3_public + '/House/Projects/25-INFANTIL-ARTUR/intantil-arthur2.jpg',
                 INFANTIL_3: environment.s3_public + '/House/Projects/25-INFANTIL-ARTUR/intantil-arthur3.jpg',
+                INFANTIL_4_ANTES1: environment.s3_public + '/House/Projects/25-INFANTIL-ARTUR/intantil-arthur4-antes1.jpg',
+                INFANTIL_5_ANTES2: environment.s3_public + '/House/Projects/25-INFANTIL-ARTUR/intantil-arthur5-antes2.jpg',
             },
             INFANTIL_GABRIEL: {
                 INFANTIL_1: environment.s3_public + '/House/Projects/26-INFANTIL-GABRIEL/infantil-gabriel1.jpg',

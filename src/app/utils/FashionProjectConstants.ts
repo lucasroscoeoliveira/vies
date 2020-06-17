@@ -1306,6 +1306,13 @@ export default class FashionProjectConstants {
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.CONSULTORIO,
             filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
         },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CONSULTORIO_8.CONSULTORIO_10_GERAL_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.CONSULTORIO_8.CONSULTORIO_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.CONSULTORIO,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
 
 
 
@@ -1896,6 +1903,38 @@ export default class FashionProjectConstants {
         },
 
 
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MODAFEMININA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MODAFEMININA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MODAFEMININA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MODAFEMININA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_5_LOJA_ANTES_1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MODAFEMININA_21.MODAFEMININA_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MODAFEMININA,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
 
 
         {
@@ -2008,6 +2047,61 @@ export default class FashionProjectConstants {
 
 
 
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
+            removeFromMain: true,
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_3_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_4_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_5_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_5_LOJA_VITRINE_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_1_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW,
+            removeFromMain: true
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_6_LOJA_VITRINE_ANTES2,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_2_LOJA,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.STORE
+        },
+
+
 
         {
             source: ImagesConstants.FASHION_IMAGES.SPECIFICS.CLARA_VERAO_25.CLARA_VERAO_1_VITRINE,
@@ -2090,6 +2184,21 @@ export default class FashionProjectConstants {
             filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
         },
 
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.BRINKEL_28.BRINKEL_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.BRINKEL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.BRINKEL_28.BRINKEL_2_GERAL_ANTES1,
+            sourceAfter: ImagesConstants.FASHION_IMAGES.SPECIFICS.BRINKEL_28.BRINKEL_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.BRINKEL,
+            filter: FashionProjectConstants.FILTERS.SHOP_WINDOW
+        },
 
 
 
@@ -2182,6 +2291,24 @@ export default class FashionProjectConstants {
             active: false,
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
             filter: FashionProjectConstants.FILTERS.STORE
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_5_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_6_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.VINCENTINA_32.VINCENTINA_7_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.VICENTINA,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
         },
 
 
@@ -2449,6 +2576,34 @@ export default class FashionProjectConstants {
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.MORAR_MAIS,
             filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
         },
+
+
+
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_AR_38.SALAO_1_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO_AR,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_AR_38.SALAO_2_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO_AR,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_AR_38.SALAO_3_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO_AR,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.SALAO_AR_38.SALAO_4_GERAL,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.SALAO_AR,
+            filter: FashionProjectConstants.FILTERS.COMERCIAL_GENERAL
+        },
+
 
 
 

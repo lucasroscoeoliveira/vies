@@ -46,6 +46,7 @@
                 grid-column: 1/2;
                 grid-row: 1/3;
                 min-width: 100%;
+                max-width: calc(25vw - 3em);
             }
 
             &:hover {
@@ -189,7 +190,7 @@
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
-            max-width: calc(50% - 1em);
+            max-width: calc(50% - 1em) !important;
             object-fit: contain;
         }
     }

@@ -2621,6 +2621,20 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
       filter: HouseProjectConstants.FILTERS.CHILD
     },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_4_ANTES1,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_1,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
+    {
+      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_5_ANTES2,
+      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.INFANTIL_ARTUR.INFANTIL_2,
+      active: false,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_ARTUR,
+      filter: HouseProjectConstants.FILTERS.CHILD
+    },
 
 
     {
