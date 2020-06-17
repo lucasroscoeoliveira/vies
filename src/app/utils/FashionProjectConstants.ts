@@ -2100,6 +2100,24 @@ export default class FashionProjectConstants {
             id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
             filter: FashionProjectConstants.FILTERS.STORE
         },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_7_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_8_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
+        {
+            source: ImagesConstants.FASHION_IMAGES.SPECIFICS.MARCELA_RABELO_24.MARCELA_RABELO_9_ID,
+            active: false,
+            id: FashionProjectConstants.PROJECT_IDENTIFIERS.MARCELA_RABELO,
+            filter: FashionProjectConstants.FILTERS.VISUAL_IDENTITY
+        },
 
 
 
