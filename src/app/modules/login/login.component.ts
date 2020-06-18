@@ -25,7 +25,28 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle("Viés – Projetos residenciais e comerciais");
     this.metaTagService.updateTag({name: 'Vitrinismo', content: "Projeto de vitrines e interiores de loja"});
-    this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
+    this.metaTagService.updateTag({name: 'Casa', content: "PROJETO RESIDENCIAL BH"});
+    this.metaTagService.updateTag({name: 'Residencia', content: "PROJETO RESIDENCIAL BELO HORIZONTE"});
+    this.metaTagService.updateTag({name: 'Arquitetura', content: "ARQUITETO BH"});
+    this.metaTagService.updateTag({name: 'Belo Horizonte', content: "ARQUITETURA BELO HORIZONTE"});
+    this.metaTagService.updateTag({name: 'Arquiteto', content: "ARQUITETO EM BELO HORIZONTE"});
+    this.metaTagService.updateTag({name: 'Arquitetura', content: "ESCRITÓRIO DE ARQUITETURA BH"});
+    this.metaTagService.updateTag({name: 'Design', content: "ESCRITÓRIO DESIGN DE INTERIORES "});
+    this.metaTagService.updateTag({name: 'Projeto', content: "PROJETO ONLINE"});
+    this.metaTagService.updateTag({name: 'Projeto Online', content: "PROJETO RESIDENCIAL ONLINE"});
+    this.metaTagService.updateTag({name: 'Arquitetura Interiores', content: "ARQUITETURA DE INTERIORES"});
+    this.metaTagService.updateTag({name: 'Arquitetura escritório', content: "ESCRITÓRIO DE ARQUITETURA DE INTERIORES"});
+    this.metaTagService.updateTag({name: 'Projeto Comercial', content: "PROJETO COMERCIAL BH"});
+    this.metaTagService.updateTag({name: 'Projeto Loja', content: "PROJETO DE LOJA BH"});
+    this.metaTagService.updateTag({name: 'Loja BH', content: "PROJETO DE LOJA BELO HORIZONTE" });
+    this.metaTagService.updateTag({name: 'Design de Interiores', content: "DESIGN DE INTERIORES BH"});
+    this.metaTagService.updateTag({name: 'Arquitetura de Interiores', content: "ARQUITETURA DE INTERIORES BH"});
+    this.metaTagService.updateTag({name: 'Vitrine', content: "ESCRITORIO DESIGN DE INTERIORES CONTAGEM"});
+    this.metaTagService.updateTag({name: 'Vitrinismo', content: "VITRINISTA BH"});
+    this.metaTagService.updateTag({name: 'Vitrine Belo Horizonte', content: "VITRINISTA EM BELO HORIZONTE"});
+    this.metaTagService.updateTag({name: 'Logo', content: "IDENTIDADE VISUAL "});
+    this.metaTagService.updateTag({name: 'Identidade Visual', content: "CRIAÇÃO DE LOGOMARCA"});
+    this.metaTagService.updateTag({name: 'Design Gráfico', content: "DESIGN GRÁFICO"});
     this.initVariables();
     this.initializeInterval();
   }
