@@ -53,7 +53,7 @@ export class ViSliderComponent implements OnInit {
   }
 
   InitializeInterval() {
-    this.intervalNumber = this.intervalNumber ? this.intervalNumber : 3000;
+    this.intervalNumber = this.intervalNumber ? this.intervalNumber : 5000;
 
     this.intervalEvent = setInterval(() => {
       this.changeImageShown();

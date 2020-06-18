@@ -21,8 +21,8 @@
         </div>
     
         <div class="content margin-bottom-3">
-            <h1 class="text text--bold text--white" *ngIf="header.type !== 'house'">Receba dicas e novidades sobre casa e decoração!</h1>
-            <h1 class="text text--bold text--white" *ngIf="header.type === 'house'">Receba dicas e novidades sobre ambientes comerciais!</h1>
+            <h1 class="text text--bold text--white" *ngIf="header.type === 'house'">Receba dicas e novidades sobre casa e decoração!</h1>
+            <h1 class="text text--bold text--white" *ngIf="header.type !== 'house'">Receba dicas e novidades sobre design, estratégias e decoração comercial!</h1>
             <div class="send margin-top-2">
                 <input 
                     [(ngModel)]="client.Email" 

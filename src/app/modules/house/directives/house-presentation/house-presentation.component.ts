@@ -30,7 +30,7 @@ export class HousePresentationComponent implements OnInit {
   initializeInterval() {
     this.intervalEvent = setInterval(() => {
       this.changePhraseShown();
-    }, 3000);
+    }, 5000);
   }
 
   changePhraseShown() {
