@@ -8,125 +8,122 @@
     flex-grow: 1;
     justify-content: flex-start;
 
-    .screen-content {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 1em 0;
-        width: 100%;
-    }
-
     .screen {
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        overflow-y: auto;
         min-height: 0;
         align-items: center;
         width: 100%;
-    
-        .logo-content {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: 1em;
-            .logo {
-                height: 5.5em;
-            }
-        }
 
-        .label {
-            max-width: 30em;
-        }
-    }
-
-    .strap-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        margin-top: 1em;
-        .strap-horizontal {
-            width: 100%;
-            height: 0.5em;
-            border-radius: 3px;
-            background-image: linear-gradient(to right, $color-green , $color-purple);
-        }
-
-        .strap-vertical-content {
-            width: 100%;
-            display: flex;
-            height: 2.5em;
-            justify-content: space-evenly;
-            align-items: center;
-            .strap-vertical {
-                width: 0.5em;
-                border-bottom-left-radius: 3px;
-                border-bottom-right-radius: 3px;
-                height: 2.5em;
-
-                &--green {
-                    background-color: $color-green;
-                }
-
-                &--purple {
-                    background-color: $color-purple;
-                }
-            }
-        }
-    }
-
-    .cards-container {
-        width: 100%;
-        padding-top: 1em;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .vies-card {
-            background-color: $color-white;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            display: flex;
-            flex-direction: column;
+        .screen-content {
+            min-height: 0;
             justify-content: flex-start;
             align-items: center;
-            padding: 1em;
-            margin: 1em;
-            border-radius: 5px;
-            width: 33em;
-            min-height: 15.5em
-        }
-    }
-
-    .partners-container {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        .partner-cards-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            padding: 1em 0;
+            flex-grow: 1;
             width: 100%;
 
-            .partner-card {
-                background-color: $color-white;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                width: 288px;
-                max-width: 90%;
-                margin: 1em 2em;
-                border-radius: 5px;
-                .image-partner {
-                    max-height: 12em;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    width: 288px;
+            .logo-content {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 1em;
+                .logo {
+                    height: 5.5em;
+                }
+            }
+    
+            .label {
+                max-width: 30em;
+            }
+    
+            .strap-content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                margin-top: 1em;
+                .strap-horizontal {
+                    width: 100%;
+                    height: 0.5em;
+                    border-radius: 3px;
+                    background-image: linear-gradient(to right, $color-green , $color-purple);
+                }
+        
+                .strap-vertical-content {
+                    width: 100%;
+                    display: flex;
+                    height: 2.5em;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .strap-vertical {
+                        width: 0.5em;
+                        border-bottom-left-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        height: 2.5em;
+        
+                        &--green {
+                            background-color: $color-green;
+                        }
+        
+                        &--purple {
+                            background-color: $color-purple;
+                        }
+                    }
+                }
+            }
+    
+            .cards-container {
+                width: 100%;
+                padding-top: 1em;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+        
+                .vies-card {
+                    background-color: $color-white;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 1em;
+                    margin: 1em;
+                    border-radius: 5px;
+                    width: 33em;
+                    min-height: 15.5em;
+                    max-width: 90% !important;
+                }
+            }
+    
+            .partners-container {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+        
+                .partner-cards-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+        
+                    .partner-card {
+                        background-color: $color-white;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        width: 288px;
+                        max-width: 90%;
+                        margin: 1em 2em;
+                        border-radius: 5px;
+                        .image-partner {
+                            max-height: 12em;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            width: 288px;
+                        }
+                    }
                 }
             }
         }
@@ -137,10 +134,40 @@
     }
 }
 
-
-
 @media only screen and (max-width: 500px) {
+    .strap-content {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: column !important;
+        flex-wrap: unset !important;
+        justify-content: center;
+    }
+
     .vies-card {
         min-width: 22em;
     }
-  }
+}
+
+
+@media only screen and (max-width: 1300px) and (min-width: 501px) {
+    .strap-content {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: unset !important;
+    }
+
+    .vies-card {
+        min-width: 22em;
+        min-height: 23em !important;
+    }
+
+    .label {
+        max-width: calc(100% - 4em) !important;
+        padding: 0 1em;
+    }
+}

@@ -2,15 +2,15 @@
     <span class="text text--green text--large text--centered margin-bottom-2 text--bold clickable"  (click)="navigateToProjectsSession()">SERVIÇOS</span>
 
     <div class="cards-container">
-        <div class="card-services" *ngFor="let serviceCard of serviceCards">
-            <span class="add-btn mobile" (click)="toggleOpened(serviceCard)">
+        <div class="card-services" *ngFor="let serviceCard of serviceCards" (click)="toggleOpened(serviceCard)">
+            <span class="add-btn mobile">
                 <span [hidden]="!serviceCard.opened">-</span>                
                 <span [hidden]="serviceCard.opened">+</span>
             </span>
 
             <div class="top-container">
                 <div class="circle margin-bottom-2 mobile">
-                    <app-vi-svg icon="{{serviceCard.image}}" (click)="toggleOpened(serviceCard)" class="service-icon"></app-vi-svg>
+                    <app-vi-svg icon="{{serviceCard.image}}" class="service-icon"></app-vi-svg>
                 </div>
                 <span class="text text--green text--large margin-bottom-1 name">{{serviceCard.title}}</span>
                 <span [hidden]="!serviceCard.opened" class="text margin-bottom-2 margin-top-2">{{serviceCard.subtitle}}</span>
