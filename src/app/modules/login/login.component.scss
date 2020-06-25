@@ -20,7 +20,7 @@
     width: 100%;
 
     .img-logo {
-      max-height: 3em;
+      max-height: 2.5em;
     }
 
     .sector-container {
@@ -139,5 +139,12 @@ a:active {
 
   .sector-container {
     padding: 1.5em !important;
+  }
+}
+
+
+@media only screen and (max-height: 880px) {
+  .height-visible {
+    display: none !important;
   }
 }

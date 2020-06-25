@@ -25,6 +25,7 @@
             border-radius: 35px;
             display: flex;
             margin-top: 1em;
+            max-height: 3em;
             max-width: 12em;
             justify-content: center;
             align-items: center;
@@ -45,7 +46,9 @@
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
-            max-height: 100%;
+            height: 100%;
+            max-height: calc(100vh - 6em);
+            object-fit: contain;
             max-width: 100%;
         }
     }
@@ -75,7 +78,7 @@
 
         .image-before-after {
             padding: 0.5em 1em;
-            max-height: calc(50% - 0.5em);
+            max-height: calc(50vh - 31px) !important;
         }
     }
 
