@@ -23,6 +23,7 @@ import { ModalModule } from './modal/modal.module';
 import { LoginModule } from './modules/login/login.module';
 
 import { registerLocaleData } from '@angular/common';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 import localeBr from '@angular/common/locales/br';
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
@@ -50,6 +51,7 @@ registerLocaleData(localeBr, 'pt-BR');
     DirectivesModule.forRoot(),
     FormsModule,
     NgxMaskModule.forRoot(),
+    PinchZoomModule
   ],
   providers: [
     HttpClient,

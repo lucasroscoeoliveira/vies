@@ -42,6 +42,17 @@
         align-items: center;
         position: relative;
 
+        pinch-zoom {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            height: 100%;
+            max-height: calc(100vh - 9em);
+            object-fit: contain;
+            max-width: 100%;
+            background-color: transparent !important;
+        }
+
         img {
             -moz-user-select: none;
             -webkit-user-select: none;
@@ -72,6 +83,9 @@
     }
     .vi-carousel__item {
         flex-direction: column;
+        pinch-zoom {
+            width: unset;
+        }
         img {
             width: unset;
         }
@@ -98,6 +112,9 @@
 
 @media only screen and (min-width: 1101px) {
     .vi-carousel__item {
+        pinch-zoom {
+            height: 100%;
+        }
         img {
             height: 100%;
         }
