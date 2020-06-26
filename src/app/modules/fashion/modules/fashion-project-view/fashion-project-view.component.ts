@@ -23,10 +23,13 @@ export class FashionProjectViewComponent implements OnInit {
     this.initVariables();
   }
 
+  ngOnDestroy(): void {
+    this.goBack();
+  }
+
   @HostListener('window:popstate', ['$event'])
   onPopState(event) {
     event.preventDefault();
-    this.goBack();
   }
 
   initVariables() {

@@ -33,10 +33,13 @@ export class HouseProjectViewComponent implements OnInit {
     this.initImages();
   }
 
+  ngOnDestroy(): void {
+    this.goBack();
+  }
+
   @HostListener('window:popstate', ['$event'])
   onPopState(event) {
     event.preventDefault();
-    this.goBack();
   }
 
   updateCurrIndex(currentIndex: number) {
