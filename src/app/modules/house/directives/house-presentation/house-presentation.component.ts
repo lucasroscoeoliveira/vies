@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-house-presentation',
@@ -12,7 +13,7 @@ export class HousePresentationComponent implements OnInit {
   position: number;
   intervalEvent: any;
 
-  constructor() { }
+  constructor(public menu: Menu) { }
 
   ngOnInit(): void {
     this.position = 0;
