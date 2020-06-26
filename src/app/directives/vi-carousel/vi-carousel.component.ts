@@ -42,7 +42,7 @@ export class ViCarouselComponent implements OnInit {
       this.containerDiv.style.transform = `translateX(-${calc}vw)`;
       this.counterChange.emit(this.currentIndex);
     }
-    else if(direction === 'left' && this.currentIndex > 0) {
+    else if (direction === 'left' && this.currentIndex > 0) {
       this.currentIndex--;
       calc = (this.currentIndex) * 100;
       this.containerDiv.style.transform = `translateX(-${calc}vw)`;
@@ -73,5 +73,4 @@ export class ViCarouselComponent implements OnInit {
         this.move('left');
     }
   }
-
 }

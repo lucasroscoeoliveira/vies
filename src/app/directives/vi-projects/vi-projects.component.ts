@@ -85,7 +85,7 @@ export class ViProjectsComponent implements OnInit {
     this.initImages();
     this.initImagesFormatted();
 
-    if(tabFilter){
+    if (tabFilter) {
       let selectedTab = this.tabs.find(tab => tab.filter === tabFilter);
       this.selectTab(selectedTab, currentPosition);
     }
@@ -149,7 +149,7 @@ export class ViProjectsComponent implements OnInit {
   selectTab(selectedTab: any, customCurrentPosition?: number) {
     this.currentIndex = customCurrentPosition ? customCurrentPosition : 0;
     this.tabs.forEach((tab: { filter: any; selected: boolean; }) => {
-      if(tab.filter === selectedTab.filter) {
+      if (tab.filter === selectedTab.filter) {
         this.filterProjects(selectedTab);
         tab.selected = true;
       } else {
@@ -163,7 +163,7 @@ export class ViProjectsComponent implements OnInit {
 
   filterProjects(selectedTab: any) {
     if (this.header.type === 'fashion') {
-      if(selectedTab.filter === FashionProjectConstants.FILTERS.MAIN){
+      if (selectedTab.filter === FashionProjectConstants.FILTERS.MAIN) {
         this.images = FashionProjectConstants.PROJECTS.filter(image => image.main);
       } else {
         this.images = FashionProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter && !image.main);
@@ -171,7 +171,7 @@ export class ViProjectsComponent implements OnInit {
     }
 
     else {
-      if(selectedTab.filter === HouseProjectConstants.FILTERS.MAIN){
+      if (selectedTab.filter === HouseProjectConstants.FILTERS.MAIN) {
         this.images = HouseProjectConstants.PROJECTS.filter(image => image.main);
       } else {
         this.images = HouseProjectConstants.PROJECTS.filter(image => image.filter === selectedTab.filter && !image.main);
@@ -266,13 +266,12 @@ export class ViProjectsComponent implements OnInit {
     }
   }
 
-  viewProjectDetail(image: Image)
-  {
+  viewProjectDetail(image: Image) {
     let prefix = this.header.type === 'fashion' ? 'negocio' : 'casa';
     const selectedTab = this.tabs.find(tab => tab.selected);
     this.router.navigate([`${prefix}/projeto`, image.id, image.filter], {
       queryParams:
-      { 
+      {
         tab: selectedTab.filter,
         current_position: this.currentIndex
       }
