@@ -33,6 +33,12 @@ export class HouseProjectViewComponent implements OnInit {
     this.initImages();
   }
 
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event) {
+    event.preventDefault();
+    this.goBack();
+  }
+
   updateCurrIndex(currentIndex: number) {
     this.currIndex = currentIndex;
   }

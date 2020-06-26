@@ -19,8 +19,14 @@ export class FashionProjectViewComponent implements OnInit {
   currIndex: number;
   routeParameters: any;
 
-ngOnInit(): void {
+  ngOnInit(): void {
     this.initVariables();
+  }
+
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event) {
+    event.preventDefault();
+    this.goBack();
   }
 
   initVariables() {
@@ -43,7 +49,7 @@ ngOnInit(): void {
 
   checkForTabParams() {
     this.routeParameters = {
-      tab : this.route.snapshot.queryParamMap.get('tab'),
+      tab: this.route.snapshot.queryParamMap.get('tab'),
       currentPosition: parseInt(this.route.snapshot.queryParamMap.get('current_position'))
     }
   }
@@ -76,10 +82,10 @@ ngOnInit(): void {
   goBack() {
     this.router.navigate(['negocio/inicio', 'projetos'], {
       queryParams:
-        { 
-          tab: this.routeParameters.tab,
-          current_position: this.routeParameters.currentPosition
-        }
+      {
+        tab: this.routeParameters.tab,
+        current_position: this.routeParameters.currentPosition
+      }
     });
     this.scroll.navigateToRoute(this.scroll.states.projects, 500, 'fashion');
   }
