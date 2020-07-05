@@ -1,4 +1,4 @@
-<main class="content">
+<main class="content" [ngClass]="{'content-android': operationSystem === 'Android'}">
   <router-outlet></router-outlet>
 </main>
 

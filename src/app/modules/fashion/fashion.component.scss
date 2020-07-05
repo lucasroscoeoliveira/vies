@@ -3,14 +3,11 @@
 .fashion-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .fashion {
   width: 100%;
-  flex-grow: 1;
-  min-height: 0;
+  height: 100%;
   overflow: auto;
   scroll-behavior: smooth;
 }
