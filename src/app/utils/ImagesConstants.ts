@@ -136,9 +136,9 @@ export default class ImagesConstants {
                 VANZI_11_LOJA_ID: environment.s3_public + '/Fashion/Projects/1-VANZI/11-vanzi-loja-id.jpg',
                 VANZI_12_LOJA_ID: environment.s3_public + '/Fashion/Projects/1-VANZI/12-vanzi-loja-id.jpg',
             },
-            LALU: {
+            LAJU: {
                 LAJU_1_LOJA_VITRINE: environment.s3_public + '/Fashion/Projects/2-LAJU/1-laju-loja-vitrine.jpg',
-                LALU_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/2-laju-loja.jpg',
+                LAJU_2_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/2-laju-loja.jpg',
                 LAJU_3_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/3-laju-loja.jpg',
                 LAJU_4_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/4-laju-loja.jpg',
                 LAJU_5_LOJA: environment.s3_public + '/Fashion/Projects/2-LAJU/5-laju-loja.jpg',

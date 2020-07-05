@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Header } from 'src/app/components-controllers/Header';
 import { environment } from 'src/environments/environment';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { Menu } from 'src/app/components-controllers/Menu';
 
 @Component({
   selector: 'app-prize',
@@ -19,7 +20,8 @@ export class PrizeComponent implements OnInit {
     public router: Router,
     public header: Header,
     public scroll: ScrollTo,
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
+    public menu: Menu
   ) { }
 
   ngOnInit(): void {
