@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import HouseProjectConstants from 'src/app/utils/HouseProjectConstants';
 import { Modal } from 'src/app/components-controllers/Modal';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-house-project-view',
@@ -11,7 +12,12 @@ import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 })
 export class HouseProjectViewComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal, public scroll: ScrollTo) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router, 
+    public modal: Modal, 
+    public scroll: ScrollTo, 
+    public facebookService: FacebookService) { }
   id: number;
   image: any;
   images: any;
@@ -21,6 +27,10 @@ export class HouseProjectViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.initVariables();
+    
+    this.facebookService.registerEvent({
+      name: 'House Project View',
+    }, 'PageView');
   }
 
   initVariables() {

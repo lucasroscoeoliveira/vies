@@ -32,7 +32,6 @@ export class HouseComponent implements OnInit {
 
     this.titleService.setTitle("Viés – Projetos residenciais");
     this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
-    debugger;
     this.facebookService.registerEvent({
       name: 'House',
     }, 'PageView');

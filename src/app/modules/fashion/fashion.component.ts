@@ -5,6 +5,7 @@ import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import { Menu } from 'src/app/components-controllers/Menu';
 import { Header } from 'src/app/components-controllers/Header';
 import { Social } from 'src/app/components-controllers/Social';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-fashion',
@@ -21,7 +22,8 @@ export class FashionComponent implements OnInit {
     public scrollTo: ScrollTo,
     public menu: Menu,
     public header: Header,
-    public social: Social
+    public social: Social,
+    public facebookService: FacebookService
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +32,10 @@ export class FashionComponent implements OnInit {
 
     this.titleService.setTitle("Viés – Projetos comerciais");
     this.metaTagService.updateTag({name: 'Negócios', content: "Projeto personalizados de ambientes comerciais"});
+
+    this.facebookService.registerEvent({
+      name: 'Fashion',
+    }, 'PageView');
   }
 
   onScroll(event) {
