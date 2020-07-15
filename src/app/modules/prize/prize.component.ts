@@ -4,6 +4,7 @@ import { Header } from 'src/app/components-controllers/Header';
 import { environment } from 'src/environments/environment';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import { Menu } from 'src/app/components-controllers/Menu';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-prize',
@@ -21,7 +22,8 @@ export class PrizeComponent implements OnInit {
     public header: Header,
     public scroll: ScrollTo,
     private route: ActivatedRoute,
-    public menu: Menu
+    public menu: Menu,
+    public facebookService: FacebookService
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +32,10 @@ export class PrizeComponent implements OnInit {
     this.setProjectImages();
     this.setVideoImages();
     this.header.setActive('premio');
+
+    this.facebookService.registerEvent({
+      name: 'Prize'
+    }, 'PageView');
   }
 
   setHeaderImages() {
@@ -102,7 +108,11 @@ export class PrizeComponent implements OnInit {
     ]
   }
 
-  viewVideo(videoImage: any) {
+  viewVideo(videoImage: any) {  
+    this.facebookService.registerEvent({
+      name: videoImage.url
+    }, 'Video View');
+
     window.open(videoImage.url);
   }
 

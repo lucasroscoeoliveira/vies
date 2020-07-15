@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Modal } from 'src/app/components-controllers/Modal';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import FashionProjectConstants from 'src/app/utils/FashionProjectConstants';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-fashion-project-view',
@@ -11,7 +12,7 @@ import FashionProjectConstants from 'src/app/utils/FashionProjectConstants';
 })
 export class FashionProjectViewComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, public modal: Modal, public scroll: ScrollTo) { }
+  constructor(public facebookService: FacebookService, private route: ActivatedRoute, private router: Router, public modal: Modal, public scroll: ScrollTo) { }
   id: number;
   image: any;
   images: any;
@@ -21,6 +22,10 @@ export class FashionProjectViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.initVariables();
+
+    this.facebookService.registerEvent({
+      name: 'Fashion Project View',
+    }, 'PageView');
   }
 
   ngOnDestroy(): void {

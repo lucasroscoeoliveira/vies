@@ -5,6 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ScrollTo } from 'src/app/components-controllers/ScrollTo';
 import { Social } from 'src/app/components-controllers/Social';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-house',
@@ -21,7 +22,8 @@ export class HouseComponent implements OnInit {
     public scrollTo: ScrollTo,
     public menu: Menu,
     public header: Header,
-    public social: Social
+    public social: Social,
+    public facebookService: FacebookService
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +32,9 @@ export class HouseComponent implements OnInit {
 
     this.titleService.setTitle("Viés – Projetos residenciais");
     this.metaTagService.updateTag({name: 'Casa', content: "Projeto personalizados de ambientes de casa"});
+    this.facebookService.registerEvent({
+      name: 'House',
+    }, 'PageView');
   }
 
   onScroll(event) {

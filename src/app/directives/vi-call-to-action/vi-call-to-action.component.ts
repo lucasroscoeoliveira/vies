@@ -5,6 +5,7 @@ import { Toast } from 'src/app/components-controllers/Toast';
 import { Social } from 'src/app/components-controllers/Social';
 import { Header } from 'src/app/components-controllers/Header';
 import { Menu } from 'src/app/components-controllers/Menu';
+import { FacebookService } from 'src/app/facebook.service';
 
 @Component({
   selector: 'app-vi-call-to-action',
@@ -21,7 +22,8 @@ export class ViCallToActionComponent implements OnInit {
     public toast: Toast,
     public social: Social,
     public header: Header,
-    public menu: Menu
+    public menu: Menu,
+    public facebookService: FacebookService
   ) { }
 
   ngOnInit(): void {
@@ -42,6 +44,11 @@ export class ViCallToActionComponent implements OnInit {
   }
 
   whatsApp() {
+    this.facebookService.registerEvent({
+      name: 'Whatsapp',
+      from: this.menu.type
+    }, 'Contact');
+    
     this.whatsAppService.sendMessage(5531991557975);
   }
 
