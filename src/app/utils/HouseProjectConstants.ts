@@ -804,7 +804,7 @@ export default class HouseProjectConstants {
       source: ImagesConstants.HOUSE_IMAGES.PROJECTS.BEDROOM_10,
       active: false,
       description: 'QUARTO CASAL - LAGOA SANTA',
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
+      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA,
       main: false,
       filter: HouseProjectConstants.FILTERS.BEDROOM
     },
