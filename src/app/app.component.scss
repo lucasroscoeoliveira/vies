@@ -2,7 +2,16 @@
 
 .content {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: $color-bg-1;
+  overflow: auto;
+}
+
+.content-android {
+  width: 100%;
+  height: 100vh;
+  min-height: -webkit-fill-available;
   background-color: $color-bg-1;
   overflow: auto;
 }
