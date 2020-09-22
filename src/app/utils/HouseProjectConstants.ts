@@ -2104,69 +2104,6 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
       filter: HouseProjectConstants.FILTERS.HOME_OFFICE
     },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_ANTES_1,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_ANTES_3,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_3,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_ANTES_5,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_5,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.LIVING_ROOM
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.COZINHA_ANTES_1,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.COZINHA,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.KITCHEN
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.CASAL_ANTES_2,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.CASAL_2,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.BEDROOM
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_ANTES_2,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_2,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.CHILD
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_ANTES_4,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_4,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.CHILD
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_ANTES_15,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.HOME_OFFICE,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.SALA_ANTES_16,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.HOME_OFFICE_2,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.RESIDENCIA_LAGOA_SANTA_2_GABI,
-      filter: HouseProjectConstants.FILTERS.HOME_OFFICE
-    },
 
 
 
@@ -2183,13 +2120,6 @@ export default class HouseProjectConstants {
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_PEDRO_LAGOA_SANTA,
       filter: HouseProjectConstants.FILTERS.CHILD
     },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_ANTES_2,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_2,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_PEDRO_LAGOA_SANTA,
-      filter: HouseProjectConstants.FILTERS.CHILD
-    },
 
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_3,
@@ -2199,13 +2129,6 @@ export default class HouseProjectConstants {
     },
     {
       source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_4,
-      active: false,
-      id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_VALENTINA_LAGOA_SANTA,
-      filter: HouseProjectConstants.FILTERS.CHILD
-    },
-    {
-      source: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_ANTES_4,
-      sourceAfter: ImagesConstants.HOUSE_IMAGES.SPECIFICS.RESIDENCIA_LAGOA_SANTA_2_GABI.INFANTIL_4,
       active: false,
       id: HouseProjectConstants.PROJECT_IDENTIFIERS.INFANTIL_VALENTINA_LAGOA_SANTA,
       filter: HouseProjectConstants.FILTERS.CHILD
