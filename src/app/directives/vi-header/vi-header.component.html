@@ -21,7 +21,7 @@
     </div>
   
     <div class="header__item clickable header__social" *ngFor="let social of header.socials">
-      <app-vi-svg icon="{{social.name}}" (click)="social.clickEvent()" class="icon" [ngClass]="{'icon--green': header.type === 'house', 'icon--purple': header.type === 'fashion'}"></app-vi-svg>
+      <app-vi-svg icon="{{social.name}}" (click)="social.clickEvent(header.type)" class="icon" [ngClass]="{'icon--green': header.type === 'house', 'icon--purple': header.type === 'fashion'}"></app-vi-svg>
     </div>
   
     <!-- <div class="header__item">
